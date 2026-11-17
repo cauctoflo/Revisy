@@ -24,7 +24,7 @@ window.EXAMS = [
  {subj:"r104", at:"2026-12-03T08:00", end:"09:50", title:"Devoir Systèmes",
   scope:"Probablement TP3 permissions, TP4 regex, TP5 scripts Bash (à confirmer).", rules:""},
  {subj:"r101", at:"2026-12-07T08:30", end:"09:50", title:"Devoir Init Dev",
-  scope:"Contenu à confirmer.", rules:""},
+  scope:"Probablement le langage C (hypothèse, pas encore confirmée par le prof) + algorithmique.", rules:""},
  {subj:"r107", at:"2026-12-08T08:30", end:"09:50", title:"Devoir 2 Outils maths",
   scope:"Gauss-Jordan (chap. 2), chap. 3 Dérivation, chap. 4 Polynômes.", rules:"Calculatrice seule autorisée."}
 ];
