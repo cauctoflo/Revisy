@@ -327,8 +327,9 @@ function viewProfil(){const v=$("#view");const now=new Date();
    <div class="set"><span>Sons</span><button class="sw" data-k="sound" aria-pressed="${S.set.sound}" aria-label="Sons"></button></div>
    <div class="set"><span>Objectif par jour</span><div class="seg" data-k="goal">${[20,50,100,150].map(g=>`<button data-v="${g}" aria-pressed="${S.set.goal===g}">${g}</button>`).join("")}</div></div>
    <div class="set"><span>Thème</span><div class="seg" data-k="theme">${[["auto","Auto"],["light","Clair"],["dark","Sombre"]].map(([k,l])=>`<button data-v="${k}" aria-pressed="${S.set.theme===k}">${l}</button>`).join("")}</div></div>
-   <div class="set"><span>Rappel quotidien</span><span class="row"><input type="time" class="time" id="rt" value="${S.set.remind}"><button class="btn ghost" id="ics" style="padding:8px 12px;font-size:14px">Ajouter</button></span></div>
-   <p class="muted" style="font-size:13px;margin:0">« Ajouter » crée un rappel quotidien dans l'agenda de ton téléphone. ${navigator.vibrate?"":"Ton navigateur ne gère pas les vibrations (iPhone) : les sons prennent le relais."}</p>
+   ${window.IN_ARTIFACT?"":`<div class="set"><span>Rappel quotidien</span><span class="row"><input type="time" class="time" id="rt" value="${S.set.remind}"><button class="btn ghost" id="ics" style="padding:8px 12px;font-size:14px">Ajouter</button></span></div>
+   <p class="muted" style="font-size:13px;margin:0">« Ajouter » crée un rappel quotidien dans l'agenda de ton téléphone.</p>`}
+   ${navigator.vibrate?"":`<p class="muted" style="font-size:13px;margin:0">Ce navigateur ne gère pas les vibrations (c'est le cas sur iPhone) : les sons prennent le relais.</p>`}
   </div>
   <div class="card"><div class="eyebrow">Sauvegarde</div><p class="muted" style="font-size:14px;margin:0">Ta progression reste sur ce téléphone. Copie-la pour la transférer.</p>
    <div class="row"><button class="btn ghost" id="exp" style="flex:1">Copier</button><button class="btn ghost" id="imp" style="flex:1">Coller</button></div>
@@ -336,8 +337,7 @@ function viewProfil(){const v=$("#view");const now=new Date();
  </div>`;
  v.querySelectorAll(".sw").forEach(b=>b.onclick=()=>{S.set[b.dataset.k]=!S.set[b.dataset.k];save();b.setAttribute("aria-pressed",S.set[b.dataset.k]);SFX.tap()});
  v.querySelectorAll(".seg").forEach(g=>g.querySelectorAll("button").forEach(b=>b.onclick=()=>{const k=g.dataset.k;S.set[k]=k==="goal"?+b.dataset.v:b.dataset.v;save();applyTheme();renderTop();viewProfil()}));
- $("#rt").onchange=e=>{S.set.remind=e.target.value;save()};
- $("#ics").onclick=()=>downloadICS(S.set.remind);
+ if($("#rt")){$("#rt").onchange=e=>{S.set.remind=e.target.value;save()};$("#ics").onclick=()=>downloadICS(S.set.remind)}
  $("#exp").onclick=async()=>{try{await navigator.clipboard.writeText(btoa(unescape(encodeURIComponent(JSON.stringify(S)))));toast("Progression copiée")}catch(e){toast("Copie impossible ici")}};
  $("#imp").onclick=()=>openSheet(`<h2>Coller une progression</h2><textarea id="impT" class="ans" style="font-size:13px;text-align:left;min-height:120px" placeholder="Colle ici le code copié"></textarea><button class="btn c block" id="impGo">Importer</button>`,el=>{el.querySelector("#impGo").onclick=()=>{const t=el.querySelector("#impT").value;closeSheet();if(!t)return;try{const o=JSON.parse(decodeURIComponent(escape(atob(t.trim()))));if(typeof o.xp!=="number")throw 0;S=Object.assign({},DEF,o);save();toast("Progression importée");go("profil")}catch(e){toast("Ce code n'est pas valide")}}});
  $("#rst").onclick=()=>openSheet(`<h2>Tout effacer ?</h2><span class="muted">XP, série et progression seront perdus sur ce téléphone.</span><button class="btn bad block" id="rstGo">Effacer</button><button class="btn ghost block" id="rstNo">Annuler</button>`,el=>{el.querySelector("#rstNo").onclick=closeSheet;el.querySelector("#rstGo").onclick=()=>{closeSheet();S=structuredClone(DEF);save();go("profil")}})}
