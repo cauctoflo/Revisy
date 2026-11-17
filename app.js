@@ -119,7 +119,7 @@ function viewHome(){
    <div class="cd" id="cd">${countdownHTML(nx.d)}</div>
    ${(UNITS[nx.subj]||[]).length?`<button class="btn block" id="heroGo"><svg class="ic"><use href="#i-bolt"/></svg>Réviser maintenant</button>`:""}</section>`:""}
   ${at?`<div class="banner"><svg class="ic"><use href="#i-flame"/></svg><span>Ta série de <b>${streakNow()} jours</b> s'éteint à minuit. Une session de 3 minutes suffit.</span></div>`:""}
-  ${!standalone()&&!S.hideInstall?installCard():""}
+  ${!standalone()&&!S.hideInstall&&!window.IN_ARTIFACT?installCard():""}
   <div class="quick">
    <button class="qbtn hl" id="bus"><svg class="ic"><use href="#i-bus"/></svg><b>Session bus</b><small>8 questions · 3 min, sur l'éval la plus proche</small></button>
    <button class="qbtn" id="mist" ${mk?"":"disabled"}><svg class="ic"><use href="#i-redo"/></svg><b>Mes erreurs</b><small>${mk?mk+" question"+(mk>1?"s":"")+" à revoir":"Aucune pour l'instant"}</small></button>
@@ -191,7 +191,7 @@ function runLesson(o){
  const el=$("#lesson");el.hidden=false;document.body.style.overflow="hidden";setC(el,o.sid);
  if(L.exam){L.deadline=Date.now()+L.minutes*6e4}
  drawQ()}
-function closeLesson(){if(L&&L.i>0&&!L.over&&!confirm("Quitter la leçon ? Ta progression de cette leçon sera perdue."))return;
+function closeLesson(force){if(force!==true&&L&&L.i>0&&!L.over){openSheet(`<h2>Quitter la leçon ?</h2><span class="muted">Les XP de cette leçon seront perdus. Ta série, elle, ne bouge pas.</span><button class="btn c block" id="stay">Continuer la leçon</button><button class="btn ghost block" id="quit" style="color:var(--bad)">Quitter</button>`,el=>{setC(el,L.sid);el.querySelector("#stay").onclick=closeSheet;el.querySelector("#quit").onclick=()=>{closeSheet();closeLesson(true)}});return}
  clearInterval(L&&L.tick);L=null;const el=$("#lesson");el.hidden=true;el.innerHTML="";document.body.style.overflow="";go(TAB)}
 
 function drawQ(){
@@ -268,8 +268,8 @@ function finish(){
    <div class="end-stats"><div><small>XP</small><b>+${L.xp}</b></div><div><small>Précision</small><b>${acc} %</b></div><div><small>Temps</small><b>${tstr}</b></div></div>
    ${L.exam&&L.wrong.length?`<div class="review"><div class="eyebrow">À revoir (${L.wrong.length})</div>${L.wrong.map(w=>`<div class="it"><div class="q">${w.q.q}</div><div><b>Réponse :</b> ${w.q.type==="mcq"?w.q.choices[w.q.answer]:esc(w.q.answers[0])}</div>${w.q.expl?`<div class="muted">${w.q.expl}</div>`:""}</div>`).join("")}</div>`:""}
   </div><div class="l-foot"><button class="btn c block" id="done">Continuer</button>${L.unit?`<button class="btn ghost block" id="again">Encore une</button>`:""}</div>`;
-  $("#done").onclick=()=>{L=null;closeLesson()};
-  const ag=$("#again");if(ag){const sid=L.sid,ui=L.ui;ag.onclick=()=>{L=null;startUnit(sid,ui)}}};
+  $("#done").onclick=()=>closeLesson(true);
+  const ag=$("#again");if(ag){const sid=L.sid,ui=L.ui;ag.onclick=()=>{closeLesson(true);startUnit(sid,ui)}}};
  if(bumped&&!before){el.innerHTML=`<div class="end"><div class="streak-big pop"><svg class="ic"><use href="#i-flame"/></svg><b>${S.streak.n}</b></div><div class="big">jour${S.streak.n>1?"s":""} de série !</div><div class="muted">${S.streak.n===1?"C'est parti. Reviens demain pour la garder allumée.":"Reviens demain pour ne pas la casser."}${S.streak.n%7===0?" Tu gagnes un gel de série.":""}</div></div><div class="l-foot"><button class="btn c block" id="sk">Continuer</button></div>`;
   setTimeout(()=>SFX.streak(),500);$("#sk").onclick=showEnd}
  else showEnd()}
@@ -339,8 +339,8 @@ function viewProfil(){const v=$("#view");const now=new Date();
  $("#rt").onchange=e=>{S.set.remind=e.target.value;save()};
  $("#ics").onclick=()=>downloadICS(S.set.remind);
  $("#exp").onclick=async()=>{try{await navigator.clipboard.writeText(btoa(unescape(encodeURIComponent(JSON.stringify(S)))));toast("Progression copiée")}catch(e){toast("Copie impossible ici")}};
- $("#imp").onclick=()=>{const t=prompt("Colle ici ta progression copiée :");if(!t)return;try{const o=JSON.parse(decodeURIComponent(escape(atob(t.trim()))));if(typeof o.xp!=="number")throw 0;S=Object.assign({},DEF,o);save();toast("Progression importée");go("profil")}catch(e){toast("Ce code n'est pas valide")}};
- $("#rst").onclick=()=>{if(confirm("Effacer toute ta progression ?")){S=structuredClone(DEF);save();go("profil")}}}
+ $("#imp").onclick=()=>openSheet(`<h2>Coller une progression</h2><textarea id="impT" class="ans" style="font-size:13px;text-align:left;min-height:120px" placeholder="Colle ici le code copié"></textarea><button class="btn c block" id="impGo">Importer</button>`,el=>{el.querySelector("#impGo").onclick=()=>{const t=el.querySelector("#impT").value;closeSheet();if(!t)return;try{const o=JSON.parse(decodeURIComponent(escape(atob(t.trim()))));if(typeof o.xp!=="number")throw 0;S=Object.assign({},DEF,o);save();toast("Progression importée");go("profil")}catch(e){toast("Ce code n'est pas valide")}}});
+ $("#rst").onclick=()=>openSheet(`<h2>Tout effacer ?</h2><span class="muted">XP, série et progression seront perdus sur ce téléphone.</span><button class="btn bad block" id="rstGo">Effacer</button><button class="btn ghost block" id="rstNo">Annuler</button>`,el=>{el.querySelector("#rstNo").onclick=closeSheet;el.querySelector("#rstGo").onclick=()=>{closeSheet();S=structuredClone(DEF);save();go("profil")}})}
 function downloadICS(t){const [h,m]=t.split(":");const d=new Date();const ds=dkey(d).replace(/-/g,"")+"T"+h+m+"00";
  const ics=["BEGIN:VCALENDAR","VERSION:2.0","PRODID:-//Revise BUT1//FR","BEGIN:VEVENT","UID:revise-but1-rappel@local","DTSTAMP:"+ds,"DTSTART:"+ds,"DURATION:PT10M","RRULE:FREQ=DAILY","SUMMARY:Révise : garde ta série !","DESCRIPTION:3 minutes suffisent. Ouvre l'appli Révise.","BEGIN:VALARM","ACTION:DISPLAY","DESCRIPTION:Révise : garde ta série !","TRIGGER:PT0M","END:VALARM","END:VEVENT","END:VCALENDAR"].join("\r\n");
  const a=document.createElement("a");a.href=URL.createObjectURL(new Blob([ics],{type:"text/calendar"}));a.download="rappel-revise.ics";document.body.appendChild(a);a.click();setTimeout(()=>{URL.revokeObjectURL(a.href);a.remove()},1000)}
