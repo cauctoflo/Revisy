@@ -153,7 +153,7 @@ h1{font-size:28px;font-weight:800}h2{font-size:22px;font-weight:800}h3{font-size
 .pop{animation:pop .35s ease}
 
 /* Fin de leçon */
-.end{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:18px;padding:24px 16px;text-align:center}
+.end{flex:1;min-height:0;overflow:auto;display:flex;flex-direction:column;align-items:center;justify-content:safe center;gap:18px;padding:24px 16px;text-align:center}
 .end .big{font:800 34px/1.1 var(--f-d)}
 .end-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;width:100%}
 .end-stats div{border:2px solid var(--line);border-radius:var(--r-md);overflow:hidden;background:var(--sheet)}
