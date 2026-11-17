@@ -31,15 +31,30 @@ window.UNITS={
   {id:"ens",title:"Ensembles (chap. 2)",qs:L.ensembles||[],gens:[]}
  ],
  r107:[
-  {id:"mat",title:"Matrices",qs:L.maths||[],gens:["matProd","matType"]},
-  {id:"matc",title:"Produits sans calculatrice",qs:[],gens:["matProd","matProd","matType"],n:8,desc:"Pour le TD noté du 26/11"}
+  {id:"mat",title:"Matrices",qs:X("r107",q=>String(q.ch).startsWith("1")).length?X("r107",q=>String(q.ch).startsWith("1")):(L.maths||[]),gens:["matProd","matType"]},
+  {id:"matc",title:"Produits sans calculatrice",qs:[],gens:["matProd","matProd","matType"],n:8,desc:"Pour le TD noté du 26/11"},
+  {id:"gj",title:"Gauss-Jordan",qs:kind("r107",/Gauss/),gens:[]},
+  {id:"der",title:"Dérivation",qs:kind("r107",/Dérivation/),gens:[]},
+  {id:"pol",title:"Polynômes",qs:kind("r107",/Polynômes/),gens:[]},
+  {id:"dev2",title:"Comme au devoir 2",exam:true,n:12,minutes:20,qs:kind("r107",/Gauss|Dérivation|Polynômes/),gens:[],desc:"Gauss-Jordan, dérivation, polynômes"}
  ],
  r101:[
-  {id:"a13",title:"Bases, conditions, boucles",qs:(L.algo||[]).filter(q=>q.ch<=3),gens:[]},
-  {id:"a48",title:"Tables, types, portée",qs:(L.algo||[]).filter(q=>q.ch>=4),gens:[]}
+  {id:"c14",title:"C : bases et fonctions",qs:X("r101",q=>/^C[1-4]$/.test(q.ch)),gens:[]},
+  {id:"c59",title:"C : tableaux, chaînes, structures",qs:X("r101",q=>/^C[5-9]$/.test(q.ch)),gens:[]},
+  {id:"a13",title:"Algo : bases, boucles",qs:X("r101",q=>/^algo[1-3]$/.test(q.ch)).length?X("r101",q=>/^algo[1-3]$/.test(q.ch)):(L.algo||[]).filter(q=>q.ch<=3),gens:[]},
+  {id:"a48",title:"Algo : tables, types, portée",qs:X("r101",q=>/^algo[4-8]$/.test(q.ch)).length?X("r101",q=>/^algo[4-8]$/.test(q.ch)):(L.algo||[]).filter(q=>q.ch>=4),gens:[]},
+  {id:"dev",title:"Comme au devoir",exam:true,n:12,minutes:20,qs:X("r101",()=>true),gens:[],desc:"12 questions chronométrées"}
  ],
  r105:[{id:"bdd",title:"MCD, cardinalités, MLD",qs:L.bdd||[],gens:[]}],
  r102:[{id:"web",title:"HTML et CSS",qs:L.web||[],gens:[]}],
- r104:[]
+ r104:[
+  {id:"cm",title:"Système, chemins, jokers",qs:X("r104",q=>q.ch==="cm"),gens:[]},
+  {id:"cmd",title:"Commandes et redirections",qs:X("r104",q=>q.ch==="cmd"),gens:[]},
+  {id:"perm",title:"Permissions (TP3)",qs:X("r104",q=>q.ch==="perm"),gens:[]},
+  {id:"regex",title:"Regex (TP4)",qs:X("r104",q=>q.ch==="regex"),gens:[]},
+  {id:"bash",title:"Scripts Bash (TP5)",qs:X("r104",q=>q.ch==="bash"),gens:[]},
+  {id:"prat",title:"Pratique du terminal",qs:X("r104",q=>q.ch==="prat"),gens:[]},
+  {id:"dev",title:"Comme au devoir",exam:true,n:12,minutes:20,qs:X("r104",()=>true),gens:[],desc:"12 questions chronométrées"}
+ ]
 };
 })();
