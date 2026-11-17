@@ -300,10 +300,10 @@ function exCard(e){const s=SUBJ[e.subj]||{code:"",name:""};const n=daysBetween(n
   </div></article>`}
 
 /* ---------- Cours ---------- */
-function viewCours(){const v=$("#view");const ids=Object.keys(COURS);let sid=ids.includes(S.coursSubj)?S.coursSubj:ids.includes(curSubj())?curSubj():ids[0];
+function viewCours(){const v=$("#view");const ids=window.SUBJECTS.map(x=>x.id).filter(id=>(COURS[id]||[]).length||(window.CHAPTERS[id]||[]).length);let sid=ids.includes(S.coursSubj)?S.coursSubj:ids.includes(curSubj())?curSubj():ids[0];
  v.innerHTML=`<div class="stack"><h1>L'essentiel du cours</h1>
   <div class="subjs">${ids.map(id=>`<button class="subj" data-s="${id}" aria-pressed="${id===sid}" style="--sc:${col(id)}"><b><i></i>${SUBJ[id].code}</b><small>${esc(SUBJ[id].name)}</small></button>`).join("")}</div>
-  <div class="stack" id="cl">${COURS[sid].map(fcHTML).join("")}</div>
+  <div class="stack" id="cl">${(COURS[sid]||[]).map(fcHTML).join("")}</div>
   ${(window.CHAPTERS[sid]||[]).length?`<div class="eyebrow">Cours complet</div>${window.CHAPTERS[sid].map((c,i)=>`<details class="card chap"><summary><b>${esc(c.title)}</b></summary><div class="chap-b">${c.html}</div></details>`).join("")}`:""}
   <a class="btn ghost block" href="${window.FULL_COURSE_URL}" target="_blank" rel="noopener">Cours complets et fiches (toutes les matières)</a>
  </div>`;setC($("#cl"),sid);
