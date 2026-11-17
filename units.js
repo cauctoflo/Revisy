@@ -20,7 +20,8 @@ window.UNITS={
   {id:"carry",title:"Carry et overflow",cours:["c-carry","c-ps"],qs:pickH([10,14],[53,57]).concat(kind("r103",/Carry|PowerShell/)),gens:["add8","sub8","band"]},
   {id:"utf8",title:"Texte et UTF-8",cours:["c-texte","c-eol","c-cmd"],qs:pickH([15,28],[60,62]).concat(kind("r103",/Fichiers|UTF/)),gens:["utf8","utf8Char"]},
   {id:"tp1",title:"Commandes du TP1",cours:["c-tp1","c-notions"],qs:pickH([29,42],[58,59],[65,65]).concat(kind("r103",/TP1/)),gens:[]},
-  {id:"float",title:"Endianness et flottants",cours:["c-endian","c-float"],qs:pickH([43,52]).concat(kind("r103",/Flottants|Endian/)),gens:["endian","ieee"]},
+  {id:"float",title:"Endianness et flottants",cours:["c-endian","c-float"],qs:pickH([43,52]).concat(kind("r103",/^(Cours|TP2) · (Flottants|Endian)/)),gens:["endian","ieee"]},
+  {id:"prat",title:"TP blanc : prévois le résultat",qs:X("r103",q=>!/^(Cours|TP1|TP2) ·/.test(q.kind||"")),gens:["utf8","band","sub8"],desc:"La partie pratique sous PowerShell"},
   {id:"qcm",title:"Comme au QCM Moodle",exam:true,n:15,minutes:15,qs:H.concat(X("r103",()=>true)),gens:["utf8Char","endian","range"],desc:"15 questions, 15 minutes, correction à la fin"}
  ],
  r106:[
