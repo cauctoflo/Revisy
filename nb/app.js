@@ -2,7 +2,7 @@
 "use strict";
 const SUBJ={r107:["R1.07","Outils mathématiques","🧮"],r106:["R1.06","Maths discrètes","🔢"],r105:["R1.05","Bases de données","🗄️"],r104:["R1.04","Systèmes","🐧"],
   r103:["R1.03","Architecture","💾"],r102:["R1.02","Web (HTML / CSS)","🌐"],r101:["R1.01","Init Dev","💻"],autre:["Autre","Autre matière","📒"]};
-const SITE_TABS={r107:[["c0","Fiches tests ch. 0"],["mx","Fiche de révision"]],r106:[["fx","Résumé express"]],r105:[["bx","Fiche de révision"]],r101:[["ax","Fiche mémento"]],r102:[["wx","Mémento TP"]],r103:[["kx","Fiche mémento"]],r104:[["sx","Fiche mémento"]]};
+const SITE_TABS={r107:[["mt","TD noté blanc (calcul matriciel)"],["mx","Fiche de révision"],["c0","Fiches tests ch. 0"]],r106:[["dv","Fiche devoir 2 (chap. 3 + 4)"],["fx","Résumé express"]],r105:[["bx","Fiche de révision"]],r101:[["ax","Fiche mémento"]],r102:[["wx","Mémento TP"]],r103:[["kx","Fiche mémento"]],r104:[["sx","Fiche mémento"]]};
 const $=(s,r=document)=>r.querySelector(s),$$=(s,r=document)=>[...r.querySelectorAll(s)];
 const esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 const app=$("#app");
@@ -247,7 +247,9 @@ function study(decks,all){
   document.addEventListener("keydown",key);draw()}
 
 /* ---------- Fiches ---------- */
-function viewFiche(f){if(!f)return;const ov=modal(f.title,`<article class="fiche">${f.html}</article>`,`<button type="button" class="btn ghost" data-del>Supprimer</button><button type="button" class="btn color" data-pr>⎙ Imprimer ou PDF</button>`,"wide");
+function viewFiche(f){if(!f)return;const cours=f.by==="seed"&&f.html.indexOf("<article")<0&&/class="(box|hn|f|tscroll)\b/.test(f.html);
+  const ov=modal(f.title,cours?`<div data-cours></div>`:`<article class="fiche">${f.html}</article>`,`<button type="button" class="btn ghost" data-del>Supprimer</button><button type="button" class="btn color" data-pr>⎙ Imprimer ou PDF</button>`,"wide");
+  if(cours){const host=$("[data-cours]",ov);const sr=host.attachShadow({mode:"open"});sr.innerHTML=`<link rel="stylesheet" href="cours.css?v=2"><div class="cours-wrap" data-subj="${esc(S.meta.subject)}"><article class="sheet fiche">${f.html}</article></div>`}
   $("[data-pr]",ov).onclick=()=>{document.body.classList.add("printing");setTimeout(()=>{print();document.body.classList.remove("printing")},50)};
   $("[data-del]",ov).onclick=e=>confirm2(e.currentTarget,"Confirmer",async()=>{try{await api("fiche_del",{nb:S.meta.id,fid:f.id});ov.close();reload()}catch(e){fail(e)}})}
 
