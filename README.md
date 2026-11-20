@@ -7,3 +7,7 @@ Appli web de révision pour le BUT1 info, pensée pour le téléphone : sessions
 - `tools/import-contenu.js` : importe les fichiers `contenu/<matière>.json` dans `data/ext.js`.
 
 Lancer en local : `python3 -m http.server` puis ouvrir http://localhost:8000.
+
+## Site Révisions BUT1 (`site/`)
+
+Le site complet (cours, fiches A4, entraînement, « Tout imprimer ») est dans `site/index.html`, en un seul fichier. Sur Plesk, la racine du sous-domaine pointe vers `site/`.
