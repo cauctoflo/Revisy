@@ -55,6 +55,29 @@ function seed_into(array &$n, string $subj): void {
   if (!is_file($f)) return;
   $s = json_decode((string)file_get_contents($f), true) ?: [];
   import_payload($n, $s, 'seed');
+  $n['seedv'] = md5_file($f);
+}
+/* Un carnet prêt par matière, créé une seule fois (s'il est supprimé, il ne revient pas). */
+const SUBJ_NAMES = ['r106' => ['R1.06 Maths discrètes', '🔢'], 'r107' => ['R1.07 Outils mathématiques', '🧮'], 'r104' => ['R1.04 Systèmes', '🐧'],
+  'r101' => ['R1.01 Init Dev', '💻'], 'r103' => ['R1.03 Architecture', '💾'], 'r105' => ['R1.05 Bases de données', '🗄️'], 'r102' => ['R1.02 Web HTML / CSS', '🌐']];
+function auto_create(): void {
+  $done = jread('autocreated', []); $l = index(); $have = array_column($l, 'subject'); $changed = false;
+  foreach (SUBJ_NAMES as $subj => [$title, $emoji]) {
+    if (in_array($subj, $done, true) || !is_file(__DIR__ . "/seed/$subj.json")) continue;
+    $done[] = $subj; $changed = true;
+    if (in_array($subj, $have, true)) continue;
+    $id = uid('n'); $n = blank(); seed_into($n, $subj);
+    $l[] = ['id' => $id, 'title' => $title, 'subject' => $subj, 'emoji' => $emoji, 'created' => time(), 'updated' => time()];
+    save_index($l); save($id, $n); $l = index();
+  }
+  if ($changed) jwrite('autocreated', $done);
+}
+/* Quand le contenu d'une matière est mis à jour (nouveau seed), les carnets existants le reçoivent à l'ouverture. */
+function sync_seed(string $id, array &$n, string $subj): void {
+  if (!in_array($subj, SUBJECTS, true)) return;
+  $f = __DIR__ . "/seed/$subj.json";
+  if (!is_file($f) || ($n['seedv'] ?? '') === md5_file($f)) return;
+  seed_into($n, $subj); save($id, $n);
 }
 function import_payload(array &$n, array $p, string $by = 'claude'): array {
   $r = ['decks' => 0, 'fiches' => 0, 'quizzes' => 0, 'sources' => 0, 'requests' => 0];
@@ -84,10 +107,19 @@ function import_payload(array &$n, array $p, string $by = 'claude'): array {
       $qs[] = ['q' => (string)$x['q'], 'choices' => $ch, 'answer' => max(0, min(count($ch) - 1, (int)($x['answer'] ?? 0))), 'expl' => (string)($x['expl'] ?? '')];
     }
     if (!$qs) continue;
-    $n['quizzes'][] = ['id' => uid('q'), 'title' => mb_substr((string)($q['title'] ?? 'Quiz'), 0, 120), 'by' => $by, 'at' => time(), 'questions' => $qs];
+    $title = mb_substr((string)($q['title'] ?? 'Quiz'), 0, 120); $found = false;
+    foreach ($n['quizzes'] as &$eq) if ($eq['title'] === $title && ($eq['by'] ?? '') !== 'moi') { $eq['questions'] = $qs; $eq['at'] = time(); $found = true; }
+    unset($eq);
+    if (!$found) $n['quizzes'][] = ['id' => uid('q'), 'title' => $title, 'by' => $by, 'at' => time(), 'questions' => $qs];
     $r['quizzes']++;
   }
   foreach ((array)($p['sources'] ?? []) as $s) {
+    if ($by === 'seed') {
+      $found = false;
+      foreach ($n['sources'] as &$es) if (($es['by'] ?? '') === 'seed' && $es['title'] === (string)($s['title'] ?? '')) { $es['text'] = mb_substr((string)($s['text'] ?? ''), 0, 400000); $found = true; }
+      unset($es);
+      if ($found) continue;
+    }
     $n['sources'][] = ['id' => uid('s'), 'type' => in_array($s['type'] ?? '', ['link', 'site'], true) ? $s['type'] : 'text',
       'title' => mb_substr((string)($s['title'] ?? 'Source'), 0, 200), 'text' => mb_substr((string)($s['text'] ?? ''), 0, 400000),
       'url' => (string)($s['url'] ?? ''), 'at' => time(), 'by' => $by];
@@ -118,6 +150,8 @@ function schedule(array $p, int $g): array {
 $a = (string)($_GET['a'] ?? '');
 switch ($a) {
   case 'list':
+    auto_create();
+    foreach (index() as $e) { $n = jread('nb-' . $e['id']); if (is_array($n)) sync_seed($e['id'], $n, (string)($e['subject'] ?? '')); }
     out(['notebooks' => index(), 'progress' => jread('progress', (object)[])]);
 
   case 'create': {
@@ -146,7 +180,8 @@ switch ($a) {
   case 'get': {
     $id = nbid(); $meta = null; foreach (index() as $e) if ($e['id'] === $id) $meta = $e;
     if (!$meta) fail('carnet introuvable', 404);
-    out(['meta' => $meta, 'nb' => load($id), 'progress' => jread('progress', (object)[])]);
+    $n = load($id); sync_seed($id, $n, (string)($meta['subject'] ?? ''));
+    out(['meta' => $meta, 'nb' => $n, 'progress' => jread('progress', (object)[])]);
   }
   case 'add_source': {
     $id = nbid(); $n = load($id); $type = (string)arg('type', 'text');
