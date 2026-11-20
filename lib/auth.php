@@ -2,7 +2,7 @@
 /* Connexion par mot de passe pour revisy : cookie signé, valable 60 jours. */
 declare(strict_types=1);
 
-const REVISY_PASS_HASH = '$2y$10$r4ZNLheAbeypkx4a0WKjj.FzgLBYpX8cZs9LvN70F/IOcZVmJfkWW';
+const REVISY_PASS_HASH = '$2y$10$.Uf6Hdn1.V1JjVa8RSPco.0AidCiE/TRmbDdp29tdFTbyTLu9PUjC';
 const REVISY_COOKIE = 'revisy_auth';
 const REVISY_DAYS = 60;
 
