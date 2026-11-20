@@ -1,0 +1,485 @@
+{
+"decks": [
+{
+"title": "HTML et CSS",
+"cards": [
+{
+"id": "cr102a95dcb8aebb2",
+"q": "Quelle balise contient le menu de navigation ?",
+"a": "<nav>\n\nnav, souvent placé dans header avec le titre principal.",
+"tag": "TP noté"
+},
+{
+"id": "cr10262d7d5184b7a",
+"q": "Comment ouvrir un lien dans un nouvel onglet ?",
+"a": "target=\"_blank\"\n\n<a href=\"…\" target=\"_blank\">",
+"tag": "TP noté"
+},
+{
+"id": "cr1029de2f0ae0967",
+"q": "Quel lien remonte en haut de la page sans ancre explicite ?",
+"a": "href=\"#\"\n\nhref=\"#\" renvoie en haut de la page.",
+"tag": "TP noté"
+},
+{
+"id": "cr1023e7a4a12ee1f",
+"q": "Pour une légende commune à deux images :",
+"a": "une figure avec les 2 img et une seule figcaption\n\n<figure><img><img><figcaption>…</figcaption></figure>",
+"tag": "TP noté"
+},
+{
+"id": "cr102236a1e1bc4bc",
+"q": "Fusionner deux cellules d'un tableau sur deux colonnes :",
+"a": "colspan=\"2\"\n\ncolspan fusionne des colonnes, rowspan des lignes.",
+"tag": "TP noté"
+},
+{
+"id": "cr1028a561003c329",
+"q": "Une liste imbriquée se place…",
+"a": "à l'intérieur d'un <li>\n\nLa sous-liste est un enfant du li.",
+"tag": "TP noté"
+},
+{
+"id": "cr1023cd48215ef4a",
+"q": "Le sélecteur #eau cible…",
+"a": "l'élément d'id eau\n\n# = id (unique), . = classe.",
+"tag": "TP noté"
+},
+{
+"id": "cr1022b3492beddb0",
+"q": "Le sélecteur section p cible…",
+"a": "les p descendants d'une section\n\nSélecteur contextuel parent-descendant. La virgule (section, p) ciblerait les deux.",
+"tag": "TP noté"
+},
+{
+"id": "cr102ef33778f5cce",
+"q": "Quel sélecteur est le plus prioritaire ?",
+"a": "#intro\n\nid > classe > balise.",
+"tag": "TP noté"
+},
+{
+"id": "cr10286b188d9101b",
+"q": "margin: 10px 20px 30px 40px; La marge de gauche vaut…",
+"a": "40px\n\nOrdre : haut, droite, bas, gauche (sens des aiguilles d'une montre).",
+"tag": "TP noté"
+},
+{
+"id": "cr1023bcba9c4c9a8",
+"q": "padding est…",
+"a": "la marge intérieure (entre le contenu et la bordure)\n\nmargin = extérieure, padding = intérieure.",
+"tag": "TP noté"
+},
+{
+"id": "cr102bfe24c7248bf",
+"q": "Centrer horizontalement un bloc de 960px max :",
+"a": "margin: 0 auto\n\nmax-width: 960px; margin: 0 auto;",
+"tag": "TP noté"
+},
+{
+"id": "cr102be6be3b7888c",
+"q": "Mettre deux div côte à côte, alignés en haut :",
+"a": "display: inline-block; vertical-align: top\n\ninline-block les place sur la même ligne tout en gardant une largeur.",
+"tag": "TP noté"
+},
+{
+"id": "cr102552f2f3ddae4",
+"q": "Cacher les sous-menus :",
+"a": "display: none\n\ndisplay: none retire l'élément de l'affichage.",
+"tag": "TP noté"
+},
+{
+"id": "cr102f52a8ac503bf",
+"q": "position: relative; top: 20px; …",
+"a": "décale l'élément de 20px vers le bas, sa place reste réservée\n\nRelatif : décalé par rapport à sa position normale.",
+"tag": "TP noté"
+},
+{
+"id": "cr102e5027cdb24e0",
+"q": "Un entête qui reste visible quand on fait défiler la page :",
+"a": "position: fixed; top: 0\n\nfixed : positionné par rapport à la fenêtre.",
+"tag": "TP noté"
+},
+{
+"id": "cr10242f1f10b9e18",
+"q": "Deux blocs se superposent. Lequel est devant ?",
+"a": "celui avec le plus grand z-index\n\nLa plus grande valeur de z-index est affichée par-dessus.",
+"tag": "TP noté"
+},
+{
+"id": "cr10205857b303b69",
+"q": "Remplacer les puces d'une liste par une icône :",
+"a": "list-style-image: url('icone.png')\n\nlist-style-image (ou list-style-type: none + background).",
+"tag": "TP noté"
+},
+{
+"id": "cr1022874a7ac88cc",
+"q": "Image de fond qui tient entière dans l'élément :",
+"a": "background-size: contain\n\ncontain : l'image entière est visible. cover : elle remplit tout quitte à être coupée.",
+"tag": "TP noté"
+},
+{
+"id": "cr102ed05e6bdd5b7",
+"q": "Écrire en petites capitales :",
+"a": "font-variant: small-caps\n\nfont-variant: small-caps.",
+"tag": "TP noté"
+},
+{
+"id": "cr102b1b619797fa5",
+"q": "Au survol d'une figure, la décaler de 20px vers le bas :",
+"a": "figure:hover { position: relative; top: 20px; }\n\nPseudo-classe :hover + position relative.",
+"tag": "TP noté"
+},
+{
+"id": "cr1023210d5f7a42d",
+"q": "Faire coller le contenu à la fenêtre (pas de bandeau autour) :",
+"a": "body { margin: 0; }\n\nLe body a une marge par défaut.",
+"tag": "TP noté"
+},
+{
+"id": "cr102f22a5be545ff",
+"q": "Un élément inline (a, span, img)…",
+"a": "s'insère dans le texte sans passer à la ligne\n\nblock passe à la ligne, inline reste dans le texte.",
+"tag": "TP noté"
+},
+{
+"id": "cr102428f2d185f8e",
+"q": "Ombre de 3px de couleur noire à 30 % :",
+"a": "box-shadow: 3px 3px 3px rgba(0,0,0,0.3)\n\nbox-shadow : décalage horizontal, vertical, flou, couleur.",
+"tag": "TP noté"
+},
+{
+"id": "cr102c8f22c930290",
+"q": "Où place-t-on <link rel=\"stylesheet\" href=\"style.css\"> ?",
+"a": "dans le head\n\nDans le head.",
+"tag": "TP noté"
+},
+{
+"id": "cr10292d75fda1ed7",
+"q": "position: absolute se positionne par rapport…",
+"a": "au premier parent positionné (sinon la page)\n\nIl sort du flux et se repère sur le premier ancêtre non static.",
+"tag": "TP noté"
+}
+]
+}
+],
+"quizzes": [
+{
+"title": "HTML et CSS · quiz 1",
+"questions": [
+{
+"q": "Quelle balise contient le menu de navigation ?",
+"choices": [
+"<menu>",
+"<nav>",
+"<header>",
+"<aside>"
+],
+"answer": 1,
+"expl": "nav, souvent placé dans header avec le titre principal."
+},
+{
+"q": "Comment ouvrir un lien dans un nouvel onglet ?",
+"choices": [
+"target=\"_blank\"",
+"rel=\"new\"",
+"href=\"_blank\"",
+"new=\"true\""
+],
+"answer": 0,
+"expl": "<a href=\"…\" target=\"_blank\">"
+},
+{
+"q": "Quel lien remonte en haut de la page sans ancre explicite ?",
+"choices": [
+"href=\"top\"",
+"href=\"#\"",
+"href=\"/\"",
+"href=\"#haut\" sans id"
+],
+"answer": 1,
+"expl": "href=\"#\" renvoie en haut de la page."
+},
+{
+"q": "Pour une légende commune à deux images :",
+"choices": [
+"deux figcaption",
+"une figure avec les 2 img et une seule figcaption",
+"un attribut title",
+"un p sous chaque image"
+],
+"answer": 1,
+"expl": "<figure><img><img><figcaption>…</figcaption></figure>"
+},
+{
+"q": "Fusionner deux cellules d'un tableau sur deux colonnes :",
+"choices": [
+"rowspan=\"2\"",
+"colspan=\"2\"",
+"merge=\"2\"",
+"span=\"2\""
+],
+"answer": 1,
+"expl": "colspan fusionne des colonnes, rowspan des lignes."
+},
+{
+"q": "Une liste imbriquée se place…",
+"choices": [
+"après le </ul>",
+"à l'intérieur d'un <li>",
+"dans un <p>",
+"dans le <head>"
+],
+"answer": 1,
+"expl": "La sous-liste est un enfant du li."
+},
+{
+"q": "Le sélecteur #eau cible…",
+"choices": [
+"les éléments de classe eau",
+"l'élément d'id eau",
+"toutes les balises eau",
+"les liens vers eau"
+],
+"answer": 1,
+"expl": "# = id (unique), . = classe."
+},
+{
+"q": "Le sélecteur section p cible…",
+"choices": [
+"les section et les p",
+"les p descendants d'une section",
+"les section dans un p",
+"le premier p"
+],
+"answer": 1,
+"expl": "Sélecteur contextuel parent-descendant. La virgule (section, p) ciblerait les deux."
+},
+{
+"q": "Quel sélecteur est le plus prioritaire ?",
+"choices": [
+"p",
+"p.rouge",
+"#intro",
+"section p"
+],
+"answer": 2,
+"expl": "id > classe > balise."
+},
+{
+"q": "margin: 10px 20px 30px 40px; La marge de gauche vaut…",
+"choices": [
+"10px",
+"20px",
+"30px",
+"40px"
+],
+"answer": 3,
+"expl": "Ordre : haut, droite, bas, gauche (sens des aiguilles d'une montre)."
+},
+{
+"q": "padding est…",
+"choices": [
+"la marge extérieure",
+"la marge intérieure (entre le contenu et la bordure)",
+"la bordure",
+"l'espace entre deux lignes"
+],
+"answer": 1,
+"expl": "margin = extérieure, padding = intérieure."
+},
+{
+"q": "Centrer horizontalement un bloc de 960px max :",
+"choices": [
+"text-align: center",
+"margin: 0 auto",
+"float: center",
+"position: center"
+],
+"answer": 1,
+"expl": "max-width: 960px; margin: 0 auto;"
+},
+{
+"q": "Mettre deux div côte à côte, alignés en haut :",
+"choices": [
+"display: block",
+"display: inline-block; vertical-align: top",
+"display: none",
+"position: fixed"
+],
+"answer": 1,
+"expl": "inline-block les place sur la même ligne tout en gardant une largeur."
+},
+{
+"q": "Cacher les sous-menus :",
+"choices": [
+"visibility: 0",
+"display: none",
+"opacity: none",
+"hidden: true"
+],
+"answer": 1,
+"expl": "display: none retire l'élément de l'affichage."
+},
+{
+"q": "position: relative; top: 20px; …",
+"choices": [
+"fixe l'élément à la fenêtre",
+"décale l'élément de 20px vers le bas, sa place reste réservée",
+"sort l'élément du flux",
+"ne fait rien"
+],
+"answer": 1,
+"expl": "Relatif : décalé par rapport à sa position normale."
+}
+]
+},
+{
+"title": "HTML et CSS · quiz 2",
+"questions": [
+{
+"q": "Un entête qui reste visible quand on fait défiler la page :",
+"choices": [
+"position: absolute",
+"position: fixed; top: 0",
+"position: relative",
+"float: top"
+],
+"answer": 1,
+"expl": "fixed : positionné par rapport à la fenêtre."
+},
+{
+"q": "Deux blocs se superposent. Lequel est devant ?",
+"choices": [
+"celui avec le plus petit z-index",
+"celui avec le plus grand z-index",
+"le premier dans le HTML",
+"le plus large"
+],
+"answer": 1,
+"expl": "La plus grande valeur de z-index est affichée par-dessus."
+},
+{
+"q": "Remplacer les puces d'une liste par une icône :",
+"choices": [
+"list-style-image: url('icone.png')",
+"background: icone.png",
+"list-type: image",
+"bullet: url()"
+],
+"answer": 0,
+"expl": "list-style-image (ou list-style-type: none + background)."
+},
+{
+"q": "Image de fond qui tient entière dans l'élément :",
+"choices": [
+"background-size: contain",
+"background-size: cover",
+"background-repeat: fit",
+"background: full"
+],
+"answer": 0,
+"expl": "contain : l'image entière est visible. cover : elle remplit tout quitte à être coupée."
+},
+{
+"q": "Écrire en petites capitales :",
+"choices": [
+"text-transform: small",
+"font-variant: small-caps",
+"font-size: small",
+"text-decoration: caps"
+],
+"answer": 1,
+"expl": "font-variant: small-caps."
+},
+{
+"q": "Au survol d'une figure, la décaler de 20px vers le bas :",
+"choices": [
+"figure:hover { position: relative; top: 20px; }",
+"figure:active { top: 20px; }",
+"figure.hover { margin: 20px; }",
+"hover figure { top: 20px; }"
+],
+"answer": 0,
+"expl": "Pseudo-classe :hover + position relative."
+},
+{
+"q": "Faire coller le contenu à la fenêtre (pas de bandeau autour) :",
+"choices": [
+"body { margin: 0; }",
+"html { border: 0; }",
+"body { padding: auto; }",
+"* { width: 100%; }"
+],
+"answer": 0,
+"expl": "Le body a une marge par défaut."
+},
+{
+"q": "Un élément inline (a, span, img)…",
+"choices": [
+"prend toute la largeur",
+"s'insère dans le texte sans passer à la ligne",
+"est caché",
+"est toujours positionné"
+],
+"answer": 1,
+"expl": "block passe à la ligne, inline reste dans le texte."
+},
+{
+"q": "Ombre de 3px de couleur noire à 30 % :",
+"choices": [
+"box-shadow: 3px 3px 3px rgba(0,0,0,0.3)",
+"shadow: 3px black",
+"text-shadow: 30%",
+"border-shadow: 3px"
+],
+"answer": 0,
+"expl": "box-shadow : décalage horizontal, vertical, flou, couleur."
+},
+{
+"q": "Où place-t-on <link rel=\"stylesheet\" href=\"style.css\"> ?",
+"choices": [
+"dans le body",
+"dans le head",
+"après </html>",
+"dans le footer"
+],
+"answer": 1,
+"expl": "Dans le head."
+},
+{
+"q": "position: absolute se positionne par rapport…",
+"choices": [
+"à la fenêtre toujours",
+"au premier parent positionné (sinon la page)",
+"à sa place normale",
+"au body uniquement"
+],
+"answer": 1,
+"expl": "Il sort du flux et se repère sur le premier ancêtre non static."
+}
+]
+}
+],
+"fiches": [
+{
+"title": "Cours : HTML",
+"html": "\n      <h2>R1.02 · HTML 5</h2>\n      <p class=\"muted\">TP noté mercredi 21/10 (groupe 3 : 8 h – 10 h), 1 h 30, sur HTML et CSS jusqu'au TD4, positionnement inclus. Documents papier autorisés, pas d'Internet ni d'IA. Ne pas reprendre le code de tes exercices.</p><div class=\"doc-tools\"></div>\n      <h3 id=\"w1-s0\">Squelette d'une page</h3>\n<div class=\"tscroll\"><pre class=\"f\" style=\"margin:0;line-height:1.5\">&lt;!DOCTYPE html&gt;\n&lt;html lang=\"fr\"&gt;\n  &lt;head&gt;\n    &lt;meta charset=\"utf-8\"&gt;\n    &lt;title&gt;Titre&lt;/title&gt;\n    &lt;link rel=\"stylesheet\" href=\"style.css\"&gt;\n  &lt;/head&gt;\n  &lt;body&gt; … &lt;/body&gt;\n&lt;/html&gt;</pre></div>\n      <h3 id=\"w1-s1\">Structure</h3>\n      <div class=\"formula-list\">\n        <span class=\"f\">header / nav / footer</span><span>entête, menu de navigation, pied de page</span>\n        <span class=\"f\">section / article</span><span>section thématique, contenu autonome. Chacun a sa propre hiérarchie de titres h1…h6</span>\n        <span class=\"f\">div / span</span><span>conteneur bloc / conteneur en ligne, sans sens particulier</span>\n        <span class=\"f\">p, h1…h6</span><span>paragraphe, titres</span>\n      </div>\n      <h3 id=\"w1-s2\">Listes, images, liens, tableaux</h3>\n      <ul>\n        <li><span class=\"f\">ul</span> (puces), <span class=\"f\">ol</span> (numérotée), <span class=\"f\">li</span>, liste de définitions <span class=\"f\">dl / dt / dd</span>. Une liste imbriquée se met <b>dans</b> un li.</li>\n        <li><span class=\"f\">&lt;img src=\"…\" alt=\"…\"&gt;</span> (alt obligatoire). Légende : <span class=\"f\">&lt;figure&gt;&lt;img&gt;&lt;figcaption&gt;…&lt;/figcaption&gt;&lt;/figure&gt;</span>, une seule figcaption pour plusieurs images.</li>\n        <li><span class=\"f\">&lt;a href=\"https://…\" target=\"_blank\"&gt;</span> ouvre un nouvel onglet. Lien interne : <span class=\"f\">href=\"#id\"</span> vers un élément <span class=\"f\">id=\"id\"</span>. <span class=\"f\">href=\"#\"</span> remonte en haut.</li>\n        <li>Tableau : <span class=\"f\">table, caption, tr, th, td</span>. Fusion : <span class=\"f\">colspan=\"2\"</span> (colonnes), <span class=\"f\">rowspan=\"2\"</span> (lignes).</li>\n        <li>Médias : <span class=\"f\">&lt;video controls&gt;</span> / <span class=\"f\">&lt;audio controls&gt;</span> avec plusieurs <span class=\"f\">&lt;source src=\"…\" type=\"…\"&gt;</span> pour les 2 formats.</li>\n      </ul>\n      <div class=\"box method\">Valide toujours tes fichiers (validator.w3.org et jigsaw pour le CSS) : une balise mal fermée casse souvent tout le style.</div>\n      <div class=\"mod\"><div class=\"mod-h\"><span class=\"mod-tag\">Schéma interactif</span><strong>Bac à sable HTML / CSS</strong></div><p class=\"mod-sub\">Tape du HTML et du CSS : le rendu s'affiche en direct à droite. Idéal pour t'entraîner avant le TP noté (sans Internet, comme le jour J).</p><div class=\"cmp-in\"><div><label class=\"lbl\" for=\"sh629407\">HTML</label><textarea class=\"txt code\" id=\"sh629407\">&lt;header&gt;&lt;h1&gt;Les Pokémon&lt;/h1&gt;&lt;/header&gt;\n&lt;section&gt;\n  &lt;h2 id=\"feu\"&gt;Type Feu&lt;/h2&gt;\n  &lt;ul&gt;&lt;li&gt;Salamèche&lt;/li&gt;&lt;li&gt;Ponyta&lt;/li&gt;&lt;/ul&gt;\n  &lt;div class=\"bloc\"&gt;Bloc A&lt;/div&gt;&lt;div class=\"bloc\"&gt;Bloc B&lt;/div&gt;\n&lt;/section&gt;</textarea><label class=\"lbl\" for=\"sc479135\">CSS</label><textarea class=\"txt code\" id=\"sc479135\">header { background: #6a3fb5; color: white; padding: 10px; }\n#feu { color: orange; }\n.bloc { display: inline-block; width: 40%; border: 5px ridge gray; margin: 10px; padding: 10px; }\n.bloc:hover { position: relative; top: 20px; }</textarea></div><div><div class=\"lbl\">Rendu</div><div class=\"preview\"></div></div></div></div>\n    "
+},
+{
+"title": "Cours : CSS",
+"html": "\n      <h2>R1.02 · CSS 3 (TD2 à TD4)</h2>\n      <h3 id=\"w2-s0\">Sélecteurs</h3><div class=\"doc-tools\"></div>\n      <div class=\"formula-list\">\n        <span class=\"f\">h2</span><span>toutes les balises h2</span>\n        <span class=\"f\">.rouge</span><span>les éléments avec class=\"rouge\" (réutilisable)</span>\n        <span class=\"f\">#eau</span><span>l'élément avec id=\"eau\" (unique dans la page)</span>\n        <span class=\"f\">section p</span><span>les p <b>descendants</b> d'une section (sélecteur contextuel)</span>\n        <span class=\"f\">figure.rouge figcaption</span><span>la légende d'une figure qui a la classe rouge</span>\n        <span class=\"f\">a:hover</span><span>pseudo-classe : au survol de la souris</span>\n        <span class=\"f\">h1, h2</span><span>les h1 <b>et</b> les h2</span>\n      </div>\n      <div class=\"box trap\">Priorité : id &gt; classe &gt; balise. À priorité égale, la dernière règle écrite gagne.</div>\n      <h3 id=\"w2-s1\">Texte, couleurs, fonds</h3>\n      <p><span class=\"f\">color, font-family, font-size, font-weight, font-style, text-align (justify), text-decoration, font-variant: small-caps, line-height</span>. Fond : <span class=\"f\">background-color, background-image: url('x.png'), background-repeat: no-repeat, background-size: contain / cover, background-position</span>.</p>\n      <h3 id=\"w2-s2\">Modèle de boîte</h3>\n      <div class=\"mod\"><div class=\"mod-h\"><span class=\"mod-tag\">Schéma interactif</span><strong>Le modèle de boîte</strong></div><p class=\"mod-sub\">Bouge les curseurs : marge extérieure (margin), bordure, marge intérieure (padding) et contenu (width).</p><div class=\"card-in\"><label><span>width : <b>200</b>px</span><input type=\"range\" min=\"50\" max=\"300\" value=\"200\"></label><label><span>padding : <b>20</b>px</span><input type=\"range\" min=\"0\" max=\"50\" value=\"20\"></label><label><span>border : <b>5</b>px</span><input type=\"range\" min=\"0\" max=\"20\" value=\"5\"></label><label><span>margin : <b>20</b>px</span><input type=\"range\" min=\"0\" max=\"50\" value=\"20\"></label></div><div class=\"bx-out\"><div class=\"tscroll\"><div class=\"bx-m\" style=\"padding:12px\"><div class=\"bx-b\" style=\"border-width:3px\"><div class=\"bx-p\" style=\"padding:12px\"><div class=\"bx-c\" style=\"width:120px\">contenu 200px</div></div></div></div></div>\n    <p>Largeur de la boîte (bordure comprise) = 200 + 2×20 + 2×5 = <b>250px</b>. Avec les marges, elle occupe 290px. <span class=\"hint\">Code : <span class=\"f\">width: 200px; padding: 20px; border: 5px solid; margin: 20px;</span></span></p></div></div>\n      <ul>\n        <li><span class=\"f\">margin: 10px 20px 5px 0</span> : haut, droite, bas, gauche (sens des aiguilles d'une montre). 2 valeurs : haut/bas puis gauche/droite.</li>\n        <li>Centrer un bloc : <span class=\"f\">max-width: 960px; margin: 0 auto;</span>. Coller à la fenêtre : <span class=\"f\">body { margin: 0; }</span>.</li>\n        <li><span class=\"f\">border: 5px ridge black; border-radius: 10px; box-shadow: 3px 3px 3px rgba(0,0,0,0.3);</span></li>\n      </ul>\n      <h3 id=\"w2-s3\">Display</h3>\n      <ul>\n        <li><b>block</b> : prend toute la largeur, passe à la ligne (div, p, h1, section). <b>inline</b> : dans le texte, pas de largeur (a, span, img). <b>inline-block</b> : côte à côte mais accepte width/height. <b>none</b> : caché.</li>\n        <li>Deux blocs côte à côte alignés en haut : <span class=\"f\">display: inline-block; vertical-align: top; width: 45%;</span></li>\n      </ul>\n      <h3 id=\"w2-s4\">Positionnement (TD4)</h3>\n      <div class=\"mod\"><div class=\"mod-h\"><span class=\"mod-tag\">Schéma interactif</span><strong>Tester position</strong></div><p class=\"mod-sub\">Choisis une valeur de position pour le bloc orange (top: 30px; left: 40px) et observe : garde-t-il sa place ? par rapport à quoi se décale-t-il ?</p><div class=\"presets\"></div>\n    <div class=\"pos-stage\"><div class=\"pos-parent\">parent (position: relative)<div class=\"pb pb1\" style=\"\">bloc bleu</div><div class=\"pb pb2\" style=\"position:static;\">bloc orange</div><div class=\"pb pb3\">bloc vert</div></div></div>\n    <p><b>static</b> : flux normal, top et left sont ignorés.</p></div>\n      <div class=\"tscroll\"><table class=\"tt\" style=\"font-family:var(--f-body)\">\n        <tbody><tr><th>position</th><th>Repère</th><th>Effet</th></tr>\n        <tr><td class=\"f\">static</td><td>—</td><td style=\"text-align:left\">valeur par défaut, flux normal, top/left ignorés</td></tr>\n        <tr><td class=\"f\">relative</td><td>sa propre place</td><td style=\"text-align:left\">décalé de top/left, garde sa place dans le flux (les autres ne bougent pas)</td></tr>\n        <tr><td class=\"f\">absolute</td><td>le 1er parent positionné (sinon la page)</td><td style=\"text-align:left\">sort du flux, peut se superposer</td></tr>\n        <tr><td class=\"f\">fixed</td><td>la fenêtre</td><td style=\"text-align:left\">reste en place au défilement (entête fixe, bouton « haut de page » en bas à droite)</td></tr>\n      </tbody></table></div>\n      <ul>\n        <li><span class=\"f\">z-index</span> : la plus grande valeur passe au premier plan (bloc Feu par-dessus).</li>\n        <li>Entête fixe : <span class=\"f\">header { position: fixed; top: 0; width: 100%; }</span> + une marge en haut du contenu pour qu'il « glisse » dessous.</li>\n        <li>Bouton en bas à droite : <span class=\"f\">position: fixed; right: 20px; bottom: 20px;</span></li>\n      </ul>\n      <h3 id=\"w2-s5\">Listes, tableaux, mobile</h3>\n      <p><span class=\"f\">list-style-type: none / square, list-style-image: url('icone.png')</span> (puces = icônes des Pokémon). <span class=\"f\">border-collapse: collapse</span>. Version mobile : un 2e fichier CSS (mobileq02.css) chargé pour les petits écrans.</p>\n    "
+}
+],
+"sources": [
+{
+"type": "text",
+"title": "Cours : HTML",
+"text": "\n      R1.02 · HTML 5\n      TP noté mercredi 21/10 (groupe 3 : 8 h – 10 h), 1 h 30, sur HTML et CSS jusqu'au TD4, positionnement inclus. Documents papier autorisés, pas d'Internet ni d'IA. Ne pas reprendre le code de tes exercices.✎ Modifier le cours⎙ Imprimer\n      Squelette d'une page\n<!DOCTYPE html>\n<html lang=\"fr\">\n  <head>\n    <meta charset=\"utf-8\">\n    <title>Titre</title>\n    <link rel=\"stylesheet\" href=\"style.css\">\n  </head>\n  <body> … </body>\n</html>\n      Structure\n      \n        header / nav / footerentête, menu de navigation, pied de page\n        section / articlesection thématique, contenu autonome. Chacun a sa propre hiérarchie de titres h1…h6\n        div / spanconteneur bloc / conteneur en ligne, sans sens particulier\n        p, h1…h6paragraphe, titres\n      \n      Listes, images, liens, tableaux\n      \n        ul (puces), ol (numérotée), li, liste de définitions dl / dt / dd. Une liste imbriquée se met dans un li.\n        <img src=\"…\" alt=\"…\"> (alt obligatoire). Légende : <figure><img><figcaption>…</figcaption></figure>, une seule figcaption pour plusieurs images.\n        <a href=\"https://…\" target=\"_blank\"> ouvre un nouvel onglet. Lien interne : href=\"#id\" vers un élément id=\"id\". href=\"#\" remonte en haut.\n        Tableau : table, caption, tr, th, td. Fusion : colspan=\"2\" (colonnes), rowspan=\"2\" (lignes).\n        Médias : <video controls> / <audio controls> avec plusieurs <source src=\"…\" type=\"…\"> pour les 2 formats.\n      \n      Valide toujours tes fichiers (validator.w3.org et jigsaw pour le CSS) : une balise mal fermée casse souvent tout le style.\n      Schéma interactifBac à sable HTML / CSSTape du HTML et du CSS : le rendu s'affiche en direct à droite. Idéal pour t'entraîner avant le TP noté (sans Internet, comme le jour J).HTML<header><h1>Les Pokémon</h1></header>\n<section>\n  <h2 id=\"feu\">Type Feu</h2>\n  <ul><li>Salamèche</li><li>Ponyta</li></ul>\n  <div class=\"bloc\">Bloc A</div><div class=\"bloc\">Bloc B</div>\n</section>CSSheader { background: #6a3fb5; color: white; padding: 10px; }\n#feu { color: orange; }\n.bloc { display: inline-block; width: 40%; border: 5px ridge gray; margin: 10px; padding: 10px; }\n.bloc:hover { position: relative; top: 20px; }Rendu\n    "
+},
+{
+"type": "text",
+"title": "Cours : CSS",
+"text": "\n      R1.02 · CSS 3 (TD2 à TD4)\n      Sélecteurs✎ Modifier le cours⎙ Imprimer\n      \n        h2toutes les balises h2\n        .rougeles éléments avec class=\"rouge\" (réutilisable)\n        #eaul'élément avec id=\"eau\" (unique dans la page)\n        section ples p descendants d'une section (sélecteur contextuel)\n        figure.rouge figcaptionla légende d'une figure qui a la classe rouge\n        a:hoverpseudo-classe : au survol de la souris\n        h1, h2les h1 et les h2\n      \n      Priorité : id > classe > balise. À priorité égale, la dernière règle écrite gagne.\n      Texte, couleurs, fonds\n      color, font-family, font-size, font-weight, font-style, text-align (justify), text-decoration, font-variant: small-caps, line-height. Fond : background-color, background-image: url('x.png'), background-repeat: no-repeat, background-size: contain / cover, background-position.\n      Modèle de boîte\n      Schéma interactifLe modèle de boîteBouge les curseurs : marge extérieure (margin), bordure, marge intérieure (padding) et contenu (width).width : 200pxpadding : 20pxborder : 5pxmargin : 20pxcontenu 200px\n    Largeur de la boîte (bordure comprise) = 200 + 2×20 + 2×5 = 250px. Avec les marges, elle occupe 290px. Code : width: 200px; padding: 20px; border: 5px solid; margin: 20px;\n      \n        margin: 10px 20px 5px 0 : haut, droite, bas, gauche (sens des aiguilles d'une montre). 2 valeurs : haut/bas puis gauche/droite.\n        Centrer un bloc : max-width: 960px; margin: 0 auto;. Coller à la fenêtre : body { margin: 0; }.\n        border: 5px ridge black; border-radius: 10px; box-shadow: 3px 3px 3px rgba(0,0,0,0.3);\n      \n      Display\n      \n        block : prend toute la largeur, passe à la ligne (div, p, h1, section). inline : dans le texte, pas de largeur (a, span, img). inline-block : côte à côte mais accepte width/height. none : caché.\n        Deux blocs côte à côte alignés en haut : display: inline-block; vertical-align: top; width: 45%;\n      \n      Positionnement (TD4)\n      Schéma interactifTester positionChoisis une valeur de position pour le bloc orange (top: 30px; left: 40px) et observe : garde-t-il sa place ? par rapport à quoi se décale-t-il ?staticrelativeabsolutefixedz-index: 2 sur le bleu\n    parent (position: relative)bloc bleubloc orangebloc vert\n    static : flux normal, top et left sont ignorés.\n      \n        positionRepèreEffet\n        static—valeur par défaut, flux normal, top/left ignorés\n        relativesa propre placedécalé de top/left, garde sa place dans le flux (les autres ne bougent pas)\n        absolutele 1er parent positionné (sinon la page)sort du flux, peut se superposer\n        fixedla fenêtrereste en place au défilement (entête fixe, bouton « haut de page » en bas à droite)\n      \n      \n        z-index : la plus grande valeur passe au premier plan (bloc Feu par-dessus).\n        Entête fixe : header { position: fixed; top: 0; width: 100%; } + une marge en haut du contenu pour qu'il « glisse » dessous.\n        Bouton en bas à droite : position: fixed; right: 20px; bottom: 20px;\n      \n      Listes, tableaux, mobile\n      list-style-type: none / square, list-style-image: url('icone.png') (puces = icônes des Pokémon). border-collapse: collapse. Version mobile : un 2e fichier CSS (mobileq02.css) chargé pour les petits écrans.\n    "
+}
+]
+}

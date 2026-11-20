@@ -1,647 +1,1672 @@
 {
- "decks": [
-  {
-   "title": "Ch. 0 · Fractions",
-   "cards": [
-    {
-     "id": "c107fr00",
-     "q": "a/b + c/d = ?",
-     "a": "(ad + bc) / bd\nMieux : réduire au même dénominateur (PPCM).",
-     "tag": "Ch. 0 · Fractions"
-    },
-    {
-     "id": "c107fr01",
-     "q": "a/b × c/d = ?",
-     "a": "(a × c) / (b × d)",
-     "tag": "Ch. 0 · Fractions"
-    },
-    {
-     "id": "c107fr02",
-     "q": "a/b ÷ c/d = ?",
-     "a": "a/b × d/c : diviser = multiplier par l'inverse",
-     "tag": "Ch. 0 · Fractions"
-    },
-    {
-     "id": "c107fr03",
-     "q": "Simplifie 33/30",
-     "a": "3 × 11 / (3 × 10) = **11/10**",
-     "tag": "Ch. 0 · Fractions"
-    },
-    {
-     "id": "c107fr04",
-     "q": "2/3 + 11/6 = ?",
-     "a": "4/6 + 11/6 = 15/6 = **5/2**",
-     "tag": "Ch. 0 · Fractions"
-    },
-    {
-     "id": "c107fr05",
-     "q": "1 + 1/2 + 1/4 + 1/8 = ?",
-     "a": "(8 + 4 + 2 + 1)/8 = **15/8**",
-     "tag": "Ch. 0 · Fractions"
-    },
-    {
-     "id": "c107fr06",
-     "q": "2/3 ÷ 4/9 = ?",
-     "a": "2/3 × 9/4 = 18/12 = **3/2**",
-     "tag": "Ch. 0 · Fractions"
-    },
-    {
-     "id": "c107fr07",
-     "q": "Vrai ou faux : 1/2 + 1/2 = 2/4",
-     "a": "**Faux** : 1/2 + 1/2 = 1. On n'additionne jamais les dénominateurs.",
-     "tag": "Ch. 0 · Fractions"
-    },
-    {
-     "id": "c107fr08",
-     "q": "Peut-on simplifier (2 + 3)/2 en 3 ?",
-     "a": "**Non** : on ne simplifie que des **facteurs**, pas des termes. (2 + 3)/2 = 5/2.",
-     "tag": "Ch. 0 · Fractions"
-    },
-    {
-     "id": "c107fr09",
-     "q": "−a/b est égal à…",
-     "a": "(−a)/b = a/(−b) = −(a/b)",
-     "tag": "Ch. 0 · Fractions"
-    }
-   ]
-  },
-  {
-   "title": "Ch. 0 · Puissances",
-   "cards": [
-    {
-     "id": "c107pw00",
-     "q": "a^n × a^m = ?",
-     "a": "a^{n+m}",
-     "tag": "Ch. 0 · Puissances"
-    },
-    {
-     "id": "c107pw01",
-     "q": "a^n / a^m = ?",
-     "a": "a^{n−m}",
-     "tag": "Ch. 0 · Puissances"
-    },
-    {
-     "id": "c107pw02",
-     "q": "(a^n)^m = ?",
-     "a": "a^{n×m}",
-     "tag": "Ch. 0 · Puissances"
-    },
-    {
-     "id": "c107pw03",
-     "q": "a^0 = ?  et  a^{−n} = ?",
-     "a": "a^0 = 1 (a ≠ 0) et a^{−n} = 1/a^n",
-     "tag": "Ch. 0 · Puissances"
-    },
-    {
-     "id": "c107pw04",
-     "q": "(2x)^3 = ?",
-     "a": "8x^3",
-     "tag": "Ch. 0 · Puissances"
-    },
-    {
-     "id": "c107pw05",
-     "q": "(−2)^4 et −2^4 valent ?",
-     "a": "(−2)^4 = **16** mais −2^4 = **−16** (la puissance passe avant le signe −)",
-     "tag": "Ch. 0 · Puissances"
-    },
-    {
-     "id": "c107pw06",
-     "q": "Simplifie 2^3 × 4^2 / 8^2",
-     "a": "2^3 × 2^4 / 2^6 = 2^{3+4−6} = **2**",
-     "tag": "Ch. 0 · Puissances"
-    },
-    {
-     "id": "c107pw07",
-     "q": "Simplifie 3^{−2} × 9^3 / 27",
-     "a": "3^{−2} × 3^6 / 3^3 = **3**",
-     "tag": "Ch. 0 · Puissances"
-    },
-    {
-     "id": "c107pw08",
-     "q": "2^3 + 2^2 = 2^5 ?",
-     "a": "**Non** : 8 + 4 = 12. On n'additionne pas les exposants dans une somme.",
-     "tag": "Ch. 0 · Puissances"
-    },
-    {
-     "id": "c107pw09",
-     "q": "10^{−2} = ?",
-     "a": "0,01",
-     "tag": "Ch. 0 · Puissances"
-    }
-   ]
-  },
-  {
-   "title": "Ch. 0 · Calcul littéral",
-   "cards": [
-    {
-     "id": "c107cl00",
-     "q": "(a + b)^2 = ?",
-     "a": "a^2 + 2ab + b^2",
-     "tag": "Ch. 0 · Calcul littéral"
-    },
-    {
-     "id": "c107cl01",
-     "q": "(a − b)^2 = ?",
-     "a": "a^2 − 2ab + b^2",
-     "tag": "Ch. 0 · Calcul littéral"
-    },
-    {
-     "id": "c107cl02",
-     "q": "(a − b)(a + b) = ?",
-     "a": "a^2 − b^2",
-     "tag": "Ch. 0 · Calcul littéral"
-    },
-    {
-     "id": "c107cl03",
-     "q": "Développe (a − 1)(a + 3)",
-     "a": "a^2 + 3a − a − 3 = **a^2 + 2a − 3**",
-     "tag": "Ch. 0 · Calcul littéral"
-    },
-    {
-     "id": "c107cl04",
-     "q": "Développe −(a + 7)(a − 11)",
-     "a": "−(a^2 − 4a − 77) = **−a^2 + 4a + 77**",
-     "tag": "Ch. 0 · Calcul littéral"
-    },
-    {
-     "id": "c107cl05",
-     "q": "Factorise 81x^2 − 64",
-     "a": "(9x)^2 − 8^2 = **(9x − 8)(9x + 8)**",
-     "tag": "Ch. 0 · Calcul littéral"
-    },
-    {
-     "id": "c107cl06",
-     "q": "Factorise 9x^2 + 12x + 4",
-     "a": "**(3x + 2)^2**",
-     "tag": "Ch. 0 · Calcul littéral"
-    },
-    {
-     "id": "c107cl07",
-     "q": "Factorise 2x + 6 + 3x(x + 3)",
-     "a": "2(x + 3) + 3x(x + 3) = **(x + 3)(3x + 2)**",
-     "tag": "Ch. 0 · Calcul littéral"
-    },
-    {
-     "id": "c107cl08",
-     "q": "Factorise x^2 + 2x − 8 (début de carré)",
-     "a": "(x + 1)^2 − 9 = **(x − 2)(x + 4)**",
-     "tag": "Ch. 0 · Calcul littéral"
-    },
-    {
-     "id": "c107cl09",
-     "q": "−(3a − 4) = ?",
-     "a": "−3a + 4 : le − change **tous** les signes",
-     "tag": "Ch. 0 · Calcul littéral"
-    },
-    {
-     "id": "c107cl10",
-     "q": "(a + b)^3 = ?",
-     "a": "a^3 + 3a^2b + 3ab^2 + b^3",
-     "tag": "Ch. 0 · Calcul littéral"
-    }
-   ]
-  },
-  {
-   "title": "Ch. 0 · Proportionnalité",
-   "cards": [
-    {
-     "id": "c107pp00",
-     "q": "Comment reconnaître que y est proportionnel à x ?",
-     "a": "y = k × x : même coefficient k sur tout le tableau ; graphique = droite passant par l'origine.",
-     "tag": "Ch. 0 · Proportionnalité"
-    },
-    {
-     "id": "c107pp01",
-     "q": "3 kg coûtent 4,50 €. Prix de 7 kg ?",
-     "a": "7 × 4,50 / 3 = **10,50 €**",
-     "tag": "Ch. 0 · Proportionnalité"
-    },
-    {
-     "id": "c107pp02",
-     "q": "Produit en croix : a/b = c/d ⇔ ?",
-     "a": "ad = bc",
-     "tag": "Ch. 0 · Proportionnalité"
-    },
-    {
-     "id": "c107pp03",
-     "q": "Augmenter de t % revient à multiplier par…",
-     "a": "1 + t/100 (ex. +20 % → × 1,2)",
-     "tag": "Ch. 0 · Proportionnalité"
-    },
-    {
-     "id": "c107pp04",
-     "q": "Baisser de t % revient à multiplier par…",
-     "a": "1 − t/100 (ex. −15 % → × 0,85)",
-     "tag": "Ch. 0 · Proportionnalité"
-    },
-    {
-     "id": "c107pp05",
-     "q": "+20 % puis −20 % : quelle évolution globale ?",
-     "a": "× 1,2 × 0,8 = × 0,96 → **−4 %**",
-     "tag": "Ch. 0 · Proportionnalité"
-    },
-    {
-     "id": "c107pp06",
-     "q": "Taux d'évolution entre V_D et V_A ?",
-     "a": "(V_A − V_D) / V_D",
-     "tag": "Ch. 0 · Proportionnalité"
-    },
-    {
-     "id": "c107pp07",
-     "q": "90 km/h en m/s ?",
-     "a": "90 ÷ 3,6 = **25 m/s**",
-     "tag": "Ch. 0 · Proportionnalité"
-    },
-    {
-     "id": "c107pp08",
-     "q": "Échelle 1/25 000 : 4 cm sur la carte = ?",
-     "a": "100 000 cm = **1 km**",
-     "tag": "Ch. 0 · Proportionnalité"
-    },
-    {
-     "id": "c107pp09",
-     "q": "Taxi : 3 € + 1,50 €/km. Proportionnel ?",
-     "a": "**Non** : 0 km coûte déjà 3 € (la droite ne passe pas par l'origine).",
-     "tag": "Ch. 0 · Proportionnalité"
-    }
-   ]
-  },
-  {
-   "title": "Ch. 0 · Vocabulaire équations / inéquations",
-   "cards": [
-    {
-     "id": "c107vo00",
-     "q": "Qu'est-ce qu'une solution d'une équation ?",
-     "a": "Une valeur de l'inconnue qui rend l'égalité **vraie**.",
-     "tag": "Ch. 0 · Vocabulaire équations / inéquations"
-    },
-    {
-     "id": "c107vo01",
-     "q": "Que veut dire « résoudre » ?",
-     "a": "Trouver **toutes** les solutions et les donner dans l'ensemble S.",
-     "tag": "Ch. 0 · Vocabulaire équations / inéquations"
-    },
-    {
-     "id": "c107vo02",
-     "q": "Deux équations équivalentes (⇔) ?",
-     "a": "Elles ont exactement le même ensemble de solutions.",
-     "tag": "Ch. 0 · Vocabulaire équations / inéquations"
-    },
-    {
-     "id": "c107vo03",
-     "q": "Que sont les membres d'une équation ?",
-     "a": "Ce qui est à gauche et à droite du signe =.",
-     "tag": "Ch. 0 · Vocabulaire équations / inéquations"
-    },
-    {
-     "id": "c107vo04",
-     "q": "Une équation toujours vraie a pour S…",
-     "a": "S = ℝ",
-     "tag": "Ch. 0 · Vocabulaire équations / inéquations"
-    },
-    {
-     "id": "c107vo05",
-     "q": "Une équation jamais vraie a pour S…",
-     "a": "S = ∅",
-     "tag": "Ch. 0 · Vocabulaire équations / inéquations"
-    },
-    {
-     "id": "c107vo06",
-     "q": "x ≥ 2 en intervalle ?",
-     "a": "[2 ; +∞[",
-     "tag": "Ch. 0 · Vocabulaire équations / inéquations"
-    },
-    {
-     "id": "c107vo07",
-     "q": "−1 < x ≤ 3 en intervalle ?",
-     "a": "]−1 ; 3]",
-     "tag": "Ch. 0 · Vocabulaire équations / inéquations"
-    },
-    {
-     "id": "c107vo08",
-     "q": "Différence entre {2 ; 5} et [2 ; 5] ?",
-     "a": "{2 ; 5} : **deux nombres**. [2 ; 5] : **tous les réels** entre 2 et 5.",
-     "tag": "Ch. 0 · Vocabulaire équations / inéquations"
-    },
-    {
-     "id": "c107vo09",
-     "q": "3 est-il solution de x^2 − 2x = 3 ?",
-     "a": "9 − 6 = 3 → **oui**",
-     "tag": "Ch. 0 · Vocabulaire équations / inéquations"
-    },
-    {
-     "id": "c107vo10",
-     "q": "Degré de 3x^2 − x + 1 ?",
-     "a": "2 (plus grande puissance de x)",
-     "tag": "Ch. 0 · Vocabulaire équations / inéquations"
-    }
-   ]
-  },
-  {
-   "title": "Ch. 0 · Équations du 1er degré",
-   "cards": [
-    {
-     "id": "c107e100",
-     "q": "Solution de ax + b = 0 (a ≠ 0) ?",
-     "a": "x = −b/a, donc S = {−b/a}",
-     "tag": "Ch. 0 · Équations du 1er degré"
-    },
-    {
-     "id": "c107e101",
-     "q": "ax + b = 0 avec a = 0 ?",
-     "a": "Si b = 0 : S = ℝ ; sinon S = ∅",
-     "tag": "Ch. 0 · Équations du 1er degré"
-    },
-    {
-     "id": "c107e102",
-     "q": "Résous 5(x − 2) = 3x + 4",
-     "a": "5x − 10 = 3x + 4 ⇔ 2x = 14 ⇔ **x = 7**",
-     "tag": "Ch. 0 · Équations du 1er degré"
-    },
-    {
-     "id": "c107e103",
-     "q": "Résous x/2 + 1/3 = x/3",
-     "a": "× 6 : 3x + 2 = 2x ⇔ **x = −2**",
-     "tag": "Ch. 0 · Équations du 1er degré"
-    },
-    {
-     "id": "c107e104",
-     "q": "Équation produit nul : A × B = 0 ⇔ ?",
-     "a": "A = 0 **ou** B = 0",
-     "tag": "Ch. 0 · Équations du 1er degré"
-    },
-    {
-     "id": "c107e105",
-     "q": "Résous (3x + 2)(−x + 1) = 0",
-     "a": "S = {−2/3 ; 1}",
-     "tag": "Ch. 0 · Équations du 1er degré"
-    },
-    {
-     "id": "c107e106",
-     "q": "Résous x^2 = 3x",
-     "a": "x(x − 3) = 0 ⇔ S = {0 ; 3}. **Ne jamais diviser par x.**",
-     "tag": "Ch. 0 · Équations du 1er degré"
-    },
-    {
-     "id": "c107e107",
-     "q": "A/B = 0 ⇔ ?",
-     "a": "A = 0 **et** B ≠ 0",
-     "tag": "Ch. 0 · Équations du 1er degré"
-    },
-    {
-     "id": "c107e108",
-     "q": "Résous 2x − 7 = 5x + 2",
-     "a": "−3x = 9 ⇔ **x = −3**",
-     "tag": "Ch. 0 · Équations du 1er degré"
-    }
-   ]
-  },
-  {
-   "title": "Ch. 0 · Équations du 2nd degré",
-   "cards": [
-    {
-     "id": "c107e200",
-     "q": "Discriminant de ax^2 + bx + c ?",
-     "a": "Δ = b^2 − 4ac",
-     "tag": "Ch. 0 · Équations du 2nd degré"
-    },
-    {
-     "id": "c107e201",
-     "q": "Si Δ > 0, les solutions sont…",
-     "a": "x = (−b − √Δ)/(2a) et x = (−b + √Δ)/(2a)",
-     "tag": "Ch. 0 · Équations du 2nd degré"
-    },
-    {
-     "id": "c107e202",
-     "q": "Si Δ = 0 ?",
-     "a": "Une solution double : x₀ = −b/(2a)",
-     "tag": "Ch. 0 · Équations du 2nd degré"
-    },
-    {
-     "id": "c107e203",
-     "q": "Si Δ < 0 ?",
-     "a": "Aucune solution réelle : S = ∅",
-     "tag": "Ch. 0 · Équations du 2nd degré"
-    },
-    {
-     "id": "c107e204",
-     "q": "Résous 2x^2 + x − 10 = 0",
-     "a": "Δ = 1 + 80 = 81 ; x = (−1 ± 9)/4 → S = {−5/2 ; 2}",
-     "tag": "Ch. 0 · Équations du 2nd degré"
-    },
-    {
-     "id": "c107e205",
-     "q": "Résous x^2 + 2x − 8 = 0",
-     "a": "Δ = 36 → S = {−4 ; 2}",
-     "tag": "Ch. 0 · Équations du 2nd degré"
-    },
-    {
-     "id": "c107e206",
-     "q": "Résous 81x^2 − 121 = 0 sans Δ",
-     "a": "(9x)^2 = 11^2 → S = {−11/9 ; 11/9}",
-     "tag": "Ch. 0 · Équations du 2nd degré"
-    },
-    {
-     "id": "c107e207",
-     "q": "Δ de 3x^2 − 15x − 2 ?",
-     "a": "(−15)^2 − 4 × 3 × (−2) = 225 + 24 = **249**",
-     "tag": "Ch. 0 · Équations du 2nd degré"
-    },
-    {
-     "id": "c107e208",
-     "q": "Factorisation si Δ > 0 ?",
-     "a": "a(x − x₁)(x − x₂)",
-     "tag": "Ch. 0 · Équations du 2nd degré"
-    },
-    {
-     "id": "c107e209",
-     "q": "Somme et produit des racines ?",
-     "a": "x₁ + x₂ = −b/a et x₁ × x₂ = c/a",
-     "tag": "Ch. 0 · Équations du 2nd degré"
-    }
-   ]
-  },
-  {
-   "title": "Ch. 0 · Inéquations",
-   "cards": [
-    {
-     "id": "c107in00",
-     "q": "Multiplier une inégalité par un négatif…",
-     "a": "**retourne** le sens (< devient >)",
-     "tag": "Ch. 0 · Inéquations"
-    },
-    {
-     "id": "c107in01",
-     "q": "Résous −2x + 5 ≥ 11",
-     "a": "−2x ≥ 6 ⇔ x ≤ −3 → S = ]−∞ ; −3]",
-     "tag": "Ch. 0 · Inéquations"
-    },
-    {
-     "id": "c107in02",
-     "q": "Signe de ax + b ?",
-     "a": "Signe de a à droite de −b/a, contraire à gauche.",
-     "tag": "Ch. 0 · Inéquations"
-    },
-    {
-     "id": "c107in03",
-     "q": "Résous (x − 2)(x + 4) ≤ 0",
-     "a": "Tableau de signes → S = [−4 ; 2]",
-     "tag": "Ch. 0 · Inéquations"
-    },
-    {
-     "id": "c107in04",
-     "q": "Signe du trinôme quand Δ > 0 ?",
-     "a": "Signe de a **à l'extérieur** des racines, contraire entre elles.",
-     "tag": "Ch. 0 · Inéquations"
-    },
-    {
-     "id": "c107in05",
-     "q": "Résous x^2 − x − 6 > 0",
-     "a": "Racines −2 et 3, a > 0 → S = ]−∞ ; −2[ ∪ ]3 ; +∞[",
-     "tag": "Ch. 0 · Inéquations"
-    },
-    {
-     "id": "c107in06",
-     "q": "Δ < 0 : signe du trinôme ?",
-     "a": "Toujours du signe de a.",
-     "tag": "Ch. 0 · Inéquations"
-    },
-    {
-     "id": "c107in07",
-     "q": "Crochets avec < ou ≤ ?",
-     "a": "< : crochet ouvert ; ≤ : crochet fermé. Valeur interdite : toujours ouvert.",
-     "tag": "Ch. 0 · Inéquations"
-    },
-    {
-     "id": "c107in08",
-     "q": "Peut-on multiplier les deux membres par x ?",
-     "a": "**Non** : on ne connaît pas le signe de x.",
-     "tag": "Ch. 0 · Inéquations"
-    }
-   ]
-  }
- ],
- "quizzes": [
-  {
-   "title": "Chapitre 0 · quiz de révision",
-   "questions": [
-    {
-     "q": "2/3 + 11/6 = ?",
-     "choices": [
-      "13/9",
-      "5/2",
-      "13/6",
-      "15/9"
-     ],
-     "answer": 1,
-     "expl": "4/6 + 11/6 = 15/6 = 5/2."
-    },
-    {
-     "q": "−2^4 = ?",
-     "choices": [
-      "16",
-      "−16",
-      "−8",
-      "8"
-     ],
-     "answer": 1,
-     "expl": "La puissance passe avant le signe : −(2^4) = −16."
-    },
-    {
-     "q": "(x − 3)^2 = ?",
-     "choices": [
-      "x^2 − 9",
-      "x^2 − 6x + 9",
-      "x^2 + 9",
-      "x^2 − 3x + 9"
-     ],
-     "answer": 1,
-     "expl": "(a − b)^2 = a^2 − 2ab + b^2."
-    },
-    {
-     "q": "Un prix augmente de 10 % puis baisse de 10 %. Il a…",
-     "choices": [
-      "baissé de 1 %",
-      "pas changé",
-      "augmenté de 1 %",
-      "baissé de 10 %"
-     ],
-     "answer": 0,
-     "expl": "× 1,1 × 0,9 = × 0,99 → −1 %."
-    },
-    {
-     "q": "S de x^2 = 3x ?",
-     "choices": [
-      "{3}",
-      "{0 ; 3}",
-      "{−3 ; 3}",
-      "∅"
-     ],
-     "answer": 1,
-     "expl": "x(x − 3) = 0 : ne jamais diviser par x, on perdrait 0."
-    },
-    {
-     "q": "Δ de x^2 + 2x + 5 ?",
-     "choices": [
-      "24",
-      "−16",
-      "16",
-      "−24"
-     ],
-     "answer": 1,
-     "expl": "4 − 20 = −16 < 0 : pas de solution réelle."
-    },
-    {
-     "q": "−3x > 12 ⇔ ?",
-     "choices": [
-      "x > −4",
-      "x < −4",
-      "x > 4",
-      "x < 4"
-     ],
-     "answer": 1,
-     "expl": "Diviser par −3 retourne le sens."
-    },
-    {
-     "q": "x ≥ 2 s'écrit…",
-     "choices": [
-      "]2 ; +∞[",
-      "[2 ; +∞[",
-      "[2 ; +∞]",
-      "{2 ; +∞}"
-     ],
-     "answer": 1,
-     "expl": "2 est inclus (crochet fermé), toujours ouvert en +∞."
-    },
-    {
-     "q": "3^{−2} = ?",
-     "choices": [
-      "−9",
-      "−6",
-      "1/9",
-      "1/6"
-     ],
-     "answer": 2,
-     "expl": "a^{−n} = 1/a^n."
-    },
-    {
-     "q": "Solutions de 2x^2 + x − 10 = 0 ?",
-     "choices": [
-      "{−2 ; 5/2}",
-      "{−5/2 ; 2}",
-      "{2 ; 5}",
-      "∅"
-     ],
-     "answer": 1,
-     "expl": "Δ = 81, x = (−1 ± 9)/4."
-    }
-   ]
-  }
- ],
- "fiches": [
-  {
-   "title": "Chapitre 0 · l'essentiel des 8 tests",
-   "html": "<h1>Chapitre 0 · l'essentiel des 8 tests</h1>\n<p>Pour la version imprimable complète (4 pages A4), ouvre le site de révision → R1.07 → <b>Fiches tests ch. 0</b>.</p>\n<div class=\"cols\"><div>\n<h2>Fractions</h2><ul><li>a/b + c/d = (ad + bc)/bd, avec le <b>plus petit dénominateur commun</b></li><li>a/b ÷ c/d = a/b × d/c</li><li>On simplifie des <b>facteurs</b>, jamais des termes</li></ul>\n<h2>Puissances</h2><ul><li>a<sup>n</sup>a<sup>m</sup> = a<sup>n+m</sup> · a<sup>n</sup>/a<sup>m</sup> = a<sup>n−m</sup> · (a<sup>n</sup>)<sup>m</sup> = a<sup>nm</sup></li><li>a<sup>0</sup> = 1 · a<sup>−n</sup> = 1/a<sup>n</sup></li><li>(−2)<sup>4</sup> = 16 mais −2<sup>4</sup> = −16</li></ul>\n<h2>Calcul littéral</h2><ul><li>(a ± b)<sup>2</sup> = a<sup>2</sup> ± 2ab + b<sup>2</sup> · (a − b)(a + b) = a<sup>2</sup> − b<sup>2</sup></li><li>Factoriser : facteur commun, puis identité, puis début de carré</li></ul>\n<h2>Proportionnalité</h2><ul><li>y = kx, droite par l'origine</li><li>+t % = × (1 + t/100) ; on multiplie les coefficients</li></ul>\n</div><div>\n<h2>Vocabulaire</h2><ul><li>Résoudre = donner <b>toutes</b> les solutions dans S</li><li>{2 ; 5} ≠ [2 ; 5]</li><li>Toujours vraie : S = ℝ ; jamais : S = ∅</li></ul>\n<h2>1er degré</h2><ul><li>ax + b = 0 ⇔ x = −b/a (a ≠ 0)</li><li>AB = 0 ⇔ A = 0 <b>ou</b> B = 0 ; ne jamais diviser par x</li></ul>\n<h2>2nd degré</h2><ul><li>Δ = b<sup>2</sup> − 4ac ; x = (−b ± √Δ)/2a</li><li>Δ = 0 : x<sub>0</sub> = −b/2a ; Δ &lt; 0 : S = ∅</li></ul>\n<h2>Inéquations</h2><ul><li>× ou ÷ par un négatif : on <b>retourne</b> le sens</li><li>Trinôme : signe de a à l'extérieur des racines</li></ul>\n</div></div>\n<div class=\"trap\"><b>Tests Arche :</b> 10 essais par test avant le mar. 1/12 à 23 h 59, c'est la moyenne qui compte.</div>"
-  }
- ]
+"decks": [
+{
+"title": "Ch. 0 · Fractions",
+"cards": [
+{
+"id": "c107fr00",
+"q": "a/b + c/d = ?",
+"a": "(ad + bc) / bd\nMieux : réduire au même dénominateur (PPCM).",
+"tag": "Ch. 0 · Fractions"
+},
+{
+"id": "c107fr01",
+"q": "a/b × c/d = ?",
+"a": "(a × c) / (b × d)",
+"tag": "Ch. 0 · Fractions"
+},
+{
+"id": "c107fr02",
+"q": "a/b ÷ c/d = ?",
+"a": "a/b × d/c : diviser = multiplier par l'inverse",
+"tag": "Ch. 0 · Fractions"
+},
+{
+"id": "c107fr03",
+"q": "Simplifie 33/30",
+"a": "3 × 11 / (3 × 10) = **11/10**",
+"tag": "Ch. 0 · Fractions"
+},
+{
+"id": "c107fr04",
+"q": "2/3 + 11/6 = ?",
+"a": "4/6 + 11/6 = 15/6 = **5/2**",
+"tag": "Ch. 0 · Fractions"
+},
+{
+"id": "c107fr05",
+"q": "1 + 1/2 + 1/4 + 1/8 = ?",
+"a": "(8 + 4 + 2 + 1)/8 = **15/8**",
+"tag": "Ch. 0 · Fractions"
+},
+{
+"id": "c107fr06",
+"q": "2/3 ÷ 4/9 = ?",
+"a": "2/3 × 9/4 = 18/12 = **3/2**",
+"tag": "Ch. 0 · Fractions"
+},
+{
+"id": "c107fr07",
+"q": "Vrai ou faux : 1/2 + 1/2 = 2/4",
+"a": "**Faux** : 1/2 + 1/2 = 1. On n'additionne jamais les dénominateurs.",
+"tag": "Ch. 0 · Fractions"
+},
+{
+"id": "c107fr08",
+"q": "Peut-on simplifier (2 + 3)/2 en 3 ?",
+"a": "**Non** : on ne simplifie que des **facteurs**, pas des termes. (2 + 3)/2 = 5/2.",
+"tag": "Ch. 0 · Fractions"
+},
+{
+"id": "c107fr09",
+"q": "−a/b est égal à…",
+"a": "(−a)/b = a/(−b) = −(a/b)",
+"tag": "Ch. 0 · Fractions"
+}
+]
+},
+{
+"title": "Ch. 0 · Puissances",
+"cards": [
+{
+"id": "c107pw00",
+"q": "a^n × a^m = ?",
+"a": "a^{n+m}",
+"tag": "Ch. 0 · Puissances"
+},
+{
+"id": "c107pw01",
+"q": "a^n / a^m = ?",
+"a": "a^{n−m}",
+"tag": "Ch. 0 · Puissances"
+},
+{
+"id": "c107pw02",
+"q": "(a^n)^m = ?",
+"a": "a^{n×m}",
+"tag": "Ch. 0 · Puissances"
+},
+{
+"id": "c107pw03",
+"q": "a^0 = ?  et  a^{−n} = ?",
+"a": "a^0 = 1 (a ≠ 0) et a^{−n} = 1/a^n",
+"tag": "Ch. 0 · Puissances"
+},
+{
+"id": "c107pw04",
+"q": "(2x)^3 = ?",
+"a": "8x^3",
+"tag": "Ch. 0 · Puissances"
+},
+{
+"id": "c107pw05",
+"q": "(−2)^4 et −2^4 valent ?",
+"a": "(−2)^4 = **16** mais −2^4 = **−16** (la puissance passe avant le signe −)",
+"tag": "Ch. 0 · Puissances"
+},
+{
+"id": "c107pw06",
+"q": "Simplifie 2^3 × 4^2 / 8^2",
+"a": "2^3 × 2^4 / 2^6 = 2^{3+4−6} = **2**",
+"tag": "Ch. 0 · Puissances"
+},
+{
+"id": "c107pw07",
+"q": "Simplifie 3^{−2} × 9^3 / 27",
+"a": "3^{−2} × 3^6 / 3^3 = **3**",
+"tag": "Ch. 0 · Puissances"
+},
+{
+"id": "c107pw08",
+"q": "2^3 + 2^2 = 2^5 ?",
+"a": "**Non** : 8 + 4 = 12. On n'additionne pas les exposants dans une somme.",
+"tag": "Ch. 0 · Puissances"
+},
+{
+"id": "c107pw09",
+"q": "10^{−2} = ?",
+"a": "0,01",
+"tag": "Ch. 0 · Puissances"
+}
+]
+},
+{
+"title": "Ch. 0 · Calcul littéral",
+"cards": [
+{
+"id": "c107cl00",
+"q": "(a + b)^2 = ?",
+"a": "a^2 + 2ab + b^2",
+"tag": "Ch. 0 · Calcul littéral"
+},
+{
+"id": "c107cl01",
+"q": "(a − b)^2 = ?",
+"a": "a^2 − 2ab + b^2",
+"tag": "Ch. 0 · Calcul littéral"
+},
+{
+"id": "c107cl02",
+"q": "(a − b)(a + b) = ?",
+"a": "a^2 − b^2",
+"tag": "Ch. 0 · Calcul littéral"
+},
+{
+"id": "c107cl03",
+"q": "Développe (a − 1)(a + 3)",
+"a": "a^2 + 3a − a − 3 = **a^2 + 2a − 3**",
+"tag": "Ch. 0 · Calcul littéral"
+},
+{
+"id": "c107cl04",
+"q": "Développe −(a + 7)(a − 11)",
+"a": "−(a^2 − 4a − 77) = **−a^2 + 4a + 77**",
+"tag": "Ch. 0 · Calcul littéral"
+},
+{
+"id": "c107cl05",
+"q": "Factorise 81x^2 − 64",
+"a": "(9x)^2 − 8^2 = **(9x − 8)(9x + 8)**",
+"tag": "Ch. 0 · Calcul littéral"
+},
+{
+"id": "c107cl06",
+"q": "Factorise 9x^2 + 12x + 4",
+"a": "**(3x + 2)^2**",
+"tag": "Ch. 0 · Calcul littéral"
+},
+{
+"id": "c107cl07",
+"q": "Factorise 2x + 6 + 3x(x + 3)",
+"a": "2(x + 3) + 3x(x + 3) = **(x + 3)(3x + 2)**",
+"tag": "Ch. 0 · Calcul littéral"
+},
+{
+"id": "c107cl08",
+"q": "Factorise x^2 + 2x − 8 (début de carré)",
+"a": "(x + 1)^2 − 9 = **(x − 2)(x + 4)**",
+"tag": "Ch. 0 · Calcul littéral"
+},
+{
+"id": "c107cl09",
+"q": "−(3a − 4) = ?",
+"a": "−3a + 4 : le − change **tous** les signes",
+"tag": "Ch. 0 · Calcul littéral"
+},
+{
+"id": "c107cl10",
+"q": "(a + b)^3 = ?",
+"a": "a^3 + 3a^2b + 3ab^2 + b^3",
+"tag": "Ch. 0 · Calcul littéral"
+}
+]
+},
+{
+"title": "Ch. 0 · Proportionnalité",
+"cards": [
+{
+"id": "c107pp00",
+"q": "Comment reconnaître que y est proportionnel à x ?",
+"a": "y = k × x : même coefficient k sur tout le tableau ; graphique = droite passant par l'origine.",
+"tag": "Ch. 0 · Proportionnalité"
+},
+{
+"id": "c107pp01",
+"q": "3 kg coûtent 4,50 €. Prix de 7 kg ?",
+"a": "7 × 4,50 / 3 = **10,50 €**",
+"tag": "Ch. 0 · Proportionnalité"
+},
+{
+"id": "c107pp02",
+"q": "Produit en croix : a/b = c/d ⇔ ?",
+"a": "ad = bc",
+"tag": "Ch. 0 · Proportionnalité"
+},
+{
+"id": "c107pp03",
+"q": "Augmenter de t % revient à multiplier par…",
+"a": "1 + t/100 (ex. +20 % → × 1,2)",
+"tag": "Ch. 0 · Proportionnalité"
+},
+{
+"id": "c107pp04",
+"q": "Baisser de t % revient à multiplier par…",
+"a": "1 − t/100 (ex. −15 % → × 0,85)",
+"tag": "Ch. 0 · Proportionnalité"
+},
+{
+"id": "c107pp05",
+"q": "+20 % puis −20 % : quelle évolution globale ?",
+"a": "× 1,2 × 0,8 = × 0,96 → **−4 %**",
+"tag": "Ch. 0 · Proportionnalité"
+},
+{
+"id": "c107pp06",
+"q": "Taux d'évolution entre V_D et V_A ?",
+"a": "(V_A − V_D) / V_D",
+"tag": "Ch. 0 · Proportionnalité"
+},
+{
+"id": "c107pp07",
+"q": "90 km/h en m/s ?",
+"a": "90 ÷ 3,6 = **25 m/s**",
+"tag": "Ch. 0 · Proportionnalité"
+},
+{
+"id": "c107pp08",
+"q": "Échelle 1/25 000 : 4 cm sur la carte = ?",
+"a": "100 000 cm = **1 km**",
+"tag": "Ch. 0 · Proportionnalité"
+},
+{
+"id": "c107pp09",
+"q": "Taxi : 3 € + 1,50 €/km. Proportionnel ?",
+"a": "**Non** : 0 km coûte déjà 3 € (la droite ne passe pas par l'origine).",
+"tag": "Ch. 0 · Proportionnalité"
+}
+]
+},
+{
+"title": "Ch. 0 · Vocabulaire équations / inéquations",
+"cards": [
+{
+"id": "c107vo00",
+"q": "Qu'est-ce qu'une solution d'une équation ?",
+"a": "Une valeur de l'inconnue qui rend l'égalité **vraie**.",
+"tag": "Ch. 0 · Vocabulaire équations / inéquations"
+},
+{
+"id": "c107vo01",
+"q": "Que veut dire « résoudre » ?",
+"a": "Trouver **toutes** les solutions et les donner dans l'ensemble S.",
+"tag": "Ch. 0 · Vocabulaire équations / inéquations"
+},
+{
+"id": "c107vo02",
+"q": "Deux équations équivalentes (⇔) ?",
+"a": "Elles ont exactement le même ensemble de solutions.",
+"tag": "Ch. 0 · Vocabulaire équations / inéquations"
+},
+{
+"id": "c107vo03",
+"q": "Que sont les membres d'une équation ?",
+"a": "Ce qui est à gauche et à droite du signe =.",
+"tag": "Ch. 0 · Vocabulaire équations / inéquations"
+},
+{
+"id": "c107vo04",
+"q": "Une équation toujours vraie a pour S…",
+"a": "S = ℝ",
+"tag": "Ch. 0 · Vocabulaire équations / inéquations"
+},
+{
+"id": "c107vo05",
+"q": "Une équation jamais vraie a pour S…",
+"a": "S = ∅",
+"tag": "Ch. 0 · Vocabulaire équations / inéquations"
+},
+{
+"id": "c107vo06",
+"q": "x ≥ 2 en intervalle ?",
+"a": "[2 ; +∞[",
+"tag": "Ch. 0 · Vocabulaire équations / inéquations"
+},
+{
+"id": "c107vo07",
+"q": "−1 < x ≤ 3 en intervalle ?",
+"a": "]−1 ; 3]",
+"tag": "Ch. 0 · Vocabulaire équations / inéquations"
+},
+{
+"id": "c107vo08",
+"q": "Différence entre {2 ; 5} et [2 ; 5] ?",
+"a": "{2 ; 5} : **deux nombres**. [2 ; 5] : **tous les réels** entre 2 et 5.",
+"tag": "Ch. 0 · Vocabulaire équations / inéquations"
+},
+{
+"id": "c107vo09",
+"q": "3 est-il solution de x^2 − 2x = 3 ?",
+"a": "9 − 6 = 3 → **oui**",
+"tag": "Ch. 0 · Vocabulaire équations / inéquations"
+},
+{
+"id": "c107vo10",
+"q": "Degré de 3x^2 − x + 1 ?",
+"a": "2 (plus grande puissance de x)",
+"tag": "Ch. 0 · Vocabulaire équations / inéquations"
+}
+]
+},
+{
+"title": "Ch. 0 · Équations du 1er degré",
+"cards": [
+{
+"id": "c107e100",
+"q": "Solution de ax + b = 0 (a ≠ 0) ?",
+"a": "x = −b/a, donc S = {−b/a}",
+"tag": "Ch. 0 · Équations du 1er degré"
+},
+{
+"id": "c107e101",
+"q": "ax + b = 0 avec a = 0 ?",
+"a": "Si b = 0 : S = ℝ ; sinon S = ∅",
+"tag": "Ch. 0 · Équations du 1er degré"
+},
+{
+"id": "c107e102",
+"q": "Résous 5(x − 2) = 3x + 4",
+"a": "5x − 10 = 3x + 4 ⇔ 2x = 14 ⇔ **x = 7**",
+"tag": "Ch. 0 · Équations du 1er degré"
+},
+{
+"id": "c107e103",
+"q": "Résous x/2 + 1/3 = x/3",
+"a": "× 6 : 3x + 2 = 2x ⇔ **x = −2**",
+"tag": "Ch. 0 · Équations du 1er degré"
+},
+{
+"id": "c107e104",
+"q": "Équation produit nul : A × B = 0 ⇔ ?",
+"a": "A = 0 **ou** B = 0",
+"tag": "Ch. 0 · Équations du 1er degré"
+},
+{
+"id": "c107e105",
+"q": "Résous (3x + 2)(−x + 1) = 0",
+"a": "S = {−2/3 ; 1}",
+"tag": "Ch. 0 · Équations du 1er degré"
+},
+{
+"id": "c107e106",
+"q": "Résous x^2 = 3x",
+"a": "x(x − 3) = 0 ⇔ S = {0 ; 3}. **Ne jamais diviser par x.**",
+"tag": "Ch. 0 · Équations du 1er degré"
+},
+{
+"id": "c107e107",
+"q": "A/B = 0 ⇔ ?",
+"a": "A = 0 **et** B ≠ 0",
+"tag": "Ch. 0 · Équations du 1er degré"
+},
+{
+"id": "c107e108",
+"q": "Résous 2x − 7 = 5x + 2",
+"a": "−3x = 9 ⇔ **x = −3**",
+"tag": "Ch. 0 · Équations du 1er degré"
+}
+]
+},
+{
+"title": "Ch. 0 · Équations du 2nd degré",
+"cards": [
+{
+"id": "c107e200",
+"q": "Discriminant de ax^2 + bx + c ?",
+"a": "Δ = b^2 − 4ac",
+"tag": "Ch. 0 · Équations du 2nd degré"
+},
+{
+"id": "c107e201",
+"q": "Si Δ > 0, les solutions sont…",
+"a": "x = (−b − √Δ)/(2a) et x = (−b + √Δ)/(2a)",
+"tag": "Ch. 0 · Équations du 2nd degré"
+},
+{
+"id": "c107e202",
+"q": "Si Δ = 0 ?",
+"a": "Une solution double : x₀ = −b/(2a)",
+"tag": "Ch. 0 · Équations du 2nd degré"
+},
+{
+"id": "c107e203",
+"q": "Si Δ < 0 ?",
+"a": "Aucune solution réelle : S = ∅",
+"tag": "Ch. 0 · Équations du 2nd degré"
+},
+{
+"id": "c107e204",
+"q": "Résous 2x^2 + x − 10 = 0",
+"a": "Δ = 1 + 80 = 81 ; x = (−1 ± 9)/4 → S = {−5/2 ; 2}",
+"tag": "Ch. 0 · Équations du 2nd degré"
+},
+{
+"id": "c107e205",
+"q": "Résous x^2 + 2x − 8 = 0",
+"a": "Δ = 36 → S = {−4 ; 2}",
+"tag": "Ch. 0 · Équations du 2nd degré"
+},
+{
+"id": "c107e206",
+"q": "Résous 81x^2 − 121 = 0 sans Δ",
+"a": "(9x)^2 = 11^2 → S = {−11/9 ; 11/9}",
+"tag": "Ch. 0 · Équations du 2nd degré"
+},
+{
+"id": "c107e207",
+"q": "Δ de 3x^2 − 15x − 2 ?",
+"a": "(−15)^2 − 4 × 3 × (−2) = 225 + 24 = **249**",
+"tag": "Ch. 0 · Équations du 2nd degré"
+},
+{
+"id": "c107e208",
+"q": "Factorisation si Δ > 0 ?",
+"a": "a(x − x₁)(x − x₂)",
+"tag": "Ch. 0 · Équations du 2nd degré"
+},
+{
+"id": "c107e209",
+"q": "Somme et produit des racines ?",
+"a": "x₁ + x₂ = −b/a et x₁ × x₂ = c/a",
+"tag": "Ch. 0 · Équations du 2nd degré"
+}
+]
+},
+{
+"title": "Ch. 0 · Inéquations",
+"cards": [
+{
+"id": "c107in00",
+"q": "Multiplier une inégalité par un négatif…",
+"a": "**retourne** le sens (< devient >)",
+"tag": "Ch. 0 · Inéquations"
+},
+{
+"id": "c107in01",
+"q": "Résous −2x + 5 ≥ 11",
+"a": "−2x ≥ 6 ⇔ x ≤ −3 → S = ]−∞ ; −3]",
+"tag": "Ch. 0 · Inéquations"
+},
+{
+"id": "c107in02",
+"q": "Signe de ax + b ?",
+"a": "Signe de a à droite de −b/a, contraire à gauche.",
+"tag": "Ch. 0 · Inéquations"
+},
+{
+"id": "c107in03",
+"q": "Résous (x − 2)(x + 4) ≤ 0",
+"a": "Tableau de signes → S = [−4 ; 2]",
+"tag": "Ch. 0 · Inéquations"
+},
+{
+"id": "c107in04",
+"q": "Signe du trinôme quand Δ > 0 ?",
+"a": "Signe de a **à l'extérieur** des racines, contraire entre elles.",
+"tag": "Ch. 0 · Inéquations"
+},
+{
+"id": "c107in05",
+"q": "Résous x^2 − x − 6 > 0",
+"a": "Racines −2 et 3, a > 0 → S = ]−∞ ; −2[ ∪ ]3 ; +∞[",
+"tag": "Ch. 0 · Inéquations"
+},
+{
+"id": "c107in06",
+"q": "Δ < 0 : signe du trinôme ?",
+"a": "Toujours du signe de a.",
+"tag": "Ch. 0 · Inéquations"
+},
+{
+"id": "c107in07",
+"q": "Crochets avec < ou ≤ ?",
+"a": "< : crochet ouvert ; ≤ : crochet fermé. Valeur interdite : toujours ouvert.",
+"tag": "Ch. 0 · Inéquations"
+},
+{
+"id": "c107in08",
+"q": "Peut-on multiplier les deux membres par x ?",
+"a": "**Non** : on ne connaît pas le signe de x.",
+"tag": "Ch. 0 · Inéquations"
+}
+]
+},
+{
+"title": "Matrices et pivot",
+"cards": [
+{
+"id": "cr107ae7be26cdaa7",
+"q": "Une matrice de type (2, 3) a…",
+"a": "2 lignes et 3 colonnes\n\nType (n, p) : n lignes, p colonnes.",
+"tag": "Chap. 1 + 2"
+},
+{
+"id": "cr107aaf2f8999237",
+"q": "Le produit A × B avec A de type (2, 3) et B de type (3, 4) est de type…",
+"a": "(2, 4)\n\n(n, p) × (p, q) = (n, q) : (2, 4).",
+"tag": "Chap. 1 + 2"
+},
+{
+"id": "cr1079678f7a7939f",
+"q": "A de type (2, 3) et B de type (2, 3) : le produit A × B est…",
+"a": "impossible\n\nIl faut nb de colonnes de A (3) = nb de lignes de B (2). Ce n'est pas le cas.",
+"tag": "Chap. 1 + 2"
+},
+{
+"id": "cr107fd6b6fc9220b",
+"q": "En général, pour deux matrices carrées A et B…",
+"a": "AB ≠ BA\n\nLa multiplication des matrices n'est pas commutative.",
+"tag": "Chap. 1 + 2"
+},
+{
+"id": "cr1077b1f6dff14d8",
+"q": "t(AB) = …",
+"a": "tB tA\n\nLa transposée d'un produit inverse l'ordre.",
+"tag": "Chap. 1 + 2"
+},
+{
+"id": "cr10736604411a85d",
+"q": "(AB)−1 = …",
+"a": "B−1A−1\n\nAttention à l'ordre : B−1A−1.",
+"tag": "Chap. 1 + 2"
+},
+{
+"id": "cr1070449904fbf32",
+"q": "Une matrice symétrique est forcément…",
+"a": "carrée\n\nA = tA impose n = p.",
+"tag": "Chap. 1 + 2"
+},
+{
+"id": "cr107980b79c2a71b",
+"q": "A + tA est toujours…",
+"a": "symétrique\n\nt(A + tA) = tA + A. Question du DM1 : on pouvait le deviner sans calculer.",
+"tag": "Chap. 1 + 2"
+},
+{
+"id": "cr1075bbb291cc1e3",
+"q": "Pour montrer que B est l'inverse de A (carrées), il suffit de vérifier…",
+"a": "AB = In\n\nRemarque 4.3 : AB = In suffit.",
+"tag": "Chap. 1 + 2"
+},
+{
+"id": "cr107e66050aa5d0a",
+"q": "Peut-on avoir AB = 0 avec A ≠ 0 et B ≠ 0 ?",
+"a": "Oui\n\nOui, par exemple E = (0 0 ; 1 0) et F = (0 0 ; 0 1).",
+"tag": "Chap. 1 + 2"
+},
+{
+"id": "cr107c4534fe0ca25",
+"q": "A0 vaut, pour A carrée d'ordre n…",
+"a": "In\n\nConvention : A0 = In.",
+"tag": "Chap. 1 + 2"
+},
+{
+"id": "cr107abeccf9ae147",
+"q": "Une matrice triangulaire supérieure a…",
+"a": "des zéros sous la diagonale\n\nSupérieure : les coefficients non nuls sont sur et au-dessus de la diagonale.",
+"tag": "Chap. 1 + 2"
+},
+{
+"id": "cr10701eea3d08de1",
+"q": "Quelle opération n'est PAS une opération élémentaire sur un système ?",
+"a": "Multiplier une équation par 0\n\nOn multiplie par une constante non nulle uniquement.",
+"tag": "Chap. 1 + 2"
+},
+{
+"id": "cr10729ff1cd562db",
+"q": "Après échelonnement on obtient la ligne 0 = 4. Le système…",
+"a": "n'a pas de solution (S = ∅)\n\n0 = b avec b ≠ 0 : système incompatible.",
+"tag": "Chap. 1 + 2"
+},
+{
+"id": "cr107408579fb7db2",
+"q": "Après échelonnement on obtient la ligne 0 = 0. Que faire ?",
+"a": "La supprimer et continuer\n\nElle est toujours vraie, on l'enlève.",
+"tag": "Chap. 1 + 2"
+},
+{
+"id": "cr107ae562ec77081",
+"q": "Système échelonné : x + 2y − 2z + 3w = 2 ; z − 2w = 1. Inconnues secondaires (libres) ?",
+"a": "y et w\n\nPrincipales : celles en tête des lignes (x, z). Les autres (y, w) sont secondaires.",
+"tag": "Chap. 1 + 2"
+},
+{
+"id": "cr107e12e0ff76126",
+"q": "Un système échelonné a 3 équations utiles et 4 inconnues. Ses solutions…",
+"a": "une infinité à 1 paramètre\n\n4 inconnues − 3 pivots = 1 inconnue secondaire, donc 1 paramètre (s'il n'y a pas de 0 = b).",
+"tag": "Chap. 1 + 2"
+},
+{
+"id": "cr10705ea0654df27",
+"q": "Un système est homogène quand…",
+"a": "tous les seconds membres sont nuls\n\nbi = 0 pour tout i. Il a toujours au moins la solution nulle.",
+"tag": "Chap. 1 + 2"
+},
+{
+"id": "cr107d92ad8f4c2a4",
+"q": "Le système AX = B : A est…",
+"a": "la matrice des coefficients des premiers membres\n\nX : inconnues, B : seconds membres.",
+"tag": "Chap. 1 + 2"
+},
+{
+"id": "cr10791c0b537fb0d",
+"q": "Échelonné signifie que…",
+"a": "le nombre de zéros en début de ligne augmente strictement\n\nDéfinition 2.1 du cours.",
+"tag": "Chap. 1 + 2"
+},
+{
+"id": "cr107aa15b9243a9f",
+"q": "Si l'on trouve une solution avec un paramètre w, on…",
+"a": "laisse w arbitraire : S = {(…, w) / w ∈ ℝ}\n\nOn ne donne aucune valeur aux variables libres.",
+"tag": "Chap. 1 + 2"
+}
+]
+},
+{
+"title": "Gauss-Jordan",
+"cards": [
+{
+"id": "cr107ae3b1760ab94",
+"q": "Pour calculer A−1 par Gauss-Jordan, on part de…",
+"a": "(A | In) et on vise (In | A−1)\n\nOn écrit A à gauche et la matrice identité à droite, et chaque opération porte sur les lignes entières. Quand la gauche est devenue In, la droite est A−1.",
+"tag": "Gauss-Jordan"
+},
+{
+"id": "cr1075b64d5760649",
+"q": "Laquelle de ces opérations est interdite sur une ligne ?",
+"a": "L2 ← 0 × L2\n\nMultiplier une ligne par 0 détruit l'information : le coefficient doit être non nul. Échanger et ajouter une combinaison des autres lignes sont permis.",
+"tag": "Gauss-Jordan"
+},
+{
+"id": "cr107274c4863611d",
+"q": "À la fin de la remontée on a (2 0 0 | −2 2 2) en 1ʳᵉ ligne. Que reste-t-il à faire ?",
+"a": "Diviser la ligne par 2 (normalisation)\n\nIl faut des 1 sur la diagonale à gauche : L1 ← ½ L1 donne (1 0 0 | −1 1 1). Cette normalisation est souvent oubliée.",
+"tag": "Gauss-Jordan"
+},
+{
+"id": "cr1077c260187195d",
+"q": "Pendant Gauss-Jordan, une ligne du bloc de gauche devient entièrement nulle. On conclut que…",
+"a": "A n'est pas inversible\n\nUne ligne nulle à gauche ne pourra jamais devenir une ligne de I : A n'est pas inversible, on s'arrête.",
+"tag": "Gauss-Jordan"
+},
+{
+"id": "cr107bd0c97febffd",
+"q": "A = (3 5 ; 4 7). Que vaut A−1 ?",
+"a": "(7 −5 ; −4 3)\n\nad − bc = 21 − 20 = 1. On échange a et d et on change le signe de b et c : (7 −5 ; −4 3). Vérification : A × A−1 = I.",
+"tag": "Gauss-Jordan"
+},
+{
+"id": "cr10797d3061346d9",
+"q": "Une matrice 2 × 2 (a b ; c d) est inversible si et seulement si…",
+"a": "ad − bc ≠ 0\n\nSi ad − bc ≠ 0, A−1 = 1/(ad − bc) × (d −b ; −c a). Sinon A n'est pas inversible.",
+"tag": "Gauss-Jordan"
+},
+{
+"id": "cr10756e288898ea7",
+"q": "Le système s'écrit AX = B avec A inversible. Alors…",
+"a": "X = A−1B\n\nOn multiplie à gauche par A−1 : A−1AX = A−1B, donc X = A−1B. L'ordre compte : BA−1 n'a même pas toujours de sens.",
+"tag": "Gauss-Jordan"
+},
+{
+"id": "cr107f9c8e8153d3c",
+"q": "On sait que A³ − 7A² + 4A − I3 = 0. Alors A−1 = …",
+"a": "A² − 7A + 4I3\n\nA³ − 7A² + 4A = I3, donc A(A² − 7A + 4I3) = I3 : l'inverse est A² − 7A + 4I3 (avec I3, pas le nombre 4).",
+"tag": "Gauss-Jordan"
+},
+{
+"id": "cr107ad87e5f5f117",
+"q": "Comment vérifier un inverse le jour du devoir ?",
+"a": "Calculer A × A−1 à la calculatrice et trouver I\n\nLa calculatrice est autorisée : A × A−1 = I prouve le résultat. Un inverse peut avoir des fractions (ex. ½ dans la feuille 2).",
+"tag": "Gauss-Jordan"
+}
+]
+},
+{
+"title": "Dérivation",
+"cards": [
+{
+"id": "cr107375352e15619",
+"q": "L'équation de la tangente à la courbe de f au point d'abscisse a est…",
+"a": "y = f(a) + f′(a)(x − a)\n\nLe coefficient directeur est f′(a) et la droite passe par (a, f(a)).",
+"tag": "Dérivation"
+},
+{
+"id": "cr10771e094e736bd",
+"q": "(u / v)′ = …",
+"a": "(u′v − uv′) / v²\n\nL'ordre compte : u′v d'abord, puis − uv′. Le signe + est celui du produit.",
+"tag": "Dérivation"
+},
+{
+"id": "cr1070091050fc824",
+"q": "(uv)′ = …",
+"a": "u′v + uv′\n\nRègle du produit : on dérive un facteur à la fois.",
+"tag": "Dérivation"
+},
+{
+"id": "cr107a5f9c2ec8a41",
+"q": "La dérivée de √(3x − 2) est…",
+"a": "3 / (2√(3x − 2))\n\n(√u)′ = u′/(2√u) avec u′ = 3. Elle existe pour x > 2/3.",
+"tag": "Dérivation"
+},
+{
+"id": "cr10777e31548974d",
+"q": "La dérivée de e^(5x²) est…",
+"a": "10x e^(5x²)\n\n(eᵘ)′ = u′ eᵘ avec u = 5x², u′ = 10x.",
+"tag": "Dérivation"
+},
+{
+"id": "cr1077196ed568c8f",
+"q": "Sur quel ensemble ln(2x − 6) est-elle définie ?",
+"a": "]3, +∞[\n\nln exige un argument strictement positif : 2x − 6 > 0 ⇔ x > 3.",
+"tag": "Dérivation"
+},
+{
+"id": "cr107075dc232bfde",
+"q": "f(x) = |x| en 0 est…",
+"a": "continue mais pas dérivable\n\nLe taux d'accroissement vaut 1 à droite et −1 à gauche : pas de limite unique. Dérivable ⇒ continue, mais pas l'inverse.",
+"tag": "Dérivation"
+},
+{
+"id": "cr107c42da85845dd",
+"q": "f′(x₀) = 0. Peut-on conclure que f a un extremum en x₀ ?",
+"a": "Non, il faut que f′ change de signe en x₀\n\nContre-exemple : f(x) = x³ en 0, f′(0) = 0 mais f est croissante. Il faut un changement de signe de f′.",
+"tag": "Dérivation"
+},
+{
+"id": "cr1074c7a732f1983",
+"q": "f(x) = x³ − 3x a un maximum local f(−1) = 2. Est-il global ?",
+"a": "Non, car f tend vers +∞ en +∞\n\nLes limites aux bornes comptent : x³ − 3x → +∞, donc f dépasse 2 (par exemple f(3) = 18).",
+"tag": "Dérivation"
+},
+{
+"id": "cr10799cf12f22c0e",
+"q": "f′(x) = 3(x − 1)(x − 3). Sur quel intervalle f est-elle décroissante ?",
+"a": "[1, 3]\n\nTrinôme de coefficient 3 > 0 : négatif entre les racines 1 et 3, donc f décroît sur [1, 3].",
+"tag": "Dérivation"
+},
+{
+"id": "cr107773d56498d16",
+"q": "La dérivée de (4x + 1) / (2x − 5) est…",
+"a": "−22 / (2x − 5)²\n\n(4(2x − 5) − (4x + 1) × 2) / (2x − 5)² = (8x − 20 − 8x − 2) / (2x − 5)² = −22 / (2x − 5)².",
+"tag": "Dérivation"
+},
+{
+"id": "cr1074bbbd0036d84",
+"q": "(uⁿ)′ = …",
+"a": "n uⁿ⁻¹ u′\n\nDérivée d'une composée : on n'oublie pas le facteur u′.",
+"tag": "Dérivation"
+},
+{
+"id": "cr1072422819923fd",
+"q": "f(3) = 0 et f′(3) = −3. Quelle est la tangente en 3 ?",
+"a": "y = −3x + 9\n\ny = f(3) + f′(3)(x − 3) = 0 − 3(x − 3) = −3x + 9 (feuille 3, ex. 5).",
+"tag": "Dérivation"
+},
+{
+"id": "cr107e7872df757f4",
+"q": "La dérivée de xˣ (x > 0) est…",
+"a": "(ln x + 1) xˣ\n\nxˣ = e^(x ln x) ; (x ln x)′ = ln x + 1, donc (xˣ)′ = (ln x + 1) xˣ.",
+"tag": "Dérivation"
+}
+]
+},
+{
+"title": "Polynômes",
+"cards": [
+{
+"id": "cr1076315cec7601c",
+"q": "Quel est le degré de x² + 2x + 3 − (x − 1)² ?",
+"a": "1\n\nOn développe d'abord : x² + 2x + 3 − x² + 2x − 1 = 4x + 2, de degré 1.",
+"tag": "Polynômes"
+},
+{
+"id": "cr1076f985849d7a2",
+"q": "deg(P × Q) = …",
+"a": "deg P + deg Q\n\nLes termes de plus haut degré se multiplient : aₙxⁿ × bₘxᵐ = aₙbₘxⁿ⁺ᵐ, avec aₙbₘ ≠ 0.",
+"tag": "Polynômes"
+},
+{
+"id": "cr1070977dfadfa82",
+"q": "P et Q sont de degré 4. Le degré de P + Q est…",
+"a": "au plus 4\n\nLes termes en x⁴ peuvent s'annuler : (x⁴ + x) + (−x⁴ + x³) = x³ + x est de degré 3.",
+"tag": "Polynômes"
+},
+{
+"id": "cr107a13864f004ab",
+"q": "Le degré du polynôme nul est, par convention…",
+"a": "−∞\n\nUne constante non nulle est de degré 0 ; le polynôme nul est de degré −∞.",
+"tag": "Polynômes"
+},
+{
+"id": "cr107194d0af2575d",
+"q": "Dans la division euclidienne A = BQ + R, on s'arrête quand…",
+"a": "deg R < deg B\n\nLe reste doit être de degré strictement inférieur à celui du diviseur. Il n'est pas forcément nul.",
+"tag": "Polynômes"
+},
+{
+"id": "cr107cf9b8b9a233e",
+"q": "Division de 2x³ − 3x + 1 par −x² + 3x + 5 : quotient et reste ?",
+"a": "Q = −2x − 6, R = 25x + 31\n\n−x² × (−2x) = 2x³ ; on soustrait, puis −6 pour le terme en x². Vérification : (−x² + 3x + 5)(−2x − 6) + 25x + 31 = 2x³ − 3x + 1.",
+"tag": "Polynômes"
+},
+{
+"id": "cr107cd3012230021",
+"q": "α est racine de P. Alors P(x) est divisible par…",
+"a": "x − α\n\nP(α) = 0 ⇔ P(x) = (x − α)Q(x). Racine −2 ↔ facteur (x + 2).",
+"tag": "Polynômes"
+},
+{
+"id": "cr107dee7d6020699",
+"q": "Quelle est la factorisation de 6x³ + 7x² − 9x + 2 ?",
+"a": "(x + 2)(2x − 1)(3x − 1)\n\nP(−2) = −48 + 28 + 18 + 2 = 0, donc P = (x + 2)(6x² − 5x + 1), et 6x² − 5x + 1 = (2x − 1)(3x − 1). Racines −2, 1/2, 1/3.",
+"tag": "Polynômes"
+},
+{
+"id": "cr107a9a71c7e9f12",
+"q": "Un polynôme de degré 5 a…",
+"a": "au plus 5 racines, et au moins une\n\nDegré n : au plus n racines. Un degré impair a au moins une racine réelle.",
+"tag": "Polynômes"
+},
+{
+"id": "cr107e980803e70f4",
+"q": "Combien de racines réelles a x⁴ − 2x³ + 2x² − 2x + 1 = (x − 1)²(x² + 1) ?",
+"a": "Une seule : 1 (double)\n\nx² + 1 > 0 n'a pas de racine réelle ; (x − 1)² donne la racine 1, double.",
+"tag": "Polynômes"
+},
+{
+"id": "cr1077b541a3fe147",
+"q": "Quel polynôme a pour coefficients (1, −5, 0, 4), du degré 3 au degré 0 ?",
+"a": "x³ − 5x² + 4\n\nLe 0 correspond au terme en x : il n'y a pas de terme en x.",
+"tag": "Polynômes"
+}
+]
+}
+],
+"quizzes": [
+{
+"title": "Chapitre 0 · quiz de révision",
+"questions": [
+{
+"q": "2/3 + 11/6 = ?",
+"choices": [
+"13/9",
+"5/2",
+"13/6",
+"15/9"
+],
+"answer": 1,
+"expl": "4/6 + 11/6 = 15/6 = 5/2."
+},
+{
+"q": "−2^4 = ?",
+"choices": [
+"16",
+"−16",
+"−8",
+"8"
+],
+"answer": 1,
+"expl": "La puissance passe avant le signe : −(2^4) = −16."
+},
+{
+"q": "(x − 3)^2 = ?",
+"choices": [
+"x^2 − 9",
+"x^2 − 6x + 9",
+"x^2 + 9",
+"x^2 − 3x + 9"
+],
+"answer": 1,
+"expl": "(a − b)^2 = a^2 − 2ab + b^2."
+},
+{
+"q": "Un prix augmente de 10 % puis baisse de 10 %. Il a…",
+"choices": [
+"baissé de 1 %",
+"pas changé",
+"augmenté de 1 %",
+"baissé de 10 %"
+],
+"answer": 0,
+"expl": "× 1,1 × 0,9 = × 0,99 → −1 %."
+},
+{
+"q": "S de x^2 = 3x ?",
+"choices": [
+"{3}",
+"{0 ; 3}",
+"{−3 ; 3}",
+"∅"
+],
+"answer": 1,
+"expl": "x(x − 3) = 0 : ne jamais diviser par x, on perdrait 0."
+},
+{
+"q": "Δ de x^2 + 2x + 5 ?",
+"choices": [
+"24",
+"−16",
+"16",
+"−24"
+],
+"answer": 1,
+"expl": "4 − 20 = −16 < 0 : pas de solution réelle."
+},
+{
+"q": "−3x > 12 ⇔ ?",
+"choices": [
+"x > −4",
+"x < −4",
+"x > 4",
+"x < 4"
+],
+"answer": 1,
+"expl": "Diviser par −3 retourne le sens."
+},
+{
+"q": "x ≥ 2 s'écrit…",
+"choices": [
+"]2 ; +∞[",
+"[2 ; +∞[",
+"[2 ; +∞]",
+"{2 ; +∞}"
+],
+"answer": 1,
+"expl": "2 est inclus (crochet fermé), toujours ouvert en +∞."
+},
+{
+"q": "3^{−2} = ?",
+"choices": [
+"−9",
+"−6",
+"1/9",
+"1/6"
+],
+"answer": 2,
+"expl": "a^{−n} = 1/a^n."
+},
+{
+"q": "Solutions de 2x^2 + x − 10 = 0 ?",
+"choices": [
+"{−2 ; 5/2}",
+"{−5/2 ; 2}",
+"{2 ; 5}",
+"∅"
+],
+"answer": 1,
+"expl": "Δ = 81, x = (−1 ± 9)/4."
+}
+]
+},
+{
+"title": "Matrices et pivot · quiz 1",
+"questions": [
+{
+"q": "Une matrice de type (2, 3) a…",
+"choices": [
+"2 colonnes et 3 lignes",
+"2 lignes et 3 colonnes",
+"6 lignes",
+"3 lignes et 3 colonnes"
+],
+"answer": 1,
+"expl": "Type (n, p) : n lignes, p colonnes."
+},
+{
+"q": "Le produit A × B avec A de type (2, 3) et B de type (3, 4) est de type…",
+"choices": [
+"(3, 3)",
+"(2, 4)",
+"(4, 2)",
+"impossible"
+],
+"answer": 1,
+"expl": "(n, p) × (p, q) = (n, q) : (2, 4)."
+},
+{
+"q": "A de type (2, 3) et B de type (2, 3) : le produit A × B est…",
+"choices": [
+"de type (2, 3)",
+"de type (2, 2)",
+"impossible",
+"de type (3, 3)"
+],
+"answer": 2,
+"expl": "Il faut nb de colonnes de A (3) = nb de lignes de B (2). Ce n'est pas le cas."
+},
+{
+"q": "En général, pour deux matrices carrées A et B…",
+"choices": [
+"AB = BA",
+"AB ≠ BA",
+"AB = 0",
+"AB = I"
+],
+"answer": 1,
+"expl": "La multiplication des matrices n'est pas commutative."
+},
+{
+"q": "t(AB) = …",
+"choices": [
+"tA tB",
+"tB tA",
+"AB",
+"BA"
+],
+"answer": 1,
+"expl": "La transposée d'un produit inverse l'ordre."
+},
+{
+"q": "(AB)−1 = …",
+"choices": [
+"A−1B−1",
+"B−1A−1",
+"BA",
+"−AB"
+],
+"answer": 1,
+"expl": "Attention à l'ordre : B−1A−1."
+},
+{
+"q": "Une matrice symétrique est forcément…",
+"choices": [
+"diagonale",
+"carrée",
+"inversible",
+"nulle"
+],
+"answer": 1,
+"expl": "A = tA impose n = p."
+},
+{
+"q": "A + tA est toujours…",
+"choices": [
+"nulle",
+"symétrique",
+"diagonale",
+"inversible"
+],
+"answer": 1,
+"expl": "t(A + tA) = tA + A. Question du DM1 : on pouvait le deviner sans calculer."
+},
+{
+"q": "Pour montrer que B est l'inverse de A (carrées), il suffit de vérifier…",
+"choices": [
+"A + B = I",
+"AB = In",
+"A = B",
+"AB = 0"
+],
+"answer": 1,
+"expl": "Remarque 4.3 : AB = In suffit."
+},
+{
+"q": "Peut-on avoir AB = 0 avec A ≠ 0 et B ≠ 0 ?",
+"choices": [
+"Oui",
+"Non"
+],
+"answer": 0,
+"expl": "Oui, par exemple E = (0 0 ; 1 0) et F = (0 0 ; 0 1)."
+},
+{
+"q": "A0 vaut, pour A carrée d'ordre n…",
+"choices": [
+"0",
+"A",
+"In",
+"1"
+],
+"answer": 2,
+"expl": "Convention : A0 = In."
+},
+{
+"q": "Une matrice triangulaire supérieure a…",
+"choices": [
+"des zéros au-dessus de la diagonale",
+"des zéros sous la diagonale",
+"des zéros sur la diagonale",
+"que des 1"
+],
+"answer": 1,
+"expl": "Supérieure : les coefficients non nuls sont sur et au-dessus de la diagonale."
+},
+{
+"q": "Quelle opération n'est PAS une opération élémentaire sur un système ?",
+"choices": [
+"Échanger deux équations",
+"Multiplier une équation par 0",
+"Ajouter à L2 un multiple de L1",
+"Multiplier une équation par −3"
+],
+"answer": 1,
+"expl": "On multiplie par une constante non nulle uniquement."
+},
+{
+"q": "Après échelonnement on obtient la ligne 0 = 4. Le système…",
+"choices": [
+"a une infinité de solutions",
+"n'a pas de solution (S = ∅)",
+"a une solution unique",
+"est homogène"
+],
+"answer": 1,
+"expl": "0 = b avec b ≠ 0 : système incompatible."
+},
+{
+"q": "Après échelonnement on obtient la ligne 0 = 0. Que faire ?",
+"choices": [
+"Conclure S = ∅",
+"La supprimer et continuer",
+"Recommencer",
+"La diviser par 0"
+],
+"answer": 1,
+"expl": "Elle est toujours vraie, on l'enlève."
+}
+]
+},
+{
+"title": "Matrices et pivot · quiz 2",
+"questions": [
+{
+"q": "Système échelonné : x + 2y − 2z + 3w = 2 ; z − 2w = 1. Inconnues secondaires (libres) ?",
+"choices": [
+"x et z",
+"y et w",
+"w seulement",
+"aucune"
+],
+"answer": 1,
+"expl": "Principales : celles en tête des lignes (x, z). Les autres (y, w) sont secondaires."
+},
+{
+"q": "Un système échelonné a 3 équations utiles et 4 inconnues. Ses solutions…",
+"choices": [
+"une seule",
+"aucune",
+"une infinité à 1 paramètre",
+"une infinité à 4 paramètres"
+],
+"answer": 2,
+"expl": "4 inconnues − 3 pivots = 1 inconnue secondaire, donc 1 paramètre (s'il n'y a pas de 0 = b)."
+},
+{
+"q": "Un système est homogène quand…",
+"choices": [
+"il a autant d'équations que d'inconnues",
+"tous les seconds membres sont nuls",
+"il est échelonné",
+"il n'a pas de solution"
+],
+"answer": 1,
+"expl": "bi = 0 pour tout i. Il a toujours au moins la solution nulle."
+},
+{
+"q": "Le système AX = B : A est…",
+"choices": [
+"le vecteur des inconnues",
+"la matrice des coefficients des premiers membres",
+"le vecteur des seconds membres",
+"l'inverse"
+],
+"answer": 1,
+"expl": "X : inconnues, B : seconds membres."
+},
+{
+"q": "Échelonné signifie que…",
+"choices": [
+"les pivots valent 1",
+"le nombre de zéros en début de ligne augmente strictement",
+"la matrice est diagonale",
+"toutes les lignes ont la même longueur"
+],
+"answer": 1,
+"expl": "Définition 2.1 du cours."
+},
+{
+"q": "Si l'on trouve une solution avec un paramètre w, on…",
+"choices": [
+"fixe w = 0",
+"laisse w arbitraire : S = {(…, w) / w ∈ ℝ}",
+"choisit w = 1",
+"élimine w"
+],
+"answer": 1,
+"expl": "On ne donne aucune valeur aux variables libres."
+}
+]
+},
+{
+"title": "Gauss-Jordan · quiz",
+"questions": [
+{
+"q": "Pour calculer A−1 par Gauss-Jordan, on part de…",
+"choices": [
+"(In | A) et on vise (A−1 | In)",
+"(A | B) et on vise (In | X)",
+"A seule, qu'on rend triangulaire",
+"(A | In) et on vise (In | A−1)"
+],
+"answer": 3,
+"expl": "On écrit A à gauche et la matrice identité à droite, et chaque opération porte sur les lignes entières. Quand la gauche est devenue In, la droite est A−1."
+},
+{
+"q": "Laquelle de ces opérations est interdite sur une ligne ?",
+"choices": [
+"L3 ← L3 − 4L1",
+"L2 ← 0 × L2",
+"L2 ← 2L2 + L1",
+"L1 ↔ L3"
+],
+"answer": 1,
+"expl": "Multiplier une ligne par 0 détruit l'information : le coefficient doit être non nul. Échanger et ajouter une combinaison des autres lignes sont permis."
+},
+{
+"q": "À la fin de la remontée on a (2 0 0 | −2 2 2) en 1ʳᵉ ligne. Que reste-t-il à faire ?",
+"choices": [
+"Échanger avec L2",
+"Soustraire L2",
+"Diviser la ligne par 2 (normalisation)",
+"Rien, c'est fini"
+],
+"answer": 2,
+"expl": "Il faut des 1 sur la diagonale à gauche : L1 ← ½ L1 donne (1 0 0 | −1 1 1). Cette normalisation est souvent oubliée."
+},
+{
+"q": "Pendant Gauss-Jordan, une ligne du bloc de gauche devient entièrement nulle. On conclut que…",
+"choices": [
+"A est égale à I",
+"A n'est pas inversible",
+"A⁻¹ a une ligne nulle",
+"il faut échanger deux lignes et continuer"
+],
+"answer": 1,
+"expl": "Une ligne nulle à gauche ne pourra jamais devenir une ligne de I : A n'est pas inversible, on s'arrête."
+},
+{
+"q": "A = (3 5 ; 4 7). Que vaut A−1 ?",
+"choices": [
+"(−7 5 ; 4 −3)",
+"(3 −4 ; −5 7)",
+"(7 −5 ; −4 3)",
+"(7 5 ; 4 3)"
+],
+"answer": 2,
+"expl": "ad − bc = 21 − 20 = 1. On échange a et d et on change le signe de b et c : (7 −5 ; −4 3). Vérification : A × A−1 = I."
+},
+{
+"q": "Une matrice 2 × 2 (a b ; c d) est inversible si et seulement si…",
+"choices": [
+"ad + bc ≠ 0",
+"a ≠ 0 et d ≠ 0",
+"a + d ≠ 0",
+"ad − bc ≠ 0"
+],
+"answer": 3,
+"expl": "Si ad − bc ≠ 0, A−1 = 1/(ad − bc) × (d −b ; −c a). Sinon A n'est pas inversible."
+},
+{
+"q": "Le système s'écrit AX = B avec A inversible. Alors…",
+"choices": [
+"X = BA−1",
+"X = B / A",
+"X = AB",
+"X = A−1B"
+],
+"answer": 3,
+"expl": "On multiplie à gauche par A−1 : A−1AX = A−1B, donc X = A−1B. L'ordre compte : BA−1 n'a même pas toujours de sens."
+},
+{
+"q": "On sait que A³ − 7A² + 4A − I3 = 0. Alors A−1 = …",
+"choices": [
+"A³ − 7A²",
+"A² − 7A + 4I3",
+"A² − 7A + 4",
+"−A² + 7A − 4I3"
+],
+"answer": 1,
+"expl": "A³ − 7A² + 4A = I3, donc A(A² − 7A + 4I3) = I3 : l'inverse est A² − 7A + 4I3 (avec I3, pas le nombre 4)."
+},
+{
+"q": "Comment vérifier un inverse le jour du devoir ?",
+"choices": [
+"Vérifier que A−1 n'a que des entiers",
+"Vérifier que la diagonale de A−1 est non nulle",
+"Recommencer Gauss-Jordan dans le même ordre",
+"Calculer A × A−1 à la calculatrice et trouver I"
+],
+"answer": 3,
+"expl": "La calculatrice est autorisée : A × A−1 = I prouve le résultat. Un inverse peut avoir des fractions (ex. ½ dans la feuille 2)."
+}
+]
+},
+{
+"title": "Dérivation · quiz",
+"questions": [
+{
+"q": "L'équation de la tangente à la courbe de f au point d'abscisse a est…",
+"choices": [
+"y = f′(a)x + f(a)",
+"y = f(a)(x − a)",
+"y = f(a) + f′(a)(x − a)",
+"y = f′(a) + f(a)(x − a)"
+],
+"answer": 2,
+"expl": "Le coefficient directeur est f′(a) et la droite passe par (a, f(a))."
+},
+{
+"q": "(u / v)′ = …",
+"choices": [
+"(u′v − uv′) / v²",
+"(uv′ − u′v) / v²",
+"u′ / v′",
+"(u′v + uv′) / v²"
+],
+"answer": 0,
+"expl": "L'ordre compte : u′v d'abord, puis − uv′. Le signe + est celui du produit."
+},
+{
+"q": "(uv)′ = …",
+"choices": [
+"u′v − uv′",
+"(u′v + uv′) / v²",
+"u′v + uv′",
+"u′v′"
+],
+"answer": 2,
+"expl": "Règle du produit : on dérive un facteur à la fois."
+},
+{
+"q": "La dérivée de √(3x − 2) est…",
+"choices": [
+"3√(3x − 2) / 2",
+"3 / (2√(3x − 2))",
+"1 / (2√(3x − 2))",
+"3 / √(3x − 2)"
+],
+"answer": 1,
+"expl": "(√u)′ = u′/(2√u) avec u′ = 3. Elle existe pour x > 2/3."
+},
+{
+"q": "La dérivée de e^(5x²) est…",
+"choices": [
+"5x² e^(5x²)",
+"10x e^(10x)",
+"10x e^(5x²)",
+"e^(5x²)"
+],
+"answer": 2,
+"expl": "(eᵘ)′ = u′ eᵘ avec u = 5x², u′ = 10x."
+},
+{
+"q": "Sur quel ensemble ln(2x − 6) est-elle définie ?",
+"choices": [
+"[3, +∞[",
+"ℝ \\ {3}",
+"]−∞, 3[",
+"]3, +∞["
+],
+"answer": 3,
+"expl": "ln exige un argument strictement positif : 2x − 6 > 0 ⇔ x > 3."
+},
+{
+"q": "f(x) = |x| en 0 est…",
+"choices": [
+"ni continue ni dérivable",
+"continue mais pas dérivable",
+"dérivable mais pas continue",
+"dérivable et continue"
+],
+"answer": 1,
+"expl": "Le taux d'accroissement vaut 1 à droite et −1 à gauche : pas de limite unique. Dérivable ⇒ continue, mais pas l'inverse."
+},
+{
+"q": "f′(x₀) = 0. Peut-on conclure que f a un extremum en x₀ ?",
+"choices": [
+"Oui, si f est un polynôme",
+"Non, jamais",
+"Non, il faut que f′ change de signe en x₀",
+"Oui, toujours"
+],
+"answer": 2,
+"expl": "Contre-exemple : f(x) = x³ en 0, f′(0) = 0 mais f est croissante. Il faut un changement de signe de f′."
+},
+{
+"q": "f(x) = x³ − 3x a un maximum local f(−1) = 2. Est-il global ?",
+"choices": [
+"On ne peut pas savoir",
+"Non, car f tend vers +∞ en +∞",
+"Oui, car f′(−1) = 0",
+"Oui, car c'est le seul maximum"
+],
+"answer": 1,
+"expl": "Les limites aux bornes comptent : x³ − 3x → +∞, donc f dépasse 2 (par exemple f(3) = 18)."
+},
+{
+"q": "f′(x) = 3(x − 1)(x − 3). Sur quel intervalle f est-elle décroissante ?",
+"choices": [
+"[1, 3]",
+"]−∞, 1]",
+"[3, +∞[",
+"]−∞, 1] ∪ [3, +∞["
+],
+"answer": 0,
+"expl": "Trinôme de coefficient 3 > 0 : négatif entre les racines 1 et 3, donc f décroît sur [1, 3]."
+},
+{
+"q": "La dérivée de (4x + 1) / (2x − 5) est…",
+"choices": [
+"2 / (2x − 5)²",
+"4 / 2",
+"−22 / (2x − 5)²",
+"22 / (2x − 5)²"
+],
+"answer": 2,
+"expl": "(4(2x − 5) − (4x + 1) × 2) / (2x − 5)² = (8x − 20 − 8x − 2) / (2x − 5)² = −22 / (2x − 5)²."
+},
+{
+"q": "(uⁿ)′ = …",
+"choices": [
+"uⁿ⁻¹ u′",
+"n u′ⁿ⁻¹",
+"n uⁿ⁻¹ u′",
+"n uⁿ⁻¹"
+],
+"answer": 2,
+"expl": "Dérivée d'une composée : on n'oublie pas le facteur u′."
+},
+{
+"q": "f(3) = 0 et f′(3) = −3. Quelle est la tangente en 3 ?",
+"choices": [
+"y = 3x − 9",
+"y = −3x + 9",
+"y = −3x",
+"y = −3x − 9"
+],
+"answer": 1,
+"expl": "y = f(3) + f′(3)(x − 3) = 0 − 3(x − 3) = −3x + 9 (feuille 3, ex. 5)."
+},
+{
+"q": "La dérivée de xˣ (x > 0) est…",
+"choices": [
+"xˣ",
+"(ln x + 1) xˣ",
+"x · xˣ⁻¹",
+"xˣ ln x"
+],
+"answer": 1,
+"expl": "xˣ = e^(x ln x) ; (x ln x)′ = ln x + 1, donc (xˣ)′ = (ln x + 1) xˣ."
+}
+]
+},
+{
+"title": "Polynômes · quiz",
+"questions": [
+{
+"q": "Quel est le degré de x² + 2x + 3 − (x − 1)² ?",
+"choices": [
+"1",
+"2",
+"0",
+"3"
+],
+"answer": 0,
+"expl": "On développe d'abord : x² + 2x + 3 − x² + 2x − 1 = 4x + 2, de degré 1."
+},
+{
+"q": "deg(P × Q) = …",
+"choices": [
+"deg P × deg Q",
+"max(deg P, deg Q)",
+"deg P − deg Q",
+"deg P + deg Q"
+],
+"answer": 3,
+"expl": "Les termes de plus haut degré se multiplient : aₙxⁿ × bₘxᵐ = aₙbₘxⁿ⁺ᵐ, avec aₙbₘ ≠ 0."
+},
+{
+"q": "P et Q sont de degré 4. Le degré de P + Q est…",
+"choices": [
+"toujours 4",
+"toujours 8",
+"au moins 4",
+"au plus 4"
+],
+"answer": 3,
+"expl": "Les termes en x⁴ peuvent s'annuler : (x⁴ + x) + (−x⁴ + x³) = x³ + x est de degré 3."
+},
+{
+"q": "Le degré du polynôme nul est, par convention…",
+"choices": [
+"non défini et sans convention",
+"−∞",
+"0",
+"1"
+],
+"answer": 1,
+"expl": "Une constante non nulle est de degré 0 ; le polynôme nul est de degré −∞."
+},
+{
+"q": "Dans la division euclidienne A = BQ + R, on s'arrête quand…",
+"choices": [
+"deg Q = deg B",
+"deg R < deg B",
+"R = 0",
+"deg R < deg A"
+],
+"answer": 1,
+"expl": "Le reste doit être de degré strictement inférieur à celui du diviseur. Il n'est pas forcément nul."
+},
+{
+"q": "Division de 2x³ − 3x + 1 par −x² + 3x + 5 : quotient et reste ?",
+"choices": [
+"Q = −2x, R = 6x² − 3x + 1",
+"Q = −2x − 6, R = 25x + 31",
+"Q = 2x + 6, R = 25x + 31",
+"Q = −2x − 6, R = 0"
+],
+"answer": 1,
+"expl": "−x² × (−2x) = 2x³ ; on soustrait, puis −6 pour le terme en x². Vérification : (−x² + 3x + 5)(−2x − 6) + 25x + 31 = 2x³ − 3x + 1."
+},
+{
+"q": "α est racine de P. Alors P(x) est divisible par…",
+"choices": [
+"α",
+"x² − α",
+"x − α",
+"x + α"
+],
+"answer": 2,
+"expl": "P(α) = 0 ⇔ P(x) = (x − α)Q(x). Racine −2 ↔ facteur (x + 2)."
+},
+{
+"q": "Quelle est la factorisation de 6x³ + 7x² − 9x + 2 ?",
+"choices": [
+"(x + 2)(6x² + 5x + 1)",
+"(x + 1)(2x − 1)(3x − 2)",
+"(x + 2)(2x − 1)(3x − 1)",
+"(x − 2)(2x + 1)(3x + 1)"
+],
+"answer": 2,
+"expl": "P(−2) = −48 + 28 + 18 + 2 = 0, donc P = (x + 2)(6x² − 5x + 1), et 6x² − 5x + 1 = (2x − 1)(3x − 1). Racines −2, 1/2, 1/3."
+},
+{
+"q": "Un polynôme de degré 5 a…",
+"choices": [
+"au plus 5 racines, et au moins une",
+"exactement 5 racines réelles",
+"au plus 4 racines",
+"aucune racine forcément"
+],
+"answer": 0,
+"expl": "Degré n : au plus n racines. Un degré impair a au moins une racine réelle."
+},
+{
+"q": "Combien de racines réelles a x⁴ − 2x³ + 2x² − 2x + 1 = (x − 1)²(x² + 1) ?",
+"choices": [
+"Deux : 1 et −1",
+"Quatre",
+"Aucune",
+"Une seule : 1 (double)"
+],
+"answer": 3,
+"expl": "x² + 1 > 0 n'a pas de racine réelle ; (x − 1)² donne la racine 1, double."
+},
+{
+"q": "Quel polynôme a pour coefficients (1, −5, 0, 4), du degré 3 au degré 0 ?",
+"choices": [
+"x² − 5x + 4",
+"x³ − 5x² + 4",
+"x³ − 5x² + 4x",
+"x³ − 5x + 4"
+],
+"answer": 1,
+"expl": "Le 0 correspond au terme en x : il n'y a pas de terme en x."
+}
+]
+}
+],
+"fiches": [
+{
+"title": "Chapitre 0 · l'essentiel des 8 tests",
+"html": "<h1>Chapitre 0 · l'essentiel des 8 tests</h1>\n<p>Pour la version imprimable complète (4 pages A4), ouvre le site de révision → R1.07 → <b>Fiches tests ch. 0</b>.</p>\n<div class=\"cols\"><div>\n<h2>Fractions</h2><ul><li>a/b + c/d = (ad + bc)/bd, avec le <b>plus petit dénominateur commun</b></li><li>a/b ÷ c/d = a/b × d/c</li><li>On simplifie des <b>facteurs</b>, jamais des termes</li></ul>\n<h2>Puissances</h2><ul><li>a<sup>n</sup>a<sup>m</sup> = a<sup>n+m</sup> · a<sup>n</sup>/a<sup>m</sup> = a<sup>n−m</sup> · (a<sup>n</sup>)<sup>m</sup> = a<sup>nm</sup></li><li>a<sup>0</sup> = 1 · a<sup>−n</sup> = 1/a<sup>n</sup></li><li>(−2)<sup>4</sup> = 16 mais −2<sup>4</sup> = −16</li></ul>\n<h2>Calcul littéral</h2><ul><li>(a ± b)<sup>2</sup> = a<sup>2</sup> ± 2ab + b<sup>2</sup> · (a − b)(a + b) = a<sup>2</sup> − b<sup>2</sup></li><li>Factoriser : facteur commun, puis identité, puis début de carré</li></ul>\n<h2>Proportionnalité</h2><ul><li>y = kx, droite par l'origine</li><li>+t % = × (1 + t/100) ; on multiplie les coefficients</li></ul>\n</div><div>\n<h2>Vocabulaire</h2><ul><li>Résoudre = donner <b>toutes</b> les solutions dans S</li><li>{2 ; 5} ≠ [2 ; 5]</li><li>Toujours vraie : S = ℝ ; jamais : S = ∅</li></ul>\n<h2>1er degré</h2><ul><li>ax + b = 0 ⇔ x = −b/a (a ≠ 0)</li><li>AB = 0 ⇔ A = 0 <b>ou</b> B = 0 ; ne jamais diviser par x</li></ul>\n<h2>2nd degré</h2><ul><li>Δ = b<sup>2</sup> − 4ac ; x = (−b ± √Δ)/2a</li><li>Δ = 0 : x<sub>0</sub> = −b/2a ; Δ &lt; 0 : S = ∅</li></ul>\n<h2>Inéquations</h2><ul><li>× ou ÷ par un négatif : on <b>retourne</b> le sens</li><li>Trinôme : signe de a à l'extérieur des racines</li></ul>\n</div></div>\n<div class=\"trap\"><b>Tests Arche :</b> 10 essais par test avant le mar. 1/12 à 23 h 59, c'est la moyenne qui compte.</div>"
+},
+{
+"title": "Cours : Matrices",
+"html": "\n      <h2>R1.07 · Chapitre 1 : calcul matriciel</h2>\n      <p class=\"muted\">Programme du <b>TD noté S1.02 du jeudi 26/11, 13 h 30</b> : calcul matriciel, en binôme, <b>sans document ni calculatrice</b>. Entraîne-toi à faire les produits à la main. (Ce chapitre a aussi servi au devoir 1 du 20/10.)</p><div class=\"doc-tools\"></div>\n      <h3 id=\"m1-s0\"><span class=\"hn\">1</span>Vocabulaire</h3>\n      <ul>\n        <li>Matrice de <b>type (n, p)</b> : n lignes, p colonnes. Coefficient a<sub>ij</sub> : ligne i, colonne j.</li>\n        <li>Vecteur ligne (1, p), vecteur colonne (n, 1), matrice <b>carrée</b> (n, n), matrice nulle 0, <b>identité</b> I<sub>n</sub> (des 1 sur la diagonale).</li>\n        <li>Égalité : même type et mêmes coefficients un par un.</li>\n      </ul>\n      <div class=\"box exm\">A = <span class=\"mx\"><table><tbody><tr><td>2</td><td>−1</td><td>3</td></tr><tr><td>0</td><td>4</td><td>1</td></tr></tbody></table></span> est de type <b>(2, 3)</b> : 2 lignes, 3 colonnes. a<sub>12</sub> = −1 (ligne 1, colonne 2), a<sub>23</sub> = 1. I<sub>3</sub> = <span class=\"mx\"><table><tbody><tr><td>1</td><td>0</td><td>0</td></tr><tr><td>0</td><td>1</td><td>0</td></tr><tr><td>0</td><td>0</td><td>1</td></tr></tbody></table></span></div>\n      <h3 id=\"m1-s1\"><span class=\"hn\">2</span>Somme et multiplication par un réel</h3>\n      <p>Même type obligatoire. On additionne case par case : (a<sub>ij</sub> + b<sub>ij</sub>). λ·A multiplie chaque coefficient. A + B = B + A, A + 0 = A, opposée −A.</p>\n      <div class=\"box exm\">A = <span class=\"mx\"><table><tbody><tr><td>1</td><td>2</td></tr><tr><td>3</td><td>4</td></tr></tbody></table></span>, B = <span class=\"mx\"><table><tbody><tr><td>0</td><td>−1</td></tr><tr><td>5</td><td>2</td></tr></tbody></table></span> → A + B = <span class=\"mx\"><table><tbody><tr><td>1</td><td>1</td></tr><tr><td>8</td><td>6</td></tr></tbody></table></span> et 3A = <span class=\"mx\"><table><tbody><tr><td>3</td><td>6</td></tr><tr><td>9</td><td>12</td></tr></tbody></table></span>. En revanche A + <span class=\"mx\"><table><tbody><tr><td>1</td><td>2</td><td>3</td></tr></tbody></table></span> est impossible : types différents.</div>\n      <h3 id=\"m1-s2\"><span class=\"hn\">3</span>Produit A × B</h3>\n      <div class=\"box def\">Possible seulement si <b>nb de colonnes de A = nb de lignes de B</b> : (n, <b>p</b>) × (<b>p</b>, q) = (n, q).<br>c<sub>ij</sub> = ligne i de A « × » colonne j de B = a<sub>i1</sub>b<sub>1j</sub> + a<sub>i2</sub>b<sub>2j</sub> + … + a<sub>ip</sub>b<sub>pj</sub>.</div>\n      <div class=\"mod\"><div class=\"mod-h\"><span class=\"mod-tag\">Schéma interactif</span><strong>Le produit en croix : A à gauche, B au-dessus</strong></div><p class=\"mod-sub\">La méthode à faire sur ta copie : écris B en haut à droite et A en bas à gauche. Chaque case de A × B est au croisement d'une ligne de A et d'une colonne de B. Clique sur une case « ? » ou avance case par case.</p><div class=\"presets\"></div>\n    <div class=\"fk-wrap\"><div class=\"fk-grid\" style=\"grid-template-columns:repeat(2,auto) 30px repeat(2,auto);grid-template-rows:repeat(2,auto) 26px repeat(2,auto)\"><div class=\"fk fk-name\" style=\"grid-row:1;grid-column:3;grid-row:1/3;align-self:center\"><span class=\"fk-lab\">B</span></div><div class=\"fk fk-b on\" style=\"grid-row:1;grid-column:4;background:color-mix(in srgb,var(--c-r105) 22%,var(--sheet));color:var(--ink);box-shadow:inset 0 0 0 2px var(--c-r105)\">5</div><div class=\"fk fk-b \" style=\"grid-row:1;grid-column:5;\">−1</div><div class=\"fk fk-b on\" style=\"grid-row:2;grid-column:4;background:color-mix(in srgb,var(--c-r105) 22%,var(--sheet));color:var(--ink);box-shadow:inset 0 0 0 2px var(--c-r105)\">−4</div><div class=\"fk fk-b \" style=\"grid-row:2;grid-column:5;\">1</div><div class=\"fk fk-a on\" style=\"grid-row:4;grid-column:1;background:color-mix(in srgb,var(--c-r107) 22%,var(--sheet));color:var(--ink);box-shadow:inset 0 0 0 2px var(--c-r107)\">1</div><div class=\"fk fk-a on\" style=\"grid-row:4;grid-column:2;background:color-mix(in srgb,var(--c-r107) 22%,var(--sheet));color:var(--ink);box-shadow:inset 0 0 0 2px var(--c-r107)\">1</div><div class=\"fk fk-a \" style=\"grid-row:5;grid-column:1;\">4</div><div class=\"fk fk-a \" style=\"grid-row:5;grid-column:2;\">5</div><div class=\"fk fk-name\" style=\"grid-row:3;grid-column:1;grid-column:1/3;justify-self:center\"><span class=\"fk-lab\">A</span></div><div class=\"fk fk-arr\" style=\"grid-row:4;grid-column:3;color:var(--c-r107)\">→</div><div class=\"fk fk-arr\" style=\"grid-row:3;grid-column:4;color:var(--c-r105)\">↓</div><div class=\"fk fk-c \" role=\"button\" tabindex=\"0\" aria-label=\"Case ligne 1 colonne 1\" style=\"grid-row:4;grid-column:4;box-shadow:inset 3px 0 0 var(--c-r107),inset 0 3px 0 var(--c-r105),inset -3px 0 0 var(--c-r107),inset 0 -3px 0 var(--c-r105);font-weight:800\">1</div><div class=\"fk fk-c q\" role=\"button\" tabindex=\"0\" aria-label=\"Case ligne 1 colonne 2\" style=\"grid-row:4;grid-column:5;\">?</div><div class=\"fk fk-c q\" role=\"button\" tabindex=\"0\" aria-label=\"Case ligne 2 colonne 1\" style=\"grid-row:5;grid-column:4;\">?</div><div class=\"fk fk-c q\" role=\"button\" tabindex=\"0\" aria-label=\"Case ligne 2 colonne 2\" style=\"grid-row:5;grid-column:5;\">?</div></div></div><div><div class=\"fk-calc\"><div><b>Case ligne 1, colonne 1</b> : la <span style=\"color:var(--c-r107);font-weight:700\">ligne 1 de A (violet)</span> part vers la droite →, la <span style=\"color:var(--c-r105);font-weight:700\">colonne 1 de B (vert)</span> descend ↓. Elles se croisent sur cette case.</div>\n      <div class=\"fk-eq\">c<sub>11</sub> = <span class=\"fk-term\" style=\"border-color:#e5484d\"><span style=\"color:var(--c-r107);font-weight:700\">1</span>×<span style=\"color:var(--c-r105);font-weight:700\">5</span></span> + <span class=\"fk-term\" style=\"border-color:#30a46c\"><span style=\"color:var(--c-r107);font-weight:700\">1</span>×<span style=\"color:var(--c-r105);font-weight:700\">(−4)</span></span> = 5 − 4 = <b>1</b></div>\n      <div class=\"hint\">On multiplie le 1er de la ligne par le 1er de la colonne, le 2e par le 2e, puis on additionne.</div></div>\n      </div>\n    <div class=\"actions\" style=\"justify-content:flex-start\"></div></div>\n      <div class=\"mod\"><div class=\"mod-h\"><span class=\"mod-tag\">Schéma interactif</span><strong>Voir le calcul d'un produit</strong></div><p class=\"mod-sub\">Clique sur une case du résultat : la ligne de A et la colonne de B utilisées s'allument, avec le calcul.</p><div class=\"mp\"><div><div class=\"hint\">A (2, 3)</div><span class=\"mx\"><table><tbody><tr><td class=\"hl\">2</td><td class=\"hl\">−1</td><td class=\"hl\">3</td></tr><tr><td class=\"\">0</td><td class=\"\">4</td><td class=\"\">1</td></tr></tbody></table></span></div><span class=\"times\">×</span>\n    <div><div class=\"hint\">B (3, 2)</div><span class=\"mx\"><table><tbody><tr><td class=\"hl\">1</td><td class=\"\">2</td></tr><tr><td class=\"hl\">−2</td><td class=\"\">0</td></tr><tr><td class=\"hl\">3</td><td class=\"\">1</td></tr></tbody></table></span></div><span class=\"times\">=</span>\n    <div><div class=\"hint\">A × B (2, 2)</div><span class=\"mx\"><table><tbody><tr><td class=\"pick hl\" tabindex=\"0\">13</td><td class=\"pick \" tabindex=\"0\">7</td></tr><tr><td class=\"pick \" tabindex=\"0\">−5</td><td class=\"pick \" tabindex=\"0\">1</td></tr></tbody></table></span></div></div>\n    <p class=\"f\" style=\"white-space:normal\">c<sub>11</sub> = 2×1 + −1×−2 + 3×3 = <b>13</b></p>\n    <div class=\"actions\" style=\"justify-content:flex-start\"></div></div>\n      <ul>\n        <li>Associatif : A(BC) = (AB)C. Distributif. I<sub>n</sub>A = A I<sub>p</sub> = A.</li>\n      </ul>\n      <div class=\"box trap\">Pas commutatif : en général AB ≠ BA. AB peut valoir 0 avec A ≠ 0 et B ≠ 0. AB = AC n'implique pas B = C. (AB)<sup>p</sup> ≠ A<sup>p</sup>B<sup>p</sup>.</div>\n      <div class=\"box exm\">A = <span class=\"mx\"><table><tbody><tr><td>1</td><td>2</td></tr><tr><td>3</td><td>4</td></tr></tbody></table></span>, B = <span class=\"mx\"><table><tbody><tr><td>2</td><td>0</td></tr><tr><td>1</td><td>3</td></tr></tbody></table></span>. c<sub>11</sub> = 1×2 + 2×1 = 4, c<sub>12</sub> = 1×0 + 2×3 = 6, c<sub>21</sub> = 3×2 + 4×1 = 10, c<sub>22</sub> = 3×0 + 4×3 = 12, donc AB = <span class=\"mx\"><table><tbody><tr><td>4</td><td>6</td></tr><tr><td>10</td><td>12</td></tr></tbody></table></span>.<br>Mais BA = <span class=\"mx\"><table><tbody><tr><td>2</td><td>4</td></tr><tr><td>10</td><td>14</td></tr></tbody></table></span> : AB ≠ BA. Et <span class=\"mx\"><table><tbody><tr><td>1</td><td>1</td></tr><tr><td>2</td><td>2</td></tr></tbody></table></span> × <span class=\"mx\"><table><tbody><tr><td>1</td><td>−1</td></tr><tr><td>−1</td><td>1</td></tr></tbody></table></span> = <span class=\"mx\"><table><tbody><tr><td>0</td><td>0</td></tr><tr><td>0</td><td>0</td></tr></tbody></table></span> alors qu'aucune des deux n'est nulle.<br>Types : (2, 3) × (3, 4) donne (2, 4) ; (2, 3) × (2, 3) est impossible (3 ≠ 2).</div>\n      <h3 id=\"m1-s3\"><span class=\"hn\">4</span>Puissances</h3>\n      <p>Pour A carrée : A<sup>0</sup> = I<sub>n</sub>, A<sup>p</sup> = A × A × … × A (p facteurs). A<sup>p</sup>A<sup>r</sup> = A<sup>p+r</sup>, (A<sup>p</sup>)<sup>r</sup> = A<sup>pr</sup>.</p>\n      <div class=\"box exm\">A = <span class=\"mx\"><table><tbody><tr><td>1</td><td>1</td></tr><tr><td>0</td><td>1</td></tr></tbody></table></span> → A<sup>2</sup> = A × A = <span class=\"mx\"><table><tbody><tr><td>1</td><td>2</td></tr><tr><td>0</td><td>1</td></tr></tbody></table></span>, A<sup>3</sup> = A<sup>2</sup> × A = <span class=\"mx\"><table><tbody><tr><td>1</td><td>3</td></tr><tr><td>0</td><td>1</td></tr></tbody></table></span>. On devine A<sup>n</sup> = <span class=\"mx\"><table><tbody><tr><td>1</td><td>n</td></tr><tr><td>0</td><td>1</td></tr></tbody></table></span> (à démontrer par récurrence si on le demande).</div>\n      <div class=\"mod\"><div class=\"mod-h\"><span class=\"mod-tag\">Schéma interactif</span><strong>Calculer A<sup>n</sup> pas à pas</strong></div><p class=\"mod-sub\">Change les coefficients de A ou choisis un exemple, puis fais varier n : chaque puissance est le produit de la précédente par A.</p><div class=\"presets\"></div>\n  <div class=\"mp\"><span class=\"hint\">A =</span><span class=\"mxin mxed\"><span class=\"mxg\" style=\"grid-template-columns:repeat(2,auto)\"><input type=\"number\" inputmode=\"numeric\" step=\"1\" value=\"1\" aria-label=\"A ligne 1 colonne 1\"><input type=\"number\" inputmode=\"numeric\" step=\"1\" value=\"1\" aria-label=\"A ligne 1 colonne 2\"><input type=\"number\" inputmode=\"numeric\" step=\"1\" value=\"0\" aria-label=\"A ligne 2 colonne 1\"><input type=\"number\" inputmode=\"numeric\" step=\"1\" value=\"1\" aria-label=\"A ligne 2 colonne 2\"></span></span><label class=\"hint\" style=\"display:flex;align-items:center;gap:8px\">n = <input type=\"range\" min=\"0\" max=\"6\" value=\"3\" style=\"width:140px\"><b>3</b></label></div><div><div class=\"mpsteps\"><div class=\"mp\"><span class=\"f\">A⁰ = I₂ =</span> <span class=\"mx\"><table><tbody><tr><td class=\"\">1</td><td class=\"\">0</td></tr><tr><td class=\"\">0</td><td class=\"\">1</td></tr></tbody></table></span></div><div class=\"mp\"><span class=\"f\">A¹ = A⁰ × A =</span> <span class=\"mx\"><table><tbody><tr><td class=\"\">1</td><td class=\"\">1</td></tr><tr><td class=\"\">0</td><td class=\"\">1</td></tr></tbody></table></span></div><div class=\"mp\"><span class=\"f\">A² = A¹ × A =</span> <span class=\"mx\"><table><tbody><tr><td class=\"\">1</td><td class=\"\">2</td></tr><tr><td class=\"\">0</td><td class=\"\">1</td></tr></tbody></table></span></div><div class=\"mp\"><span class=\"f\">A³ = A² × A =</span> <span class=\"mx\"><table><tbody><tr><td class=\"\">1</td><td class=\"\">3</td></tr><tr><td class=\"\">0</td><td class=\"\">1</td></tr></tbody></table></span></div></div><p class=\"hint\">Astuce devoir : calcule A², A³, devine la forme de A<sup>n</sup>, puis vérifie avec une valeur.</p></div></div>\n      <h3 id=\"m1-s4\"><span class=\"hn\">5</span>Inverse</h3>\n      <ul>\n        <li>A carrée est <b>inversible</b> s'il existe B avec AB = BA = I<sub>n</sub>. On note B = A<sup>−1</sup>. Il suffit de vérifier AB = I<sub>n</sub>.</li>\n        <li>Pour montrer qu'une matrice n'est <b>pas</b> inversible : on pose B inconnue, on écrit AB = I et on trouve un système impossible (ou une ligne de AB forcément nulle, comme au DM1).</li>\n        <li><b>(AB)<sup>−1</sup> = B<sup>−1</sup>A<sup>−1</sup></b> (l'ordre s'inverse).</li>\n      </ul>\n      <div class=\"box exm\"><b>Vérifier un inverse</b> : A = <span class=\"mx\"><table><tbody><tr><td>2</td><td>1</td></tr><tr><td>5</td><td>3</td></tr></tbody></table></span>, B = <span class=\"mx\"><table><tbody><tr><td>3</td><td>−1</td></tr><tr><td>−5</td><td>2</td></tr></tbody></table></span>. AB : 2×3 + 1×(−5) = 1, 2×(−1) + 1×2 = 0, 5×3 + 3×(−5) = 0, 5×(−1) + 3×2 = 1, donc AB = I<sub>2</sub> et A<sup>−1</sup> = B.<br><b>Montrer qu'elle n'est pas inversible</b> : A = <span class=\"mx\"><table><tbody><tr><td>1</td><td>2</td></tr><tr><td>2</td><td>4</td></tr></tbody></table></span>. On pose B = <span class=\"mx\"><table><tbody><tr><td>x</td><td>y</td></tr><tr><td>z</td><td>t</td></tr></tbody></table></span>. AB = I donne x + 2z = 1 et 2x + 4z = 0. Or 2x + 4z = 2(x + 2z) = 2 ≠ 0 : le système est impossible, donc A n'est pas inversible.</div>\n      <div class=\"mod\"><div class=\"mod-h\"><span class=\"mod-tag\">Schéma interactif</span><strong>B est-elle l'inverse de A ?</strong></div><p class=\"mod-sub\">Tape A et une matrice B candidate. On calcule AB case par case : si AB = I<sub>2</sub>, alors B = A<sup>−1</sup>. Clique sur une case de AB pour voir son calcul.</p><div class=\"presets\"></div>\n  <div class=\"mp\"><span class=\"hint\">A =</span><span class=\"mxin mxed\"><span class=\"mxg\" style=\"grid-template-columns:repeat(2,auto)\"><input type=\"number\" inputmode=\"numeric\" step=\"1\" value=\"2\" aria-label=\"A ligne 1 colonne 1\"><input type=\"number\" inputmode=\"numeric\" step=\"1\" value=\"1\" aria-label=\"A ligne 1 colonne 2\"><input type=\"number\" inputmode=\"numeric\" step=\"1\" value=\"5\" aria-label=\"A ligne 2 colonne 1\"><input type=\"number\" inputmode=\"numeric\" step=\"1\" value=\"3\" aria-label=\"A ligne 2 colonne 2\"></span></span><span class=\"hint\">B =</span><span class=\"mxin mxed\"><span class=\"mxg\" style=\"grid-template-columns:repeat(2,auto)\"><input type=\"number\" inputmode=\"numeric\" step=\"1\" value=\"3\" aria-label=\"B ligne 1 colonne 1\"><input type=\"number\" inputmode=\"numeric\" step=\"1\" value=\"-1\" aria-label=\"B ligne 1 colonne 2\"><input type=\"number\" inputmode=\"numeric\" step=\"1\" value=\"-5\" aria-label=\"B ligne 2 colonne 1\"><input type=\"number\" inputmode=\"numeric\" step=\"1\" value=\"2\" aria-label=\"B ligne 2 colonne 2\"></span></span></div><div><div class=\"mp\"><span class=\"hint\">AB =</span><span class=\"mx clickable\"><table><tbody><tr><td class=\"hl pick\">1</td><td class=\"hl pick\">0</td></tr><tr><td class=\"hl pick\">0</td><td class=\"hl pick\">1</td></tr></tbody></table></span><span class=\"hint\">= I<sub>2</sub></span></div><div class=\"verdict ok\"><b>Oui</b> : AB = I<sub>2</sub>, donc A est inversible et A<sup>−1</sup> = B. Sur la copie : « AB = I<sub>2</sub> donc A est inversible et A<sup>−1</sup> = B ».</div></div></div>\n      <h3 id=\"m1-s5\"><span class=\"hn\">6</span>Transposée et matrices particulières</h3>\n      <ul>\n        <li><sup>t</sup>A : la ligne i devient la colonne i. Type (n, p) → (p, n). <sup>t</sup>(A + B) = <sup>t</sup>A + <sup>t</sup>B, <b><sup>t</sup>(AB) = <sup>t</sup>B <sup>t</sup>A</b>.</li>\n        <li><b>Symétrique</b> : A = <sup>t</sup>A (forcément carrée). A + <sup>t</sup>A est toujours symétrique.</li>\n        <li><b>Diagonale</b> : zéros hors de la diagonale. <b>Triangulaire supérieure</b> : zéros sous la diagonale. <b>Inférieure</b> : zéros au-dessus.</li>\n      </ul>\n      <div class=\"box exm\">A = <span class=\"mx\"><table><tbody><tr><td>1</td><td>2</td><td>3</td></tr><tr><td>4</td><td>5</td><td>6</td></tr></tbody></table></span> de type (2, 3) → <sup>t</sup>A = <span class=\"mx\"><table><tbody><tr><td>1</td><td>4</td></tr><tr><td>2</td><td>5</td></tr><tr><td>3</td><td>6</td></tr></tbody></table></span> de type (3, 2).<br>Symétrique : <span class=\"mx\"><table><tbody><tr><td>1</td><td>7</td></tr><tr><td>7</td><td>3</td></tr></tbody></table></span>. Avec M = <span class=\"mx\"><table><tbody><tr><td>1</td><td>2</td></tr><tr><td>0</td><td>3</td></tr></tbody></table></span> : M + <sup>t</sup>M = <span class=\"mx\"><table><tbody><tr><td>2</td><td>2</td></tr><tr><td>2</td><td>6</td></tr></tbody></table></span>, bien symétrique.<br>Diagonale <span class=\"mx\"><table><tbody><tr><td>2</td><td>0</td><td>0</td></tr><tr><td>0</td><td>5</td><td>0</td></tr><tr><td>0</td><td>0</td><td>−1</td></tr></tbody></table></span>, triangulaire supérieure <span class=\"mx\"><table><tbody><tr><td>1</td><td>4</td><td>2</td></tr><tr><td>0</td><td>3</td><td>5</td></tr><tr><td>0</td><td>0</td><td>6</td></tr></tbody></table></span>, triangulaire inférieure <span class=\"mx\"><table><tbody><tr><td>1</td><td>0</td><td>0</td></tr><tr><td>4</td><td>3</td><td>0</td></tr><tr><td>2</td><td>5</td><td>6</td></tr></tbody></table></span>.</div>\n      <div class=\"mod\"><div class=\"mod-h\"><span class=\"mod-tag\">Schéma interactif</span><strong>Transposer et reconnaître une matrice</strong></div><p class=\"mod-sub\">Choisis une matrice (ou change ses coefficients). Survole ou touche une ligne de A : elle devient la colonne de même numéro dans <sup>t</sup>A. Les étiquettes disent quelles propriétés A vérifie.</p><div class=\"presets\"></div><div><div class=\"mp\"><span class=\"hint\">A =</span><span class=\"mxin mxed\"><span class=\"mxg\" style=\"grid-template-columns:repeat(3,auto)\"><input type=\"number\" inputmode=\"numeric\" step=\"1\" value=\"1\" aria-label=\"A ligne 1 colonne 1\"><input type=\"number\" inputmode=\"numeric\" step=\"1\" value=\"2\" aria-label=\"A ligne 1 colonne 2\"><input type=\"number\" inputmode=\"numeric\" step=\"1\" value=\"3\" aria-label=\"A ligne 1 colonne 3\"><input type=\"number\" inputmode=\"numeric\" step=\"1\" value=\"4\" aria-label=\"A ligne 2 colonne 1\"><input type=\"number\" inputmode=\"numeric\" step=\"1\" value=\"5\" aria-label=\"A ligne 2 colonne 2\"><input type=\"number\" inputmode=\"numeric\" step=\"1\" value=\"6\" aria-label=\"A ligne 2 colonne 3\"></span></span></div></div><div><div class=\"mp\"><span class=\"hint\">A (2, 3) =</span><span class=\"mx\"><table><tbody><tr class=\"\"><td class=\"\">1</td><td class=\"\">2</td><td class=\"\">3</td></tr><tr class=\"\"><td class=\"\">4</td><td class=\"\">5</td><td class=\"\">6</td></tr></tbody></table></span><span class=\"hint\">→ ᵗA (3, 2) =</span><span class=\"mx\"><table><tbody><tr><td class=\"\">1</td><td class=\"\">4</td></tr><tr><td class=\"\">2</td><td class=\"\">5</td></tr><tr><td class=\"\">3</td><td class=\"\">6</td></tr></tbody></table></span></div>\n    <div class=\"presets\"><span class=\"pill \" style=\"cursor:default\">✗ carrée</span><span class=\"pill \" style=\"cursor:default\">✗ symétrique (A = ᵗA)</span><span class=\"pill \" style=\"cursor:default\">✗ diagonale</span><span class=\"pill \" style=\"cursor:default\">✗ triangulaire supérieure</span><span class=\"pill \" style=\"cursor:default\">✗ triangulaire inférieure</span><span class=\"pill \" style=\"cursor:default\">✗ identité</span></div>\n    <p class=\"hint\">Survole une ligne de A. </p></div></div>\n    "
+},
+{
+"title": "Cours : Gauss-Jordan",
+"html": "\n      <h2>R1.07 · Gauss-Jordan : inverser une matrice</h2>\n      <p class=\"muted\">Devoir 2 mardi 8/12, 8 h 30 : Gauss-Jordan (chap. 2 § 4), dérivation (chap. 3), polynômes (chap. 4). Seule la calculatrice est autorisée.</p><div class=\"doc-tools\"></div>\n      <h3 id=\"mg-s0\"><span class=\"hn\">1</span>Rappels de la méthode du pivot</h3>\n      <ul>\n        <li>Opérations élémentaires (on obtient un système équivalent) : échanger deux lignes ; multiplier une ligne par une constante <b>non nulle</b> ; ajouter à une ligne une combinaison des autres (<span class=\"f\">L2 ← L2 − 2L1</span>).</li>\n        <li>Échelonné : le nombre de zéros en début de ligne augmente <b>strictement</b> d'une ligne à l'autre. Les pivots sont les premiers coefficients non nuls.</li>\n        <li>Trois issues : une ligne « 0 = b » avec b ≠ 0 → S = ∅ ; autant d'inconnues principales que d'inconnues → solution unique ; des inconnues secondaires → infinité de solutions (on ne fixe jamais la valeur d'un paramètre). Une ligne « 0 = 0 » se supprime.</li>\n        <li>Écriture matricielle : le système s'écrit <b>AX = B</b>. Si A est inversible, <b>X = A<sup>−1</sup>B</b>.</li>\n      </ul>\n      <div class=\"box exm\">x + 2y − z = 1, 2x + 3y + z = 2, x + 4y − 6z = 2 : L2 ← L2 − 2L1, L3 ← L3 − L1, puis L3 ← L3 + 2L2 → z = 1, y = 3, x = −4 : S = {(−4, 3, 1)}.<br>2x + y + z = 3, x − y + 3z = 8, x + 2y − z = −3 → S = {(1, −1, 2)}. Avec en plus x + y + 2z = −1 : 1 − 1 + 4 = 4 ≠ −1, donc plus de solution.</div>\n\n      <h3 id=\"mg-s1\"><span class=\"hn\">2</span>La méthode de Gauss-Jordan</h3>\n      <div class=\"box def\">On écrit le bloc <b>(A | I<sub>n</sub>)</b> et on fait des opérations sur les <b>lignes entières</b> (les deux blocs) jusqu'à obtenir <b>(I<sub>n</sub> | A<sup>−1</sup>)</b>.</div>\n      <ol>\n        <li><b>Descente</b> : des 0 sous la diagonale (comme le pivot).</li>\n        <li><b>Remontée</b> : des 0 au-dessus des pivots, en partant de la dernière ligne.</li>\n        <li><b>Normalisation</b> : diviser chaque ligne par son pivot pour avoir des 1 (souvent oublié).</li>\n      </ol>\n      <ul>\n        <li>Si une ligne du bloc de gauche devient entièrement nulle, A <b>n'est pas inversible</b> : on s'arrête.</li>\n        <li>Une matrice avec une ligne (ou une colonne) nulle n'est jamais inversible.</li>\n        <li>Toujours <b>vérifier A × A<sup>−1</sup> = I</b> à la calculatrice.</li>\n      </ul>\n      <div class=\"box method\">Cas 2 × 2 : A = <span class=\"mx\"><span class=\"mxg\" style=\"grid-template-columns:repeat(2,auto)\"><span>a</span><span>b</span><span>c</span><span>d</span></span></span> est inversible ⇔ <b>ad − bc ≠ 0</b>, et A<sup>−1</sup> = 1/(ad − bc) × <span class=\"mx\"><span class=\"mxg\" style=\"grid-template-columns:repeat(2,auto)\"><span>d</span><span>−b</span><span>−c</span><span>a</span></span></span>. Exemple (DM1) : <span class=\"mx\"><span class=\"mxg\" style=\"grid-template-columns:repeat(2,auto)\"><span>3</span><span>5</span><span>4</span><span>7</span></span></span> : ad − bc = 21 − 20 = 1, donc A<sup>−1</sup> = <span class=\"mx\"><span class=\"mxg\" style=\"grid-template-columns:repeat(2,auto)\"><span>7</span><span>−5</span><span>−4</span><span>3</span></span></span>.</div>\n\n      <h3 id=\"mg-s2\"><span class=\"hn\">3</span>Exemple 4.1 du cours</h3>\n      <p>A = <span class=\"mx\"><span class=\"mxg\" style=\"grid-template-columns:repeat(3,auto)\"><span>2</span><span>1</span><span>4</span><span>−1</span><span>0</span><span>1</span><span>4</span><span>1</span><span>3</span></span></span></p>\n      <div class=\"gj-step\"><span class=\"gj-op\">Départ (A | I₃)</span><div class=\"tscroll\"><span class=\"mx aug\"><span class=\"mxg\" style=\"grid-template-columns:repeat(6,auto)\"><span>2</span><span>1</span><span>4</span><span class=\"sep\">1</span><span>0</span><span>0</span><span>−1</span><span>0</span><span>1</span><span class=\"sep\">0</span><span>1</span><span>0</span><span>4</span><span>1</span><span>3</span><span class=\"sep\">0</span><span>0</span><span>1</span></span></span></div></div>\n      <div class=\"gj-step\"><span class=\"gj-op\">L2 ← 2L2 + L1 ; L3 ← L3 − 2L1</span><div class=\"tscroll\"><span class=\"mx aug\"><span class=\"mxg\" style=\"grid-template-columns:repeat(6,auto)\"><span>2</span><span>1</span><span>4</span><span class=\"sep\">1</span><span>0</span><span>0</span><span>0</span><span>1</span><span>6</span><span class=\"sep\">1</span><span>2</span><span>0</span><span>0</span><span>−1</span><span>−5</span><span class=\"sep\">−2</span><span>0</span><span>1</span></span></span></div></div>\n      <div class=\"gj-step\"><span class=\"gj-op\">L3 ← L3 + L2</span><div class=\"tscroll\"><span class=\"mx aug\"><span class=\"mxg\" style=\"grid-template-columns:repeat(6,auto)\"><span>2</span><span>1</span><span>4</span><span class=\"sep\">1</span><span>0</span><span>0</span><span>0</span><span>1</span><span>6</span><span class=\"sep\">1</span><span>2</span><span>0</span><span>0</span><span>0</span><span>1</span><span class=\"sep\">−1</span><span>2</span><span>1</span></span></span></div></div>\n      <div class=\"gj-step\"><span class=\"gj-op\">L1 ← L1 − 4L3 ; L2 ← L2 − 6L3</span><div class=\"tscroll\"><span class=\"mx aug\"><span class=\"mxg\" style=\"grid-template-columns:repeat(6,auto)\"><span>2</span><span>1</span><span>0</span><span class=\"sep\">5</span><span>−8</span><span>−4</span><span>0</span><span>1</span><span>0</span><span class=\"sep\">7</span><span>−10</span><span>−6</span><span>0</span><span>0</span><span>1</span><span class=\"sep\">−1</span><span>2</span><span>1</span></span></span></div></div>\n      <div class=\"gj-step\"><span class=\"gj-op\">L1 ← L1 − L2, puis L1 ← ½ L1</span><div class=\"tscroll\"><span class=\"mx aug\"><span class=\"mxg\" style=\"grid-template-columns:repeat(6,auto)\"><span>1</span><span>0</span><span>0</span><span class=\"sep\">−1</span><span>1</span><span>1</span><span>0</span><span>1</span><span>0</span><span class=\"sep\">7</span><span>−10</span><span>−6</span><span>0</span><span>0</span><span>1</span><span class=\"sep\">−1</span><span>2</span><span>1</span></span></span></div></div>\n      <div class=\"box exm\">A<sup>−1</sup> = <span class=\"mx\"><span class=\"mxg\" style=\"grid-template-columns:repeat(3,auto)\"><span>−1</span><span>1</span><span>1</span><span>7</span><span>−10</span><span>−6</span><span>−1</span><span>2</span><span>1</span></span></span> (vérifié : A × A<sup>−1</sup> = I<sub>3</sub>).</div>\n\n      <h3 id=\"mg-s3\"><span class=\"hn\">4</span>DM1 : inverser puis résoudre</h3>\n      <p>x − 2y − 5z = 24, x − y − 3z = 16, −y − z = 3, donc A = <span class=\"mx\"><span class=\"mxg\" style=\"grid-template-columns:repeat(3,auto)\"><span>1</span><span>−2</span><span>−5</span><span>1</span><span>−1</span><span>−3</span><span>0</span><span>−1</span><span>−1</span></span></span>.</p>\n      <div class=\"gj-step\"><span class=\"gj-op\">L2 ← L2 − L1</span><div class=\"tscroll\"><span class=\"mx aug\"><span class=\"mxg\" style=\"grid-template-columns:repeat(6,auto)\"><span>1</span><span>−2</span><span>−5</span><span class=\"sep\">1</span><span>0</span><span>0</span><span>0</span><span>1</span><span>2</span><span class=\"sep\">−1</span><span>1</span><span>0</span><span>0</span><span>−1</span><span>−1</span><span class=\"sep\">0</span><span>0</span><span>1</span></span></span></div></div>\n      <div class=\"gj-step\"><span class=\"gj-op\">L1 ← L1 + 2L2 ; L3 ← L3 + L2</span><div class=\"tscroll\"><span class=\"mx aug\"><span class=\"mxg\" style=\"grid-template-columns:repeat(6,auto)\"><span>1</span><span>0</span><span>−1</span><span class=\"sep\">−1</span><span>2</span><span>0</span><span>0</span><span>1</span><span>2</span><span class=\"sep\">−1</span><span>1</span><span>0</span><span>0</span><span>0</span><span>1</span><span class=\"sep\">−1</span><span>1</span><span>1</span></span></span></div></div>\n      <div class=\"gj-step\"><span class=\"gj-op\">L1 ← L1 + L3 ; L2 ← L2 − 2L3</span><div class=\"tscroll\"><span class=\"mx aug\"><span class=\"mxg\" style=\"grid-template-columns:repeat(6,auto)\"><span>1</span><span>0</span><span>0</span><span class=\"sep\">−2</span><span>3</span><span>1</span><span>0</span><span>1</span><span>0</span><span class=\"sep\">1</span><span>−1</span><span>−2</span><span>0</span><span>0</span><span>1</span><span class=\"sep\">−1</span><span>1</span><span>1</span></span></span></div></div>\n      <div class=\"box exm\">A<sup>−1</sup> = <span class=\"mx\"><span class=\"mxg\" style=\"grid-template-columns:repeat(3,auto)\"><span>−2</span><span>3</span><span>1</span><span>1</span><span>−1</span><span>−2</span><span>−1</span><span>1</span><span>1</span></span></span>, puis X = A<sup>−1</sup>B = A<sup>−1</sup> × <span class=\"mx\"><span class=\"mxg\" style=\"grid-template-columns:repeat(1,auto)\"><span>24</span><span>16</span><span>3</span></span></span> = <span class=\"mx\"><span class=\"mxg\" style=\"grid-template-columns:repeat(1,auto)\"><span>3</span><span>2</span><span>−5</span></span></span> : S = {(3, 2, −5)}.</div>\n\n      <h3 id=\"mg-s4\"><span class=\"hn\">5</span>Feuille 2, exercice 7 (pivot non égal à 1)</h3>\n      <p>B = <span class=\"mx\"><span class=\"mxg\" style=\"grid-template-columns:repeat(3,auto)\"><span>1</span><span>0</span><span>1</span><span>0</span><span>1</span><span>1</span><span>1</span><span>1</span><span>0</span></span></span></p>\n      <div class=\"gj-step\"><span class=\"gj-op\">L3 ← L3 − L1, puis L3 ← L3 − L2</span><div class=\"tscroll\"><span class=\"mx aug\"><span class=\"mxg\" style=\"grid-template-columns:repeat(6,auto)\"><span>1</span><span>0</span><span>1</span><span class=\"sep\">1</span><span>0</span><span>0</span><span>0</span><span>1</span><span>1</span><span class=\"sep\">0</span><span>1</span><span>0</span><span>0</span><span>0</span><span>−2</span><span class=\"sep\">−1</span><span>−1</span><span>1</span></span></span></div></div>\n      <div class=\"gj-step\"><span class=\"gj-op\">L3 ← −½ L3</span><div class=\"tscroll\"><span class=\"mx aug\"><span class=\"mxg\" style=\"grid-template-columns:repeat(6,auto)\"><span>1</span><span>0</span><span>1</span><span class=\"sep\">1</span><span>0</span><span>0</span><span>0</span><span>1</span><span>1</span><span class=\"sep\">0</span><span>1</span><span>0</span><span>0</span><span>0</span><span>1</span><span class=\"sep\">½</span><span>½</span><span>−½</span></span></span></div></div>\n      <div class=\"gj-step\"><span class=\"gj-op\">L1 ← L1 − L3 ; L2 ← L2 − L3</span><div class=\"tscroll\"><span class=\"mx aug\"><span class=\"mxg\" style=\"grid-template-columns:repeat(6,auto)\"><span>1</span><span>0</span><span>0</span><span class=\"sep\">½</span><span>−½</span><span>½</span><span>0</span><span>1</span><span>0</span><span class=\"sep\">−½</span><span>½</span><span>½</span><span>0</span><span>0</span><span>1</span><span class=\"sep\">½</span><span>½</span><span>−½</span></span></span></div></div>\n      <div class=\"box exm\">B<sup>−1</sup> = ½ × <span class=\"mx\"><span class=\"mxg\" style=\"grid-template-columns:repeat(3,auto)\"><span>1</span><span>−1</span><span>1</span><span>−1</span><span>1</span><span>1</span><span>1</span><span>1</span><span>−1</span></span></span> (det B = −2).</div>\n\n      <h3 id=\"mg-s5\"><span class=\"hn\">6</span>Feuille 2, exercice 8 : échange de lignes et P(A) = 0</h3>\n      <p>A = <span class=\"mx\"><span class=\"mxg\" style=\"grid-template-columns:repeat(3,auto)\"><span>2</span><span>5</span><span>3</span><span>1</span><span>3</span><span>2</span><span>1</span><span>2</span><span>2</span></span></span></p>\n      <div class=\"gj-step\"><span class=\"gj-op\">L1 ↔ L2</span><div class=\"tscroll\"><span class=\"mx aug\"><span class=\"mxg\" style=\"grid-template-columns:repeat(6,auto)\"><span>1</span><span>3</span><span>2</span><span class=\"sep\">0</span><span>1</span><span>0</span><span>2</span><span>5</span><span>3</span><span class=\"sep\">1</span><span>0</span><span>0</span><span>1</span><span>2</span><span>2</span><span class=\"sep\">0</span><span>0</span><span>1</span></span></span></div></div>\n      <div class=\"gj-step\"><span class=\"gj-op\">L2 ← L2 − 2L1 ; L3 ← L3 − L1</span><div class=\"tscroll\"><span class=\"mx aug\"><span class=\"mxg\" style=\"grid-template-columns:repeat(6,auto)\"><span>1</span><span>3</span><span>2</span><span class=\"sep\">0</span><span>1</span><span>0</span><span>0</span><span>−1</span><span>−1</span><span class=\"sep\">1</span><span>−2</span><span>0</span><span>0</span><span>−1</span><span>0</span><span class=\"sep\">0</span><span>−1</span><span>1</span></span></span></div></div>\n      <div class=\"gj-step\"><span class=\"gj-op\">L3 ← L3 − L2</span><div class=\"tscroll\"><span class=\"mx aug\"><span class=\"mxg\" style=\"grid-template-columns:repeat(6,auto)\"><span>1</span><span>3</span><span>2</span><span class=\"sep\">0</span><span>1</span><span>0</span><span>0</span><span>−1</span><span>−1</span><span class=\"sep\">1</span><span>−2</span><span>0</span><span>0</span><span>0</span><span>1</span><span class=\"sep\">−1</span><span>1</span><span>1</span></span></span></div></div>\n      <div class=\"gj-step\"><span class=\"gj-op\">L2 ← L2 + L3 ; L1 ← L1 − 2L3</span><div class=\"tscroll\"><span class=\"mx aug\"><span class=\"mxg\" style=\"grid-template-columns:repeat(6,auto)\"><span>1</span><span>3</span><span>0</span><span class=\"sep\">2</span><span>−1</span><span>−2</span><span>0</span><span>−1</span><span>0</span><span class=\"sep\">0</span><span>−1</span><span>1</span><span>0</span><span>0</span><span>1</span><span class=\"sep\">−1</span><span>1</span><span>1</span></span></span></div></div>\n      <div class=\"gj-step\"><span class=\"gj-op\">L2 ← −L2 ; L1 ← L1 − 3L2</span><div class=\"tscroll\"><span class=\"mx aug\"><span class=\"mxg\" style=\"grid-template-columns:repeat(6,auto)\"><span>1</span><span>0</span><span>0</span><span class=\"sep\">2</span><span>−4</span><span>1</span><span>0</span><span>1</span><span>0</span><span class=\"sep\">0</span><span>1</span><span>−1</span><span>0</span><span>0</span><span>1</span><span class=\"sep\">−1</span><span>1</span><span>1</span></span></span></div></div>\n      <div class=\"box exm\">A<sup>−1</sup> = <span class=\"mx\"><span class=\"mxg\" style=\"grid-template-columns:repeat(3,auto)\"><span>2</span><span>−4</span><span>1</span><span>0</span><span>1</span><span>−1</span><span>−1</span><span>1</span><span>1</span></span></span> (det A = 1).<br>Autre méthode : A² = <span class=\"mx\"><span class=\"mxg\" style=\"grid-template-columns:repeat(3,auto)\"><span>12</span><span>31</span><span>22</span><span>7</span><span>18</span><span>13</span><span>6</span><span>15</span><span>11</span></span></span> et A³ − 7A² + 4A − I<sub>3</sub> = 0. Donc A(A² − 7A + 4I<sub>3</sub>) = I<sub>3</sub> et <b>A<sup>−1</sup> = A² − 7A + 4I<sub>3</sub></b>.</div>\n      <div class=\"box method\">Si P(A) = 0 avec un terme constant non nul : on isole I, on factorise par A, et ce qui reste est A<sup>−1</sup>.</div>\n      <div class=\"box trap\">Q3 (ateliers) : les données sont données <b>par article</b>, pas par atelier. Le système 2x + y + z = 48, 5x + 3y + 2z = 118, 3x + 2y + 2z = 81 a pour matrice <b>ᵗA</b>, et (ᵗA)<sup>−1</sup> = ᵗ(A<sup>−1</sup>). Solution x = 15, y = 7, z = 11. Coût : 25 × 48 + 22 × 118 + 23 × 81 = 5 659 €.</div>\n      <div class=\"box trap\">Pièges : appliquer l'opération au seul bloc de gauche ; oublier la normalisation ; multiplier une ligne par 0 ; écrire « L2 ← L1 + … » (qui remplace L2 par autre chose) au lieu de « L2 ← 2L2 + L1 » ; erreurs de signe dans la remontée.</div>\n    "
+},
+{
+"title": "Cours : Dérivation",
+"html": "\n      <h2>R1.07 · Chapitre 3 : dérivation</h2>\n      <p class=\"muted\">Devoir 2 mardi 8/12 : calculatrice seule autorisée. Toujours commencer par l'ensemble de définition.</p><div class=\"doc-tools\"></div>\n      <h3 id=\"md-s0\"><span class=\"hn\">1</span>Nombre dérivé et tangente</h3>\n      <ul>\n        <li>f est dérivable en x₀ si le taux d'accroissement <span class=\"f\">(f(x) − f(x₀)) / (x − x₀)</span> a une <b>limite finie</b> quand x → x₀ : c'est f′(x₀).</li>\n        <li>f′(x₀) est le coefficient directeur de la tangente en (x₀, f(x₀)).</li>\n        <li>Dérivable ⇒ continue. La réciproque est fausse : |x| est continue en 0 mais pas dérivable (taux → 1 à droite, −1 à gauche) ; √x n'est pas dérivable en 0 (taux → +∞).</li>\n      </ul>\n      <div class=\"box def\">Tangente en x₀ : <b>y = f(x₀) + f′(x₀)(x − x₀)</b>.</div>\n      <h3 id=\"md-s1\"><span class=\"hn\">2</span>Dérivées usuelles</h3>\n      <div class=\"tscroll\"><table class=\"tt\">\n        <tbody><tr><th>f(x)</th><th>f′(x)</th><th>f(x)</th><th>f′(x)</th></tr>\n        <tr><td>a (constante)</td><td>0</td><td>xⁿ</td><td>n xⁿ⁻¹</td></tr>\n        <tr><td>1/x</td><td>−1/x²</td><td>1/xⁿ</td><td>−n/xⁿ⁺¹</td></tr>\n        <tr><td>√x</td><td>1/(2√x), x &gt; 0</td><td>xʳ</td><td>r xʳ⁻¹</td></tr>\n        <tr><td>sin x</td><td>cos x</td><td>cos x</td><td>−sin x</td></tr>\n        <tr><td>tan x</td><td>1/cos²x = 1 + tan²x</td><td>eˣ</td><td>eˣ</td></tr>\n        <tr><td>ln x</td><td>1/x, x &gt; 0</td><td>ln|x|</td><td>1/x, x ≠ 0</td></tr>\n      </tbody></table></div>\n      <h3 id=\"md-s2\"><span class=\"hn\">3</span>Règles de calcul</h3>\n      <div class=\"formula-list\">\n        <span class=\"f\">(uv)′</span><span>u′v + uv′</span>\n        <span class=\"f\">(u/v)′</span><span>(u′v − uv′) / v² (l'ordre compte)</span>\n        <span class=\"f\">(1/u)′</span><span>−u′ / u²</span>\n        <span class=\"f\">(g∘f)′(x)</span><span>g′(f(x)) × f′(x)</span>\n        <span class=\"f\">(uʳ)′</span><span>r uʳ⁻¹ u′</span>\n        <span class=\"f\">(√u)′</span><span>u′ / (2√u)</span>\n        <span class=\"f\">(eᵘ)′</span><span>u′ eᵘ</span>\n        <span class=\"f\">(ln|u|)′</span><span>u′ / u</span>\n        <span class=\"f\">(sin u)′, (cos u)′</span><span>u′ cos u, −u′ sin u</span>\n      </div>\n      <p>Astuce : aᵘ = e^(u ln a) et xˣ = e^(x ln x), donc (xˣ)′ = (ln x + 1)xˣ.</p>\n      <div class=\"box trap\">Ensemble de définition : sous une racine ≥ 0 (dérivable seulement si &gt; 0) ; dénominateur ≠ 0 ; dans ln : &gt; 0. Ne pas oublier u′ dans une composée (eᵘ, uⁿ, √u).</div>\n      <h3 id=\"md-s3\"><span class=\"hn\">4</span>Variations et extremums</h3>\n      <ul>\n        <li>Sur un intervalle : f′ ≥ 0 ⇔ f croissante ; f′ ≤ 0 ⇔ f décroissante ; f′ = 0 ⇔ f constante.</li>\n        <li>Extremum local en x₀ (intervalle ouvert) ⇒ f′(x₀) = 0. La réciproque est fausse : x³ en 0. Il faut que <b>f′ change de signe</b> : + puis − → maximum local ; − puis + → minimum local.</li>\n        <li>Local ≠ global : regarder les limites aux bornes avant de dire « global ».</li>\n        <li>Signe de ax² + bx + c : signe de a à l'extérieur des racines, signe contraire entre. Δ = b² − 4ac, x = (−b ± √Δ)/(2a).</li>\n        <li>À l'infini, un polynôme se comporte comme son terme de plus haut degré, une fraction rationnelle comme le quotient des termes de plus haut degré.</li>\n      </ul>\n      <div class=\"box exm\">f(x) = x³ − 3x : f′(x) = 3(x − 1)(x + 1). Maximum local f(−1) = 2, minimum local f(1) = −2, pas d'extremum global (limites −∞ et +∞).<br>f(x) = x³ − 6x² + 9x + 1 : f′(x) = 3(x − 1)(x − 3). Croissante sur ]−∞, 1], décroissante sur [1, 3], croissante sur [3, +∞[. Max local f(1) = 5, min local f(3) = 1, non globaux.</div>\n      <h3 id=\"md-s4\"><span class=\"hn\">5</span>Exercices corrigés (feuille 3)</h3>\n      <div class=\"tscroll\"><table class=\"tt\">\n        <tbody><tr><th>Fonction</th><th>Domaine</th><th>Dérivée</th></tr>\n        <tr><td>x³ + 3x² − 4x + 11</td><td>ℝ</td><td>3x² + 6x − 4</td></tr>\n        <tr><td>√(3x − 2)</td><td>[2/3, +∞[, dérivable sur ]2/3, +∞[</td><td>3 / (2√(3x − 2))</td></tr>\n        <tr><td>√(3x² − 4x + 1)</td><td>]−∞, 1/3] ∪ [1, +∞[</td><td>(3x − 2) / √(3x² − 4x + 1)</td></tr>\n        <tr><td>12 / (4x² − 9)</td><td>ℝ \\ {−3/2, 3/2}</td><td>−96x / (4x² − 9)²</td></tr>\n        <tr><td>(4x + 1) / (2x − 5)</td><td>ℝ \\ {5/2}</td><td>−22 / (2x − 5)²</td></tr>\n        <tr><td>(x² + 3x + 1) / (2x − 5)</td><td>ℝ \\ {5/2}</td><td>(2x² − 10x − 17) / (2x − 5)²</td></tr>\n        <tr><td>((2x − 1) / (x + 1))³</td><td>ℝ \\ {−1}</td><td>9(2x − 1)² / (x + 1)⁴</td></tr>\n        <tr><td>(√x + 1)²</td><td>[0, +∞[, dérivable sur ]0, +∞[</td><td>1 + 1/√x</td></tr>\n        <tr><td>e^(5x²)</td><td>ℝ</td><td>10x e^(5x²)</td></tr>\n        <tr><td>e^(sin x)</td><td>ℝ</td><td>cos x e^(sin x)</td></tr>\n      </tbody></table></div>\n      <div class=\"box exm\">Ex. 5 : f(x) = (x² − 12x + 27)/(x² − 4x + 5), D = ℝ (x² − 4x + 5 = (x − 2)² + 1 &gt; 0). f′(x) = 4(2x² − 11x + 12)/(x² − 4x + 5)², racines 3/2 et 4. Max global f(3/2) = 9, min global f(4) = −1, asymptote y = 1. Tangente en 3 : f(3) = 0, f′(3) = −3 → <b>y = −3x + 9</b>.</div>\n      <div class=\"box exm\">Ex. 6 : U(x) = x − 10 + 900/x sur [10, 100], U′(x) = (x − 30)(x + 30)/x², minimum U(30) = 50. B(x) = x(100 − U(x)) = −x² + 110x − 900, maximum B(55) = 2 125 € : le bénéfice maximal n'est pas au coût unitaire minimal.<br>Ex. 7 et 8 (boîtes) : S(x) = 2x² + 4/x minimale en x = 1 (S = 6 dm², un cube) ; S(x) = 2x² + 32/x minimale en x = 2 (S = 24 m²).</div>\n      <div class=\"box trap\">Pièges : (u/v)′ avec le signe dans le mauvais ordre ; conclure « extremum » seulement parce que f′(x₀) = 0 ; dire « global » sans les limites ; confondre le signe de f′ (variations) et le signe de f.</div>\n    "
+},
+{
+"title": "Cours : Polynômes",
+"html": "\n      <h2>R1.07 · Chapitre 4 : polynômes</h2>\n      <p class=\"muted\">Degré, opérations, division euclidienne, racines et factorisation.</p><div class=\"doc-tools\"></div>\n      <h3 id=\"mp-s0\"><span class=\"hn\">1</span>Degré et coefficients</h3>\n      <ul>\n        <li>P(x) = aₙxⁿ + … + a₁x + a₀ avec aₙ ≠ 0 est de degré n. Une constante non nulle est de degré 0 ; le polynôme nul est de degré −∞.</li>\n        <li><b>Développer avant</b> de lire le degré : x² + 2x + 3 − (x − 1)² = 4x + 2 est de degré 1.</li>\n        <li>Les coefficients déterminent le polynôme : (1, −5, 0, 4) ↔ x³ − 5x² + 4 (ne pas oublier les coefficients nuls).</li>\n        <li><b>deg(P × Q) = deg P + deg Q</b> ; deg(P + Q) ≤ max(deg P, deg Q) (deux degrés 4 peuvent donner un degré 3).</li>\n      </ul>\n      <div class=\"box exm\">(2 + 3x − 5x² + 2x⁴) + (−1 + 2x − 4x² + 6x³ + x⁴ + 3x⁵) = 1 + 5x − 9x² + 6x³ + 3x⁴ + 3x⁵.<br>(5 + 2x + 3x³ + 2x⁴)(1 + 7x + 5x² + 6x³) = 5 + 37x + 39x² + 43x³ + 35x⁴ + 29x⁵ + 28x⁶ + 12x⁷.</div>\n      <h3 id=\"mp-s1\"><span class=\"hn\">2</span>Division euclidienne</h3>\n      <div class=\"box def\">Pour B ≠ 0 : il existe un unique couple (Q, R) tel que <b>A = BQ + R</b> avec <b>deg R &lt; deg B</b>.</div>\n      <ol>\n        <li>Diviser le terme de plus haut degré de A par celui de B : premier terme de Q.</li>\n        <li>Multiplier B par ce terme, soustraire de A.</li>\n        <li>Recommencer avec le reste, jusqu'à deg(reste) &lt; deg B.</li>\n      </ol>\n      <div class=\"box exm\">x⁵ + 2x⁴ − x³ + 22x = (x² − 4x + 1)(x³ + 6x² + 22x + 82) + 328x − 82.<br>B = 2x³ − 3x + 1 divisé par A = −x² + 3x + 5 : <b>Q = −2x − 6, R = 25x + 31</b>. A ÷ B : Q = 0, R = A (deg A &lt; deg B).</div>\n      <div class=\"box trap\">Écrire les termes nuls (0x²…) pour aligner les colonnes ; attention aux signes en soustrayant ; s'arrêter dès que deg R &lt; deg B.</div>\n      <h3 id=\"mp-s2\"><span class=\"hn\">3</span>Racines et factorisation</h3>\n      <ul>\n        <li>α est racine de P ⇔ P(α) = 0 ⇔ P(x) = (x − α)Q(x) avec deg Q = n − 1 ⇔ le reste de la division par x − α est nul.</li>\n        <li>Pour trouver Q : division euclidienne, ou identification de (x − α)(ax² + bx + c).</li>\n        <li>Un polynôme de degré n a <b>au plus n racines</b> ; un degré impair a au moins une racine réelle.</li>\n        <li>Racines évidentes à tester : 0, 1, −1, 2, −2.</li>\n      </ul>\n      <div class=\"box exm\">x³ − 2x² − 5x + 6 : P(1) = 0, P = (x − 1)(x² − x − 6) = (x − 1)(x + 2)(x − 3).<br>6x³ + 7x² − 9x + 2 : P(−2) = −48 + 28 + 18 + 2 = 0, P = (x + 2)(6x² − 5x + 1) = (x + 2)(2x − 1)(3x − 1), racines −2, 1/2, 1/3.<br>x⁴ − 2x³ + 2x² − 2x + 1 = (x − 1)²(x² + 1) : seule racine réelle 1 (double).</div>\n      <div class=\"box trap\">Racine α ↔ facteur (x − α), pas (x + α). Penser à refactoriser le quotient.</div>\n    "
+},
+{
+"title": "Cours : Pivot",
+"html": "\n      <h2>R1.07 · Chapitre 2 : méthode du pivot</h2>\n      <h3 id=\"m2-s0\"><span class=\"hn\">1</span>Systèmes linéaires</h3><div class=\"doc-tools\"></div>\n      <ul>\n        <li>n équations, p inconnues. <b>Homogène</b> si tous les seconds membres sont nuls.</li>\n        <li><b>Opérations élémentaires</b> (donnent un système équivalent) : échanger deux équations, multiplier une équation par une constante non nulle, ajouter à une équation une combinaison des autres (L<sub>2</sub> ← L<sub>2</sub> − 2L<sub>1</sub>).</li>\n      </ul>\n      <div class=\"box exm\"><div class=\"sys\"><div>x + y = 3   L1</div><div>2x − y = 0   L2</div></div>L<sub>2</sub> ← L<sub>2</sub> − 2L<sub>1</sub> : −3y = −6, donc y = 2, puis x = 3 − 2 = 1. S = {(1, 2)}.<br>Homogène : <div class=\"sys\"><div>x + 2y = 0</div><div>3x − y = 0</div></div>(0, 0) est toujours solution d'un système homogène.</div>\n      <h3 id=\"m2-s1\"><span class=\"hn\">2</span>Échelonner</h3>\n      <p>Un système est <b>échelonné</b> si le nombre de coefficients nuls en début d'équation augmente strictement d'une ligne à la suivante.</p>\n      <ol>\n        <li>Mettre en L<sub>1</sub> une équation dont le premier coefficient est non nul : c'est le <b>pivot</b>.</li>\n        <li>Éliminer x des lignes suivantes avec L<sub>1</sub> (L<sub>i</sub> ← L<sub>i</sub> − k L<sub>1</sub>, ou a·L<sub>i</sub> − b·L<sub>1</sub> pour éviter les fractions).</li>\n        <li>Recommencer avec y à partir de L<sub>2</sub>, etc. <b>Toujours écrire l'opération à droite de chaque ligne.</b></li>\n      </ol>\n      <div class=\"mod\"><div class=\"mod-h\"><span class=\"mod-tag\">Schéma interactif</span><strong>Échelonner pas à pas</strong></div><p class=\"mod-sub\">Écris la matrice augmentée (A | B) : une ligne par équation, les nombres séparés par des espaces, le second membre en dernier. Le module affiche chaque opération comme sur ta copie.</p><div class=\"presets\"></div>\n  <textarea class=\"txt\" id=\"pv33495\" rows=\"4\" style=\"min-height:0;font-family:var(--f-mono)\">1 2 -1 1\n2 3 1 2\n1 4 -6 2</textarea><div class=\"mod-out\"><div class=\"mod-step\"><b>Système de départ</b></div><div class=\"sys\"><div>x + 2y − z = 1</div><div>2x + 3y + z = 2</div><div>x + 4y − 6z = 2</div></div><div class=\"mod-step\">Pivot <b>1</b> (inconnue x) : L2 ← L2 − 2L1, L3 ← L3 − L1</div><div class=\"sys\"><div>x + 2y − z = 1</div><div>−y + 3z = 0</div><div>2y − 5z = 1</div></div><div class=\"mod-step\">Pivot <b>−1</b> (inconnue y) : L3 ← L3 + 2L2</div><div class=\"sys\"><div>x + 2y − z = 1</div><div>−y + 3z = 0</div><div>z = 1</div></div><div class=\"verdict ok\">Autant de pivots que d'inconnues : <b>solution unique</b> (on remonte de la dernière ligne) : S = {(−4, 3, 1)}.</div></div></div>\n      <div class=\"box exm\"><div class=\"sys\"><div>x + y + z = 6   L1</div><div>2x + 3y + z = 11   L2</div><div>x − y + 2z = 5   L3</div></div><div class=\"sys\"><div>x + y + z = 6</div><div>y − z = −1   L2 ← L2 − 2L1</div><div>−2y + z = −1   L3 ← L3 − L1</div></div><div class=\"sys\"><div>x + y + z = 6</div><div>y − z = −1</div><div>−z = −3   L3 ← L3 + 2L2</div></div>Échelonné : 3 pivots pour 3 inconnues. On remonte : z = 3, y = −1 + z = 2, x = 6 − y − z = 1. S = {(1, 2, 3)}. Vérification dans L2 : 2 + 6 + 3 = 11.</div>\n      <h3 id=\"m2-s2\"><span class=\"hn\">3</span>Lire le résultat</h3>\n      <div class=\"tscroll\"><table class=\"tt\" style=\"font-family:var(--f-body)\">\n        <tbody><tr><th>Ce qu'on obtient</th><th>Conclusion</th></tr>\n        <tr><td style=\"text-align:left\">une ligne <span class=\"f\">0 = b</span> avec b ≠ 0</td><td style=\"text-align:left\">système <b>incompatible</b>, S = ∅</td></tr>\n        <tr><td style=\"text-align:left\">une ligne <span class=\"f\">0 = 0</span></td><td style=\"text-align:left\">on la supprime</td></tr>\n        <tr><td style=\"text-align:left\">autant de pivots que d'inconnues</td><td style=\"text-align:left\"><b>solution unique</b>, on remonte de la dernière ligne à la première</td></tr>\n        <tr><td style=\"text-align:left\">moins de pivots que d'inconnues</td><td style=\"text-align:left\"><b>infinité</b> de solutions, à k paramètres (k = nb d'inconnues secondaires)</td></tr>\n      </tbody></table></div>\n      <ul>\n        <li><b>Inconnues principales</b> : celles en tête des équations échelonnées (sous un pivot). <b>Secondaires</b> (variables libres) : toutes les autres, elles servent de paramètres.</li>\n        <li>On passe les secondaires à droite, on exprime les principales en fonction d'elles, et on ne leur donne <b>aucune valeur</b>. Ex. S = {(4 − 2y + w, y, 1 + 2w, w) / y, w ∈ ℝ}.</li>\n      </ul>\n      <div class=\"box exm\"><b>Incompatible</b> : <div class=\"sys\"><div>x + y = 1</div><div>2x + 2y = 3</div></div>L<sub>2</sub> ← L<sub>2</sub> − 2L<sub>1</sub> donne 0 = 1 : impossible, S = ∅.<br><b>Infinité</b> : <div class=\"sys\"><div>x + 2y − z = 1</div><div>y + z = 2</div></div>2 pivots (x, y) pour 3 inconnues : z est secondaire. y = 2 − z, puis x = 1 − 2y + z = 1 − 4 + 2z + z = −3 + 3z. S = {(−3 + 3z, 2 − z, z) / z ∈ ℝ}.</div>\n      <h3 id=\"m2-s3\"><span class=\"hn\">4</span>Forme matricielle</h3>\n      <p>Le système s'écrit <b>AX = B</b> : A matrice des coefficients, X vecteur colonne des inconnues, B vecteur des seconds membres. On échelonne la <b>matrice augmentée</b> (A | B) avec les mêmes opérations sur les lignes entières.</p>\n      <div class=\"box trap\">Gauss-Jordan (calcul de A<sup>−1</sup> avec (A | I<sub>n</sub>)) n'était pas au devoir 1 du 20/10, mais il est <b>au programme du devoir 2 du 8/12</b> : voir l'onglet « Cours : Gauss-Jordan ».</div>\n      <div class=\"box exm\">Le système de la partie 2 s'écrit AX = B avec A = <span class=\"mx\"><table><tbody><tr><td>1</td><td>1</td><td>1</td></tr><tr><td>2</td><td>3</td><td>1</td></tr><tr><td>1</td><td>−1</td><td>2</td></tr></tbody></table></span>, X = <span class=\"mx\"><table><tbody><tr><td>x</td></tr><tr><td>y</td></tr><tr><td>z</td></tr></tbody></table></span>, B = <span class=\"mx\"><table><tbody><tr><td>6</td></tr><tr><td>11</td></tr><tr><td>5</td></tr></tbody></table></span>.<br>Matrice augmentée (A | B) = <span class=\"mx\"><table><tbody><tr><td>1</td><td>1</td><td>1</td><td>| 6</td></tr><tr><td>2</td><td>3</td><td>1</td><td>| 11</td></tr><tr><td>1</td><td>−1</td><td>2</td><td>| 5</td></tr></tbody></table></span>, qu'on échelonne avec les mêmes opérations que le système.</div>\n    "
+}
+],
+"sources": [
+{
+"type": "text",
+"title": "Cours : Matrices",
+"text": "\n      R1.07 · Chapitre 1 : calcul matriciel\n      Programme du TD noté S1.02 du jeudi 26/11, 13 h 30 : calcul matriciel, en binôme, sans document ni calculatrice. Entraîne-toi à faire les produits à la main. (Ce chapitre a aussi servi au devoir 1 du 20/10.)✎ Modifier le cours⎙ Imprimer\n      1Vocabulaire\n      \n        Matrice de type (n, p) : n lignes, p colonnes. Coefficient aij : ligne i, colonne j.\n        Vecteur ligne (1, p), vecteur colonne (n, 1), matrice carrée (n, n), matrice nulle 0, identité In (des 1 sur la diagonale).\n        Égalité : même type et mêmes coefficients un par un.\n      \n      A = 2−13041 est de type (2, 3) : 2 lignes, 3 colonnes. a12 = −1 (ligne 1, colonne 2), a23 = 1. I3 = 100010001\n      2Somme et multiplication par un réel\n      Même type obligatoire. On additionne case par case : (aij + bij). λ·A multiplie chaque coefficient. A + B = B + A, A + 0 = A, opposée −A.\n      A = 1234, B = 0−152 → A + B = 1186 et 3A = 36912. En revanche A + 123 est impossible : types différents.\n      3Produit A × B\n      Possible seulement si nb de colonnes de A = nb de lignes de B : (n, p) × (p, q) = (n, q).cij = ligne i de A « × » colonne j de B = ai1b1j + ai2b2j + … + aipbpj.\n      Schéma interactifLe produit en croix : A à gauche, B au-dessusLa méthode à faire sur ta copie : écris B en haut à droite et A en bas à gauche. Chaque case de A × B est au croisement d'une ligne de A et d'une colonne de B. Clique sur une case « ? » ou avance case par case.M × N (inverse)A² = A × AA² nul(2, 3) × (3, 2)\n    B5−1−411145A→↓1???Case ligne 1, colonne 1 : la ligne 1 de A (violet) part vers la droite →, la colonne 1 de B (vert) descend ↓. Elles se croisent sur cette case.\n      c11 = 1×5 + 1×(−4) = 5 − 4 = 1\n      On multiplie le 1er de la ligne par le 1er de la colonne, le 2e par le 2e, puis on additionne.\n      \n    ← Case précédenteCase suivante →Tout calculer\n      Schéma interactifVoir le calcul d'un produitClique sur une case du résultat : la ligne de A et la colonne de B utilisées s'allument, avec le calcul.A (2, 3)2−13041×\n    B (3, 2)12−2031=\n    A × B (2, 2)137−51\n    c11 = 2×1 + −1×−2 + 3×3 = 13\n    Nouvel exemple\n      \n        Associatif : A(BC) = (AB)C. Distributif. InA = A Ip = A.\n      \n      Pas commutatif : en général AB ≠ BA. AB peut valoir 0 avec A ≠ 0 et B ≠ 0. AB = AC n'implique pas B = C. (AB)p ≠ ApBp.\n      A = 1234, B = 2013. c11 = 1×2 + 2×1 = 4, c12 = 1×0 + 2×3 = 6, c21 = 3×2 + 4×1 = 10, c22 = 3×0 + 4×3 = 12, donc AB = 461012.Mais BA = 241014 : AB ≠ BA. Et 1122 × 1−1−11 = 0000 alors qu'aucune des deux n'est nulle.Types : (2, 3) × (3, 4) donne (2, 4) ; (2, 3) × (2, 3) est impossible (3 ≠ 2).\n      4Puissances\n      Pour A carrée : A0 = In, Ap = A × A × … × A (p facteurs). ApAr = Ap+r, (Ap)r = Apr.\n      A = 1101 → A2 = A × A = 1201, A3 = A2 × A = 1301. On devine An = 1n01 (à démontrer par récurrence si on le demande).\n      Schéma interactifCalculer An pas à pasChange les coefficients de A ou choisis un exemple, puis fais varier n : chaque puissance est le produit de la précédente par A.TriangulaireDiagonaleNilpotenteRotation\n  A =n = 3A⁰ = I₂ = 1001A¹ = A⁰ × A = 1101A² = A¹ × A = 1201A³ = A² × A = 1301Astuce devoir : calcule A², A³, devine la forme de An, puis vérifie avec une valeur.\n      5Inverse\n      \n        A carrée est inversible s'il existe B avec AB = BA = In. On note B = A−1. Il suffit de vérifier AB = In.\n        Pour montrer qu'une matrice n'est pas inversible : on pose B inconnue, on écrit AB = I et on trouve un système impossible (ou une ligne de AB forcément nulle, comme au DM1).\n        (AB)−1 = B−1A−1 (l'ordre s'inverse).\n      \n      Vérifier un inverse : A = 2153, B = 3−1−52. AB : 2×3 + 1×(−5) = 1, 2×(−1) + 1×2 = 0, 5×3 + 3×(−5) = 0, 5×(−1) + 3×2 = 1, donc AB = I2 et A−1 = B.Montrer qu'elle n'est pas inversible : A = 1224. On pose B = xyzt. AB = I donne x + 2z = 1 et 2x + 4z = 0. Or 2x + 4z = 2(x + 2z) = 2 ≠ 0 : le système est impossible, donc A n'est pas inversible.\n      Schéma interactifB est-elle l'inverse de A ?Tape A et une matrice B candidate. On calcule AB case par case : si AB = I2, alors B = A−1. Clique sur une case de AB pour voir son calcul.InversibleMauvais candidatPas inversibleDiagonale\n  A =B =AB =1001= I2Oui : AB = I2, donc A est inversible et A−1 = B. Sur la copie : « AB = I2 donc A est inversible et A−1 = B ».\n      6Transposée et matrices particulières\n      \n        tA : la ligne i devient la colonne i. Type (n, p) → (p, n). t(A + B) = tA + tB, t(AB) = tB tA.\n        Symétrique : A = tA (forcément carrée). A + tA est toujours symétrique.\n        Diagonale : zéros hors de la diagonale. Triangulaire supérieure : zéros sous la diagonale. Inférieure : zéros au-dessus.\n      \n      A = 123456 de type (2, 3) → tA = 142536 de type (3, 2).Symétrique : 1773. Avec M = 1203 : M + tM = 2226, bien symétrique.Diagonale 20005000−1, triangulaire supérieure 142035006, triangulaire inférieure 100430256.\n      Schéma interactifTransposer et reconnaître une matriceChoisis une matrice (ou change ses coefficients). Survole ou touche une ligne de A : elle devient la colonne de même numéro dans tA. Les étiquettes disent quelles propriétés A vérifie.(2, 3)SymétriqueDiagonaleTriangulaire sup.IdentitéA =A (2, 3) =123456→ ᵗA (3, 2) =142536\n    ✗ carrée✗ symétrique (A = ᵗA)✗ diagonale✗ triangulaire supérieure✗ triangulaire inférieure✗ identité\n    Survole une ligne de A. \n    "
+},
+{
+"type": "text",
+"title": "Cours : Gauss-Jordan",
+"text": "\n      R1.07 · Gauss-Jordan : inverser une matrice\n      Devoir 2 mardi 8/12, 8 h 30 : Gauss-Jordan (chap. 2 § 4), dérivation (chap. 3), polynômes (chap. 4). Seule la calculatrice est autorisée.✎ Modifier le cours⎙ Imprimer\n      1Rappels de la méthode du pivot\n      \n        Opérations élémentaires (on obtient un système équivalent) : échanger deux lignes ; multiplier une ligne par une constante non nulle ; ajouter à une ligne une combinaison des autres (L2 ← L2 − 2L1).\n        Échelonné : le nombre de zéros en début de ligne augmente strictement d'une ligne à l'autre. Les pivots sont les premiers coefficients non nuls.\n        Trois issues : une ligne « 0 = b » avec b ≠ 0 → S = ∅ ; autant d'inconnues principales que d'inconnues → solution unique ; des inconnues secondaires → infinité de solutions (on ne fixe jamais la valeur d'un paramètre). Une ligne « 0 = 0 » se supprime.\n        Écriture matricielle : le système s'écrit AX = B. Si A est inversible, X = A−1B.\n      \n      x + 2y − z = 1, 2x + 3y + z = 2, x + 4y − 6z = 2 : L2 ← L2 − 2L1, L3 ← L3 − L1, puis L3 ← L3 + 2L2 → z = 1, y = 3, x = −4 : S = {(−4, 3, 1)}.2x + y + z = 3, x − y + 3z = 8, x + 2y − z = −3 → S = {(1, −1, 2)}. Avec en plus x + y + 2z = −1 : 1 − 1 + 4 = 4 ≠ −1, donc plus de solution.\n\n      2La méthode de Gauss-Jordan\n      On écrit le bloc (A | In) et on fait des opérations sur les lignes entières (les deux blocs) jusqu'à obtenir (In | A−1).\n      \n        Descente : des 0 sous la diagonale (comme le pivot).\n        Remontée : des 0 au-dessus des pivots, en partant de la dernière ligne.\n        Normalisation : diviser chaque ligne par son pivot pour avoir des 1 (souvent oublié).\n      \n      \n        Si une ligne du bloc de gauche devient entièrement nulle, A n'est pas inversible : on s'arrête.\n        Une matrice avec une ligne (ou une colonne) nulle n'est jamais inversible.\n        Toujours vérifier A × A−1 = I à la calculatrice.\n      \n      Cas 2 × 2 : A = abcd est inversible ⇔ ad − bc ≠ 0, et A−1 = 1/(ad − bc) × d−b−ca. Exemple (DM1) : 3547 : ad − bc = 21 − 20 = 1, donc A−1 = 7−5−43.\n\n      3Exemple 4.1 du cours\n      A = 214−101413\n      Départ (A | I₃)214100−101010413001\n      L2 ← 2L2 + L1 ; L3 ← L3 − 2L12141000161200−1−5−201\n      L3 ← L3 + L2214100016120001−121\n      L1 ← L1 − 4L3 ; L2 ← L2 − 6L32105−8−40107−10−6001−121\n      L1 ← L1 − L2, puis L1 ← ½ L1100−1110107−10−6001−121\n      A−1 = −1117−10−6−121 (vérifié : A × A−1 = I3).\n\n      4DM1 : inverser puis résoudre\n      x − 2y − 5z = 24, x − y − 3z = 16, −y − z = 3, donc A = 1−2−51−1−30−1−1.\n      L2 ← L2 − L11−2−5100012−1100−1−1001\n      L1 ← L1 + 2L2 ; L3 ← L3 + L210−1−120012−110001−111\n      L1 ← L1 + L3 ; L2 ← L2 − 2L3100−2310101−1−2001−111\n      A−1 = −2311−1−2−111, puis X = A−1B = A−1 × 24163 = 32−5 : S = {(3, 2, −5)}.\n\n      5Feuille 2, exercice 7 (pivot non égal à 1)\n      B = 101011110\n      L3 ← L3 − L1, puis L3 ← L3 − L210110001101000−2−1−11\n      L3 ← −½ L3101100011010001½½−½\n      L1 ← L1 − L3 ; L2 ← L2 − L3100½−½½010−½½½001½½−½\n      B−1 = ½ × 1−11−11111−1 (det B = −2).\n\n      6Feuille 2, exercice 8 : échange de lignes et P(A) = 0\n      A = 253132122\n      L1 ↔ L2132010253100122001\n      L2 ← L2 − 2L1 ; L3 ← L3 − L11320100−1−11−200−100−11\n      L3 ← L3 − L21320100−1−11−20001−111\n      L2 ← L2 + L3 ; L1 ← L1 − 2L31302−1−20−100−11001−111\n      L2 ← −L2 ; L1 ← L1 − 3L21002−4101001−1001−111\n      A−1 = 2−4101−1−111 (det A = 1).Autre méthode : A² = 1231227181361511 et A³ − 7A² + 4A − I3 = 0. Donc A(A² − 7A + 4I3) = I3 et A−1 = A² − 7A + 4I3.\n      Si P(A) = 0 avec un terme constant non nul : on isole I, on factorise par A, et ce qui reste est A−1.\n      Q3 (ateliers) : les données sont données par article, pas par atelier. Le système 2x + y + z = 48, 5x + 3y + 2z = 118, 3x + 2y + 2z = 81 a pour matrice ᵗA, et (ᵗA)−1 = ᵗ(A−1). Solution x = 15, y = 7, z = 11. Coût : 25 × 48 + 22 × 118 + 23 × 81 = 5 659 €.\n      Pièges : appliquer l'opération au seul bloc de gauche ; oublier la normalisation ; multiplier une ligne par 0 ; écrire « L2 ← L1 + … » (qui remplace L2 par autre chose) au lieu de « L2 ← 2L2 + L1 » ; erreurs de signe dans la remontée.\n    "
+},
+{
+"type": "text",
+"title": "Cours : Dérivation",
+"text": "\n      R1.07 · Chapitre 3 : dérivation\n      Devoir 2 mardi 8/12 : calculatrice seule autorisée. Toujours commencer par l'ensemble de définition.✎ Modifier le cours⎙ Imprimer\n      1Nombre dérivé et tangente\n      \n        f est dérivable en x₀ si le taux d'accroissement (f(x) − f(x₀)) / (x − x₀) a une limite finie quand x → x₀ : c'est f′(x₀).\n        f′(x₀) est le coefficient directeur de la tangente en (x₀, f(x₀)).\n        Dérivable ⇒ continue. La réciproque est fausse : |x| est continue en 0 mais pas dérivable (taux → 1 à droite, −1 à gauche) ; √x n'est pas dérivable en 0 (taux → +∞).\n      \n      Tangente en x₀ : y = f(x₀) + f′(x₀)(x − x₀).\n      2Dérivées usuelles\n      \n        f(x)f′(x)f(x)f′(x)\n        a (constante)0xⁿn xⁿ⁻¹\n        1/x−1/x²1/xⁿ−n/xⁿ⁺¹\n        √x1/(2√x), x > 0xʳr xʳ⁻¹\n        sin xcos xcos x−sin x\n        tan x1/cos²x = 1 + tan²xeˣeˣ\n        ln x1/x, x > 0ln|x|1/x, x ≠ 0\n      \n      3Règles de calcul\n      \n        (uv)′u′v + uv′\n        (u/v)′(u′v − uv′) / v² (l'ordre compte)\n        (1/u)′−u′ / u²\n        (g∘f)′(x)g′(f(x)) × f′(x)\n        (uʳ)′r uʳ⁻¹ u′\n        (√u)′u′ / (2√u)\n        (eᵘ)′u′ eᵘ\n        (ln|u|)′u′ / u\n        (sin u)′, (cos u)′u′ cos u, −u′ sin u\n      \n      Astuce : aᵘ = e^(u ln a) et xˣ = e^(x ln x), donc (xˣ)′ = (ln x + 1)xˣ.\n      Ensemble de définition : sous une racine ≥ 0 (dérivable seulement si > 0) ; dénominateur ≠ 0 ; dans ln : > 0. Ne pas oublier u′ dans une composée (eᵘ, uⁿ, √u).\n      4Variations et extremums\n      \n        Sur un intervalle : f′ ≥ 0 ⇔ f croissante ; f′ ≤ 0 ⇔ f décroissante ; f′ = 0 ⇔ f constante.\n        Extremum local en x₀ (intervalle ouvert) ⇒ f′(x₀) = 0. La réciproque est fausse : x³ en 0. Il faut que f′ change de signe : + puis − → maximum local ; − puis + → minimum local.\n        Local ≠ global : regarder les limites aux bornes avant de dire « global ».\n        Signe de ax² + bx + c : signe de a à l'extérieur des racines, signe contraire entre. Δ = b² − 4ac, x = (−b ± √Δ)/(2a).\n        À l'infini, un polynôme se comporte comme son terme de plus haut degré, une fraction rationnelle comme le quotient des termes de plus haut degré.\n      \n      f(x) = x³ − 3x : f′(x) = 3(x − 1)(x + 1). Maximum local f(−1) = 2, minimum local f(1) = −2, pas d'extremum global (limites −∞ et +∞).f(x) = x³ − 6x² + 9x + 1 : f′(x) = 3(x − 1)(x − 3). Croissante sur ]−∞, 1], décroissante sur [1, 3], croissante sur [3, +∞[. Max local f(1) = 5, min local f(3) = 1, non globaux.\n      5Exercices corrigés (feuille 3)\n      \n        FonctionDomaineDérivée\n        x³ + 3x² − 4x + 11ℝ3x² + 6x − 4\n        √(3x − 2)[2/3, +∞[, dérivable sur ]2/3, +∞[3 / (2√(3x − 2))\n        √(3x² − 4x + 1)]−∞, 1/3] ∪ [1, +∞[(3x − 2) / √(3x² − 4x + 1)\n        12 / (4x² − 9)ℝ \\ {−3/2, 3/2}−96x / (4x² − 9)²\n        (4x + 1) / (2x − 5)ℝ \\ {5/2}−22 / (2x − 5)²\n        (x² + 3x + 1) / (2x − 5)ℝ \\ {5/2}(2x² − 10x − 17) / (2x − 5)²\n        ((2x − 1) / (x + 1))³ℝ \\ {−1}9(2x − 1)² / (x + 1)⁴\n        (√x + 1)²[0, +∞[, dérivable sur ]0, +∞[1 + 1/√x\n        e^(5x²)ℝ10x e^(5x²)\n        e^(sin x)ℝcos x e^(sin x)\n      \n      Ex. 5 : f(x) = (x² − 12x + 27)/(x² − 4x + 5), D = ℝ (x² − 4x + 5 = (x − 2)² + 1 > 0). f′(x) = 4(2x² − 11x + 12)/(x² − 4x + 5)², racines 3/2 et 4. Max global f(3/2) = 9, min global f(4) = −1, asymptote y = 1. Tangente en 3 : f(3) = 0, f′(3) = −3 → y = −3x + 9.\n      Ex. 6 : U(x) = x − 10 + 900/x sur [10, 100], U′(x) = (x − 30)(x + 30)/x², minimum U(30) = 50. B(x) = x(100 − U(x)) = −x² + 110x − 900, maximum B(55) = 2 125 € : le bénéfice maximal n'est pas au coût unitaire minimal.Ex. 7 et 8 (boîtes) : S(x) = 2x² + 4/x minimale en x = 1 (S = 6 dm², un cube) ; S(x) = 2x² + 32/x minimale en x = 2 (S = 24 m²).\n      Pièges : (u/v)′ avec le signe dans le mauvais ordre ; conclure « extremum » seulement parce que f′(x₀) = 0 ; dire « global » sans les limites ; confondre le signe de f′ (variations) et le signe de f.\n    "
+},
+{
+"type": "text",
+"title": "Cours : Polynômes",
+"text": "\n      R1.07 · Chapitre 4 : polynômes\n      Degré, opérations, division euclidienne, racines et factorisation.✎ Modifier le cours⎙ Imprimer\n      1Degré et coefficients\n      \n        P(x) = aₙxⁿ + … + a₁x + a₀ avec aₙ ≠ 0 est de degré n. Une constante non nulle est de degré 0 ; le polynôme nul est de degré −∞.\n        Développer avant de lire le degré : x² + 2x + 3 − (x − 1)² = 4x + 2 est de degré 1.\n        Les coefficients déterminent le polynôme : (1, −5, 0, 4) ↔ x³ − 5x² + 4 (ne pas oublier les coefficients nuls).\n        deg(P × Q) = deg P + deg Q ; deg(P + Q) ≤ max(deg P, deg Q) (deux degrés 4 peuvent donner un degré 3).\n      \n      (2 + 3x − 5x² + 2x⁴) + (−1 + 2x − 4x² + 6x³ + x⁴ + 3x⁵) = 1 + 5x − 9x² + 6x³ + 3x⁴ + 3x⁵.(5 + 2x + 3x³ + 2x⁴)(1 + 7x + 5x² + 6x³) = 5 + 37x + 39x² + 43x³ + 35x⁴ + 29x⁵ + 28x⁶ + 12x⁷.\n      2Division euclidienne\n      Pour B ≠ 0 : il existe un unique couple (Q, R) tel que A = BQ + R avec deg R < deg B.\n      \n        Diviser le terme de plus haut degré de A par celui de B : premier terme de Q.\n        Multiplier B par ce terme, soustraire de A.\n        Recommencer avec le reste, jusqu'à deg(reste) < deg B.\n      \n      x⁵ + 2x⁴ − x³ + 22x = (x² − 4x + 1)(x³ + 6x² + 22x + 82) + 328x − 82.B = 2x³ − 3x + 1 divisé par A = −x² + 3x + 5 : Q = −2x − 6, R = 25x + 31. A ÷ B : Q = 0, R = A (deg A < deg B).\n      Écrire les termes nuls (0x²…) pour aligner les colonnes ; attention aux signes en soustrayant ; s'arrêter dès que deg R < deg B.\n      3Racines et factorisation\n      \n        α est racine de P ⇔ P(α) = 0 ⇔ P(x) = (x − α)Q(x) avec deg Q = n − 1 ⇔ le reste de la division par x − α est nul.\n        Pour trouver Q : division euclidienne, ou identification de (x − α)(ax² + bx + c).\n        Un polynôme de degré n a au plus n racines ; un degré impair a au moins une racine réelle.\n        Racines évidentes à tester : 0, 1, −1, 2, −2.\n      \n      x³ − 2x² − 5x + 6 : P(1) = 0, P = (x − 1)(x² − x − 6) = (x − 1)(x + 2)(x − 3).6x³ + 7x² − 9x + 2 : P(−2) = −48 + 28 + 18 + 2 = 0, P = (x + 2)(6x² − 5x + 1) = (x + 2)(2x − 1)(3x − 1), racines −2, 1/2, 1/3.x⁴ − 2x³ + 2x² − 2x + 1 = (x − 1)²(x² + 1) : seule racine réelle 1 (double).\n      Racine α ↔ facteur (x − α), pas (x + α). Penser à refactoriser le quotient.\n    "
+},
+{
+"type": "text",
+"title": "Cours : Pivot",
+"text": "\n      R1.07 · Chapitre 2 : méthode du pivot\n      1Systèmes linéaires✎ Modifier le cours⎙ Imprimer\n      \n        n équations, p inconnues. Homogène si tous les seconds membres sont nuls.\n        Opérations élémentaires (donnent un système équivalent) : échanger deux équations, multiplier une équation par une constante non nulle, ajouter à une équation une combinaison des autres (L2 ← L2 − 2L1).\n      \n      x + y = 3   L12x − y = 0   L2L2 ← L2 − 2L1 : −3y = −6, donc y = 2, puis x = 3 − 2 = 1. S = {(1, 2)}.Homogène : x + 2y = 03x − y = 0(0, 0) est toujours solution d'un système homogène.\n      2Échelonner\n      Un système est échelonné si le nombre de coefficients nuls en début d'équation augmente strictement d'une ligne à la suivante.\n      \n        Mettre en L1 une équation dont le premier coefficient est non nul : c'est le pivot.\n        Éliminer x des lignes suivantes avec L1 (Li ← Li − k L1, ou a·Li − b·L1 pour éviter les fractions).\n        Recommencer avec y à partir de L2, etc. Toujours écrire l'opération à droite de chaque ligne.\n      \n      Schéma interactifÉchelonner pas à pasÉcris la matrice augmentée (A | B) : une ligne par équation, les nombres séparés par des espaces, le second membre en dernier. Le module affiche chaque opération comme sur ta copie.Cours 1.8Cours 1.9 (4 inconnues)Incompatible (3.2)Exercice 3\n  1 2 -1 1\n2 3 1 2\n1 4 -6 2Système de départx + 2y − z = 12x + 3y + z = 2x + 4y − 6z = 2Pivot 1 (inconnue x) : L2 ← L2 − 2L1, L3 ← L3 − L1x + 2y − z = 1−y + 3z = 02y − 5z = 1Pivot −1 (inconnue y) : L3 ← L3 + 2L2x + 2y − z = 1−y + 3z = 0z = 1Autant de pivots que d'inconnues : solution unique (on remonte de la dernière ligne) : S = {(−4, 3, 1)}.\n      x + y + z = 6   L12x + 3y + z = 11   L2x − y + 2z = 5   L3x + y + z = 6y − z = −1   L2 ← L2 − 2L1−2y + z = −1   L3 ← L3 − L1x + y + z = 6y − z = −1−z = −3   L3 ← L3 + 2L2Échelonné : 3 pivots pour 3 inconnues. On remonte : z = 3, y = −1 + z = 2, x = 6 − y − z = 1. S = {(1, 2, 3)}. Vérification dans L2 : 2 + 6 + 3 = 11.\n      3Lire le résultat\n      \n        Ce qu'on obtientConclusion\n        une ligne 0 = b avec b ≠ 0système incompatible, S = ∅\n        une ligne 0 = 0on la supprime\n        autant de pivots que d'inconnuessolution unique, on remonte de la dernière ligne à la première\n        moins de pivots que d'inconnuesinfinité de solutions, à k paramètres (k = nb d'inconnues secondaires)\n      \n      \n        Inconnues principales : celles en tête des équations échelonnées (sous un pivot). Secondaires (variables libres) : toutes les autres, elles servent de paramètres.\n        On passe les secondaires à droite, on exprime les principales en fonction d'elles, et on ne leur donne aucune valeur. Ex. S = {(4 − 2y + w, y, 1 + 2w, w) / y, w ∈ ℝ}.\n      \n      Incompatible : x + y = 12x + 2y = 3L2 ← L2 − 2L1 donne 0 = 1 : impossible, S = ∅.Infinité : x + 2y − z = 1y + z = 22 pivots (x, y) pour 3 inconnues : z est secondaire. y = 2 − z, puis x = 1 − 2y + z = 1 − 4 + 2z + z = −3 + 3z. S = {(−3 + 3z, 2 − z, z) / z ∈ ℝ}.\n      4Forme matricielle\n      Le système s'écrit AX = B : A matrice des coefficients, X vecteur colonne des inconnues, B vecteur des seconds membres. On échelonne la matrice augmentée (A | B) avec les mêmes opérations sur les lignes entières.\n      Gauss-Jordan (calcul de A−1 avec (A | In)) n'était pas au devoir 1 du 20/10, mais il est au programme du devoir 2 du 8/12 : voir l'onglet « Cours : Gauss-Jordan ».\n      Le système de la partie 2 s'écrit AX = B avec A = 1112311−12, X = xyz, B = 6115.Matrice augmentée (A | B) = 111| 6231| 111−12| 5, qu'on échelonne avec les mêmes opérations que le système.\n    "
+}
+]
 }

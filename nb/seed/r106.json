@@ -1,0 +1,1739 @@
+{
+"decks": [
+{
+"title": "Relations et divisibilité",
+"cards": [
+{
+"id": "cr106dbe873a63cf0",
+"q": "Une relation binaire de A vers B est…",
+"a": "une partie de A × B\n\nR ⊂ A × B : un ensemble de couples (x, y). C'est donc un élément de P(A × B).",
+"tag": "Chap. 3 · Définition"
+},
+{
+"id": "cr106f44a82df58f8",
+"q": "Combien y a-t-il de relations de A = {a, b} vers B = {1, 2} ?",
+"a": "16\n\nA × B a 2 × 2 = 4 couples ; une relation est une partie de A × B, il y en a 2⁴ = 16.",
+"tag": "Chap. 3 · Compter"
+},
+{
+"id": "cr106302d8d7fe132",
+"q": "Combien y a-t-il de relations dans E = {1, 2, 3} ?",
+"a": "512\n\nE × E a 3 × 3 = 9 couples, donc 2⁹ = 512 relations.",
+"tag": "Chap. 3 · Compter"
+},
+{
+"id": "cr1067e4d446ead7d",
+"q": "Parmi les 16 relations de {a, b} vers {1, 2}, combien sont des applications ?",
+"a": "4\n\nUne application associe à chaque élément de A un et un seul élément de B : 2 choix pour a, 2 pour b, soit 4.",
+"tag": "Chap. 3 · Compter"
+},
+{
+"id": "cr1063e4715fd58d8",
+"q": "Une table ADHERENT de base de données à 8 colonnes est une relation…",
+"a": "8-aire\n\nUne ligne est un 8-uplet : la table est une partie de A₁ × … × A₈, une relation d'arité 8.",
+"tag": "Chap. 3 · Définition"
+},
+{
+"id": "cr106ffd312b2725b",
+"q": "Sur le tableau cartésien d'une relation dans E, la réflexivité se voit…",
+"a": "à la diagonale entièrement cochée\n\nRéflexive : x R x pour tout x, donc toutes les cases (x, x) de la diagonale sont cochées.",
+"tag": "Chap. 3 · Propriétés"
+},
+{
+"id": "cr1063c3b732be442",
+"q": "R, relation dans E, est symétrique si…",
+"a": "x R y ⇒ y R x\n\nSymétrique : chaque flèche a sa flèche retour. Les autres définitions sont l'antisymétrie, la réflexivité et la transitivité.",
+"tag": "Chap. 3 · Propriétés"
+},
+{
+"id": "cr106f0c1e4d38d0a",
+"q": "Antisymétrique signifie…",
+"a": "(x R y et y R x) ⇒ x = y\n\nPas d'aller-retour entre deux éléments distincts. Les boucles x R x sont permises. « Non symétrique » n'est pas la même chose.",
+"tag": "Chap. 3 · Propriétés"
+},
+{
+"id": "cr106c114c45587cb",
+"q": "A = {1, 2, 3}, R = {(1,1), (1,2), (1,3), (3,3)}. R est…",
+"a": "transitive et antisymétrique, ni réflexive ni symétrique\n\nNon réflexive : 2 R 2 est faux. Non symétrique : 1 R 2 mais pas 2 R 1. Transitive : chaque triplet x R y, y R z donne x R z. Antisymétrique : aucun aller-retour entre éléments distincts. Pas un ordre car non réflexive.",
+"tag": "Chap. 3 · Propriétés"
+},
+{
+"id": "cr106ad45b3562bad",
+"q": "T = {(1,1), (1,2), (2,2), (2,3)} dans {1, 2, 3} n'est pas transitive. Quel contre-exemple ?",
+"a": "1 T 2 et 2 T 3, mais pas 1 T 3\n\nIl faut x T y et y T z vrais avec x T z faux : (1, 2, 3). « 3 T 3 faux » montre la non-réflexivité, « 1 T 2 sans 2 T 1 » la non-symétrie.",
+"tag": "Chap. 3 · Propriétés"
+},
+{
+"id": "cr106a94b6517457e",
+"q": "Pour montrer qu'une relation n'est pas transitive, il faut…",
+"a": "un seul contre-exemple\n\n« Non transitive » veut dire qu'il existe un triplet qui ne marche pas : un seul suffit. Pour prouver « transitive », il faut au contraire vérifier tous les triplets utiles.",
+"tag": "Chap. 3 · Propriétés"
+},
+{
+"id": "cr106b99354be3116",
+"q": "Une relation d'équivalence est…",
+"a": "réflexive, symétrique et transitive\n\nÉquivalence : R + S + T (« avoir le même … que »). Ordre : R + antisymétrique + T.",
+"tag": "Chap. 3 · Équivalence et ordre"
+},
+{
+"id": "cr106d34bd50e0d35",
+"q": "Une relation d'ordre est…",
+"a": "réflexive, antisymétrique et transitive\n\nOrdre = réflexive + antisymétrique + transitive. Il peut être partiel (⊂, divisibilité dans ℕ).",
+"tag": "Chap. 3 · Équivalence et ordre"
+},
+{
+"id": "cr10666d0ad771a4f",
+"q": "Les classes d'une relation d'équivalence sur E…",
+"a": "forment une partition de E\n\nPartition : classes non vides (x ∈ Cℓ(x)), disjointes deux à deux, et leur union est E.",
+"tag": "Chap. 3 · Équivalence et ordre"
+},
+{
+"id": "cr106a9db4395853a",
+"q": "Avec « être l'anagramme de », Cℓ(chien) = …",
+"a": "{chien, niche, Chine}\n\nLa classe contient chien lui-même (réflexivité) et tous ses anagrammes.",
+"tag": "Chap. 3 · Équivalence et ordre"
+},
+{
+"id": "cr106f498d8ed660d",
+"q": "Sur {1, …, 8}, x R y ⇔ xy est un carré parfait. Cℓ(2) = …",
+"a": "{2, 8}\n\n2 × 2 = 4 et 2 × 8 = 16 sont des carrés ; 2 × 4 = 8 et 2 × 1 = 2 non. Classes : {1, 4}, {2, 8}, {3}, {5}, {6}, {7}.",
+"tag": "Chap. 3 · Équivalence et ordre"
+},
+{
+"id": "cr106999b322e7a62",
+"q": "« divise » dans ℤ n'est pas une relation d'ordre, car…",
+"a": "elle n'est pas antisymétrique : 1 | −1 et −1 | 1\n\nRéflexive et transitive, mais 1 | −1 et −1 | 1 avec 1 ≠ −1. Dans ℕ, elle est antisymétrique : c'est un ordre (partiel).",
+"tag": "Chap. 3 · Équivalence et ordre"
+},
+{
+"id": "cr10609c6431f9aaa",
+"q": "L'inclusion ⊂ dans P(X), avec X = {a, b}, est un ordre…",
+"a": "partiel\n\n{a} et {b} ne sont pas comparables (aucun n'est inclus dans l'autre) : ordre partiel.",
+"tag": "Chap. 3 · Équivalence et ordre"
+},
+{
+"id": "cr106350b4bd00eb6",
+"q": "< dans ℝ n'est pas une relation d'ordre au sens du cours, car…",
+"a": "elle n'est pas réflexive\n\nx < x est faux : pas réflexive. ≤ est l'ordre (total) de ℝ.",
+"tag": "Chap. 3 · Équivalence et ordre"
+},
+{
+"id": "cr106a3dc29167cef",
+"q": "L'égalité dans un ensemble E est…",
+"a": "à la fois une équivalence et un ordre\n\nElle est réflexive, symétrique, antisymétrique et transitive : les deux à la fois (ordre partiel dès que E a 2 éléments).",
+"tag": "Chap. 3 · Équivalence et ordre"
+},
+{
+"id": "cr1069009f1b0e84f",
+"q": "Division euclidienne de a par b (b ≠ 0) : a = bq + r avec…",
+"a": "0 ≤ r < |b|\n\nLe reste est positif ou nul et strictement plus petit que |b|. C'est ce qui rend (q, r) unique.",
+"tag": "Chap. 4 · Division euclidienne"
+},
+{
+"id": "cr10691e67918fd35",
+"q": "Division euclidienne de −35 par 12 :",
+"a": "−35 = 12 × (−3) + 1\n\nLe reste doit être entre 0 et 11. 12 × (−3) = −36 et −35 − (−36) = 1. La 2ᵉ écriture est juste mais le reste −11 est interdit.",
+"tag": "Chap. 4 · Division euclidienne"
+},
+{
+"id": "cr106e3514bf9021b",
+"q": "Division euclidienne de 35 par −12 :",
+"a": "35 = (−12) × (−2) + 11\n\nb = −12, |b| = 12 : on veut 0 ≤ r < 12. (−12) × (−2) = 24 et 35 − 24 = 11.",
+"tag": "Chap. 4 · Division euclidienne"
+},
+{
+"id": "cr10667916918a6a0",
+"q": "Quel est le reste de −2013 dans la division euclidienne par 7 ?",
+"a": "3\n\n2013 = 7 × 287 + 4, donc −2013 = 7 × (−287) − 4 : reste négatif interdit. On descend : 7 × (−288) = −2016 et −2013 + 2016 = 3.",
+"tag": "Chap. 4 · Division euclidienne"
+},
+{
+"id": "cr106dad0eec98cd6",
+"q": "Division euclidienne de 12 par 35 :",
+"a": "q = 0 et r = 12\n\n12 = 35 × 0 + 12 et 0 ≤ 12 < 35. De même −7 = 2013 × (−1) + 2006.",
+"tag": "Chap. 4 · Division euclidienne"
+},
+{
+"id": "cr10604e5c507a99a",
+"q": "Comment écrit-on « 3 divise 12 » ?",
+"a": "3 | 12\n\nb | a se lit « b divise a ». On n'écrit jamais une fraction pour dire « divise ».",
+"tag": "Chap. 4 · Divisibilité"
+},
+{
+"id": "cr106cd29f7e95385",
+"q": "Laquelle de ces affirmations est fausse ?",
+"a": "0 divise 5\n\n0 | n seulement si n = 0 (il faudrait 5 = 0 × k). En revanche n | 0 (0 = n × 0), 1 | n et n | n sont toujours vrais.",
+"tag": "Chap. 4 · Divisibilité"
+},
+{
+"id": "cr1064204a92d30ea",
+"q": "a = 2n + 7 et b = n + 1. Tout diviseur commun de a et b divise…",
+"a": "5\n\nLinéarité : d | a et d | b ⇒ d | a − 2b = 2n + 7 − 2n − 2 = 5. Donc d ∈ {−5, −1, 1, 5}.",
+"tag": "Chap. 4 · Divisibilité"
+},
+{
+"id": "cr106d5aa9886e175",
+"q": "Si b | a avec a ≠ 0, alors…",
+"a": "1 ≤ |b| ≤ |a|\n\nLes valeurs absolues sont ordonnées, pas forcément les nombres : 5 | −10 alors que 5 > −10.",
+"tag": "Chap. 4 · Divisibilité"
+},
+{
+"id": "cr106206b3b8b82d0",
+"q": "Lequel de ces nombres est premier ?",
+"a": "29\n\n29 n'est divisible ni par 2, 3 ni 5 (5² > 29 suffit). 1 n'est pas premier, 21 = 3 × 7, 51 = 3 × 17.",
+"tag": "Chap. 4 · Nombres premiers"
+},
+{
+"id": "cr1064bcf98500038",
+"q": "0 et 1 sont-ils premiers ?",
+"a": "Aucun des deux\n\nUn premier a exactement deux diviseurs dans ℕ. 1 n'en a qu'un, 0 en a une infinité.",
+"tag": "Chap. 4 · Nombres premiers"
+},
+{
+"id": "cr106662686878bce",
+"q": "Quelle est la décomposition en facteurs premiers de 24 ?",
+"a": "2³ × 3\n\n24 = 2 × 12 = 2 × 2 × 6 = 2 × 2 × 2 × 3. 6 et 4 ne sont pas premiers : les autres écritures ne sont pas des décompositions en facteurs premiers.",
+"tag": "Chap. 4 · Décomposition"
+},
+{
+"id": "cr106099e3352574a",
+"q": "Combien de diviseurs positifs a 150 = 2 × 3 × 5² ?",
+"a": "12\n\n(1 + 1)(1 + 1)(2 + 1) = 12.",
+"tag": "Chap. 4 · Nombre de diviseurs"
+},
+{
+"id": "cr106d0aef5ead71a",
+"q": "Nombre de diviseurs positifs de p₁^α₁ × … × p_r^α_r :",
+"a": "(1 + α₁)(1 + α₂)…(1 + α_r)\n\nUn diviseur est p₁^β₁ × … × p_r^β_r avec 0 ≤ βᵢ ≤ αᵢ : (1 + αᵢ) choix pour chaque exposant.",
+"tag": "Chap. 4 · Nombre de diviseurs"
+},
+{
+"id": "cr10636c945d4fc18",
+"q": "Combien de diviseurs positifs a 21⁵ ?",
+"a": "36\n\n21 n'est pas premier : 21⁵ = 3⁵ × 7⁵, donc (5 + 1)(5 + 1) = 36. Le piège donne 6.",
+"tag": "Chap. 4 · Nombre de diviseurs"
+},
+{
+"id": "cr106df0770b2db3d",
+"q": "D(24) = …",
+"a": "{1, 2, 3, 4, 6, 8, 12, 24}\n\n24 = 2³ × 3 : (1 + 2 + 4 + 8)(1 + 3) développé donne 8 diviseurs, 1 et 24 compris.",
+"tag": "Chap. 4 · Liste des diviseurs"
+},
+{
+"id": "cr1067fe9ea7e0e72",
+"q": "8 400 = 2⁴ × 3 × 5² × 7. Est-ce un multiple de 120 = 2³ × 3 × 5 ?",
+"a": "Oui : chaque facteur de 120 y est, avec un exposant au moins aussi grand\n\n2⁴ ≥ 2³, 3 ≥ 3, 5² ≥ 5 : 8 400 = 120 × 70. Le 7 en plus ne gêne pas.",
+"tag": "Chap. 4 · Décomposition"
+},
+{
+"id": "cr106103ba50f67bd",
+"q": "966 = 23 × 42. On peut en déduire…",
+"a": "23 | 966 et 42 | 966\n\na = kb ⇒ b | a : ici 966 = 23 × 42, donc 23 et 42 divisent 966.",
+"tag": "Chap. 4 · Divisibilité"
+},
+{
+"id": "cr106cdfd6e0b532a",
+"q": "Combien de diviseurs a 6 dans ℤ ?",
+"a": "8\n\nD(6) = {1, 2, 3, 6} dans ℕ ; dans ℤ on ajoute les opposés : {−6, −3, −2, −1, 1, 2, 3, 6}, soit 8.",
+"tag": "Chap. 4 · Liste des diviseurs"
+}
+]
+},
+{
+"title": "Logique",
+"cards": [
+{
+"id": "cr106377fd569971e",
+"q": "Lequel de ces énoncés n'est PAS une proposition ?",
+"a": "Quelle heure est-il ?\n\nUne proposition peut être vraie ou fausse. Une question ou un ordre ne l'est pas. « 2 + 2 = 5 » est une proposition (fausse).",
+"tag": "Chapitre 1"
+},
+{
+"id": "cr106bec25675775e",
+"q": "Pour quelle interprétation p → q est-elle fausse ?",
+"a": "p = V, q = F\n\nL'implication n'est fausse que dans un seul cas : p vrai et q faux.",
+"tag": "Chapitre 1"
+},
+{
+"id": "cr106745e9cdc76ff",
+"q": "p ↔ q est vraie quand…",
+"a": "p et q ont la même valeur de vérité\n\nLa biconditionnelle vaut V quand p et q sont toutes deux V ou toutes deux F.",
+"tag": "Chapitre 1"
+},
+{
+"id": "cr10654e5d4f408cb",
+"q": "Quelle est la contraposée de p → q ?",
+"a": "¬q → ¬p\n\nContraposée : ¬q → ¬p. Elle est équivalente à p → q. (q → p est la réciproque.)",
+"tag": "Chapitre 1"
+},
+{
+"id": "cr106a34c997da8f6",
+"q": "Quelle est la réciproque de p → q ?",
+"a": "q → p\n\nRéciproque : q → p. Elle n'est PAS équivalente à p → q (i3 : p=F, q=V est un modèle de p→q mais un contre-exemple de q→p).",
+"tag": "Chapitre 1"
+},
+{
+"id": "cr10697f9f8981600",
+"q": "Quelle formule est équivalente à p → q ?",
+"a": "¬p ∨ q\n\np → q éq ¬p ∨ q (même table : seule la ligne V,F donne F). À retenir (TD1 ex. 6).",
+"tag": "Chapitre 1"
+},
+{
+"id": "cr106326d7ba1357e",
+"q": "Loi de Morgan : ¬(p ∧ q) éq …",
+"a": "¬p ∨ ¬q\n\n¬(p ∧ q) éq ¬p ∨ ¬q : la négation transforme le ET en OU.",
+"tag": "Chapitre 1"
+},
+{
+"id": "cr106f3c81ca13f04",
+"q": "Loi de Morgan : ¬(p ∨ q) éq …",
+"a": "¬p ∧ ¬q\n\n¬(p ∨ q) éq ¬p ∧ ¬q (« ni p ni q »).",
+"tag": "Chapitre 1"
+},
+{
+"id": "cr1062871a145772c",
+"q": "Nature de p ∨ ¬p ?",
+"a": "Tautologie\n\nElle vaut V pour p = V et pour p = F : que des modèles.",
+"tag": "Chapitre 1"
+},
+{
+"id": "cr1061909c90fb229",
+"q": "Nature de p ∧ ¬p ?",
+"a": "Contradiction\n\nAucun modèle : c'est une contradiction, notée p ∧ ¬p ⊨.",
+"tag": "Chapitre 1"
+},
+{
+"id": "cr10663a9ec78d81d",
+"q": "Nature de (p ∧ q) → p ?",
+"a": "Tautologie\n\nPour être F il faudrait p ∧ q = V et p = F, impossible. C'est une tautologie.",
+"tag": "Chapitre 1"
+},
+{
+"id": "cr106f9526bea6522",
+"q": "Nature de p → q ?",
+"a": "Contingente\n\ni1 (V,V) est un modèle et i2 (V,F) un contre-exemple : formule contingente.",
+"tag": "Chapitre 1"
+},
+{
+"id": "cr106174973952858",
+"q": "« Il réussira seulement s'il travaille. » (p : il réussit, q : il travaille)",
+"a": "p → q\n\n« p seulement si q » se traduit par p → q (TD1 ex. 10.5).",
+"tag": "Chapitre 1"
+},
+{
+"id": "cr106a694295fac5d",
+"q": "« Il ralentit s'il freine. » (p : il ralentit, q : il freine)",
+"a": "q → p\n\n« p si q » = « si q alors p » : q → p.",
+"tag": "Chapitre 1"
+},
+{
+"id": "cr1060be2b0d0908f",
+"q": "« Pour penser, il faut être. » (p : penser, q : être)",
+"a": "p → q\n\n« Pour p il faut q » : q est une condition nécessaire de p, donc p → q.",
+"tag": "Chapitre 1"
+},
+{
+"id": "cr106661b84e68410",
+"q": "« Il suffit que je chante pour qu'il pleuve. » (p : je chante, q : il pleut)",
+"a": "p → q\n\nCondition suffisante à gauche de la flèche : p → q.",
+"tag": "Chapitre 1"
+},
+{
+"id": "cr106df8516c97907",
+"q": "« Pour qu'il vienne, il suffit que je l'appelle. » (p : il vient, q : je l'appelle)",
+"a": "q → p\n\nLa condition suffisante est « je l'appelle » (q) : q → p.",
+"tag": "Chapitre 1"
+},
+{
+"id": "cr106be211c57b0a0",
+"q": "« Je viendrai sauf s'il est là. » (p : je viens, q : il est là)",
+"a": "p ↔ ¬q\n\nConvention du cours (TD1 ex. 9.4 et 10.2) : « sauf si » / « à moins que » se traduit par p ↔ ¬q.",
+"tag": "Chapitre 1"
+},
+{
+"id": "cr106b45df8db51cd",
+"q": "« S'il pleut je joue aux cartes, sinon je me promène. » (p, q, r dans l'ordre)",
+"a": "(p → q) ∧ (¬p → r)\n\n« sinon » = « si non p alors r » : (p → q) ∧ (¬p → r).",
+"tag": "Chapitre 1"
+},
+{
+"id": "cr1066a0823d7bc9d",
+"q": "« Je suis riche mais je ne suis pas heureux. » (p : riche, q : heureux)",
+"a": "p ∧ ¬q\n\n« mais » se traduit par un ET : p ∧ ¬q.",
+"tag": "Chapitre 1"
+},
+{
+"id": "cr1068baa717e6265",
+"q": "Négation de « Elle lit ou se promène en forêt » :",
+"a": "Elle ne lit pas et ne se promène pas en forêt.\n\n¬(p ∨ q) éq ¬p ∧ ¬q : elle ne lit pas ET ne se promène pas.",
+"tag": "Chapitre 1"
+},
+{
+"id": "cr10659c8ba7ef700",
+"q": "Négation de « Les voitures de ce garage sont neuves et bien équipées » :",
+"a": "Elles ne sont pas neuves ou pas bien équipées.\n\n¬(p ∧ q) éq ¬p ∨ ¬q (exemple du polycopié).",
+"tag": "Chapitre 1"
+},
+{
+"id": "cr10610077db1bd3b",
+"q": "« Si son cheval chute, Marie sera disqualifiée. » Marie est disqualifiée. Son cheval a-t-il chuté ?",
+"a": "On ne peut pas conclure\n\nIl faudrait utiliser la réciproque (« si disqualifiée alors chute »), qui n'est pas équivalente à l'implication.",
+"tag": "Chapitre 1"
+},
+{
+"id": "cr1062552c3c8c2a2",
+"q": "« Si son cheval chute, Marie sera disqualifiée. » Marie n'est pas disqualifiée. Son cheval a-t-il chuté ?",
+"a": "Non\n\nLa contraposée « si elle n'est pas disqualifiée, son cheval n'a pas chuté » est équivalente à l'implication.",
+"tag": "Chapitre 1"
+},
+{
+"id": "cr106f424ff888b1f",
+"q": "Connecteur principal (le plus externe) de ((p ∨ r) → ¬q) ∨ r ?",
+"a": "∨ (celui de droite)\n\nLa formule est de la forme (…) ∨ r : on enlève d'abord ce ∨, puis le →, etc.",
+"tag": "Chapitre 1"
+},
+{
+"id": "cr106eb1e3e8b70c2",
+"q": "A éq B si et seulement si…",
+"a": "⊨ (A ↔ B)\n\nThéorème 10.1 : A éq B ⇔ A ↔ B est une tautologie, c'est-à-dire que A et B ont les mêmes modèles.",
+"tag": "Chapitre 1"
+},
+{
+"id": "cr1065c0af73a00eb",
+"q": "Un modèle d'une formule φ, c'est…",
+"a": "une interprétation où φ vaut V\n\nModèle : interprétation pour laquelle φ est interprétée à V. Contre-exemple : à F.",
+"tag": "Chapitre 1"
+},
+{
+"id": "cr106c6086ce6ffaf",
+"q": "La notation ⊨ φ signifie…",
+"a": "φ est une tautologie\n\n⊨ φ : φ est une tautologie. φ ⊨ : φ est une contradiction.",
+"tag": "Chapitre 1"
+},
+{
+"id": "cr1064e6d39e3546b",
+"q": "Avec les conventions du cours, que vaut l'interprétation i5 pour (p, q, r) ?",
+"a": "F V V\n\ni1 VVV, i2 VVF, i3 VFV, i4 VFF, i5 FVV, i6 FVF, i7 FFV, i8 FFF.",
+"tag": "Chapitre 1"
+},
+{
+"id": "cr106246d7867fa87",
+"q": "Valeur de (p ∨ q) → p pour p = F, q = V ?",
+"a": "Faux\n\np ∨ q = V et p = F, donc V → F = F. C'est un contre-exemple (exemple du cours, i3).",
+"tag": "Chapitre 1"
+},
+{
+"id": "cr1060ab0eeabebf7",
+"q": "Modèles de p → (q ∧ r) ?",
+"a": "{i1, i5, i6, i7, i8}\n\nSi p = V il faut q ∧ r = V (seulement i1). Si p = F l'implication est vraie (i5 à i8).",
+"tag": "Chapitre 1"
+},
+{
+"id": "cr1064e099577c6ee",
+"q": "Pour justifier qu'une formule est contingente, on donne…",
+"a": "un modèle et un contre-exemple\n\nUn contre-exemple prouve qu'elle n'est pas une tautologie, un modèle qu'elle n'est pas une contradiction.",
+"tag": "Chapitre 1"
+},
+{
+"id": "cr10639287c3e2127",
+"q": "Le « ou » du calcul des propositions (∨) est…",
+"a": "inclusif\n\n∨ est inclusif : p ∨ q est vrai si p, si q, ou si les deux sont vrais.",
+"tag": "Chapitre 1"
+},
+{
+"id": "cr1062ff41c599ceb",
+"q": "Négation de p → q ?",
+"a": "p ∧ ¬q\n\np → q éq ¬p ∨ q, donc sa négation est ¬(¬p ∨ q) éq p ∧ ¬q (Morgan).",
+"tag": "Chapitre 1"
+},
+{
+"id": "cr1066f8616531344",
+"q": "Négation de « Cette région n'est pas chaude ou est humide » :",
+"a": "Elle est chaude et n'est pas humide.\n\n¬(¬p ∨ q) éq ¬¬p ∧ ¬q éq p ∧ ¬q.",
+"tag": "Chapitre 1"
+},
+{
+"id": "cr106cf81d21f2ad1",
+"q": "« Il ira au cinéma seulement si le concert est annulé. » (p : cinéma, q : concert annulé)",
+"a": "p → q\n\n« seulement si » : p → q (exercices corrigés, ex. 3.1).",
+"tag": "Chapitre 1"
+},
+{
+"id": "cr106a112eafdf2a9",
+"q": "« Pour faire connaître ce restaurant, il suffit d'en faire de la publicité. » (p : connaître, q : publicité)",
+"a": "q → p\n\nLa condition suffisante (publicité, q) est à gauche : q → p.",
+"tag": "Chapitre 1"
+},
+{
+"id": "cr1065cd76c8af7e8",
+"q": "p ↔ q est équivalente à…",
+"a": "(p → q) ∧ (q → p)\n\nLa biconditionnelle, c'est l'implication dans les deux sens (TD1 ex. 6.3).",
+"tag": "Chapitre 1"
+}
+]
+},
+{
+"title": "Ensembles",
+"cards": [
+{
+"id": "cr106cd3dc8b6cffb",
+"q": "{∅}, c'est…",
+"a": "un singleton dont l'élément est ∅\n\n{∅} contient un élément (l'ensemble vide) : Card({∅}) = 1.",
+"tag": "Chapitre 2"
+},
+{
+"id": "cr106492585e49f07",
+"q": "A = {b, u, t}. Compléter : {u} … A",
+"a": "⊂\n\n{u} est un ensemble (une partie de A) : {u} ⊂ A.",
+"tag": "Chapitre 2"
+},
+{
+"id": "cr1063a876e157f4f",
+"q": "A = {b, u, t}. Compléter : {b, t} … P(A)",
+"a": "∈\n\n{b, t} est une partie de A, donc un élément de P(A) : {b, t} ∈ P(A).",
+"tag": "Chapitre 2"
+},
+{
+"id": "cr1061effb78d80bd",
+"q": "A = {b, u, t}. Compléter : b … A",
+"a": "∈\n\nb est un élément : b ∈ A.",
+"tag": "Chapitre 2"
+},
+{
+"id": "cr10630d69ba3457f",
+"q": "A = {b, u, t}. Compléter : {∅, {u, t}} … P(A)",
+"a": "⊂\n\n∅ et {u, t} sont deux éléments de P(A), donc l'ensemble qu'ils forment est inclus dans P(A).",
+"tag": "Chapitre 2"
+},
+{
+"id": "cr106e1cdbda92a81",
+"q": "Card(A ∪ B) = …",
+"a": "Card A + Card B − Card(A ∩ B)\n\nOn enlève une fois les éléments communs, comptés deux fois.",
+"tag": "Chapitre 2"
+},
+{
+"id": "cr106effa3d61f5a5",
+"q": "A et B sont disjoints signifie…",
+"a": "A ∩ B = ∅\n\nDisjoints : aucun élément commun. Ne pas confondre avec distincts (A ≠ B).",
+"tag": "Chapitre 2"
+},
+{
+"id": "cr1069e46bce99da9",
+"q": "Loi de Morgan : ∁E(A ∪ B) = …",
+"a": "Ā ∩ B̄\n\n∁(A ∪ B) = Ā ∩ B̄ : « ni dans A ni dans B ».",
+"tag": "Chapitre 2"
+},
+{
+"id": "cr106cbcd2d03e0db",
+"q": "A − B = …",
+"a": "A ∩ ∁E(B)\n\nÉléments de A qui ne sont pas dans B : A ∩ B̄.",
+"tag": "Chapitre 2"
+},
+{
+"id": "cr106bbd77802b7ea",
+"q": "A ∆ B = …",
+"a": "(A − B) ∪ (B − A)\n\nDifférence symétrique : dans A seulement ou dans B seulement.",
+"tag": "Chapitre 2"
+},
+{
+"id": "cr106d0a90a64db3d",
+"q": "Card(A ∆ B) = …",
+"a": "Card A + Card B − 2 Card(A ∩ B)\n\nCard(A − B) + Card(B − A) = Card A + Card B − 2 Card(A ∩ B).",
+"tag": "Chapitre 2"
+},
+{
+"id": "cr106ec4e01e598e5",
+"q": "Lequel est vrai (a ≠ b) ?",
+"a": "{a, b} = {b, a}\n\nDans un ensemble l'ordre ne compte pas, dans un couple si. Et a ≠ {a}.",
+"tag": "Chapitre 2"
+},
+{
+"id": "cr10611996e33e9c9",
+"q": "A₁, …, Aₙ forment une partition de E si…",
+"a": "elles sont non vides, disjointes deux à deux et de réunion E\n\nTrois conditions : aucune vide, disjointes deux à deux, réunion = E.",
+"tag": "Chapitre 2"
+},
+{
+"id": "cr106ff98d47a8a3d",
+"q": "Théorème de la double inclusion : A = B ⇔ …",
+"a": "A ⊂ B et B ⊂ A\n\nIl faut les deux inclusions.",
+"tag": "Chapitre 2"
+},
+{
+"id": "cr106c2d551f8bf78",
+"q": "Pour tout ensemble E, ∅ ⊂ E.",
+"a": "Vrai\n\nThéorème 2.3 : l'ensemble vide est une partie de tout ensemble, et E ⊂ E.",
+"tag": "Chapitre 2"
+},
+{
+"id": "cr106065ea8988ce7",
+"q": "Choisir une équipe de 11 joueurs parmi 21 : c'est…",
+"a": "une combinaison\n\nPas d'ordre, pas de répétition : combinaison C(21, 11).",
+"tag": "Chapitre 2"
+},
+{
+"id": "cr106f0013a69a234",
+"q": "A ∪ (A ∩ B) = …",
+"a": "A\n\nLoi d'absorption : A ∪ (A ∩ B) = A.",
+"tag": "Chapitre 2"
+},
+{
+"id": "cr106db390edd8c6c",
+"q": "P({a, b}) = …",
+"a": "{∅, {a}, {b}, {a, b}}\n\nToutes les parties : ∅, {a}, {b}, {a, b} (2² = 4).",
+"tag": "Chapitre 2"
+},
+{
+"id": "cr10682a72bfef7dc",
+"q": "X ∈ P(E) ⇔ …",
+"a": "X ⊂ E\n\nLes éléments de P(E) sont les parties de E.",
+"tag": "Chapitre 2"
+},
+{
+"id": "cr1062c15a0939a1b",
+"q": "Si Card(E) = 9 et Card(A) = 5 (A ⊂ E), Card(∁E(A)) = ?",
+"a": "4\n\nCard(∁E(A)) = Card E − Card A = 9 − 5 = 4.",
+"tag": "Chapitre 2"
+}
+]
+}
+],
+"quizzes": [
+{
+"title": "Relations et divisibilité · quiz 1",
+"questions": [
+{
+"q": "Une relation binaire de A vers B est…",
+"choices": [
+"un élément de A × B",
+"une application de A dans B",
+"une partie de A ∪ B",
+"une partie de A × B"
+],
+"answer": 3,
+"expl": "R ⊂ A × B : un ensemble de couples (x, y). C'est donc un élément de P(A × B)."
+},
+{
+"q": "Combien y a-t-il de relations de A = {a, b} vers B = {1, 2} ?",
+"choices": [
+"16",
+"4",
+"8",
+"2"
+],
+"answer": 0,
+"expl": "A × B a 2 × 2 = 4 couples ; une relation est une partie de A × B, il y en a 2⁴ = 16."
+},
+{
+"q": "Combien y a-t-il de relations dans E = {1, 2, 3} ?",
+"choices": [
+"8",
+"512",
+"9",
+"64"
+],
+"answer": 1,
+"expl": "E × E a 3 × 3 = 9 couples, donc 2⁹ = 512 relations."
+},
+{
+"q": "Parmi les 16 relations de {a, b} vers {1, 2}, combien sont des applications ?",
+"choices": [
+"2",
+"8",
+"16",
+"4"
+],
+"answer": 3,
+"expl": "Une application associe à chaque élément de A un et un seul élément de B : 2 choix pour a, 2 pour b, soit 4."
+},
+{
+"q": "Une table ADHERENT de base de données à 8 colonnes est une relation…",
+"choices": [
+"unaire",
+"à 8 couples",
+"8-aire",
+"binaire"
+],
+"answer": 2,
+"expl": "Une ligne est un 8-uplet : la table est une partie de A₁ × … × A₈, une relation d'arité 8."
+},
+{
+"q": "Sur le tableau cartésien d'une relation dans E, la réflexivité se voit…",
+"choices": [
+"au tableau symétrique par rapport à la diagonale",
+"à une diagonale vide",
+"à une seule croix par ligne",
+"à la diagonale entièrement cochée"
+],
+"answer": 3,
+"expl": "Réflexive : x R x pour tout x, donc toutes les cases (x, x) de la diagonale sont cochées."
+},
+{
+"q": "R, relation dans E, est symétrique si…",
+"choices": [
+"(x R y et y R z) ⇒ x R z",
+"x R y ⇒ y R x",
+"(x R y et y R x) ⇒ x = y",
+"x R x pour tout x"
+],
+"answer": 1,
+"expl": "Symétrique : chaque flèche a sa flèche retour. Les autres définitions sont l'antisymétrie, la réflexivité et la transitivité."
+},
+{
+"q": "Antisymétrique signifie…",
+"choices": [
+"x R y ⇒ y R x",
+"la relation n'est pas symétrique",
+"(x R y et y R x) ⇒ x = y",
+"x R y ⇒ non (y R x), même si x = y"
+],
+"answer": 2,
+"expl": "Pas d'aller-retour entre deux éléments distincts. Les boucles x R x sont permises. « Non symétrique » n'est pas la même chose."
+},
+{
+"q": "A = {1, 2, 3}, R = {(1,1), (1,2), (1,3), (3,3)}. R est…",
+"choices": [
+"symétrique et transitive",
+"une relation d'ordre",
+"transitive et antisymétrique, ni réflexive ni symétrique",
+"réflexive et transitive"
+],
+"answer": 2,
+"expl": "Non réflexive : 2 R 2 est faux. Non symétrique : 1 R 2 mais pas 2 R 1. Transitive : chaque triplet x R y, y R z donne x R z. Antisymétrique : aucun aller-retour entre éléments distincts. Pas un ordre car non réflexive."
+},
+{
+"q": "T = {(1,1), (1,2), (2,2), (2,3)} dans {1, 2, 3} n'est pas transitive. Quel contre-exemple ?",
+"choices": [
+"1 T 1 et 1 T 2 donnent 1 T 2",
+"1 T 2 et 2 T 3, mais pas 1 T 3",
+"3 T 3 est faux",
+"1 T 2 mais pas 2 T 1"
+],
+"answer": 1,
+"expl": "Il faut x T y et y T z vrais avec x T z faux : (1, 2, 3). « 3 T 3 faux » montre la non-réflexivité, « 1 T 2 sans 2 T 1 » la non-symétrie."
+},
+{
+"q": "Pour montrer qu'une relation n'est pas transitive, il faut…",
+"choices": [
+"au moins deux contre-exemples",
+"montrer qu'elle n'est pas symétrique",
+"un seul contre-exemple",
+"vérifier tous les triplets"
+],
+"answer": 2,
+"expl": "« Non transitive » veut dire qu'il existe un triplet qui ne marche pas : un seul suffit. Pour prouver « transitive », il faut au contraire vérifier tous les triplets utiles."
+},
+{
+"q": "Une relation d'équivalence est…",
+"choices": [
+"réflexive, symétrique et transitive",
+"réflexive, antisymétrique et transitive",
+"symétrique et antisymétrique",
+"réflexive et transitive seulement"
+],
+"answer": 0,
+"expl": "Équivalence : R + S + T (« avoir le même … que »). Ordre : R + antisymétrique + T."
+},
+{
+"q": "Une relation d'ordre est…",
+"choices": [
+"réflexive, symétrique et transitive",
+"antisymétrique et transitive seulement",
+"forcément totale",
+"réflexive, antisymétrique et transitive"
+],
+"answer": 3,
+"expl": "Ordre = réflexive + antisymétrique + transitive. Il peut être partiel (⊂, divisibilité dans ℕ)."
+},
+{
+"q": "Les classes d'une relation d'équivalence sur E…",
+"choices": [
+"ont toujours le même nombre d'éléments",
+"forment une partition de E",
+"peuvent se chevaucher",
+"peuvent être vides"
+],
+"answer": 1,
+"expl": "Partition : classes non vides (x ∈ Cℓ(x)), disjointes deux à deux, et leur union est E."
+},
+{
+"q": "Avec « être l'anagramme de », Cℓ(chien) = …",
+"choices": [
+"{chien, niche, Chine}",
+"{chien}",
+"{niche, Chine}",
+"tous les mots de 5 lettres"
+],
+"answer": 0,
+"expl": "La classe contient chien lui-même (réflexivité) et tous ses anagrammes."
+}
+]
+},
+{
+"title": "Relations et divisibilité · quiz 2",
+"questions": [
+{
+"q": "Sur {1, …, 8}, x R y ⇔ xy est un carré parfait. Cℓ(2) = …",
+"choices": [
+"{1, 2, 4, 8}",
+"{2, 8}",
+"{2, 4, 8}",
+"{2}"
+],
+"answer": 1,
+"expl": "2 × 2 = 4 et 2 × 8 = 16 sont des carrés ; 2 × 4 = 8 et 2 × 1 = 2 non. Classes : {1, 4}, {2, 8}, {3}, {5}, {6}, {7}."
+},
+{
+"q": "« divise » dans ℤ n'est pas une relation d'ordre, car…",
+"choices": [
+"elle n'est pas réflexive",
+"elle n'est pas transitive",
+"0 ne divise rien",
+"elle n'est pas antisymétrique : 1 | −1 et −1 | 1"
+],
+"answer": 3,
+"expl": "Réflexive et transitive, mais 1 | −1 et −1 | 1 avec 1 ≠ −1. Dans ℕ, elle est antisymétrique : c'est un ordre (partiel)."
+},
+{
+"q": "L'inclusion ⊂ dans P(X), avec X = {a, b}, est un ordre…",
+"choices": [
+"symétrique",
+"qui n'en est pas un",
+"partiel",
+"total"
+],
+"answer": 2,
+"expl": "{a} et {b} ne sont pas comparables (aucun n'est inclus dans l'autre) : ordre partiel."
+},
+{
+"q": "< dans ℝ n'est pas une relation d'ordre au sens du cours, car…",
+"choices": [
+"elle n'est pas réflexive",
+"elle n'est pas transitive",
+"elle n'est pas antisymétrique",
+"elle n'est pas totale"
+],
+"answer": 0,
+"expl": "x < x est faux : pas réflexive. ≤ est l'ordre (total) de ℝ."
+},
+{
+"q": "L'égalité dans un ensemble E est…",
+"choices": [
+"seulement une équivalence",
+"seulement un ordre",
+"ni une équivalence ni un ordre",
+"à la fois une équivalence et un ordre"
+],
+"answer": 3,
+"expl": "Elle est réflexive, symétrique, antisymétrique et transitive : les deux à la fois (ordre partiel dès que E a 2 éléments)."
+},
+{
+"q": "Division euclidienne de a par b (b ≠ 0) : a = bq + r avec…",
+"choices": [
+"0 ≤ r ≤ |b|",
+"−|b| < r < |b|",
+"0 < r < b",
+"0 ≤ r < |b|"
+],
+"answer": 3,
+"expl": "Le reste est positif ou nul et strictement plus petit que |b|. C'est ce qui rend (q, r) unique."
+},
+{
+"q": "Division euclidienne de −35 par 12 :",
+"choices": [
+"−35 = 12 × (−3) + 1",
+"−35 = 12 × (−2) − 11",
+"−35 = 12 × (−2) + 11",
+"−35 = 12 × 3 + 1"
+],
+"answer": 0,
+"expl": "Le reste doit être entre 0 et 11. 12 × (−3) = −36 et −35 − (−36) = 1. La 2ᵉ écriture est juste mais le reste −11 est interdit."
+},
+{
+"q": "Division euclidienne de 35 par −12 :",
+"choices": [
+"35 = (−12) × 3 + 71",
+"35 = 12 × 2 + 11",
+"35 = (−12) × (−2) + 11",
+"35 = (−12) × (−3) − 1"
+],
+"answer": 2,
+"expl": "b = −12, |b| = 12 : on veut 0 ≤ r < 12. (−12) × (−2) = 24 et 35 − 24 = 11."
+},
+{
+"q": "Quel est le reste de −2013 dans la division euclidienne par 7 ?",
+"choices": [
+"3",
+"4",
+"−4",
+"6"
+],
+"answer": 0,
+"expl": "2013 = 7 × 287 + 4, donc −2013 = 7 × (−287) − 4 : reste négatif interdit. On descend : 7 × (−288) = −2016 et −2013 + 2016 = 3."
+},
+{
+"q": "Division euclidienne de 12 par 35 :",
+"choices": [
+"q = 0 et r = 35",
+"q = 0 et r = 12",
+"q = 1 et r = −23",
+"impossible car 12 < 35"
+],
+"answer": 1,
+"expl": "12 = 35 × 0 + 12 et 0 ≤ 12 < 35. De même −7 = 2013 × (−1) + 2006."
+},
+{
+"q": "Comment écrit-on « 3 divise 12 » ?",
+"choices": [
+"12/3",
+"3 | 12",
+"12 | 3",
+"3/12"
+],
+"answer": 1,
+"expl": "b | a se lit « b divise a ». On n'écrit jamais une fraction pour dire « divise »."
+},
+{
+"q": "Laquelle de ces affirmations est fausse ?",
+"choices": [
+"0 divise 5",
+"5 divise 0",
+"1 divise 5",
+"5 divise 5"
+],
+"answer": 0,
+"expl": "0 | n seulement si n = 0 (il faudrait 5 = 0 × k). En revanche n | 0 (0 = n × 0), 1 | n et n | n sont toujours vrais."
+},
+{
+"q": "a = 2n + 7 et b = n + 1. Tout diviseur commun de a et b divise…",
+"choices": [
+"7",
+"n",
+"9",
+"5"
+],
+"answer": 3,
+"expl": "Linéarité : d | a et d | b ⇒ d | a − 2b = 2n + 7 − 2n − 2 = 5. Donc d ∈ {−5, −1, 1, 5}."
+},
+{
+"q": "Si b | a avec a ≠ 0, alors…",
+"choices": [
+"b < a",
+"|a| ≤ |b|",
+"1 ≤ |b| ≤ |a|",
+"b ≤ a"
+],
+"answer": 2,
+"expl": "Les valeurs absolues sont ordonnées, pas forcément les nombres : 5 | −10 alors que 5 > −10."
+},
+{
+"q": "Lequel de ces nombres est premier ?",
+"choices": [
+"21",
+"51",
+"29",
+"1"
+],
+"answer": 2,
+"expl": "29 n'est divisible ni par 2, 3 ni 5 (5² > 29 suffit). 1 n'est pas premier, 21 = 3 × 7, 51 = 3 × 17."
+}
+]
+},
+{
+"title": "Relations et divisibilité · quiz 3",
+"questions": [
+{
+"q": "0 et 1 sont-ils premiers ?",
+"choices": [
+"Les deux",
+"Seulement 1",
+"Seulement 0",
+"Aucun des deux"
+],
+"answer": 3,
+"expl": "Un premier a exactement deux diviseurs dans ℕ. 1 n'en a qu'un, 0 en a une infinité."
+},
+{
+"q": "Quelle est la décomposition en facteurs premiers de 24 ?",
+"choices": [
+"4 × 6",
+"2 × 3 × 4",
+"2³ × 3",
+"2² × 6"
+],
+"answer": 2,
+"expl": "24 = 2 × 12 = 2 × 2 × 6 = 2 × 2 × 2 × 3. 6 et 4 ne sont pas premiers : les autres écritures ne sont pas des décompositions en facteurs premiers."
+},
+{
+"q": "Combien de diviseurs positifs a 150 = 2 × 3 × 5² ?",
+"choices": [
+"12",
+"4",
+"8",
+"10"
+],
+"answer": 0,
+"expl": "(1 + 1)(1 + 1)(2 + 1) = 12."
+},
+{
+"q": "Nombre de diviseurs positifs de p₁^α₁ × … × p_r^α_r :",
+"choices": [
+"(1 + α₁)(1 + α₂)…(1 + α_r)",
+"α₁ × α₂ × … × α_r",
+"α₁ + α₂ + … + α_r",
+"2^r"
+],
+"answer": 0,
+"expl": "Un diviseur est p₁^β₁ × … × p_r^β_r avec 0 ≤ βᵢ ≤ αᵢ : (1 + αᵢ) choix pour chaque exposant."
+},
+{
+"q": "Combien de diviseurs positifs a 21⁵ ?",
+"choices": [
+"25",
+"36",
+"6",
+"10"
+],
+"answer": 1,
+"expl": "21 n'est pas premier : 21⁵ = 3⁵ × 7⁵, donc (5 + 1)(5 + 1) = 36. Le piège donne 6."
+},
+{
+"q": "D(24) = …",
+"choices": [
+"{1, 2, 3, 4, 6, 8, 12}",
+"{1, 2, 3, 4, 6, 12, 24}",
+"{1, 2, 3, 4, 6, 8, 12, 24}",
+"{2, 3, 4, 6, 8, 12}"
+],
+"answer": 2,
+"expl": "24 = 2³ × 3 : (1 + 2 + 4 + 8)(1 + 3) développé donne 8 diviseurs, 1 et 24 compris."
+},
+{
+"q": "8 400 = 2⁴ × 3 × 5² × 7. Est-ce un multiple de 120 = 2³ × 3 × 5 ?",
+"choices": [
+"Oui : chaque facteur de 120 y est, avec un exposant au moins aussi grand",
+"Non, car 7 ne divise pas 120",
+"Non, car les exposants sont différents",
+"On ne peut pas savoir sans poser la division"
+],
+"answer": 0,
+"expl": "2⁴ ≥ 2³, 3 ≥ 3, 5² ≥ 5 : 8 400 = 120 × 70. Le 7 en plus ne gêne pas."
+},
+{
+"q": "966 = 23 × 42. On peut en déduire…",
+"choices": [
+"966 | 23",
+"966 est premier",
+"23 et 42 sont premiers",
+"23 | 966 et 42 | 966"
+],
+"answer": 3,
+"expl": "a = kb ⇒ b | a : ici 966 = 23 × 42, donc 23 et 42 divisent 966."
+},
+{
+"q": "Combien de diviseurs a 6 dans ℤ ?",
+"choices": [
+"6",
+"12",
+"8",
+"4"
+],
+"answer": 2,
+"expl": "D(6) = {1, 2, 3, 6} dans ℕ ; dans ℤ on ajoute les opposés : {−6, −3, −2, −1, 1, 2, 3, 6}, soit 8."
+}
+]
+},
+{
+"title": "Logique · quiz 1",
+"questions": [
+{
+"q": "Lequel de ces énoncés n'est PAS une proposition ?",
+"choices": [
+"Il pleut.",
+"Quelle heure est-il ?",
+"2 + 2 = 5",
+"Si la sonnerie retentit, le cours s'arrête."
+],
+"answer": 1,
+"expl": "Une proposition peut être vraie ou fausse. Une question ou un ordre ne l'est pas. « 2 + 2 = 5 » est une proposition (fausse)."
+},
+{
+"q": "Pour quelle interprétation p → q est-elle fausse ?",
+"choices": [
+"p = V, q = V",
+"p = V, q = F",
+"p = F, q = V",
+"p = F, q = F"
+],
+"answer": 1,
+"expl": "L'implication n'est fausse que dans un seul cas : p vrai et q faux."
+},
+{
+"q": "p ↔ q est vraie quand…",
+"choices": [
+"p et q sont vraies",
+"au moins une est vraie",
+"p et q ont la même valeur de vérité",
+"p et q ont des valeurs différentes"
+],
+"answer": 2,
+"expl": "La biconditionnelle vaut V quand p et q sont toutes deux V ou toutes deux F."
+},
+{
+"q": "Quelle est la contraposée de p → q ?",
+"choices": [
+"q → p",
+"¬p → ¬q",
+"¬q → ¬p",
+"p ∧ ¬q"
+],
+"answer": 2,
+"expl": "Contraposée : ¬q → ¬p. Elle est équivalente à p → q. (q → p est la réciproque.)"
+},
+{
+"q": "Quelle est la réciproque de p → q ?",
+"choices": [
+"q → p",
+"¬q → ¬p",
+"¬p → ¬q",
+"¬p ∨ q"
+],
+"answer": 0,
+"expl": "Réciproque : q → p. Elle n'est PAS équivalente à p → q (i3 : p=F, q=V est un modèle de p→q mais un contre-exemple de q→p)."
+},
+{
+"q": "Quelle formule est équivalente à p → q ?",
+"choices": [
+"q → p",
+"¬p ∨ q",
+"p ∨ ¬q",
+"¬p → ¬q"
+],
+"answer": 1,
+"expl": "p → q éq ¬p ∨ q (même table : seule la ligne V,F donne F). À retenir (TD1 ex. 6)."
+},
+{
+"q": "Loi de Morgan : ¬(p ∧ q) éq …",
+"choices": [
+"¬p ∧ ¬q",
+"¬p ∨ ¬q",
+"p ∨ q",
+"¬p → q"
+],
+"answer": 1,
+"expl": "¬(p ∧ q) éq ¬p ∨ ¬q : la négation transforme le ET en OU."
+},
+{
+"q": "Loi de Morgan : ¬(p ∨ q) éq …",
+"choices": [
+"¬p ∨ ¬q",
+"¬p ∧ ¬q",
+"p ∧ q",
+"¬p ↔ ¬q"
+],
+"answer": 1,
+"expl": "¬(p ∨ q) éq ¬p ∧ ¬q (« ni p ni q »)."
+},
+{
+"q": "Nature de p ∨ ¬p ?",
+"choices": [
+"Tautologie",
+"Contradiction",
+"Contingente"
+],
+"answer": 0,
+"expl": "Elle vaut V pour p = V et pour p = F : que des modèles."
+},
+{
+"q": "Nature de p ∧ ¬p ?",
+"choices": [
+"Tautologie",
+"Contradiction",
+"Contingente"
+],
+"answer": 1,
+"expl": "Aucun modèle : c'est une contradiction, notée p ∧ ¬p ⊨."
+},
+{
+"q": "Nature de (p ∧ q) → p ?",
+"choices": [
+"Tautologie",
+"Contradiction",
+"Contingente"
+],
+"answer": 0,
+"expl": "Pour être F il faudrait p ∧ q = V et p = F, impossible. C'est une tautologie."
+},
+{
+"q": "Nature de p → q ?",
+"choices": [
+"Tautologie",
+"Contradiction",
+"Contingente"
+],
+"answer": 2,
+"expl": "i1 (V,V) est un modèle et i2 (V,F) un contre-exemple : formule contingente."
+},
+{
+"q": "« Il réussira seulement s'il travaille. » (p : il réussit, q : il travaille)",
+"choices": [
+"p → q",
+"q → p",
+"p ↔ q",
+"p ∧ q"
+],
+"answer": 0,
+"expl": "« p seulement si q » se traduit par p → q (TD1 ex. 10.5)."
+},
+{
+"q": "« Il ralentit s'il freine. » (p : il ralentit, q : il freine)",
+"choices": [
+"p → q",
+"q → p",
+"p ↔ q",
+"¬q → p"
+],
+"answer": 1,
+"expl": "« p si q » = « si q alors p » : q → p."
+},
+{
+"q": "« Pour penser, il faut être. » (p : penser, q : être)",
+"choices": [
+"p → q",
+"q → p",
+"p ↔ q",
+"¬p → ¬q"
+],
+"answer": 0,
+"expl": "« Pour p il faut q » : q est une condition nécessaire de p, donc p → q."
+}
+]
+},
+{
+"title": "Logique · quiz 2",
+"questions": [
+{
+"q": "« Il suffit que je chante pour qu'il pleuve. » (p : je chante, q : il pleut)",
+"choices": [
+"p → q",
+"q → p",
+"p ↔ q",
+"p ∧ q"
+],
+"answer": 0,
+"expl": "Condition suffisante à gauche de la flèche : p → q."
+},
+{
+"q": "« Pour qu'il vienne, il suffit que je l'appelle. » (p : il vient, q : je l'appelle)",
+"choices": [
+"p → q",
+"q → p",
+"p ↔ q",
+"¬q → ¬p"
+],
+"answer": 1,
+"expl": "La condition suffisante est « je l'appelle » (q) : q → p."
+},
+{
+"q": "« Je viendrai sauf s'il est là. » (p : je viens, q : il est là)",
+"choices": [
+"p → ¬q",
+"¬q → p",
+"p ↔ ¬q",
+"p ∧ ¬q"
+],
+"answer": 2,
+"expl": "Convention du cours (TD1 ex. 9.4 et 10.2) : « sauf si » / « à moins que » se traduit par p ↔ ¬q."
+},
+{
+"q": "« S'il pleut je joue aux cartes, sinon je me promène. » (p, q, r dans l'ordre)",
+"choices": [
+"p → (q ∨ r)",
+"(p → q) ∧ (¬p → r)",
+"(p → q) ∨ r",
+"(p ∧ q) ∨ r"
+],
+"answer": 1,
+"expl": "« sinon » = « si non p alors r » : (p → q) ∧ (¬p → r)."
+},
+{
+"q": "« Je suis riche mais je ne suis pas heureux. » (p : riche, q : heureux)",
+"choices": [
+"p ∨ ¬q",
+"p → ¬q",
+"p ∧ ¬q",
+"¬(p ∧ q)"
+],
+"answer": 2,
+"expl": "« mais » se traduit par un ET : p ∧ ¬q."
+},
+{
+"q": "Négation de « Elle lit ou se promène en forêt » :",
+"choices": [
+"Elle ne lit pas ou ne se promène pas en forêt.",
+"Elle ne lit pas et ne se promène pas en forêt.",
+"Elle lit et se promène en forêt.",
+"Si elle lit, elle ne se promène pas."
+],
+"answer": 1,
+"expl": "¬(p ∨ q) éq ¬p ∧ ¬q : elle ne lit pas ET ne se promène pas."
+},
+{
+"q": "Négation de « Les voitures de ce garage sont neuves et bien équipées » :",
+"choices": [
+"Elles ne sont ni neuves ni bien équipées.",
+"Elles ne sont pas neuves ou pas bien équipées.",
+"Elles sont neuves mais pas bien équipées.",
+"Elles ne sont pas neuves et sont bien équipées."
+],
+"answer": 1,
+"expl": "¬(p ∧ q) éq ¬p ∨ ¬q (exemple du polycopié)."
+},
+{
+"q": "« Si son cheval chute, Marie sera disqualifiée. » Marie est disqualifiée. Son cheval a-t-il chuté ?",
+"choices": [
+"Oui, forcément",
+"Non, forcément",
+"On ne peut pas conclure"
+],
+"answer": 2,
+"expl": "Il faudrait utiliser la réciproque (« si disqualifiée alors chute »), qui n'est pas équivalente à l'implication."
+},
+{
+"q": "« Si son cheval chute, Marie sera disqualifiée. » Marie n'est pas disqualifiée. Son cheval a-t-il chuté ?",
+"choices": [
+"Oui",
+"Non",
+"On ne peut pas conclure"
+],
+"answer": 1,
+"expl": "La contraposée « si elle n'est pas disqualifiée, son cheval n'a pas chuté » est équivalente à l'implication."
+},
+{
+"q": "Connecteur principal (le plus externe) de ((p ∨ r) → ¬q) ∨ r ?",
+"choices": [
+"→",
+"∨ (celui de droite)",
+"¬",
+"∨ (celui de p ∨ r)"
+],
+"answer": 1,
+"expl": "La formule est de la forme (…) ∨ r : on enlève d'abord ce ∨, puis le →, etc."
+},
+{
+"q": "A éq B si et seulement si…",
+"choices": [
+"⊨ (A → B)",
+"⊨ (A ↔ B)",
+"A ∧ B est une tautologie",
+"A et B ont un modèle commun"
+],
+"answer": 1,
+"expl": "Théorème 10.1 : A éq B ⇔ A ↔ B est une tautologie, c'est-à-dire que A et B ont les mêmes modèles."
+},
+{
+"q": "Un modèle d'une formule φ, c'est…",
+"choices": [
+"une interprétation où φ vaut V",
+"une interprétation où φ vaut F",
+"une formule équivalente à φ",
+"une tautologie"
+],
+"answer": 0,
+"expl": "Modèle : interprétation pour laquelle φ est interprétée à V. Contre-exemple : à F."
+},
+{
+"q": "La notation ⊨ φ signifie…",
+"choices": [
+"φ est une contradiction",
+"φ est une tautologie",
+"φ a un modèle",
+"φ est contingente"
+],
+"answer": 1,
+"expl": "⊨ φ : φ est une tautologie. φ ⊨ : φ est une contradiction."
+},
+{
+"q": "Avec les conventions du cours, que vaut l'interprétation i5 pour (p, q, r) ?",
+"choices": [
+"V F V",
+"F V V",
+"F V F",
+"V F F"
+],
+"answer": 1,
+"expl": "i1 VVV, i2 VVF, i3 VFV, i4 VFF, i5 FVV, i6 FVF, i7 FFV, i8 FFF."
+},
+{
+"q": "Valeur de (p ∨ q) → p pour p = F, q = V ?",
+"choices": [
+"Vrai",
+"Faux"
+],
+"answer": 1,
+"expl": "p ∨ q = V et p = F, donc V → F = F. C'est un contre-exemple (exemple du cours, i3)."
+}
+]
+},
+{
+"title": "Logique · quiz 3",
+"questions": [
+{
+"q": "Modèles de p → (q ∧ r) ?",
+"choices": [
+"{i1, i5, i6, i7, i8}",
+"{i1}",
+"{i2, i3, i4}",
+"{i1, i2, i3, i4}"
+],
+"answer": 0,
+"expl": "Si p = V il faut q ∧ r = V (seulement i1). Si p = F l'implication est vraie (i5 à i8)."
+},
+{
+"q": "Pour justifier qu'une formule est contingente, on donne…",
+"choices": [
+"sa table de vérité seulement",
+"un modèle et un contre-exemple",
+"deux modèles",
+"une formule équivalente"
+],
+"answer": 1,
+"expl": "Un contre-exemple prouve qu'elle n'est pas une tautologie, un modèle qu'elle n'est pas une contradiction."
+},
+{
+"q": "Le « ou » du calcul des propositions (∨) est…",
+"choices": [
+"exclusif",
+"inclusif"
+],
+"answer": 1,
+"expl": "∨ est inclusif : p ∨ q est vrai si p, si q, ou si les deux sont vrais."
+},
+{
+"q": "Négation de p → q ?",
+"choices": [
+"¬p → ¬q",
+"q → p",
+"p ∧ ¬q",
+"¬p ∧ q"
+],
+"answer": 2,
+"expl": "p → q éq ¬p ∨ q, donc sa négation est ¬(¬p ∨ q) éq p ∧ ¬q (Morgan)."
+},
+{
+"q": "Négation de « Cette région n'est pas chaude ou est humide » :",
+"choices": [
+"Elle est chaude et n'est pas humide.",
+"Elle est chaude ou n'est pas humide.",
+"Elle n'est ni chaude ni humide.",
+"Elle n'est pas chaude et est humide."
+],
+"answer": 0,
+"expl": "¬(¬p ∨ q) éq ¬¬p ∧ ¬q éq p ∧ ¬q."
+},
+{
+"q": "« Il ira au cinéma seulement si le concert est annulé. » (p : cinéma, q : concert annulé)",
+"choices": [
+"p → q",
+"q → p",
+"p ↔ q",
+"p ∧ q"
+],
+"answer": 0,
+"expl": "« seulement si » : p → q (exercices corrigés, ex. 3.1)."
+},
+{
+"q": "« Pour faire connaître ce restaurant, il suffit d'en faire de la publicité. » (p : connaître, q : publicité)",
+"choices": [
+"p → q",
+"q → p",
+"p ↔ q",
+"¬p → q"
+],
+"answer": 1,
+"expl": "La condition suffisante (publicité, q) est à gauche : q → p."
+},
+{
+"q": "p ↔ q est équivalente à…",
+"choices": [
+"(p → q) ∨ (q → p)",
+"(p → q) ∧ (q → p)",
+"p ∧ q",
+"¬p ∨ q"
+],
+"answer": 1,
+"expl": "La biconditionnelle, c'est l'implication dans les deux sens (TD1 ex. 6.3)."
+}
+]
+},
+{
+"title": "Ensembles · quiz 1",
+"questions": [
+{
+"q": "{∅}, c'est…",
+"choices": [
+"l'ensemble vide",
+"un singleton dont l'élément est ∅",
+"un ensemble à 0 élément",
+"une paire"
+],
+"answer": 1,
+"expl": "{∅} contient un élément (l'ensemble vide) : Card({∅}) = 1."
+},
+{
+"q": "A = {b, u, t}. Compléter : {u} … A",
+"choices": [
+"∈",
+"⊂"
+],
+"answer": 1,
+"expl": "{u} est un ensemble (une partie de A) : {u} ⊂ A."
+},
+{
+"q": "A = {b, u, t}. Compléter : {b, t} … P(A)",
+"choices": [
+"∈",
+"⊂"
+],
+"answer": 0,
+"expl": "{b, t} est une partie de A, donc un élément de P(A) : {b, t} ∈ P(A)."
+},
+{
+"q": "A = {b, u, t}. Compléter : b … A",
+"choices": [
+"∈",
+"⊂"
+],
+"answer": 0,
+"expl": "b est un élément : b ∈ A."
+},
+{
+"q": "A = {b, u, t}. Compléter : {∅, {u, t}} … P(A)",
+"choices": [
+"∈",
+"⊂"
+],
+"answer": 1,
+"expl": "∅ et {u, t} sont deux éléments de P(A), donc l'ensemble qu'ils forment est inclus dans P(A)."
+},
+{
+"q": "Card(A ∪ B) = …",
+"choices": [
+"Card A + Card B",
+"Card A + Card B − Card(A ∩ B)",
+"Card A × Card B",
+"Card A + Card B − 2 Card(A ∩ B)"
+],
+"answer": 1,
+"expl": "On enlève une fois les éléments communs, comptés deux fois."
+},
+{
+"q": "A et B sont disjoints signifie…",
+"choices": [
+"A ≠ B",
+"A ∩ B = ∅",
+"A ∪ B = E",
+"A ⊄ B"
+],
+"answer": 1,
+"expl": "Disjoints : aucun élément commun. Ne pas confondre avec distincts (A ≠ B)."
+},
+{
+"q": "Loi de Morgan : ∁E(A ∪ B) = …",
+"choices": [
+"Ā ∪ B̄",
+"Ā ∩ B̄",
+"A ∩ B",
+"∁E(A) − B"
+],
+"answer": 1,
+"expl": "∁(A ∪ B) = Ā ∩ B̄ : « ni dans A ni dans B »."
+},
+{
+"q": "A − B = …",
+"choices": [
+"A ∩ ∁E(B)",
+"A ∪ ∁E(B)",
+"∁E(A) ∩ B",
+"(A ∪ B) − A"
+],
+"answer": 0,
+"expl": "Éléments de A qui ne sont pas dans B : A ∩ B̄."
+},
+{
+"q": "A ∆ B = …",
+"choices": [
+"(A − B) ∩ (B − A)",
+"(A − B) ∪ (B − A)",
+"A ∪ B",
+"∁(A ∩ B)"
+],
+"answer": 1,
+"expl": "Différence symétrique : dans A seulement ou dans B seulement."
+},
+{
+"q": "Card(A ∆ B) = …",
+"choices": [
+"Card A + Card B − Card(A ∩ B)",
+"Card A + Card B − 2 Card(A ∩ B)",
+"Card A − Card B",
+"Card(A ∪ B) + Card(A ∩ B)"
+],
+"answer": 1,
+"expl": "Card(A − B) + Card(B − A) = Card A + Card B − 2 Card(A ∩ B)."
+},
+{
+"q": "Lequel est vrai (a ≠ b) ?",
+"choices": [
+"(a, b) = (b, a)",
+"{a, b} = {b, a}",
+"{a, b} = (a, b)",
+"{a} = a"
+],
+"answer": 1,
+"expl": "Dans un ensemble l'ordre ne compte pas, dans un couple si. Et a ≠ {a}."
+},
+{
+"q": "A₁, …, Aₙ forment une partition de E si…",
+"choices": [
+"leur réunion est E",
+"elles sont non vides, disjointes deux à deux et de réunion E",
+"elles sont disjointes deux à deux",
+"elles ont toutes le même cardinal"
+],
+"answer": 1,
+"expl": "Trois conditions : aucune vide, disjointes deux à deux, réunion = E."
+},
+{
+"q": "Théorème de la double inclusion : A = B ⇔ …",
+"choices": [
+"A ⊂ B ou B ⊂ A",
+"A ⊂ B et B ⊂ A",
+"A ∩ B ≠ ∅",
+"Card A = Card B"
+],
+"answer": 1,
+"expl": "Il faut les deux inclusions."
+},
+{
+"q": "Pour tout ensemble E, ∅ ⊂ E.",
+"choices": [
+"Vrai",
+"Faux"
+],
+"answer": 0,
+"expl": "Théorème 2.3 : l'ensemble vide est une partie de tout ensemble, et E ⊂ E."
+}
+]
+},
+{
+"title": "Ensembles · quiz 2",
+"questions": [
+{
+"q": "Choisir une équipe de 11 joueurs parmi 21 : c'est…",
+"choices": [
+"un arrangement",
+"une combinaison",
+"un p-uplet avec répétition",
+"une permutation"
+],
+"answer": 1,
+"expl": "Pas d'ordre, pas de répétition : combinaison C(21, 11)."
+},
+{
+"q": "A ∪ (A ∩ B) = …",
+"choices": [
+"A ∩ B",
+"B",
+"A",
+"A ∪ B"
+],
+"answer": 2,
+"expl": "Loi d'absorption : A ∪ (A ∩ B) = A."
+},
+{
+"q": "P({a, b}) = …",
+"choices": [
+"{a, b}",
+"{{a}, {b}}",
+"{∅, {a}, {b}, {a, b}}",
+"{∅, a, b, {a, b}}"
+],
+"answer": 2,
+"expl": "Toutes les parties : ∅, {a}, {b}, {a, b} (2² = 4)."
+},
+{
+"q": "X ∈ P(E) ⇔ …",
+"choices": [
+"X ∈ E",
+"X ⊂ E",
+"E ⊂ X",
+"X ∩ E = ∅"
+],
+"answer": 1,
+"expl": "Les éléments de P(E) sont les parties de E."
+},
+{
+"q": "Si Card(E) = 9 et Card(A) = 5 (A ⊂ E), Card(∁E(A)) = ?",
+"choices": [
+"4",
+"5",
+"9",
+"14"
+],
+"answer": 0,
+"expl": "Card(∁E(A)) = Card E − Card A = 9 − 5 = 4."
+}
+]
+}
+],
+"fiches": [
+{
+"title": "Cours : Relations",
+"html": "\n      <h2>Chapitre 3 · Relations binaires</h2>\n      <p class=\"muted\">Devoir n°2 lundi 23/11 (8 h 30, 1 h) : chapitres 3 et 4. Le chapitre 3 sert aussi pour l'éval écrite SAÉ 1.04 du 25/11 (produits cartésiens et relations).</p><div class=\"doc-tools\"></div>\n\n      <h3 id=\"f3-s0\"><span class=\"hn\">1</span>Définition et représentations</h3>\n      <ul>\n        <li>Une <b>relation binaire</b> R de A vers B est une <b>partie de A × B</b> (un élément de P(A × B)). On écrit <span class=\"f\">x R y</span> ou <span class=\"f\">(x, y) ∈ R</span>.</li>\n        <li>Si A = B, on parle de relation <b>dans A</b>.</li>\n        <li>Représentations : <b>sagittale</b> (flèches de x vers y) ou <b>cartésienne</b> (tableau, une croix dans la case (x, y)).</li>\n        <li>Relation <b>n-aire</b> : partie de A₁ × … × Aₙ (arité n). Une table de BDD ADHERENT à 8 colonnes est une relation 8-aire. Relation unaire : « être pair ».</li>\n      </ul>\n      <div class=\"box def\">Nombre de relations de A vers B : <b>2^(Card A × Card B)</b>, car A × B a Card A × Card B couples et chaque relation est une partie de A × B.<br>A = {a, b}, B = {1, 2} → 2⁴ = 16 · dans {1, 2, 3} → 2⁹ = 512 · dans {a, b, c, d} → 2¹⁶ = 65 536.</div>\n      <p><b>Application</b> : chaque x de A est en relation avec <b>un et un seul</b> y de B. Parmi les 16 relations de {a, b} vers {1, 2}, seules 4 sont des applications (2 choix pour a, 2 pour b).</p>\n\n      <h3 id=\"f3-s1\"><span class=\"hn\">2</span>Propriétés d'une relation dans E</h3>\n      <div class=\"tscroll\"><table class=\"tt\">\n        <tbody><tr><th>Propriété</th><th>Définition</th><th>Sur le dessin / le tableau</th></tr>\n        <tr><td><b>Réflexive</b></td><td><span class=\"f\">∀x, x R x</span></td><td>une boucle sur chaque élément ; diagonale entièrement cochée</td></tr>\n        <tr><td><b>Symétrique</b></td><td><span class=\"f\">x R y ⇒ y R x</span></td><td>chaque flèche a sa flèche retour ; tableau symétrique par rapport à la diagonale</td></tr>\n        <tr><td><b>Transitive</b></td><td><span class=\"f\">(x R y et y R z) ⇒ x R z</span></td><td>chaque « chemin en deux flèches » a son raccourci</td></tr>\n        <tr><td><b>Antisymétrique</b></td><td><span class=\"f\">(x R y et y R x) ⇒ x = y</span></td><td>jamais d'aller-retour entre deux éléments <b>distincts</b></td></tr>\n      </tbody></table></div>\n      <div class=\"box method\">Méthode du devoir : un tableau V/F par propriété. Pour la transitivité, ne liste <b>que</b> les triplets (x, y, z) où x R y <b>et</b> y R z sont vrais, puis vérifie x R z. <b>Un seul contre-exemple</b> suffit pour conclure « non ». Si la prémisse est fausse, l'implication est vraie.</div>\n      <div class=\"box exm\">A = {1, 2, 3}, R = {(1,1), (1,2), (1,3), (3,3)} :<br>\n        non réflexive (2 R 2 est faux) · non symétrique (1 R 2 mais pas 2 R 1) · transitive (triplets (1,1,1), (1,1,2), (1,1,3), (1,3,3), (3,3,3) : à chaque fois x R z) · antisymétrique (aucun aller-retour entre éléments distincts).<br>\n        T = {(1,1), (1,2), (2,2), (2,3)} : non réflexive (3 T 3 est faux) · non symétrique · <b>non transitive</b> (1 T 2 et 2 T 3 mais pas 1 T 3) · antisymétrique.</div>\n      <div class=\"box trap\">Symétrique et antisymétrique ne sont pas contraires : l'égalité est les deux à la fois, et une relation peut n'être ni l'une ni l'autre. ≤, ⊂ et « divise » ne sont pas symétriques ; &lt; n'est pas réflexive.</div>\n\n      <h3 id=\"f3-s2\"><span class=\"hn\">3</span>Relation d'équivalence</h3>\n      <ul>\n        <li><b>Équivalence = réflexive + symétrique + transitive</b>. Elle se reconnaît souvent à « avoir le même … que ».</li>\n        <li><b>Classe</b> de x : <span class=\"f\">Cℓ(x) = {y ∈ E / x R y}</span>.</li>\n        <li>Les classes forment une <b>partition</b> de E : non vides, disjointes deux à deux, leur union est E. L'ensemble des classes est l'<b>ensemble quotient</b> E/R.</li>\n      </ul>\n      <div class=\"box exm\">Anagrammes : Cℓ(chien) = {chien, niche, Chine}.<br>Sur {1, …, 8}, x R y ⇔ xy est un carré parfait : classes {1, 4}, {2, 8}, {3}, {5}, {6}, {7}.<br>Sur ℤ, « avoir le même reste dans la division par 3 » : 3 classes, celles de 0, 1 et 2.</div>\n\n      <h3 id=\"f3-s3\"><span class=\"hn\">4</span>Relation d'ordre</h3>\n      <ul>\n        <li><b>Ordre = réflexive + antisymétrique + transitive</b>.</li>\n        <li><b>Total</b> si deux éléments sont toujours comparables (≤ dans ℝ), sinon <b>partiel</b> (⊂ dans P(X), divisibilité dans ℕ : 2 et 3 ne sont pas comparables).</li>\n        <li>L'égalité est à la fois une équivalence et un ordre (partiel).</li>\n      </ul>\n      <div class=\"box trap\">« Divise » dans ℤ est réflexive et transitive mais <b>pas antisymétrique</b> : 1 | −1 et −1 | 1 alors que 1 ≠ −1. Dans ℕ, elle est antisymétrique, donc c'est un ordre.</div>\n    "
+},
+{
+"title": "Cours : Divisibilité",
+"html": "\n      <h2>Chapitre 4 · Divisibilité dans ℤ</h2>\n      <p class=\"muted\">Division euclidienne, diviseurs, nombres premiers, décomposition et nombre de diviseurs.</p><div class=\"doc-tools\"></div>\n\n      <h3 id=\"f4-s0\"><span class=\"hn\">1</span>Division euclidienne</h3>\n      <div class=\"box def\">Pour a ∈ ℤ et b ∈ ℤ, b ≠ 0, il existe un <b>unique</b> couple (q, r) tel que <span class=\"f\">a = bq + r</span> et <span class=\"f\">0 ≤ r &lt; |b|</span>.</div>\n      <div class=\"tscroll\"><table class=\"tt\">\n        <tbody><tr><th>a</th><th>b</th><th>Écriture</th><th>q</th><th>r</th></tr>\n        <tr><td>125</td><td>11</td><td class=\"f\">125 = 11 × 11 + 4</td><td>11</td><td>4</td></tr>\n        <tr><td>−35</td><td>12</td><td class=\"f\">−35 = 12 × (−3) + 1</td><td>−3</td><td>1</td></tr>\n        <tr><td>35</td><td>−12</td><td class=\"f\">35 = (−12) × (−2) + 11</td><td>−2</td><td>11</td></tr>\n        <tr><td>12</td><td>35</td><td class=\"f\">12 = 35 × 0 + 12</td><td>0</td><td>12</td></tr>\n        <tr><td>2013</td><td>7</td><td class=\"f\">2013 = 7 × 287 + 4</td><td>287</td><td>4</td></tr>\n        <tr><td>−2013</td><td>7</td><td class=\"f\">−2013 = 7 × (−288) + 3</td><td>−288</td><td>3</td></tr>\n        <tr><td>−7</td><td>2013</td><td class=\"f\">−7 = 2013 × (−1) + 2006</td><td>−1</td><td>2006</td></tr>\n      </tbody></table></div>\n      <div class=\"box trap\">Le reste est <b>toujours positif ou nul</b>. Pour a négatif, on descend d'un cran : −35 = 12 × (−2) + (−11) a un reste négatif, c'est interdit ; on prend q = −3 et r = −35 + 36 = 1.</div>\n\n      <h3 id=\"f4-s1\"><span class=\"hn\">2</span>Diviseurs et multiples</h3>\n      <ul>\n        <li><span class=\"f\">b | a ⇔ ∃k ∈ ℤ, a = kb</span> : « b divise a », « a est un multiple de b ». Sinon <span class=\"f\">b ∤ a</span>. N'écris jamais b/a pour « b divise a ».</li>\n        <li>Pour b ≠ 0 : b | a ⇔ le reste de a par b est nul. 966 = 23 × 42 donc 23 | 966.</li>\n      </ul>\n      <div class=\"formula-list\">\n        <span class=\"f\">1 | n, n | n, n | 0</span><span>toujours vrai</span>\n        <span class=\"f\">0 | n</span><span>seulement si n = 0</span>\n        <span class=\"f\">a | b et b | a</span><span>⇒ a = ±b</span>\n        <span class=\"f\">a | b et b | c</span><span>⇒ a | c (transitivité)</span>\n        <span class=\"f\">a | b</span><span>⇒ ac | bc ; et ac | bc avec c ≠ 0 ⇒ a | b</span>\n        <span class=\"f\">a | b et a | c</span><span>⇒ a | xb + yc pour tous x, y entiers (linéarité)</span>\n        <span class=\"f\">b | a, a ≠ 0</span><span>⇒ 1 ≤ |b| ≤ |a| (mais pas forcément b ≤ a : 5 | −10 alors que 5 &gt; −10)</span>\n      </div>\n      <div class=\"box exm\">a = 2n + 7 et b = n + 1. Tout diviseur commun d de a et b divise a − 2b = 5, donc <span class=\"f\">d ∈ {−5, −1, 1, 5}</span>.</div>\n\n      <h3 id=\"f4-s2\"><span class=\"hn\">3</span>Nombres premiers</h3>\n      <ul>\n        <li>p est <b>premier</b> s'il a exactement <b>deux</b> diviseurs dans ℕ : 1 et lui-même. 0 et 1 ne sont <b>pas</b> premiers.</li>\n        <li>2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47… Il y en a une infinité.</li>\n        <li>Pour tester n, on essaie les premiers p avec p² ≤ n.</li>\n      </ul>\n\n      <h3 id=\"f4-s3\"><span class=\"hn\">4</span>Décomposition en facteurs premiers</h3>\n      <p>Tout entier n ≥ 2 s'écrit de façon <b>unique</b> <span class=\"f\">n = p₁^α₁ × … × p_r^α_r</span>.</p>\n      <div class=\"tscroll\"><table class=\"tt\">\n        <tbody><tr><th>n</th><th>Décomposition</th><th>Nombre de diviseurs positifs</th></tr>\n        <tr><td>24</td><td class=\"f\">2³ × 3</td><td>(3+1)(1+1) = 8</td></tr>\n        <tr><td>120</td><td class=\"f\">2³ × 3 × 5</td><td>4 × 2 × 2 = 16</td></tr>\n        <tr><td>150</td><td class=\"f\">2 × 3 × 5²</td><td>2 × 2 × 3 = 12</td></tr>\n        <tr><td>720</td><td class=\"f\">2⁴ × 3² × 5</td><td>5 × 3 × 2 = 30</td></tr>\n        <tr><td>1 323</td><td class=\"f\">3³ × 7²</td><td>4 × 3 = 12</td></tr>\n        <tr><td>2 860</td><td class=\"f\">2² × 5 × 11 × 13</td><td>3 × 2 × 2 × 2 = 24</td></tr>\n        <tr><td>8 040</td><td class=\"f\">2³ × 3 × 5 × 67</td><td>4 × 2 × 2 × 2 = 32</td></tr>\n        <tr><td>38 808</td><td class=\"f\">2³ × 3² × 7² × 11</td><td>4 × 3 × 3 × 2 = 72</td></tr>\n        <tr><td>983 125</td><td class=\"f\">5⁴ × 11² × 13</td><td>5 × 3 × 2 = 30</td></tr>\n      </tbody></table></div>\n      <div class=\"box def\">Nombre de diviseurs positifs de <span class=\"f\">p₁^α₁ × … × p_r^α_r</span> : <b>(1 + α₁)(1 + α₂)…(1 + α_r)</b>. Exemples : 3² × 5⁷ → 3 × 8 = 24 ; 2 × 11³ → 2 × 4 = 8.</div>\n      <div class=\"box trap\">Vérifie que chaque facteur est premier : 21 ne l'est pas. 21⁵ = 3⁵ × 7⁵ a 6 × 6 = 36 diviseurs, pas 6. Dans ℤ, il y a deux fois plus de diviseurs (les opposés).</div>\n\n      <h3 id=\"f4-s4\"><span class=\"hn\">5</span>Lister les diviseurs</h3>\n      <p>On développe le produit sans réduire : pour 120 = 2³ × 3 × 5, <span class=\"f\">(1 + 2 + 2² + 2³)(1 + 3)(1 + 5)</span> : chaque terme du développement est un diviseur.</p>\n      <ul>\n        <li>D(24) = {1, 2, 3, 4, 6, 8, 12, 24}</li>\n        <li>D(150) = {1, 2, 3, 5, 6, 10, 15, 25, 30, 50, 75, 150}</li>\n        <li>D(120) = {1, 2, 3, 4, 5, 6, 8, 10, 12, 15, 20, 24, 30, 40, 60, 120}</li>\n        <li>D<sub>ℤ</sub>(n) contient aussi les opposés : D<sub>ℤ</sub>(6) = {−6, −3, −2, −1, 1, 2, 3, 6}.</li>\n      </ul>\n      <div class=\"box method\">Un multiple de n contient tous les facteurs premiers de n avec des exposants au moins aussi grands. 8 400 = 120 × 70 = 2⁴ × 3 × 5² × 7 est bien un multiple de 120 = 2³ × 3 × 5.</div>\n    "
+},
+{
+"title": "Cours : Logique",
+"html": "\n      <h2>Chapitre 1 · Logique formelle, calcul des propositions</h2>\n      <p class=\"muted\">Tout ce qu'il faut savoir pour le devoir, avec les conventions du cours de l'IUT de Metz.</p><div class=\"doc-tools\"></div>\n\n      <h3 id=\"f1-s0\"><span class=\"hn\">1</span>Proposition, connecteurs, formules</h3>\n      <div class=\"box def\"><b>Proposition</b> : énoncé qui peut être vrai ou faux. « Il pleut » en est une. « Quelle heure est-il ? » et « Sortez ! » n'en sont pas.</div>\n      <ul>\n        <li><b>Élémentaire</b> (atomique) : une seule lettre <span class=\"f\">p, q, r…</span></li>\n        <li><b>Composée</b> : construite avec des connecteurs.</li>\n      </ul>\n      <div class=\"formula-list\">\n        <span class=\"f\">¬p</span><span>NON p (négation)</span>\n        <span class=\"f\">p ∧ q</span><span>p ET q</span>\n        <span class=\"f\">p ∨ q</span><span>p OU q (ou <b>inclusif</b> : l'un, l'autre ou les deux)</span>\n        <span class=\"f\">p → q</span><span>SI p ALORS q (implication)</span>\n        <span class=\"f\">p ↔ q</span><span>p SI ET SEULEMENT SI q (biconditionnelle)</span>\n      </div>\n\n      <h3 id=\"f1-s1\"><span class=\"hn\">2</span>Tables de vérité des connecteurs (à connaître par cœur)</h3>\n      <div class=\"tscroll\"><table class=\"tt\">\n        <tbody><tr><th>p</th><th>q</th><th>¬p</th><th>p∧q</th><th>p∨q</th><th>p→q</th><th>p↔q</th></tr>\n        <tr><td>V</td><td>V</td><td class=\"x\">F</td><td class=\"v\">V</td><td class=\"v\">V</td><td class=\"v\">V</td><td class=\"v\">V</td></tr>\n        <tr><td>V</td><td>F</td><td class=\"x\">F</td><td class=\"x\">F</td><td class=\"v\">V</td><td class=\"x\">F</td><td class=\"x\">F</td></tr>\n        <tr><td>F</td><td>V</td><td class=\"v\">V</td><td class=\"x\">F</td><td class=\"v\">V</td><td class=\"v\">V</td><td class=\"x\">F</td></tr>\n        <tr><td>F</td><td>F</td><td class=\"v\">V</td><td class=\"x\">F</td><td class=\"x\">F</td><td class=\"v\">V</td><td class=\"v\">V</td></tr>\n      </tbody></table></div>\n      <ul>\n        <li><span class=\"f\">p ∧ q</span> est V <b>seulement</b> si les deux sont V.</li>\n        <li><span class=\"f\">p ∨ q</span> est F <b>seulement</b> si les deux sont F.</li>\n        <li><span class=\"f\">p → q</span> est F <b>seulement</b> pour (p = V, q = F).</li>\n        <li><span class=\"f\">p ↔ q</span> est V quand p et q ont <b>la même valeur</b>.</li>\n      </ul>\n      <div class=\"box trap\">Si p est faux, <span class=\"f\">p → q</span> est toujours vrai (« Si 3 &gt; 4 alors 1 = 0 » est vraie).</div>\n      <div class=\"mod\"><div class=\"mod-h\"><span class=\"mod-tag\">Schéma interactif</span><strong>Joue avec p et q</strong></div><p class=\"mod-sub\">Clique sur p ou q pour changer leur valeur : chaque connecteur se recalcule.</p><div class=\"sw-row\"></div>\n    <div class=\"lamps\"><div class=\"lamp off\"><span class=\"f\">¬p</span><b>F</b><small>¬p est l'inverse de p.</small></div><div class=\"lamp off\"><span class=\"f\">p ∧ q</span><b>F</b><small>ET : V seulement si p et q sont V tous les deux.</small></div><div class=\"lamp on\"><span class=\"f\">p ∨ q</span><b>V</b><small>OU : V dès qu'au moins un des deux est V.</small></div><div class=\"lamp off\"><span class=\"f\">p → q</span><b>F</b><small>Le seul cas faux : p est V et q est F.</small></div><div class=\"lamp off\"><span class=\"f\">p ↔ q</span><b>F</b><small>p et q ont des valeurs différentes.</small></div></div></div>\n\n      <h3 id=\"f1-s2\"><span class=\"hn\">3</span>Arbre de décomposition</h3>\n      <p>On enlève à chaque étape le <b>connecteur le plus externe</b> (celui qui s'applique en dernier), jusqu'aux lettres.</p>\n      <p>Exemple du cours : <span class=\"f\">q ∧ (r → ¬p)</span>. Le module ci-dessous dessine l'arbre, remplit la table et conclut, pour n'importe quelle formule (il sert aussi aux parties 4 et 5).</p>\n      <div class=\"mod\"><div class=\"mod-h\"><span class=\"mod-tag\">Schéma interactif</span><strong>Décompose et calcule une formule</strong></div><p class=\"mod-sub\">Tape une formule (ou choisis un exemple du cours). Clique sur une ligne de la table : l'arbre se colorie avec les valeurs de cette interprétation.</p><div class=\"presets\"></div>\n  <input class=\"answer-input\" id=\"exp769653\" value=\"q ∧ (r → ¬p)\" autocomplete=\"off\" aria-label=\"Formule\"><div class=\"symbols\"></div>\n  <div class=\"mod-err\" role=\"status\"></div><div class=\"mod-out\"><div class=\"mod-step\"><b>1. L'arbre</b> : on enlève à chaque étage le connecteur le plus externe. Valeurs pour <b>i1</b> (p = V, q = V, r = V).</div><div class=\"tscroll\"><svg viewBox=\"0 0 166 242\" width=\"166\" height=\"242\" role=\"img\" aria-label=\"Arbre de décomposition\"><line x1=\"73\" y1=\"37\" x2=\"25\" y2=\"75\" class=\"t-edge\"></line><line x1=\"73\" y1=\"37\" x2=\"97\" y2=\"75\" class=\"t-edge\"></line><line x1=\"97\" y1=\"101\" x2=\"73\" y2=\"139\" class=\"t-edge\"></line><line x1=\"97\" y1=\"101\" x2=\"121\" y2=\"139\" class=\"t-edge\"></line><line x1=\"121\" y1=\"165\" x2=\"121\" y2=\"203\" class=\"t-edge\"></line><g><rect x=\"8\" y=\"75\" width=\"34\" height=\"26\" rx=\"7\" class=\"t-node t-v\"></rect><text x=\"25\" y=\"92.5\" text-anchor=\"middle\" class=\"t-txt\">q</text><text x=\"46\" y=\"92.5\" class=\"t-val tv\">V</text></g><g><rect x=\"56\" y=\"139\" width=\"34\" height=\"26\" rx=\"7\" class=\"t-node t-v\"></rect><text x=\"73\" y=\"156.5\" text-anchor=\"middle\" class=\"t-txt\">r</text><text x=\"94\" y=\"156.5\" class=\"t-val tv\">V</text></g><g><rect x=\"104\" y=\"203\" width=\"34\" height=\"26\" rx=\"7\" class=\"t-node t-v\"></rect><text x=\"121\" y=\"220.5\" text-anchor=\"middle\" class=\"t-txt\">p</text><text x=\"142\" y=\"220.5\" class=\"t-val tv\">V</text></g><g><rect x=\"104\" y=\"139\" width=\"34\" height=\"26\" rx=\"7\" class=\"t-node t-f\"></rect><text x=\"121\" y=\"156.5\" text-anchor=\"middle\" class=\"t-txt\">¬p</text><text x=\"142\" y=\"156.5\" class=\"t-val tf\">F</text></g><g><rect x=\"65.2\" y=\"75\" width=\"63.599999999999994\" height=\"26\" rx=\"7\" class=\"t-node t-f\"></rect><text x=\"97\" y=\"92.5\" text-anchor=\"middle\" class=\"t-txt\">r → ¬p</text><text x=\"132.8\" y=\"92.5\" class=\"t-val tf\">F</text></g><g><rect x=\"18.400000000000006\" y=\"11\" width=\"109.19999999999999\" height=\"26\" rx=\"7\" class=\"t-node t-f\"></rect><text x=\"73\" y=\"28.5\" text-anchor=\"middle\" class=\"t-txt\">q ∧ (r → ¬p)</text><text x=\"131.6\" y=\"28.5\" class=\"t-val tf\">F</text></g></svg></div>\n    <div class=\"mod-step\"><b>2. La table</b> : une colonne par sous-formule, de la plus petite à φ (colonne noire).</div>\n    <div class=\"tscroll\"><table class=\"tt clickable\"><tbody><tr><th></th><th>p</th><th>q</th><th>r</th><th class=\"\">¬p</th><th class=\"\">r → ¬p</th><th class=\"last\">q ∧ (r → ¬p)</th></tr>\n    <tr class=\"sel\" tabindex=\"0\"><td>i1</td><td>V</td><td>V</td><td>V</td><td class=\"x\">F</td><td class=\"x\">F</td><td class=\"x\">F</td></tr><tr class=\"\" tabindex=\"0\"><td>i2</td><td>V</td><td>V</td><td>F</td><td class=\"x\">F</td><td class=\"v\">V</td><td class=\"v\">V</td></tr><tr class=\"\" tabindex=\"0\"><td>i3</td><td>V</td><td>F</td><td>V</td><td class=\"x\">F</td><td class=\"x\">F</td><td class=\"x\">F</td></tr><tr class=\"\" tabindex=\"0\"><td>i4</td><td>V</td><td>F</td><td>F</td><td class=\"x\">F</td><td class=\"v\">V</td><td class=\"x\">F</td></tr><tr class=\"\" tabindex=\"0\"><td>i5</td><td>F</td><td>V</td><td>V</td><td class=\"v\">V</td><td class=\"v\">V</td><td class=\"v\">V</td></tr><tr class=\"\" tabindex=\"0\"><td>i6</td><td>F</td><td>V</td><td>F</td><td class=\"v\">V</td><td class=\"v\">V</td><td class=\"v\">V</td></tr><tr class=\"\" tabindex=\"0\"><td>i7</td><td>F</td><td>F</td><td>V</td><td class=\"v\">V</td><td class=\"v\">V</td><td class=\"x\">F</td></tr><tr class=\"\" tabindex=\"0\"><td>i8</td><td>F</td><td>F</td><td>F</td><td class=\"v\">V</td><td class=\"v\">V</td><td class=\"x\">F</td></tr></tbody></table></div>\n    <div class=\"mod-step\"><b>3. Conclusion</b> : <b>M(φ) = {i2, i5, i6}</b>. i1 est un contre-exemple, donc φ n'est pas une tautologie. i2 est un modèle, donc φ n'est pas une contradiction. φ est <b>contingente</b>.</div></div></div>\n\n      <h3 id=\"f1-s3\"><span class=\"hn\">4</span>Interprétations et table de vérité d'une formule</h3>\n      <ul>\n        <li>Une <b>interprétation</b> donne V ou F à chaque lettre. Avec <b>n</b> lettres, il y a <b>2ⁿ</b> interprétations (2 → 4 lignes, 3 → 8, 4 → 16).</li>\n        <li>Convention du cours : lettres dans l'ordre alphabétique, et on met <b>V en priorité à la lettre la plus à gauche</b>.</li>\n      </ul>\n      <div class=\"tscroll\"><table class=\"tt\">\n        <tbody><tr><th></th><th>p</th><th>q</th><th>r</th></tr>\n        <tr><td>i1</td><td>V</td><td>V</td><td>V</td></tr><tr><td>i2</td><td>V</td><td>V</td><td>F</td></tr>\n        <tr><td>i3</td><td>V</td><td>F</td><td>V</td></tr><tr><td>i4</td><td>V</td><td>F</td><td>F</td></tr>\n        <tr><td>i5</td><td>F</td><td>V</td><td>V</td></tr><tr><td>i6</td><td>F</td><td>V</td><td>F</td></tr>\n        <tr><td>i7</td><td>F</td><td>F</td><td>V</td></tr><tr><td>i8</td><td>F</td><td>F</td><td>F</td></tr>\n      </tbody></table></div>\n      <p>Pour remplir : on écrit la valeur <b>sous chaque connecteur</b>, en partant des feuilles de l'arbre vers la racine. La colonne du connecteur principal donne le résultat (à entourer / colorier, pas en rouge).</p>\n\n      <h3 id=\"f1-s4\"><span class=\"hn\">5</span>Modèles, contre-exemples, nature d'une formule</h3>\n      <ul>\n        <li><b>Modèle</b> de φ : interprétation où φ vaut V. Ensemble des modèles : <span class=\"f\">M(φ)</span>.</li>\n        <li><b>Contre-exemple</b> : interprétation où φ vaut F.</li>\n        <li><b>Tautologie</b> (<span class=\"f\">⊨ φ</span>) : que des modèles. Ex. <span class=\"f\">p ∨ ¬p</span>, <span class=\"f\">(p ∧ q) → p</span>, <span class=\"f\">p → (p ∨ q)</span>.</li>\n        <li><b>Contradiction</b> (<span class=\"f\">φ ⊨</span>) : aucun modèle. Ex. <span class=\"f\">p ∧ ¬p</span>.</li>\n        <li><b>Contingente</b> : ni l'un ni l'autre.</li>\n      </ul>\n      <div class=\"box method\">Rédaction attendue : « M(φ) = {i2, i5, i6}. i3 est un contre-exemple de φ donc φ n'est pas une tautologie. i2 est un modèle de φ donc φ n'est pas une contradiction. C'est donc une formule contingente. »</div>\n\n      <h3 id=\"f1-s5\"><span class=\"hn\">6</span>Formules équivalentes</h3>\n      <p><span class=\"f\">A éq B</span> si A et B ont <b>les mêmes modèles</b> (même table de vérité). Équivaut à <span class=\"f\">⊨ (A ↔ B)</span>.</p>\n      <div class=\"formula-list\">\n        <span class=\"f\">¬¬p</span><span class=\"f\">éq p</span>\n        <span class=\"f\">p → q</span><span class=\"f\">éq ¬p ∨ q</span>\n        <span class=\"f\">p ↔ q</span><span class=\"f\">éq (p → q) ∧ (q → p)</span>\n        <span class=\"f\">p → q</span><span class=\"f\">éq ¬q → ¬p (contraposée)</span>\n      </div>\n\n      <div class=\"mod\"><div class=\"mod-h\"><span class=\"mod-tag\">Schéma interactif</span><strong>Ces deux formules sont-elles équivalentes ?</strong></div><p class=\"mod-sub\">Deux formules sont équivalentes si elles ont exactement la même colonne finale (les mêmes modèles). Essaie les exemples.</p><div class=\"presets\"></div>\n  <div class=\"cmp-in\"><div><label class=\"lbl\" for=\"ca145694\">Formule A</label><input class=\"answer-input\" id=\"ca145694\" value=\"p → q\" autocomplete=\"off\"><div class=\"symbols\"></div></div>\n  <div><label class=\"lbl\" for=\"cb846755\">Formule B</label><input class=\"answer-input\" id=\"cb846755\" value=\"¬q → ¬p\" autocomplete=\"off\"><div class=\"symbols\"></div></div></div>\n  <div class=\"mod-out\"><div class=\"tscroll\"><table class=\"tt\"><tbody><tr><th></th><th>p</th><th>q</th><th class=\"last\">A : p → q</th><th class=\"last\">B : ¬q → ¬p</th></tr>\n    <tr class=\"\"><td>i1</td><td>V</td><td>V</td><td class=\"v\">V</td><td class=\"v\">V</td></tr><tr class=\"\"><td>i2</td><td>V</td><td>F</td><td class=\"x\">F</td><td class=\"x\">F</td></tr><tr class=\"\"><td>i3</td><td>F</td><td>V</td><td class=\"v\">V</td><td class=\"v\">V</td></tr><tr class=\"\"><td>i4</td><td>F</td><td>F</td><td class=\"v\">V</td><td class=\"v\">V</td></tr></tbody></table></div>\n    <div class=\"verdict ok\"><b>Équivalentes</b> : les deux colonnes sont identiques, donc A éq B.</div></div></div>\n\n      <h3 id=\"f1-s6\"><span class=\"hn\">7</span>Réciproque et contraposée</h3>\n      <div class=\"grid2\">\n        <div class=\"box\"><b>Implication</b><br><span class=\"f\">p → q</span><br><span class=\"muted\">Si je mange, je dors.</span></div>\n        <div class=\"box\"><b>Réciproque</b><br><span class=\"f\">q → p</span><br><span class=\"muted\">Si je dors, c'est que j'ai mangé.</span><br><b style=\"color:var(--bad)\">PAS équivalente</b></div>\n        <div class=\"box\"><b>Contraposée</b><br><span class=\"f\">¬q → ¬p</span><br><span class=\"muted\">Si je ne dors pas, c'est que je n'ai pas mangé.</span><br><b style=\"color:var(--ok)\">Équivalente</b></div>\n      </div>\n      <div class=\"box method\">« S'il y a des soldes, j'irai en ville. »<br>Je ne suis pas en ville → la contraposée est équivalente, donc <b>il n'y a pas de soldes</b>.<br>Je suis en ville → la réciproque n'est pas équivalente, donc <b>on ne peut pas conclure</b>.</div>\n\n      <h3 id=\"f1-s7\"><span class=\"hn\">8</span>Lois de Morgan (négations)</h3>\n      <div class=\"formula-list\">\n        <span class=\"f\">¬(p ∧ q)</span><span class=\"f\">éq ¬p ∨ ¬q</span>\n        <span class=\"f\">¬(p ∨ q)</span><span class=\"f\">éq ¬p ∧ ¬q</span>\n      </div>\n      <ul>\n        <li>« Les voitures sont neuves <b>et</b> bien équipées » → « Elles ne sont pas neuves <b>ou</b> pas bien équipées ».</li>\n        <li>« J'irai au restaurant <b>ou</b> au cinéma » → « Je n'irai <b>ni</b> au restaurant <b>ni</b> au cinéma ».</li>\n        <li>« Elle n'est pas chaude ou est humide » → « Elle est chaude <b>et</b> n'est pas humide ».</li>\n      </ul>\n      <div class=\"box trap\">La négation change le ET en OU (et inversement). La négation de <span class=\"f\">p → q</span> est <span class=\"f\">p ∧ ¬q</span>, pas <span class=\"f\">¬p → ¬q</span>.</div>\n\n      <h3 id=\"f1-s8\"><span class=\"hn\">9</span>Traduire une phrase (les tournures piégeuses)</h3>\n      <div class=\"tscroll\"><table class=\"tt\" style=\"font-family:var(--f-body)\">\n        <tbody><tr><th>Phrase</th><th>Formule</th></tr>\n        <tr><td style=\"text-align:left\">Si p alors q / p implique q</td><td class=\"f\">p → q</td></tr>\n        <tr><td style=\"text-align:left\">p <b>seulement si</b> q</td><td class=\"f\">p → q</td></tr>\n        <tr><td style=\"text-align:left\">p <b>si</b> q (« Il ralentit s'il freine »)</td><td class=\"f\">q → p</td></tr>\n        <tr><td style=\"text-align:left\"><b>Il suffit</b> que p pour que q</td><td class=\"f\">p → q</td></tr>\n        <tr><td style=\"text-align:left\">Pour que p, <b>il faut</b> (est nécessaire) que q</td><td class=\"f\">p → q</td></tr>\n        <tr><td style=\"text-align:left\">Pour que p, <b>il suffit</b> que q</td><td class=\"f\">q → p</td></tr>\n        <tr><td style=\"text-align:left\">p <b>si et seulement si</b> q / nécessaire et suffisant</td><td class=\"f\">p ↔ q</td></tr>\n        <tr><td style=\"text-align:left\">p <b>sauf si</b> q / p <b>à moins que</b> q</td><td class=\"f\">p ↔ ¬q</td></tr>\n        <tr><td style=\"text-align:left\">p <b>mais</b> pas q</td><td class=\"f\">p ∧ ¬q</td></tr>\n        <tr><td style=\"text-align:left\">Si p alors q, <b>sinon</b> r</td><td class=\"f\">(p → q) ∧ (¬p → r)</td></tr>\n        <tr><td style=\"text-align:left\"><b>Ni</b> p <b>ni</b> q</td><td class=\"f\">¬p ∧ ¬q</td></tr>\n        <tr><td style=\"text-align:left\"><b>Soit</b> p, <b>soit</b> q (ou inclusif dans le cours)</td><td class=\"f\">p ∨ q</td></tr>\n      </tbody></table></div>\n      <div class=\"box method\">Astuce : la condition suffisante est à gauche de la flèche, la condition nécessaire à droite. « Il faut être pour penser » : penser → être.</div>\n    "
+},
+{
+"title": "Cours : Ensembles",
+"html": "\n      <h2>Chapitre 2 · Les ensembles</h2>\n      <p class=\"muted\">Définitions, opérations, cardinaux et dénombrement, avec la rédaction attendue.</p><div class=\"doc-tools\"></div>\n\n      <h3 id=\"f2-s0\"><span class=\"hn\">1</span>Ensembles et éléments</h3>\n      <ul>\n        <li><span class=\"f\">a ∈ E</span> : a appartient à E. <span class=\"f\">a ∉ E</span> sinon.</li>\n        <li><b>En extension</b> : on liste chaque élément <b>une seule fois</b>, l'ordre ne compte pas. Lettres de « ananas » : <span class=\"f\">{a, n, s}</span>.</li>\n        <li><b>En compréhension</b> : <span class=\"f\">{x ∈ E / x vérifie P}</span>. Ex. <span class=\"f\">{x ∈ ℕ / x² ≤ 10} = {0, 1, 2, 3}</span> mais <span class=\"f\">{x ∈ ℤ / x² ≤ 10} = {−3, −2, −1, 0, 1, 2, 3}</span>.</li>\n        <li><b>Singleton</b> : 1 élément. <b>Paire</b> : 2 éléments. <span class=\"f\">{a, b} = {b, a}</span>.</li>\n        <li><b>Cardinal</b> <span class=\"f\">Card(A)</span> ou <span class=\"f\">|A|</span> : nombre d'éléments.</li>\n      </ul>\n      <div class=\"box trap\"><span class=\"f\">∅</span> est vide (Card 0). <span class=\"f\">{∅}</span> est un singleton (Card 1) dont l'élément est ∅. Et <span class=\"f\">a ≠ {a}</span>.</div>\n\n      <h3 id=\"f2-s1\"><span class=\"hn\">2</span>Inclusion</h3>\n      <div class=\"box def\"><span class=\"f\">E ⊂ F</span> ⇔ <span class=\"f\">∀x ∈ E, x ∈ F</span> (tout élément de E est dans F).</div>\n      <ul>\n        <li><b>Double inclusion</b> : <span class=\"f\">A = B ⇔ (A ⊂ B et B ⊂ A)</span>.</li>\n        <li><span class=\"f\">A ⊄ B</span> ⇔ il existe x tel que <span class=\"f\">x ∈ A</span> et <span class=\"f\">x ∉ B</span>.</li>\n        <li>Transitivité : <span class=\"f\">A ⊂ B</span> et <span class=\"f\">B ⊂ C</span> ⇒ <span class=\"f\">A ⊂ C</span>.</li>\n        <li>Toujours : <span class=\"f\">∅ ⊂ E</span> et <span class=\"f\">E ⊂ E</span>. Partie <b>propre</b> : ni ∅ ni E.</li>\n      </ul>\n      <div class=\"box trap\"><b>∈</b> relie un <b>élément</b> à un ensemble, <b>⊂</b> relie deux <b>ensembles</b>. Avec A = {b, u, t} : <span class=\"f\">b ∈ A</span>, <span class=\"f\">{u} ⊂ A</span>, <span class=\"f\">{b, t} ∈ P(A)</span>, <span class=\"f\">{∅, {u, t}} ⊂ P(A)</span>.</div>\n\n      <h3 id=\"f2-s2\"><span class=\"hn\">3</span>Opérations (A, B parties de E)</h3>\n      <div class=\"formula-list\">\n        <span class=\"f\">A ∪ B</span><span>réunion : x ∈ A <b>ou</b> x ∈ B</span>\n        <span class=\"f\">A ∩ B</span><span>intersection : x ∈ A <b>et</b> x ∈ B</span>\n        <span class=\"f\">∁E(A) = Ā</span><span>complémentaire : x ∈ E et x ∉ A</span>\n        <span class=\"f\">A − B</span><span>différence : x ∈ A et x ∉ B. <span class=\"f\">A − B = A ∩ ∁E(B)</span></span>\n        <span class=\"f\">A ∆ B</span><span>différence symétrique : dans un seul des deux. <span class=\"f\">A ∆ B = (A − B) ∪ (B − A)</span></span>\n      </div>\n      <div class=\"box method\">Exemple : E = {a,…,i}, A = {a, b, d, f, g}, B = {a, c, d, e, f}.<br>\n      A ∪ B = {a, b, c, d, e, f, g} · A ∩ B = {a, d, f} · ∁E(A) = {c, e, h, i}<br>\n      A − B = {b, g} · A ∆ B = {b, c, e, g}</div>\n      <ul>\n        <li><b>Disjoints</b> : <span class=\"f\">A ∩ B = ∅</span>. À ne pas confondre avec <b>distincts</b> (<span class=\"f\">A ≠ B</span>).</li>\n        <li><span class=\"f\">∁E(∅) = E</span>, <span class=\"f\">∁E(E) = ∅</span>, <span class=\"f\">∁E(∁E(A)) = A</span>, <span class=\"f\">A ∪ Ā = E</span>, <span class=\"f\">A ∩ Ā = ∅</span>.</li>\n        <li><span class=\"f\">A ⊂ B ⇔ ∁E(B) ⊂ ∁E(A)</span>.</li>\n      </ul>\n      <div class=\"mod\"><div class=\"mod-h\"><span class=\"mod-tag\">Schéma interactif</span><strong>Les opérations sur un diagramme de Venn</strong></div><p class=\"mod-sub\">E = {a, …, i}, A = {a, b, d, f, g}, B = {a, c, d, e, f}. Choisis une opération : la zone concernée se colorie.</p><div class=\"presets\"></div>\n    <div class=\"venn-wrap\"><div class=\"tscroll\"><svg viewBox=\"0 0 360 240\" width=\"360\" height=\"240\" class=\"venn\" role=\"img\" aria-label=\"Diagramme de Venn\">\n  <defs><clipPath id=\"cA497699\"><circle cx=\"135\" cy=\"120\" r=\"82\"></circle></clipPath>\n  <mask id=\"mNotB497699\"><rect width=\"360\" height=\"240\" fill=\"white\"></rect><circle cx=\"225\" cy=\"120\" r=\"82\" fill=\"black\"></circle></mask>\n  <mask id=\"mNotA497699\"><rect width=\"360\" height=\"240\" fill=\"white\"></rect><circle cx=\"135\" cy=\"120\" r=\"82\" fill=\"black\"></circle></mask>\n  <mask id=\"mOut497699\"><rect width=\"360\" height=\"240\" fill=\"white\"></rect><circle cx=\"135\" cy=\"120\" r=\"82\" fill=\"black\"></circle><circle cx=\"225\" cy=\"120\" r=\"82\" fill=\"black\"></circle></mask></defs>\n  <rect x=\"6\" y=\"6\" width=\"348\" height=\"228\" rx=\"10\" class=\"vr\" mask=\"url(#mOut497699)\"></rect>\n  <circle cx=\"135\" cy=\"120\" r=\"82\" class=\"vr on\" mask=\"url(#mNotB497699)\"></circle>\n  <circle cx=\"225\" cy=\"120\" r=\"82\" class=\"vr on\" mask=\"url(#mNotA497699)\"></circle>\n  <circle cx=\"225\" cy=\"120\" r=\"82\" class=\"vr on\" clip-path=\"url(#cA497699)\"></circle>\n  <rect x=\"6\" y=\"6\" width=\"348\" height=\"228\" rx=\"10\" class=\"v-line\"></rect><circle cx=\"135\" cy=\"120\" r=\"82\" class=\"v-line\"></circle><circle cx=\"225\" cy=\"120\" r=\"82\" class=\"v-line\"></circle>\n  <text x=\"18\" y=\"28\" class=\"v-lab\">E</text><text x=\"70\" y=\"52\" class=\"v-lab\">A</text><text x=\"282\" y=\"52\" class=\"v-lab\">B</text>\n  <text x=\"88\" y=\"92\" text-anchor=\"middle\" class=\"v-el in\">b</text><text x=\"92\" y=\"150\" text-anchor=\"middle\" class=\"v-el in\">g</text><text x=\"180\" y=\"88\" text-anchor=\"middle\" class=\"v-el in\">a</text><text x=\"180\" y=\"120\" text-anchor=\"middle\" class=\"v-el in\">d</text><text x=\"180\" y=\"152\" text-anchor=\"middle\" class=\"v-el in\">f</text><text x=\"268\" y=\"92\" text-anchor=\"middle\" class=\"v-el in\">c</text><text x=\"270\" y=\"150\" text-anchor=\"middle\" class=\"v-el in\">e</text><text x=\"330\" y=\"36\" text-anchor=\"middle\" class=\"v-el \">h</text><text x=\"30\" y=\"212\" text-anchor=\"middle\" class=\"v-el \">i</text></svg></div>\n    <div class=\"venn-info\"><div class=\"f big\">A ∪ B</div><p>x ∈ A <b>ou</b> x ∈ B</p><p>A ∪ B = <span class=\"f\">{a, b, c, d, e, f, g}</span></p><p class=\"hint\">Card = 7</p></div></div></div>\n\n      <h3 id=\"f2-s3\"><span class=\"hn\">4</span>Propriétés et lois de Morgan</h3>\n      <div class=\"formula-list\">\n        <span>Idempotence</span><span class=\"f\">A ∪ A = A, A ∩ A = A</span>\n        <span>Commutativité, associativité</span><span class=\"f\">A ∪ B = B ∪ A, (A ∩ B) ∩ C = A ∩ (B ∩ C)</span>\n        <span>Neutres</span><span class=\"f\">A ∪ ∅ = A, A ∩ E = A, A ∪ E = E, A ∩ ∅ = ∅</span>\n        <span>Distributivité</span><span class=\"f\">A ∩ (B ∪ C) = (A ∩ B) ∪ (A ∩ C)</span>\n        <span></span><span class=\"f\">A ∪ (B ∩ C) = (A ∪ B) ∩ (A ∪ C)</span>\n        <span>Absorption</span><span class=\"f\">A ∪ (A ∩ B) = A, A ∩ (A ∪ B) = A</span>\n        <span><b>Morgan</b></span><span class=\"f\">∁(A ∪ B) = Ā ∩ B̄ ; ∁(A ∩ B) = Ā ∪ B̄</span>\n      </div>\n\n      <h3 id=\"f2-s4\"><span class=\"hn\">5</span>Cardinaux (problèmes « enquête »)</h3>\n      <div class=\"formula-list\">\n        <span class=\"f\">Card(A ∪ B)</span><span class=\"f\">= Card A + Card B − Card(A ∩ B)</span>\n        <span class=\"f\">Card(Ā)</span><span class=\"f\">= Card E − Card A</span>\n        <span class=\"f\">Card(A − B)</span><span class=\"f\">= Card A − Card(A ∩ B)</span>\n        <span class=\"f\">Card(A ∆ B)</span><span class=\"f\">= Card A + Card B − 2·Card(A ∩ B)</span>\n        <span class=\"f\">Card(Ā ∩ B̄)</span><span class=\"f\">= Card E − Card(A ∪ B) (Morgan)</span>\n      </div>\n      <div class=\"box method\">100 employés, F = femmes (52), I = formation info (70), F ∩ I = 40.<br>\n      1. F ou I : Card(F ∪ I) = 52 + 70 − 40 = <b>82</b>. Ainsi 82 employés sont des femmes ou ont suivi la formation.<br>\n      2. Ni l'un ni l'autre : F̄ ∩ Ī = ∁(F ∪ I), Card = 100 − 82 = <b>18</b>.<br>\n      3. Pas femme mais formation : Card(I − F) = 70 − 40 = <b>30</b>.<br>\n      Toujours : nommer les ensembles, écrire la formule du cours, calculer, <b>phrase de conclusion</b>.</div>\n\n      <div class=\"mod\"><div class=\"mod-h\"><span class=\"mod-tag\">Schéma interactif</span><strong>Résoudre un problème « enquête » avec un Venn</strong></div><p class=\"mod-sub\">Rentre l'effectif total et les trois nombres de l'énoncé : le schéma remplit chaque zone et donne toutes les réponses classiques.</p><div class=\"presets\"></div>\n  <div class=\"card-in\"><label><span>Card E (total)</span><input type=\"number\" min=\"0\" class=\"txt\" value=\"25\"></label><label><span>Card A</span><input type=\"number\" min=\"0\" class=\"txt\" value=\"18\"></label><label><span>Card B</span><input type=\"number\" min=\"0\" class=\"txt\" value=\"10\"></label><label><span>Card(A ∩ B)</span><input type=\"number\" min=\"0\" class=\"txt\" value=\"7\"></label></div><div class=\"mod-out\"><div class=\"venn-wrap\"><div class=\"tscroll\"><svg viewBox=\"0 0 360 240\" width=\"360\" height=\"240\" class=\"venn\" role=\"img\" aria-label=\"Diagramme de Venn\">\n  <defs><clipPath id=\"cA447974\"><circle cx=\"135\" cy=\"120\" r=\"82\"></circle></clipPath>\n  <mask id=\"mNotB447974\"><rect width=\"360\" height=\"240\" fill=\"white\"></rect><circle cx=\"225\" cy=\"120\" r=\"82\" fill=\"black\"></circle></mask>\n  <mask id=\"mNotA447974\"><rect width=\"360\" height=\"240\" fill=\"white\"></rect><circle cx=\"135\" cy=\"120\" r=\"82\" fill=\"black\"></circle></mask>\n  <mask id=\"mOut447974\"><rect width=\"360\" height=\"240\" fill=\"white\"></rect><circle cx=\"135\" cy=\"120\" r=\"82\" fill=\"black\"></circle><circle cx=\"225\" cy=\"120\" r=\"82\" fill=\"black\"></circle></mask></defs>\n  <rect x=\"6\" y=\"6\" width=\"348\" height=\"228\" rx=\"10\" class=\"vr\" mask=\"url(#mOut447974)\"></rect>\n  <circle cx=\"135\" cy=\"120\" r=\"82\" class=\"vr\" mask=\"url(#mNotB447974)\"></circle>\n  <circle cx=\"225\" cy=\"120\" r=\"82\" class=\"vr\" mask=\"url(#mNotA447974)\"></circle>\n  <circle cx=\"225\" cy=\"120\" r=\"82\" class=\"vr\" clip-path=\"url(#cA447974)\"></circle>\n  <rect x=\"6\" y=\"6\" width=\"348\" height=\"228\" rx=\"10\" class=\"v-line\"></rect><circle cx=\"135\" cy=\"120\" r=\"82\" class=\"v-line\"></circle><circle cx=\"225\" cy=\"120\" r=\"82\" class=\"v-line\"></circle>\n  <text x=\"18\" y=\"28\" class=\"v-lab\">E</text><text x=\"70\" y=\"52\" class=\"v-lab\">A</text><text x=\"282\" y=\"52\" class=\"v-lab\">B</text>\n  <text x=\"88\" y=\"126\" text-anchor=\"middle\" class=\"v-num\">11</text><text x=\"180\" y=\"126\" text-anchor=\"middle\" class=\"v-num\">7</text><text x=\"272\" y=\"126\" text-anchor=\"middle\" class=\"v-num\">3</text><text x=\"40\" y=\"216\" text-anchor=\"middle\" class=\"v-num\">4</text></svg></div><div class=\"venn-info\">\n    <p><b>Au centre</b> : Card(A ∩ B) = 7</p>\n    <p><b>A seulement</b> : Card(A − B) = 18 − 7 = <b>11</b></p>\n    <p><b>B seulement</b> : Card(B − A) = 10 − 7 = <b>3</b></p></div></div>\n    <div class=\"tscroll\"><table class=\"tt\" style=\"font-family:var(--f-body)\"><tbody><tr><th>Question</th><th>Ensemble</th><th>Calcul</th></tr>\n    <tr><td style=\"text-align:left\">l'un <b>ou</b> l'autre</td><td class=\"f\">A ∪ B</td><td class=\"f\">18 + 10 − 7 = 21</td></tr>\n    <tr><td style=\"text-align:left\"><b>ni</b> l'un <b>ni</b> l'autre</td><td class=\"f\">Ā ∩ B̄ = ∁(A ∪ B)</td><td class=\"f\">25 − 21 = 4</td></tr>\n    <tr><td style=\"text-align:left\">A <b>mais pas</b> B</td><td class=\"f\">A − B</td><td class=\"f\">18 − 7 = 11</td></tr>\n    <tr><td style=\"text-align:left\"><b>un seul</b> des deux</td><td class=\"f\">A ∆ B</td><td class=\"f\">18 + 10 − 2 × 7 = 14</td></tr>\n    <tr><td style=\"text-align:left\"><b>pas</b> A</td><td class=\"f\">Ā</td><td class=\"f\">25 − 18 = 7</td></tr></tbody></table></div>\n    <p class=\"hint\">Vérification : 11 + 7 + 3 + 4 = 25, tout le monde est compté une seule fois.</p></div></div>\n\n      <h3 id=\"f2-s5\"><span class=\"hn\">6</span>Ensemble des parties P(E)</h3>\n      <ul>\n        <li><span class=\"f\">X ∈ P(E) ⇔ X ⊂ E</span>. Ex. <span class=\"f\">P({a, b}) = {∅, {a}, {b}, {a, b}}</span>.</li>\n        <li><b>Card(P(E)) = 2^Card(E)</b> : 3 éléments → 8 parties, 4 → 16.</li>\n        <li><b>Arbre des parties</b> : pour chaque élément, branche « oui » (on le prend) / « non ». Les feuilles sont les parties.</li>\n      </ul>\n\n      <div class=\"mod\"><div class=\"mod-h\"><span class=\"mod-tag\">Schéma interactif</span><strong>L'arbre des parties</strong></div><p class=\"mod-sub\">Pour chaque élément on décide : on le prend (oui) ou pas (non). Chaque chemin donne une partie. Change les éléments (2 à 4).</p><input class=\"answer-input\" id=\"pt232994\" value=\"a, b, c\" autocomplete=\"off\" aria-label=\"Éléments\"><div class=\"mod-out\"><div class=\"tscroll\"><svg viewBox=\"0 0 832.8 254\" width=\"832.8\" height=\"254\" role=\"img\" aria-label=\"Arbre des parties\"><circle cx=\"416.4\" cy=\"30\" r=\"5\" class=\"t-dot\"></circle><text x=\"426.4\" y=\"34\" class=\"t-q\">a ?</text><text x=\"300.79999999999995\" y=\"61\" class=\"t-yes\">oui</text><text x=\"522\" y=\"61\" class=\"t-no\">non</text><line x1=\"416.4\" y1=\"35\" x2=\"213.2\" y2=\"80\" class=\"t-edge\"></line><circle cx=\"213.2\" cy=\"88\" r=\"5\" class=\"t-dot\"></circle><text x=\"223.2\" y=\"92\" class=\"t-q\">b ?</text><text x=\"148.39999999999998\" y=\"119\" class=\"t-yes\">oui</text><text x=\"268\" y=\"119\" class=\"t-no\">non</text><line x1=\"213.2\" y1=\"93\" x2=\"111.6\" y2=\"138\" class=\"t-edge\"></line><circle cx=\"111.6\" cy=\"146\" r=\"5\" class=\"t-dot\"></circle><text x=\"121.6\" y=\"150\" class=\"t-q\">c ?</text><text x=\"72.19999999999999\" y=\"177\" class=\"t-yes\">oui</text><text x=\"141\" y=\"177\" class=\"t-no\">non</text><line x1=\"111.6\" y1=\"151\" x2=\"60.8\" y2=\"196\" class=\"t-edge\"></line><rect x=\"14\" y=\"194\" width=\"93.6\" height=\"26\" rx=\"7\" class=\"t-node t-v\"></rect><text x=\"60.8\" y=\"211\" text-anchor=\"middle\" class=\"t-txt\">{a, b, c}</text><line x1=\"111.6\" y1=\"151\" x2=\"162.39999999999998\" y2=\"196\" class=\"t-edge\"></line><rect x=\"115.59999999999998\" y=\"194\" width=\"93.6\" height=\"26\" rx=\"7\" class=\"t-node t-v\"></rect><text x=\"162.39999999999998\" y=\"211\" text-anchor=\"middle\" class=\"t-txt\">{a, b}</text><line x1=\"213.2\" y1=\"93\" x2=\"314.79999999999995\" y2=\"138\" class=\"t-edge\"></line><circle cx=\"314.79999999999995\" cy=\"146\" r=\"5\" class=\"t-dot\"></circle><text x=\"324.79999999999995\" y=\"150\" class=\"t-q\">c ?</text><text x=\"275.4\" y=\"177\" class=\"t-yes\">oui</text><text x=\"344.19999999999993\" y=\"177\" class=\"t-no\">non</text><line x1=\"314.79999999999995\" y1=\"151\" x2=\"264\" y2=\"196\" class=\"t-edge\"></line><rect x=\"217.2\" y=\"194\" width=\"93.6\" height=\"26\" rx=\"7\" class=\"t-node t-v\"></rect><text x=\"264\" y=\"211\" text-anchor=\"middle\" class=\"t-txt\">{a, c}</text><line x1=\"314.79999999999995\" y1=\"151\" x2=\"365.59999999999997\" y2=\"196\" class=\"t-edge\"></line><rect x=\"318.79999999999995\" y=\"194\" width=\"93.6\" height=\"26\" rx=\"7\" class=\"t-node t-v\"></rect><text x=\"365.59999999999997\" y=\"211\" text-anchor=\"middle\" class=\"t-txt\">{a}</text><line x1=\"416.4\" y1=\"35\" x2=\"619.5999999999999\" y2=\"80\" class=\"t-edge\"></line><circle cx=\"619.5999999999999\" cy=\"88\" r=\"5\" class=\"t-dot\"></circle><text x=\"629.5999999999999\" y=\"92\" class=\"t-q\">b ?</text><text x=\"554.8\" y=\"119\" class=\"t-yes\">oui</text><text x=\"674.3999999999999\" y=\"119\" class=\"t-no\">non</text><line x1=\"619.5999999999999\" y1=\"93\" x2=\"518\" y2=\"138\" class=\"t-edge\"></line><circle cx=\"518\" cy=\"146\" r=\"5\" class=\"t-dot\"></circle><text x=\"528\" y=\"150\" class=\"t-q\">c ?</text><text x=\"478.6\" y=\"177\" class=\"t-yes\">oui</text><text x=\"547.4\" y=\"177\" class=\"t-no\">non</text><line x1=\"518\" y1=\"151\" x2=\"467.2\" y2=\"196\" class=\"t-edge\"></line><rect x=\"420.4\" y=\"194\" width=\"93.6\" height=\"26\" rx=\"7\" class=\"t-node t-v\"></rect><text x=\"467.2\" y=\"211\" text-anchor=\"middle\" class=\"t-txt\">{b, c}</text><line x1=\"518\" y1=\"151\" x2=\"568.8\" y2=\"196\" class=\"t-edge\"></line><rect x=\"522\" y=\"194\" width=\"93.6\" height=\"26\" rx=\"7\" class=\"t-node t-v\"></rect><text x=\"568.8\" y=\"211\" text-anchor=\"middle\" class=\"t-txt\">{b}</text><line x1=\"619.5999999999999\" y1=\"93\" x2=\"721.1999999999999\" y2=\"138\" class=\"t-edge\"></line><circle cx=\"721.1999999999999\" cy=\"146\" r=\"5\" class=\"t-dot\"></circle><text x=\"731.1999999999999\" y=\"150\" class=\"t-q\">c ?</text><text x=\"681.8\" y=\"177\" class=\"t-yes\">oui</text><text x=\"750.5999999999999\" y=\"177\" class=\"t-no\">non</text><line x1=\"721.1999999999999\" y1=\"151\" x2=\"670.3999999999999\" y2=\"196\" class=\"t-edge\"></line><rect x=\"623.5999999999999\" y=\"194\" width=\"93.6\" height=\"26\" rx=\"7\" class=\"t-node t-v\"></rect><text x=\"670.3999999999999\" y=\"211\" text-anchor=\"middle\" class=\"t-txt\">{c}</text><line x1=\"721.1999999999999\" y1=\"151\" x2=\"772\" y2=\"196\" class=\"t-edge\"></line><rect x=\"725.2\" y=\"194\" width=\"93.6\" height=\"26\" rx=\"7\" class=\"t-node t-v\"></rect><text x=\"772\" y=\"211\" text-anchor=\"middle\" class=\"t-txt\">∅</text></svg></div>\n    <p>E = {a, b, c} a 3 éléments, donc <b>Card(P(E)) = 2<sup>3</sup> = 8</b> parties (les 8 feuilles).</p></div></div>\n\n      <h3 id=\"f2-s6\"><span class=\"hn\">7</span>Produit cartésien, couples</h3>\n      <ul>\n        <li><span class=\"f\">(a, b) = (c, d) ⇔ a = c et b = d</span> : l'ordre compte, <span class=\"f\">(a, b) ≠ (b, a)</span> si a ≠ b.</li>\n        <li><span class=\"f\">A × B = {(a, b) / a ∈ A et b ∈ B}</span>, <span class=\"f\">A² = A × A</span>.</li>\n        <li><b>Card(A × B) = Card A × Card B</b>. Généralisation : <span class=\"f\">Card(A₁ × … × Aₙ) = produit des Card</span>.</li>\n        <li>Représentation cartésienne : tableau, A en lignes, B en colonnes, chaque case = (a, b).</li>\n      </ul>\n\n      <div class=\"mod\"><div class=\"mod-h\"><span class=\"mod-tag\">Schéma interactif</span><strong>Construire A × B</strong></div><p class=\"mod-sub\">Chaque case du tableau est un couple (a, b) : a vient de la ligne (A), b de la colonne (B).</p><div class=\"cmp-in\"><div><label class=\"lbl\" for=\"xa944144\">A</label><input class=\"answer-input\" id=\"xa944144\" value=\"a, b, c\"></div><div><label class=\"lbl\" for=\"xb366550\">B</label><input class=\"answer-input\" id=\"xb366550\" value=\"1, 2\"></div></div><div class=\"mod-out\"><div class=\"tscroll\"><table class=\"tt\"><tbody><tr><th>A \\ B</th><th>1</th><th>2</th></tr><tr><th>a</th><td>(a, 1)</td><td>(a, 2)</td></tr><tr><th>b</th><td>(b, 1)</td><td>(b, 2)</td></tr><tr><th>c</th><td>(c, 1)</td><td>(c, 2)</td></tr></tbody></table></div>\n    <p><b>Card(A × B) = Card A × Card B = 3 × 2 = 6</b>. Attention, (a, 1) ≠ (1, a) : dans un couple l'ordre compte, donc A × B ≠ B × A.</p></div></div>\n\n      <h3 id=\"f2-s7\"><span class=\"hn\">8</span>Dénombrement : quelle formule ?</h3>\n      <div class=\"tscroll\"><table class=\"tt\" style=\"font-family:var(--f-body)\">\n        <tbody><tr><th>Situation</th><th>Ordre ?</th><th>Répétition ?</th><th>Formule</th></tr>\n        <tr><td style=\"text-align:left\">p-uplet (code, mot de passe, dés)</td><td>oui</td><td>oui</td><td class=\"f\">nᵖ</td></tr>\n        <tr><td style=\"text-align:left\">Arrangement (éléments tous distincts)</td><td>oui</td><td>non</td><td class=\"f\">Aₙᵖ = n!/(n−p)!</td></tr>\n        <tr><td style=\"text-align:left\">Permutation (tous, ordonnés)</td><td>oui</td><td>non</td><td class=\"f\">n!</td></tr>\n        <tr><td style=\"text-align:left\">Combinaison (partie, tirage simultané, équipe)</td><td>non</td><td>non</td><td class=\"f\">C(n,p) = n!/(p!(n−p)!)</td></tr>\n      </tbody></table></div>\n      <ul>\n        <li>Code de 3 chiffres (0 à 9) : <span class=\"f\">10³ = 1000</span>. Commençant par 5 : <span class=\"f\">10² = 100</span>. 3 chiffres distincts non nuls commençant par 5 : <span class=\"f\">8 × 7 = 56</span>.</li>\n        <li>4 chiffres distincts parmi 10 : <span class=\"f\">A₁₀⁴ = 10 × 9 × 8 × 7 = 5040</span>.</li>\n        <li>3 jetons parmi 8 tirés ensemble : <span class=\"f\">C(8,3) = 56</span>.</li>\n        <li>4 chiffres puis 2 lettres : <span class=\"f\">10⁴ × 26² = 6 760 000</span>.</li>\n        <li><span class=\"f\">0! = 1</span> et <span class=\"f\">2ⁿ = C(n,0) + C(n,1) + … + C(n,n)</span>.</li>\n      </ul>\n      <div class=\"box method\">Fais le schéma des cases : C1 × C2 × C3, en écrivant le nombre de choix sous chaque case. Laisse en puissance si le calcul est long.</div>\n      <div class=\"mod\"><div class=\"mod-h\"><span class=\"mod-tag\">Schéma interactif</span><strong>Le schéma des cases</strong></div><p class=\"mod-sub\">Choisis la situation : chaque case montre combien de choix il reste, et on multiplie.</p><div class=\"presets\"></div>\n  <div class=\"card-in\"><label><span>n (choix possibles)</span><input type=\"number\" min=\"1\" max=\"30\" class=\"txt\" value=\"10\"></label><label><span>p (nombre de cases)</span><input type=\"number\" min=\"1\" max=\"12\" class=\"txt\" value=\"3\"></label></div>\n  <div class=\"modes\"></div><div class=\"mod-out\"><div class=\"boxes\"><div class=\"cbox\"><span>C1</span><b>10</b></div><span class=\"times\">×</span><div class=\"cbox\"><span>C2</span><b>10</b></div><span class=\"times\">×</span><div class=\"cbox\"><span>C3</span><b>10</b></div></div><p>10 × 10 × 10 = 10<sup>3</sup> = <b>1 000</b></p>\n    <p class=\"hint\">Chaque case a les mêmes 10 choix, puisqu'on peut répéter.</p></div></div>\n\n      <h3 id=\"f2-s8\"><span class=\"hn\">9</span>Partition</h3>\n      <p>A₁, …, Aₙ forment une partition de E si : aucune partie n'est vide, elles sont <b>disjointes deux à deux</b>, et leur réunion vaut E. Ex. si A est une partie propre de E, A et ∁E(A) forment une partition de E.</p>\n    "
+},
+{
+"title": "Résumé express",
+"html": "\n      <h2>Fiche express · Chap. 1 à 4</h2>\n      <p class=\"muted\">L'essentiel à relire juste avant le devoir. Devoir n°2 (lun. 23/11) : chapitres 3 et 4, en premier ci-dessous.</p><div class=\"doc-tools\"></div>\n      <div class=\"grid2\">\n        <div>\n          <h3 id=\"fx-s0\">Relations (chap. 3)</h3>\n          <ul>\n            <li>Relation de A vers B = <b>partie de A × B</b> · nombre : <span class=\"f\">2^(|A|·|B|)</span></li>\n            <li>Application : chaque x a <b>une et une seule</b> image · nombre : <span class=\"f\">|B|^|A|</span></li>\n            <li>Réflexive : <span class=\"f\">x R x</span> pour tout x (diagonale cochée)</li>\n            <li>Symétrique : <span class=\"f\">x R y ⇒ y R x</span></li>\n            <li>Transitive : <span class=\"f\">x R y et y R z ⇒ x R z</span> (ne lister que les triplets où les deux sont vrais)</li>\n            <li>Antisymétrique : <span class=\"f\">x R y et y R x ⇒ x = y</span></li>\n            <li>« Non » : <b>un seul contre-exemple</b> suffit</li>\n            <li>Équivalence = R + S + T · classes = partition de E</li>\n            <li>Ordre = R + antisymétrique + T · total ou partiel</li>\n            <li>« divise » dans ℤ : pas antisymétrique (1 | −1, −1 | 1)</li>\n          </ul>\n        </div>\n        <div>\n          <h3 id=\"fx-s1\">Divisibilité (chap. 4)</h3>\n          <ul>\n            <li><span class=\"f\">a = bq + r</span>, <span class=\"f\">0 ≤ r &lt; |b|</span> : reste <b>jamais négatif</b></li>\n            <li><span class=\"f\">−35 = 12 × (−3) + 1</span> · <span class=\"f\">35 = (−12) × (−2) + 11</span></li>\n            <li><span class=\"f\">b | a ⇔ a = kb</span> · 1 | n, n | 0, 0 | n ⇔ n = 0</li>\n            <li>a | b et a | c ⇒ a | xb + yc</li>\n            <li>Premier : exactement 2 diviseurs · 0 et 1 non premiers</li>\n            <li>24 = <span class=\"f\">2³ × 3</span> · 150 = <span class=\"f\">2 × 3 × 5²</span></li>\n            <li>Nombre de diviseurs : <span class=\"f\">(1+α₁)(1+α₂)…</span></li>\n            <li>Toujours redécomposer : 21⁵ = 3⁵ × 7⁵ → 36</li>\n            <li>Liste : développer <span class=\"f\">(1+2+2²+2³)(1+3)</span></li>\n            <li>Dans ℤ : deux fois plus (les opposés)</li>\n          </ul>\n        </div>\n      </div>\n      <div class=\"grid2\">\n        <div>\n          <h3 id=\"fx-s2\">Logique</h3>\n          <ul>\n            <li><span class=\"f\">∧</span> V ssi tout V · <span class=\"f\">∨</span> F ssi tout F</li>\n            <li><span class=\"f\">p → q</span> F <b>uniquement</b> si V → F</li>\n            <li><span class=\"f\">p ↔ q</span> V ssi même valeur</li>\n            <li>n lettres → <b>2ⁿ</b> lignes, V d'abord à gauche</li>\n            <li>Modèle = V, contre-exemple = F</li>\n            <li>Tautologie : tout V · Contradiction : tout F · sinon contingente (justifier avec 1 modèle + 1 contre-ex.)</li>\n            <li><span class=\"f\">p → q éq ¬p ∨ q éq ¬q → ¬p</span></li>\n            <li>Réciproque <span class=\"f\">q → p</span> : <b>pas</b> équivalente</li>\n            <li>Morgan : <span class=\"f\">¬(p∧q) éq ¬p∨¬q</span>, <span class=\"f\">¬(p∨q) éq ¬p∧¬q</span></li>\n            <li>« p seulement si q », « il suffit p pour q », « pour p il faut q » → <span class=\"f\">p → q</span></li>\n            <li>« p si q » → <span class=\"f\">q → p</span> · « sauf si » → <span class=\"f\">p ↔ ¬q</span></li>\n            <li>« sinon » → <span class=\"f\">(p→q) ∧ (¬p→r)</span></li>\n          </ul>\n        </div>\n        <div>\n          <h3 id=\"fx-s3\">Ensembles</h3>\n          <ul>\n            <li><b>∈</b> élément · <b>⊂</b> ensemble</li>\n            <li><span class=\"f\">{∅} ≠ ∅</span>, <span class=\"f\">{a,b} = {b,a}</span>, <span class=\"f\">(a,b) ≠ (b,a)</span></li>\n            <li>A = B ⇔ A ⊂ B et B ⊂ A</li>\n            <li><span class=\"f\">A − B = A ∩ B̄</span> · <span class=\"f\">A∆B = (A−B) ∪ (B−A)</span></li>\n            <li>Morgan : <span class=\"f\">∁(A∪B) = Ā∩B̄</span>, <span class=\"f\">∁(A∩B) = Ā∪B̄</span></li>\n            <li><span class=\"f\">|A∪B| = |A| + |B| − |A∩B|</span></li>\n            <li><span class=\"f\">|Ā| = |E| − |A|</span> · <span class=\"f\">|A−B| = |A| − |A∩B|</span></li>\n            <li><span class=\"f\">|A∆B| = |A| + |B| − 2|A∩B|</span></li>\n            <li><span class=\"f\">|P(E)| = 2^|E|</span> · <span class=\"f\">|A×B| = |A|·|B|</span></li>\n            <li>Ordre + répétition : <span class=\"f\">nᵖ</span> · ordre sans répétition : <span class=\"f\">n!/(n−p)!</span> · sans ordre : <span class=\"f\">C(n,p)</span></li>\n            <li>Disjoints : <span class=\"f\">A∩B = ∅</span> (≠ distincts)</li>\n          </ul>\n        </div>\n      </div>\n      <div class=\"box method\">Au devoir : nommer les ensembles / propositions, citer le résultat du cours, calculer, puis une <b>phrase de conclusion</b>. Tables : écrire la valeur sous chaque connecteur et entourer la colonne finale.</div>\n    "
+}
+],
+"sources": [
+{
+"type": "text",
+"title": "Cours : Relations",
+"text": "\n      Chapitre 3 · Relations binaires\n      Devoir n°2 lundi 23/11 (8 h 30, 1 h) : chapitres 3 et 4. Le chapitre 3 sert aussi pour l'éval écrite SAÉ 1.04 du 25/11 (produits cartésiens et relations).✎ Modifier le cours⎙ Imprimer\n\n      1Définition et représentations\n      \n        Une relation binaire R de A vers B est une partie de A × B (un élément de P(A × B)). On écrit x R y ou (x, y) ∈ R.\n        Si A = B, on parle de relation dans A.\n        Représentations : sagittale (flèches de x vers y) ou cartésienne (tableau, une croix dans la case (x, y)).\n        Relation n-aire : partie de A₁ × … × Aₙ (arité n). Une table de BDD ADHERENT à 8 colonnes est une relation 8-aire. Relation unaire : « être pair ».\n      \n      Nombre de relations de A vers B : 2^(Card A × Card B), car A × B a Card A × Card B couples et chaque relation est une partie de A × B.A = {a, b}, B = {1, 2} → 2⁴ = 16 · dans {1, 2, 3} → 2⁹ = 512 · dans {a, b, c, d} → 2¹⁶ = 65 536.\n      Application : chaque x de A est en relation avec un et un seul y de B. Parmi les 16 relations de {a, b} vers {1, 2}, seules 4 sont des applications (2 choix pour a, 2 pour b).\n\n      2Propriétés d'une relation dans E\n      \n        PropriétéDéfinitionSur le dessin / le tableau\n        Réflexive∀x, x R xune boucle sur chaque élément ; diagonale entièrement cochée\n        Symétriquex R y ⇒ y R xchaque flèche a sa flèche retour ; tableau symétrique par rapport à la diagonale\n        Transitive(x R y et y R z) ⇒ x R zchaque « chemin en deux flèches » a son raccourci\n        Antisymétrique(x R y et y R x) ⇒ x = yjamais d'aller-retour entre deux éléments distincts\n      \n      Méthode du devoir : un tableau V/F par propriété. Pour la transitivité, ne liste que les triplets (x, y, z) où x R y et y R z sont vrais, puis vérifie x R z. Un seul contre-exemple suffit pour conclure « non ». Si la prémisse est fausse, l'implication est vraie.\n      A = {1, 2, 3}, R = {(1,1), (1,2), (1,3), (3,3)} :\n        non réflexive (2 R 2 est faux) · non symétrique (1 R 2 mais pas 2 R 1) · transitive (triplets (1,1,1), (1,1,2), (1,1,3), (1,3,3), (3,3,3) : à chaque fois x R z) · antisymétrique (aucun aller-retour entre éléments distincts).\n        T = {(1,1), (1,2), (2,2), (2,3)} : non réflexive (3 T 3 est faux) · non symétrique · non transitive (1 T 2 et 2 T 3 mais pas 1 T 3) · antisymétrique.\n      Symétrique et antisymétrique ne sont pas contraires : l'égalité est les deux à la fois, et une relation peut n'être ni l'une ni l'autre. ≤, ⊂ et « divise » ne sont pas symétriques ; < n'est pas réflexive.\n\n      3Relation d'équivalence\n      \n        Équivalence = réflexive + symétrique + transitive. Elle se reconnaît souvent à « avoir le même … que ».\n        Classe de x : Cℓ(x) = {y ∈ E / x R y}.\n        Les classes forment une partition de E : non vides, disjointes deux à deux, leur union est E. L'ensemble des classes est l'ensemble quotient E/R.\n      \n      Anagrammes : Cℓ(chien) = {chien, niche, Chine}.Sur {1, …, 8}, x R y ⇔ xy est un carré parfait : classes {1, 4}, {2, 8}, {3}, {5}, {6}, {7}.Sur ℤ, « avoir le même reste dans la division par 3 » : 3 classes, celles de 0, 1 et 2.\n\n      4Relation d'ordre\n      \n        Ordre = réflexive + antisymétrique + transitive.\n        Total si deux éléments sont toujours comparables (≤ dans ℝ), sinon partiel (⊂ dans P(X), divisibilité dans ℕ : 2 et 3 ne sont pas comparables).\n        L'égalité est à la fois une équivalence et un ordre (partiel).\n      \n      « Divise » dans ℤ est réflexive et transitive mais pas antisymétrique : 1 | −1 et −1 | 1 alors que 1 ≠ −1. Dans ℕ, elle est antisymétrique, donc c'est un ordre.\n    "
+},
+{
+"type": "text",
+"title": "Cours : Divisibilité",
+"text": "\n      Chapitre 4 · Divisibilité dans ℤ\n      Division euclidienne, diviseurs, nombres premiers, décomposition et nombre de diviseurs.✎ Modifier le cours⎙ Imprimer\n\n      1Division euclidienne\n      Pour a ∈ ℤ et b ∈ ℤ, b ≠ 0, il existe un unique couple (q, r) tel que a = bq + r et 0 ≤ r < |b|.\n      \n        abÉcritureqr\n        12511125 = 11 × 11 + 4114\n        −3512−35 = 12 × (−3) + 1−31\n        35−1235 = (−12) × (−2) + 11−211\n        123512 = 35 × 0 + 12012\n        201372013 = 7 × 287 + 42874\n        −20137−2013 = 7 × (−288) + 3−2883\n        −72013−7 = 2013 × (−1) + 2006−12006\n      \n      Le reste est toujours positif ou nul. Pour a négatif, on descend d'un cran : −35 = 12 × (−2) + (−11) a un reste négatif, c'est interdit ; on prend q = −3 et r = −35 + 36 = 1.\n\n      2Diviseurs et multiples\n      \n        b | a ⇔ ∃k ∈ ℤ, a = kb : « b divise a », « a est un multiple de b ». Sinon b ∤ a. N'écris jamais b/a pour « b divise a ».\n        Pour b ≠ 0 : b | a ⇔ le reste de a par b est nul. 966 = 23 × 42 donc 23 | 966.\n      \n      \n        1 | n, n | n, n | 0toujours vrai\n        0 | nseulement si n = 0\n        a | b et b | a⇒ a = ±b\n        a | b et b | c⇒ a | c (transitivité)\n        a | b⇒ ac | bc ; et ac | bc avec c ≠ 0 ⇒ a | b\n        a | b et a | c⇒ a | xb + yc pour tous x, y entiers (linéarité)\n        b | a, a ≠ 0⇒ 1 ≤ |b| ≤ |a| (mais pas forcément b ≤ a : 5 | −10 alors que 5 > −10)\n      \n      a = 2n + 7 et b = n + 1. Tout diviseur commun d de a et b divise a − 2b = 5, donc d ∈ {−5, −1, 1, 5}.\n\n      3Nombres premiers\n      \n        p est premier s'il a exactement deux diviseurs dans ℕ : 1 et lui-même. 0 et 1 ne sont pas premiers.\n        2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47… Il y en a une infinité.\n        Pour tester n, on essaie les premiers p avec p² ≤ n.\n      \n\n      4Décomposition en facteurs premiers\n      Tout entier n ≥ 2 s'écrit de façon unique n = p₁^α₁ × … × p_r^α_r.\n      \n        nDécompositionNombre de diviseurs positifs\n        242³ × 3(3+1)(1+1) = 8\n        1202³ × 3 × 54 × 2 × 2 = 16\n        1502 × 3 × 5²2 × 2 × 3 = 12\n        7202⁴ × 3² × 55 × 3 × 2 = 30\n        1 3233³ × 7²4 × 3 = 12\n        2 8602² × 5 × 11 × 133 × 2 × 2 × 2 = 24\n        8 0402³ × 3 × 5 × 674 × 2 × 2 × 2 = 32\n        38 8082³ × 3² × 7² × 114 × 3 × 3 × 2 = 72\n        983 1255⁴ × 11² × 135 × 3 × 2 = 30\n      \n      Nombre de diviseurs positifs de p₁^α₁ × … × p_r^α_r : (1 + α₁)(1 + α₂)…(1 + α_r). Exemples : 3² × 5⁷ → 3 × 8 = 24 ; 2 × 11³ → 2 × 4 = 8.\n      Vérifie que chaque facteur est premier : 21 ne l'est pas. 21⁵ = 3⁵ × 7⁵ a 6 × 6 = 36 diviseurs, pas 6. Dans ℤ, il y a deux fois plus de diviseurs (les opposés).\n\n      5Lister les diviseurs\n      On développe le produit sans réduire : pour 120 = 2³ × 3 × 5, (1 + 2 + 2² + 2³)(1 + 3)(1 + 5) : chaque terme du développement est un diviseur.\n      \n        D(24) = {1, 2, 3, 4, 6, 8, 12, 24}\n        D(150) = {1, 2, 3, 5, 6, 10, 15, 25, 30, 50, 75, 150}\n        D(120) = {1, 2, 3, 4, 5, 6, 8, 10, 12, 15, 20, 24, 30, 40, 60, 120}\n        Dℤ(n) contient aussi les opposés : Dℤ(6) = {−6, −3, −2, −1, 1, 2, 3, 6}.\n      \n      Un multiple de n contient tous les facteurs premiers de n avec des exposants au moins aussi grands. 8 400 = 120 × 70 = 2⁴ × 3 × 5² × 7 est bien un multiple de 120 = 2³ × 3 × 5.\n    "
+},
+{
+"type": "text",
+"title": "Cours : Logique",
+"text": "\n      Chapitre 1 · Logique formelle, calcul des propositions\n      Tout ce qu'il faut savoir pour le devoir, avec les conventions du cours de l'IUT de Metz.✎ Modifier le cours⎙ Imprimer\n\n      1Proposition, connecteurs, formules\n      Proposition : énoncé qui peut être vrai ou faux. « Il pleut » en est une. « Quelle heure est-il ? » et « Sortez ! » n'en sont pas.\n      \n        Élémentaire (atomique) : une seule lettre p, q, r…\n        Composée : construite avec des connecteurs.\n      \n      \n        ¬pNON p (négation)\n        p ∧ qp ET q\n        p ∨ qp OU q (ou inclusif : l'un, l'autre ou les deux)\n        p → qSI p ALORS q (implication)\n        p ↔ qp SI ET SEULEMENT SI q (biconditionnelle)\n      \n\n      2Tables de vérité des connecteurs (à connaître par cœur)\n      \n        pq¬pp∧qp∨qp→qp↔q\n        VVFVVVV\n        VFFFVFF\n        FVVFVVF\n        FFVFFVV\n      \n      \n        p ∧ q est V seulement si les deux sont V.\n        p ∨ q est F seulement si les deux sont F.\n        p → q est F seulement pour (p = V, q = F).\n        p ↔ q est V quand p et q ont la même valeur.\n      \n      Si p est faux, p → q est toujours vrai (« Si 3 > 4 alors 1 = 0 » est vraie).\n      Schéma interactifJoue avec p et qClique sur p ou q pour changer leur valeur : chaque connecteur se recalcule.pVqF\n    ¬pF¬p est l'inverse de p.p ∧ qFET : V seulement si p et q sont V tous les deux.p ∨ qVOU : V dès qu'au moins un des deux est V.p → qFLe seul cas faux : p est V et q est F.p ↔ qFp et q ont des valeurs différentes.\n\n      3Arbre de décomposition\n      On enlève à chaque étape le connecteur le plus externe (celui qui s'applique en dernier), jusqu'aux lettres.\n      Exemple du cours : q ∧ (r → ¬p). Le module ci-dessous dessine l'arbre, remplit la table et conclut, pour n'importe quelle formule (il sert aussi aux parties 4 et 5).\n      Schéma interactifDécompose et calcule une formuleTape une formule (ou choisis un exemple du cours). Clique sur une ligne de la table : l'arbre se colorie avec les valeurs de cette interprétation.q ∧ (r → ¬p)¬q → (r ∧ p)(¬p ∨ r) → (q ∧ r)(p ∨ q) → pp ∨ ¬pp ∧ ¬p\n  ¬∧∨→↔()pqr\n  1. L'arbre : on enlève à chaque étage le connecteur le plus externe. Valeurs pour i1 (p = V, q = V, r = V).qVrVpV¬pFr → ¬pFq ∧ (r → ¬p)F\n    2. La table : une colonne par sous-formule, de la plus petite à φ (colonne noire).\n    pqr¬pr → ¬pq ∧ (r → ¬p)\n    i1VVVFFFi2VVFFVVi3VFVFFFi4VFFFVFi5FVVVVVi6FVFVVVi7FFVVVFi8FFFVVF\n    3. Conclusion : M(φ) = {i2, i5, i6}. i1 est un contre-exemple, donc φ n'est pas une tautologie. i2 est un modèle, donc φ n'est pas une contradiction. φ est contingente.\n\n      4Interprétations et table de vérité d'une formule\n      \n        Une interprétation donne V ou F à chaque lettre. Avec n lettres, il y a 2ⁿ interprétations (2 → 4 lignes, 3 → 8, 4 → 16).\n        Convention du cours : lettres dans l'ordre alphabétique, et on met V en priorité à la lettre la plus à gauche.\n      \n      \n        pqr\n        i1VVVi2VVF\n        i3VFVi4VFF\n        i5FVVi6FVF\n        i7FFVi8FFF\n      \n      Pour remplir : on écrit la valeur sous chaque connecteur, en partant des feuilles de l'arbre vers la racine. La colonne du connecteur principal donne le résultat (à entourer / colorier, pas en rouge).\n\n      5Modèles, contre-exemples, nature d'une formule\n      \n        Modèle de φ : interprétation où φ vaut V. Ensemble des modèles : M(φ).\n        Contre-exemple : interprétation où φ vaut F.\n        Tautologie (⊨ φ) : que des modèles. Ex. p ∨ ¬p, (p ∧ q) → p, p → (p ∨ q).\n        Contradiction (φ ⊨) : aucun modèle. Ex. p ∧ ¬p.\n        Contingente : ni l'un ni l'autre.\n      \n      Rédaction attendue : « M(φ) = {i2, i5, i6}. i3 est un contre-exemple de φ donc φ n'est pas une tautologie. i2 est un modèle de φ donc φ n'est pas une contradiction. C'est donc une formule contingente. »\n\n      6Formules équivalentes\n      A éq B si A et B ont les mêmes modèles (même table de vérité). Équivaut à ⊨ (A ↔ B).\n      \n        ¬¬péq p\n        p → qéq ¬p ∨ q\n        p ↔ qéq (p → q) ∧ (q → p)\n        p → qéq ¬q → ¬p (contraposée)\n      \n\n      Schéma interactifCes deux formules sont-elles équivalentes ?Deux formules sont équivalentes si elles ont exactement la même colonne finale (les mêmes modèles). Essaie les exemples.ContraposéeRéciproqueMorgan (ET)Morgan (OU)Faux Morgan→ en ∨↔ en →Négation de →\n  Formule A¬∧∨→↔()pqr\n  Formule B¬∧∨→↔()pqr\n  pqA : p → qB : ¬q → ¬p\n    i1VVVVi2VFFFi3FVVVi4FFVV\n    Équivalentes : les deux colonnes sont identiques, donc A éq B.\n\n      7Réciproque et contraposée\n      \n        Implicationp → qSi je mange, je dors.\n        Réciproqueq → pSi je dors, c'est que j'ai mangé.PAS équivalente\n        Contraposée¬q → ¬pSi je ne dors pas, c'est que je n'ai pas mangé.Équivalente\n      \n      « S'il y a des soldes, j'irai en ville. »Je ne suis pas en ville → la contraposée est équivalente, donc il n'y a pas de soldes.Je suis en ville → la réciproque n'est pas équivalente, donc on ne peut pas conclure.\n\n      8Lois de Morgan (négations)\n      \n        ¬(p ∧ q)éq ¬p ∨ ¬q\n        ¬(p ∨ q)éq ¬p ∧ ¬q\n      \n      \n        « Les voitures sont neuves et bien équipées » → « Elles ne sont pas neuves ou pas bien équipées ».\n        « J'irai au restaurant ou au cinéma » → « Je n'irai ni au restaurant ni au cinéma ».\n        « Elle n'est pas chaude ou est humide » → « Elle est chaude et n'est pas humide ».\n      \n      La négation change le ET en OU (et inversement). La négation de p → q est p ∧ ¬q, pas ¬p → ¬q.\n\n      9Traduire une phrase (les tournures piégeuses)\n      \n        PhraseFormule\n        Si p alors q / p implique qp → q\n        p seulement si qp → q\n        p si q (« Il ralentit s'il freine »)q → p\n        Il suffit que p pour que qp → q\n        Pour que p, il faut (est nécessaire) que qp → q\n        Pour que p, il suffit que qq → p\n        p si et seulement si q / nécessaire et suffisantp ↔ q\n        p sauf si q / p à moins que qp ↔ ¬q\n        p mais pas qp ∧ ¬q\n        Si p alors q, sinon r(p → q) ∧ (¬p → r)\n        Ni p ni q¬p ∧ ¬q\n        Soit p, soit q (ou inclusif dans le cours)p ∨ q\n      \n      Astuce : la condition suffisante est à gauche de la flèche, la condition nécessaire à droite. « Il faut être pour penser » : penser → être.\n    "
+},
+{
+"type": "text",
+"title": "Cours : Ensembles",
+"text": "\n      Chapitre 2 · Les ensembles\n      Définitions, opérations, cardinaux et dénombrement, avec la rédaction attendue.✎ Modifier le cours⎙ Imprimer\n\n      1Ensembles et éléments\n      \n        a ∈ E : a appartient à E. a ∉ E sinon.\n        En extension : on liste chaque élément une seule fois, l'ordre ne compte pas. Lettres de « ananas » : {a, n, s}.\n        En compréhension : {x ∈ E / x vérifie P}. Ex. {x ∈ ℕ / x² ≤ 10} = {0, 1, 2, 3} mais {x ∈ ℤ / x² ≤ 10} = {−3, −2, −1, 0, 1, 2, 3}.\n        Singleton : 1 élément. Paire : 2 éléments. {a, b} = {b, a}.\n        Cardinal Card(A) ou |A| : nombre d'éléments.\n      \n      ∅ est vide (Card 0). {∅} est un singleton (Card 1) dont l'élément est ∅. Et a ≠ {a}.\n\n      2Inclusion\n      E ⊂ F ⇔ ∀x ∈ E, x ∈ F (tout élément de E est dans F).\n      \n        Double inclusion : A = B ⇔ (A ⊂ B et B ⊂ A).\n        A ⊄ B ⇔ il existe x tel que x ∈ A et x ∉ B.\n        Transitivité : A ⊂ B et B ⊂ C ⇒ A ⊂ C.\n        Toujours : ∅ ⊂ E et E ⊂ E. Partie propre : ni ∅ ni E.\n      \n      ∈ relie un élément à un ensemble, ⊂ relie deux ensembles. Avec A = {b, u, t} : b ∈ A, {u} ⊂ A, {b, t} ∈ P(A), {∅, {u, t}} ⊂ P(A).\n\n      3Opérations (A, B parties de E)\n      \n        A ∪ Bréunion : x ∈ A ou x ∈ B\n        A ∩ Bintersection : x ∈ A et x ∈ B\n        ∁E(A) = Ācomplémentaire : x ∈ E et x ∉ A\n        A − Bdifférence : x ∈ A et x ∉ B. A − B = A ∩ ∁E(B)\n        A ∆ Bdifférence symétrique : dans un seul des deux. A ∆ B = (A − B) ∪ (B − A)\n      \n      Exemple : E = {a,…,i}, A = {a, b, d, f, g}, B = {a, c, d, e, f}.\n      A ∪ B = {a, b, c, d, e, f, g} · A ∩ B = {a, d, f} · ∁E(A) = {c, e, h, i}\n      A − B = {b, g} · A ∆ B = {b, c, e, g}\n      \n        Disjoints : A ∩ B = ∅. À ne pas confondre avec distincts (A ≠ B).\n        ∁E(∅) = E, ∁E(E) = ∅, ∁E(∁E(A)) = A, A ∪ Ā = E, A ∩ Ā = ∅.\n        A ⊂ B ⇔ ∁E(B) ⊂ ∁E(A).\n      \n      Schéma interactifLes opérations sur un diagramme de VennE = {a, …, i}, A = {a, b, d, f, g}, B = {a, c, d, e, f}. Choisis une opération : la zone concernée se colorie.A ∪ BA ∩ BA − BB − AA ∆ B∁E(A)∁E(A ∪ B)∁E(A ∩ B)\n    \n  \n  \n  \n  \n  \n  \n  \n  \n  \n  EAB\n  bgadfcehi\n    A ∪ Bx ∈ A ou x ∈ BA ∪ B = {a, b, c, d, e, f, g}Card = 7\n\n      4Propriétés et lois de Morgan\n      \n        IdempotenceA ∪ A = A, A ∩ A = A\n        Commutativité, associativitéA ∪ B = B ∪ A, (A ∩ B) ∩ C = A ∩ (B ∩ C)\n        NeutresA ∪ ∅ = A, A ∩ E = A, A ∪ E = E, A ∩ ∅ = ∅\n        DistributivitéA ∩ (B ∪ C) = (A ∩ B) ∪ (A ∩ C)\n        A ∪ (B ∩ C) = (A ∪ B) ∩ (A ∪ C)\n        AbsorptionA ∪ (A ∩ B) = A, A ∩ (A ∪ B) = A\n        Morgan∁(A ∪ B) = Ā ∩ B̄ ; ∁(A ∩ B) = Ā ∪ B̄\n      \n\n      5Cardinaux (problèmes « enquête »)\n      \n        Card(A ∪ B)= Card A + Card B − Card(A ∩ B)\n        Card(Ā)= Card E − Card A\n        Card(A − B)= Card A − Card(A ∩ B)\n        Card(A ∆ B)= Card A + Card B − 2·Card(A ∩ B)\n        Card(Ā ∩ B̄)= Card E − Card(A ∪ B) (Morgan)\n      \n      100 employés, F = femmes (52), I = formation info (70), F ∩ I = 40.\n      1. F ou I : Card(F ∪ I) = 52 + 70 − 40 = 82. Ainsi 82 employés sont des femmes ou ont suivi la formation.\n      2. Ni l'un ni l'autre : F̄ ∩ Ī = ∁(F ∪ I), Card = 100 − 82 = 18.\n      3. Pas femme mais formation : Card(I − F) = 70 − 40 = 30.\n      Toujours : nommer les ensembles, écrire la formule du cours, calculer, phrase de conclusion.\n\n      Schéma interactifRésoudre un problème « enquête » avec un VennRentre l'effectif total et les trois nombres de l'énoncé : le schéma remplit chaque zone et donne toutes les réponses classiques.Classe (TD2)Employés (DM1)Casino (exos corrigés)\n  Card E (total)Card ACard BCard(A ∩ B)\n  \n  \n  \n  \n  \n  \n  \n  \n  \n  EAB\n  11734\n    Au centre : Card(A ∩ B) = 7\n    A seulement : Card(A − B) = 18 − 7 = 11\n    B seulement : Card(B − A) = 10 − 7 = 3\n    QuestionEnsembleCalcul\n    l'un ou l'autreA ∪ B18 + 10 − 7 = 21\n    ni l'un ni l'autreĀ ∩ B̄ = ∁(A ∪ B)25 − 21 = 4\n    A mais pas BA − B18 − 7 = 11\n    un seul des deuxA ∆ B18 + 10 − 2 × 7 = 14\n    pas AĀ25 − 18 = 7\n    Vérification : 11 + 7 + 3 + 4 = 25, tout le monde est compté une seule fois.\n\n      6Ensemble des parties P(E)\n      \n        X ∈ P(E) ⇔ X ⊂ E. Ex. P({a, b}) = {∅, {a}, {b}, {a, b}}.\n        Card(P(E)) = 2^Card(E) : 3 éléments → 8 parties, 4 → 16.\n        Arbre des parties : pour chaque élément, branche « oui » (on le prend) / « non ». Les feuilles sont les parties.\n      \n\n      Schéma interactifL'arbre des partiesPour chaque élément on décide : on le prend (oui) ou pas (non). Chaque chemin donne une partie. Change les éléments (2 à 4).a ?ouinonb ?ouinonc ?ouinon{a, b, c}{a, b}c ?ouinon{a, c}{a}b ?ouinonc ?ouinon{b, c}{b}c ?ouinon{c}∅\n    E = {a, b, c} a 3 éléments, donc Card(P(E)) = 23 = 8 parties (les 8 feuilles).\n\n      7Produit cartésien, couples\n      \n        (a, b) = (c, d) ⇔ a = c et b = d : l'ordre compte, (a, b) ≠ (b, a) si a ≠ b.\n        A × B = {(a, b) / a ∈ A et b ∈ B}, A² = A × A.\n        Card(A × B) = Card A × Card B. Généralisation : Card(A₁ × … × Aₙ) = produit des Card.\n        Représentation cartésienne : tableau, A en lignes, B en colonnes, chaque case = (a, b).\n      \n\n      Schéma interactifConstruire A × BChaque case du tableau est un couple (a, b) : a vient de la ligne (A), b de la colonne (B).ABA \\ B12a(a, 1)(a, 2)b(b, 1)(b, 2)c(c, 1)(c, 2)\n    Card(A × B) = Card A × Card B = 3 × 2 = 6. Attention, (a, 1) ≠ (1, a) : dans un couple l'ordre compte, donc A × B ≠ B × A.\n\n      8Dénombrement : quelle formule ?\n      \n        SituationOrdre ?Répétition ?Formule\n        p-uplet (code, mot de passe, dés)ouiouinᵖ\n        Arrangement (éléments tous distincts)ouinonAₙᵖ = n!/(n−p)!\n        Permutation (tous, ordonnés)ouinonn!\n        Combinaison (partie, tirage simultané, équipe)nonnonC(n,p) = n!/(p!(n−p)!)\n      \n      \n        Code de 3 chiffres (0 à 9) : 10³ = 1000. Commençant par 5 : 10² = 100. 3 chiffres distincts non nuls commençant par 5 : 8 × 7 = 56.\n        4 chiffres distincts parmi 10 : A₁₀⁴ = 10 × 9 × 8 × 7 = 5040.\n        3 jetons parmi 8 tirés ensemble : C(8,3) = 56.\n        4 chiffres puis 2 lettres : 10⁴ × 26² = 6 760 000.\n        0! = 1 et 2ⁿ = C(n,0) + C(n,1) + … + C(n,n).\n      \n      Fais le schéma des cases : C1 × C2 × C3, en écrivant le nombre de choix sous chaque case. Laisse en puissance si le calcul est long.\n      Schéma interactifLe schéma des casesChoisis la situation : chaque case montre combien de choix il reste, et on multiplie.Cadenas 3 chiffres4 chiffres distincts3 jetons parmi 8Équipe de 11 parmi 213 dés\n  n (choix possibles)p (nombre de cases)\n  Ordre compte, répétitions permisesp-uplet : code, mot de passe, désOrdre compte, sans répétitionarrangement : éléments tous distinctsOrdre ne compte pas, sans répétitioncombinaison : partie, groupe, tirage simultanéC110×C210×C31010 × 10 × 10 = 103 = 1 000\n    Chaque case a les mêmes 10 choix, puisqu'on peut répéter.\n\n      9Partition\n      A₁, …, Aₙ forment une partition de E si : aucune partie n'est vide, elles sont disjointes deux à deux, et leur réunion vaut E. Ex. si A est une partie propre de E, A et ∁E(A) forment une partition de E.\n    "
+},
+{
+"type": "text",
+"title": "Résumé express",
+"text": "\n      Fiche express · Chap. 1 à 4\n      L'essentiel à relire juste avant le devoir. Devoir n°2 (lun. 23/11) : chapitres 3 et 4, en premier ci-dessous.✎ Modifier le cours⎙ Imprimer\n      \n        \n          Relations (chap. 3)\n          \n            Relation de A vers B = partie de A × B · nombre : 2^(|A|·|B|)\n            Application : chaque x a une et une seule image · nombre : |B|^|A|\n            Réflexive : x R x pour tout x (diagonale cochée)\n            Symétrique : x R y ⇒ y R x\n            Transitive : x R y et y R z ⇒ x R z (ne lister que les triplets où les deux sont vrais)\n            Antisymétrique : x R y et y R x ⇒ x = y\n            « Non » : un seul contre-exemple suffit\n            Équivalence = R + S + T · classes = partition de E\n            Ordre = R + antisymétrique + T · total ou partiel\n            « divise » dans ℤ : pas antisymétrique (1 | −1, −1 | 1)\n          \n        \n        \n          Divisibilité (chap. 4)\n          \n            a = bq + r, 0 ≤ r < |b| : reste jamais négatif\n            −35 = 12 × (−3) + 1 · 35 = (−12) × (−2) + 11\n            b | a ⇔ a = kb · 1 | n, n | 0, 0 | n ⇔ n = 0\n            a | b et a | c ⇒ a | xb + yc\n            Premier : exactement 2 diviseurs · 0 et 1 non premiers\n            24 = 2³ × 3 · 150 = 2 × 3 × 5²\n            Nombre de diviseurs : (1+α₁)(1+α₂)…\n            Toujours redécomposer : 21⁵ = 3⁵ × 7⁵ → 36\n            Liste : développer (1+2+2²+2³)(1+3)\n            Dans ℤ : deux fois plus (les opposés)\n          \n        \n      \n      \n        \n          Logique\n          \n            ∧ V ssi tout V · ∨ F ssi tout F\n            p → q F uniquement si V → F\n            p ↔ q V ssi même valeur\n            n lettres → 2ⁿ lignes, V d'abord à gauche\n            Modèle = V, contre-exemple = F\n            Tautologie : tout V · Contradiction : tout F · sinon contingente (justifier avec 1 modèle + 1 contre-ex.)\n            p → q éq ¬p ∨ q éq ¬q → ¬p\n            Réciproque q → p : pas équivalente\n            Morgan : ¬(p∧q) éq ¬p∨¬q, ¬(p∨q) éq ¬p∧¬q\n            « p seulement si q », « il suffit p pour q », « pour p il faut q » → p → q\n            « p si q » → q → p · « sauf si » → p ↔ ¬q\n            « sinon » → (p→q) ∧ (¬p→r)\n          \n        \n        \n          Ensembles\n          \n            ∈ élément · ⊂ ensemble\n            {∅} ≠ ∅, {a,b} = {b,a}, (a,b) ≠ (b,a)\n            A = B ⇔ A ⊂ B et B ⊂ A\n            A − B = A ∩ B̄ · A∆B = (A−B) ∪ (B−A)\n            Morgan : ∁(A∪B) = Ā∩B̄, ∁(A∩B) = Ā∪B̄\n            |A∪B| = |A| + |B| − |A∩B|\n            |Ā| = |E| − |A| · |A−B| = |A| − |A∩B|\n            |A∆B| = |A| + |B| − 2|A∩B|\n            |P(E)| = 2^|E| · |A×B| = |A|·|B|\n            Ordre + répétition : nᵖ · ordre sans répétition : n!/(n−p)! · sans ordre : C(n,p)\n            Disjoints : A∩B = ∅ (≠ distincts)\n          \n        \n      \n      Au devoir : nommer les ensembles / propositions, citer le résultat du cours, calculer, puis une phrase de conclusion. Tables : écrire la valeur sous chaque connecteur et entourer la colonne finale.\n    "
+}
+]
+}

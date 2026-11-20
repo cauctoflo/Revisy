@@ -1,0 +1,1539 @@
+{
+"decks": [
+{
+"title": "Comme au QCM",
+"cards": [
+{
+"id": "cr10399e8b31262fe",
+"q": "Combien vaut 101011₂ en décimal ?",
+"a": "43\n\nPositions 5, 3, 1 et 0 : 32 + 8 + 2 + 1 = 43. On compte les positions à partir de 0, à droite.",
+"tag": "Cours · Bases"
+},
+{
+"id": "cr103d20d4e9d7e04",
+"q": "Combien de bits code un chiffre hexadécimal ?",
+"a": "4\n\n16 = 2⁴ : un chiffre hexa correspond à 4 bits, donc un octet s'écrit avec 2 chiffres hexa.",
+"tag": "Cours · Bases"
+},
+{
+"id": "cr10373cee8c6e06a",
+"q": "Combien vaut 0xB0A en décimal ?",
+"a": "2826\n\nB0A₁₆ = 11 × 256 + 0 × 16 + 10 = 2 826. Le 0 du milieu compte : il occupe la position des « 16 ».",
+"tag": "Cours · Bases"
+},
+{
+"id": "cr103e1b6f5ec40d1",
+"q": "Combien de valeurs différentes peut-on coder sur 8 bits ?",
+"a": "256\n\nn bits donnent 2ⁿ combinaisons : 2⁸ = 256 (de 0 à 255 en non signé).",
+"tag": "Cours · Bases"
+},
+{
+"id": "cr1035d9a8e7ef37f",
+"q": "Quelle est la plage d'un entier non signé sur 8 bits ?",
+"a": "0 à 255\n\nNon signé sur n bits : 0 à 2ⁿ − 1, soit 0 à 255 sur 8 bits.",
+"tag": "Cours · Bases"
+},
+{
+"id": "cr103c39bdf5d746d",
+"q": "Quelle est la plage d'un entier signé sur 8 bits (complément à deux) ?",
+"a": "−128 à 127\n\nPlage −2ⁿ⁻¹ à 2ⁿ⁻¹ − 1 : −128 à 127. Il y a un négatif de plus que de positifs, car 0 n'a qu'un codage.",
+"tag": "Cours · Complément à deux"
+},
+{
+"id": "cr1033e527e411e15",
+"q": "Quelle est la plage d'un entier signé sur 5 bits (complément à deux) ?",
+"a": "−16 à 15\n\n−2⁴ à 2⁴ − 1 = −16 à 15. 0 à 31 serait la plage non signée.",
+"tag": "Cours · Complément à deux"
+},
+{
+"id": "cr10313948a3501da",
+"q": "Comment s'écrit −5 sur 8 bits en complément à deux ?",
+"a": "1111 1011\n\n5 = 0000 0101 → on inverse les bits : 1111 1010 → on ajoute 1 : 1111 1011. 1000 0101 est le codage « signe + valeur absolue », pas le complément à deux ; 1111 1010 oublie le +1.",
+"tag": "Cours · Complément à deux"
+},
+{
+"id": "cr103f4337722f8c1",
+"q": "Pour obtenir l'opposé d'un entier en complément à deux, on…",
+"a": "inverse tous les bits puis ajoute 1\n\nMéthode du cours : inverser chaque bit puis ajouter 1. Inverser seulement donne le complément à un (il manque 1).",
+"tag": "Cours · Complément à deux"
+},
+{
+"id": "cr1038748d49dce0e",
+"q": "Lu comme un entier signé sur 8 bits, 1111 1111 vaut…",
+"a": "−1\n\nOn inverse : 0000 0000, puis +1 : 0000 0001 = 1, donc le mot vaut −1. 255 est sa lecture non signée (255 − 256 = −1).",
+"tag": "Cours · Complément à deux"
+},
+{
+"id": "cr103804de98e7eca",
+"q": "Lu comme un entier signé sur 8 bits, 1000 0000 vaut…",
+"a": "−128\n\nC'est le plus petit nombre signé sur 8 bits : 128 − 256 = −128. Il n'existe pas de « −0 » en complément à deux.",
+"tag": "Cours · Complément à deux"
+},
+{
+"id": "cr103ee15fe031190",
+"q": "Que vaut 1111 0000 en non signé, puis en signé ?",
+"a": "240 et −16\n\nNon signé : 128 + 64 + 32 + 16 = 240. Signé : 240 − 256 = −16. −112 serait la lecture « signe + valeur absolue » (−(64 + 32 + 16)).",
+"tag": "Cours · Complément à deux"
+},
+{
+"id": "cr1039857637e35df",
+"q": "Combien de codages du zéro y a-t-il en complément à deux ?",
+"a": "Un seul\n\n0000 0000 est le seul zéro : l'opposé de 0 redonne 0 (1111 1111 + 1 = 0000 0000, carry jeté).",
+"tag": "Cours · Complément à deux"
+},
+{
+"id": "cr1034c69d5145f3e",
+"q": "Le carry (retenue sortante) d'une addition sur 8 bits signale…",
+"a": "un dépassement en non signé\n\nLe carry est le 9ᵉ bit qui sort : le vrai résultat non signé dépasse 255. Il ne dit rien du résultat signé.",
+"tag": "Cours · Carry et overflow"
+},
+{
+"id": "cr103e619d010e4e6",
+"q": "Il y a overflow (dépassement signé) quand…",
+"a": "deux nombres de même signe donnent un résultat de signe opposé\n\nOverflow : + et + donnent −, ou − et − donnent +. Le résultat signé exact sort de [−128 ; 127].",
+"tag": "Cours · Carry et overflow"
+},
+{
+"id": "cr103a01608443fd3",
+"q": "Peut-on avoir un overflow en additionnant un nombre positif et un nombre négatif ?",
+"a": "Non, jamais\n\nLa somme d'un positif et d'un négatif est toujours entre les deux : elle reste dans la plage. L'overflow ne vient que de deux nombres de même signe.",
+"tag": "Cours · Carry et overflow"
+},
+{
+"id": "cr1031b8dd544c022",
+"q": "Sur 8 bits : 0111 0110 + 0100 0011 = ?",
+"a": "1011 1001, carry 0, overflow oui\n\n118 + 67 = 185 ≤ 255 : pas de carry. Mais deux positifs donnent un mot qui commence par 1 (négatif en signé) : 185 > 127, overflow.",
+"tag": "Cours · Carry et overflow"
+},
+{
+"id": "cr103c48d1410bbd5",
+"q": "Sur 8 bits : 1111 1111 + 0000 0001 = ?",
+"a": "0000 0000, carry 1, pas d'overflow\n\nNon signé : 255 + 1 = 256, on garde 8 bits (0000 0000) et le carry vaut 1. Signé : −1 + 1 = 0, résultat juste, pas d'overflow. On ne garde jamais de 9ᵉ bit.",
+"tag": "Cours · Carry et overflow"
+},
+{
+"id": "cr103129ff31e6c9a",
+"q": "Sur 8 bits : 0111 1111 + 0000 0001 = ?",
+"a": "1000 0000, carry 0, overflow oui\n\n127 + 1 = 128 ≤ 255 : pas de carry. En signé, 127 + 1 sort de [−128 ; 127] : le mot 1000 0000 se lit −128, overflow.",
+"tag": "Cours · Carry et overflow"
+},
+{
+"id": "cr1032ae7fcd38283",
+"q": "Comment le processeur calcule-t-il a − b ?",
+"a": "a + (complément à deux de b)\n\nSoustraire, c'est ajouter l'opposé : a − b = a + (−b), et −b s'obtient par le complément à deux. On jette le carry final.",
+"tag": "Cours · Carry et overflow"
+},
+{
+"id": "cr1031ffe42c77f07",
+"q": "Sur 8 bits : 0000 1111 − 0001 0000 = ?",
+"a": "1111 1111 (−1)\n\n15 − 16 = −1. −16 = 1111 0000, et 0000 1111 + 1111 0000 = 1111 1111, qui vaut −1 en signé.",
+"tag": "Cours · Carry et overflow"
+},
+{
+"id": "cr1033faf0a368482",
+"q": "En IEEE 754 simple précision, comment sont répartis les 32 bits ?",
+"a": "1 signe, 8 exposant, 23 fraction\n\nSimple : 1 + 8 + 23 = 32 bits (biais 127). Double : 1 + 11 + 52 = 64 bits (biais 1023).",
+"tag": "Cours · Flottants"
+},
+{
+"id": "cr1034925c06586b1",
+"q": "Quel est le biais de l'exposant en simple précision ?",
+"a": "127\n\nOn stocke e = E + 127. 1023 est le biais de la double précision.",
+"tag": "Cours · Flottants"
+},
+{
+"id": "cr1039a17be490369",
+"q": "Dans un flottant normalisé, le 1 avant la virgule de 1,F…",
+"a": "n'est pas stocké (implicite)\n\nComme il vaut toujours 1, on ne le stocke pas : les 23 bits de fraction sont ceux après la virgule. Le mettre dans F est une erreur classique.",
+"tag": "Cours · Flottants"
+},
+{
+"id": "cr10354e7fe55fd6f",
+"q": "Que vaut le flottant 0 | 10000001 | 0110 0…0 ?",
+"a": "5,5\n\nSigne 0 : positif. e = 129 donc E = 129 − 127 = 2. 1,011₂ = 1,375. 1,375 × 2² = 5,5.",
+"tag": "Cours · Flottants"
+},
+{
+"id": "cr103682655d2332e",
+"q": "Quel est le codage IEEE 754 simple de 5,75 ?",
+"a": "0x40B80000\n\n5,75 = 101,11₂ = 1,0111 × 2². s = 0, e = 2 + 127 = 129 = 1000 0001, F = 0111 0…0. Bits : 0100 0000 1011 1000 0…0 = 0x40B80000. 0xC0B80000 a le bit de signe à 1 (−5,75).",
+"tag": "Cours · Flottants"
+},
+{
+"id": "cr10351a6de81ed3d",
+"q": "Pourquoi 0,1 n'est-il pas stocké exactement dans un flottant ?",
+"a": "Son écriture binaire est infinie (0,000110011…₂)\n\nEn binaire, 0,1 = 0,0001100110011…₂ : le motif 0011 se répète sans fin. Avec 23 bits de fraction, il faut arrondir : en simple, la valeur stockée est 0,10000000149011612.",
+"tag": "Cours · Flottants"
+},
+{
+"id": "cr103e925978b22f5",
+"q": "Lequel de ces nombres est stocké exactement en IEEE 754 ?",
+"a": "0,5\n\n0,5 = 0,1₂ = 2⁻¹ : écriture binaire finie. 0,1, 0,2 et 0,3 ont une écriture binaire infinie.",
+"tag": "Cours · Flottants"
+},
+{
+"id": "cr103beb900416960",
+"q": "Un flottant a l'exposant 1111 1111 et une fraction non nulle. C'est…",
+"a": "NaN\n\nExposant tout à 1 : fraction nulle → ±∞, fraction non nulle → NaN (Not a Number, par exemple 0/0).",
+"tag": "Cours · Flottants"
+},
+{
+"id": "cr10343e0845ee4ad",
+"q": "Un flottant a l'exposant 1111 1111 et une fraction nulle. C'est…",
+"a": "±∞ selon le signe\n\nExposant tout à 1 avec fraction 0 : l'infini. Exposant 0000 0000 avec fraction 0 : zéro.",
+"tag": "Cours · Flottants"
+},
+{
+"id": "cr103ffe343a5da7f",
+"q": "Pour tester si deux flottants x et y sont « égaux », on écrit plutôt…",
+"a": "|x − y| < ε\n\nLes arrondis rendent == peu fiable (0,1 + 0,2 ≠ 0,3). On compare avec une tolérance ε.",
+"tag": "Cours · Flottants"
+},
+{
+"id": "cr1035b91a24fdd82",
+"q": "Combien vaut 101,101₂ ?",
+"a": "5,625\n\n101₂ = 5 et 0,101₂ = 0,5 + 0,125 = 0,625. Après la virgule, les positions valent 2⁻¹, 2⁻², 2⁻³…",
+"tag": "Cours · Flottants"
+},
+{
+"id": "cr1036efa47c17fd9",
+"q": "Quelle est la forme normalisée de 0,00101₂ ?",
+"a": "1,01 × 2⁻³\n\nOn décale la virgule de 3 rangs vers la droite pour avoir 1,… : il faut multiplier par 2⁻³ pour compenser.",
+"tag": "Cours · Flottants"
+},
+{
+"id": "cr103ea3022b9999b",
+"q": "Sous PowerShell, quelle commande donne le nombre de cœurs et de processeurs logiques ?",
+"a": "Get-CimInstance Win32_Processor\n\nGet-CimInstance Win32_Processor donne Name, NumberOfCores, NumberOfLogicalProcessors et MaxClockSpeed. Sous Fedora : lscpu.",
+"tag": "TP1 · Commandes"
+},
+{
+"id": "cr103087cf78fe93b",
+"q": "Sous Fedora, quelle commande décrit le processeur ?",
+"a": "lscpu\n\nlscpu = processeur. lsblk = disques et partitions, lspci = périphériques PCI, free -h = mémoire vive.",
+"tag": "TP1 · Commandes"
+},
+{
+"id": "cr1032ac04ab701c6",
+"q": "Sous Fedora, quelle commande affiche la RAM en unités lisibles ?",
+"a": "free -h\n\nfree -h : mémoire totale, utilisée et libre, -h pour des unités lisibles (Gi, Mi). Sous Windows : Get-CimInstance Win32_ComputerSystem (TotalPhysicalMemory en octets).",
+"tag": "TP1 · Commandes"
+},
+{
+"id": "cr103f3abc603f0bb",
+"q": "uname -m affiche x86_64. Cela signifie…",
+"a": "une architecture 64 bits (comme AMD64)\n\nx86_64 = AMD64 = 64 bits. La version du noyau, c'est uname -r ; le nom de la machine, hostname.",
+"tag": "TP1 · Commandes"
+},
+{
+"id": "cr103541061937893",
+"q": "Sous Fedora, quelle commande affiche le nom et la version du système ?",
+"a": "cat /etc/os-release\n\nLe fichier /etc/os-release décrit la distribution. Sous Windows : Get-ComputerInfo (WindowsProductName, WindowsVersion).",
+"tag": "TP1 · Commandes"
+},
+{
+"id": "cr1030894d302850c",
+"q": "Quel est l'équivalent Fedora de Get-PhysicalDisk ?",
+"a": "lsblk\n\nlsblk liste les disques (TYPE disk) et leurs partitions ; avec -o NAME,SIZE,TYPE,FSTYPE,MOUNTPOINTS,MODEL on choisit les colonnes.",
+"tag": "TP1 · Commandes"
+},
+{
+"id": "cr1037da52f58868a",
+"q": "Quel est l'équivalent PowerShell de lsblk -f (systèmes de fichiers des volumes) ?",
+"a": "Get-Volume\n\nGet-Volume donne DriveLetter, FileSystem (NTFS…), Size et SizeRemaining. Get-PhysicalDisk décrit le disque matériel, pas les volumes.",
+"tag": "TP1 · Commandes"
+},
+{
+"id": "cr103f742b9636636",
+"q": "ip -br link (Fedora) correspond sous PowerShell à…",
+"a": "Get-NetAdapter\n\nGet-NetAdapter liste les interfaces réseau (Name, InterfaceDescription, Status, LinkSpeed).",
+"tag": "TP1 · Commandes"
+},
+{
+"id": "cr103e8240d44550a",
+"q": "Quelle cmdlet PowerShell correspond à pwd ?",
+"a": "Get-Location\n\nGet-Location affiche le dossier courant ; Set-Location change de dossier (comme cd).",
+"tag": "TP1 · Commandes"
+},
+{
+"id": "cr1039f9a28f6c7a4",
+"q": "Sous Fedora, quelle commande liste les périphériques PCI (carte graphique, carte réseau…) ?",
+"a": "lspci\n\nlspci. Sous Windows : Get-PnpDevice -PresentOnly, avec -Class Display ou -Class Net pour filtrer.",
+"tag": "TP1 · Commandes"
+},
+{
+"id": "cr10393a8d793d14f",
+"q": "Un processeur a 8 cœurs avec hyperthreading. Combien de processeurs logiques affiche Windows ?",
+"a": "16\n\nAvec l'hyperthreading, chaque cœur physique offre 2 processeurs logiques : 8 × 2 = 16. C'est NumberOfLogicalProcessors.",
+"tag": "TP1 · Matériel"
+},
+{
+"id": "cr103116657075d9c",
+"q": "Un disque vendu « 512 Go » s'affiche environ…",
+"a": "476 Gio\n\n512 Go = 512 × 10⁹ octets ; 1 Gio = 2³⁰ ≈ 1,074 × 10⁹ octets. 512 × 10⁹ / 2³⁰ ≈ 476 Gio.",
+"tag": "TP1 · Matériel"
+},
+{
+"id": "cr103b4c0d6bf218e",
+"q": "Quel ordre va du plus rapide au plus lent ?",
+"a": "registres, cache, RAM, SSD\n\nLes registres sont dans le processeur, puis le cache, la RAM, et enfin le stockage (SSD).",
+"tag": "TP1 · Matériel"
+},
+{
+"id": "cr10395f76057a16b",
+"q": "Pour lancer plusieurs machines virtuelles en même temps, quelle ressource limite en premier ?",
+"a": "La RAM\n\nChaque machine virtuelle réserve sa propre mémoire : la RAM est épuisée en premier.",
+"tag": "TP1 · Matériel"
+},
+{
+"id": "cr103344f612b1f07",
+"q": "Dans le modèle de von Neumann, l'UAL (unité arithmétique et logique) fait partie…",
+"a": "du processeur\n\nProcesseur = UAL + unité de commande + registres. Autour : mémoire, stockage, périphériques d'E/S, reliés par des bus.",
+"tag": "TP1 · Matériel"
+},
+{
+"id": "cr1033d3c3a8f392f",
+"q": "Sous Fedora, echo \"Bonjour\" > f.txt crée un fichier de…",
+"a": "8 octets\n\n7 octets de texte (ASCII) + LF (0a, 1 octet) ajouté par Bash = 8 octets.",
+"tag": "TP2 · Fichiers texte"
+},
+{
+"id": "cr1030d2c554535ed",
+"q": "Sous Windows avec PowerShell 7, echo \"Bonjour\" > f.txt crée un fichier de…",
+"a": "9 octets\n\n7 octets de texte + CRLF (0D 0A, 2 octets) = 9 octets.",
+"tag": "TP2 · Fichiers texte"
+},
+{
+"id": "cr103fc003211bc47",
+"q": "Quels octets terminent une ligne écrite par PowerShell 7 sous Windows ?",
+"a": "0D 0A (CRLF)\n\nWindows : CR LF = 0D 0A. Linux (Fedora) : LF seul = 0a.",
+"tag": "TP2 · Fichiers texte"
+},
+{
+"id": "cr103fc989d6557ed",
+"q": "Que fait > dans echo \"x\" > f.txt ?",
+"a": "Il crée le fichier ou remplace son contenu\n\n> redirige la sortie vers le fichier en l'écrasant. Pour ajouter à la fin, c'est >>.",
+"tag": "TP2 · Fichiers texte"
+},
+{
+"id": "cr1035fa5bf86017b",
+"q": "echo \"Café\" > accent.txt : les guillemets sont-ils écrits dans le fichier ?",
+"a": "Non\n\nLes guillemets délimitent le texte pour le shell, ils ne sont pas écrits : le fichier contient Café et la fin de ligne.",
+"tag": "TP2 · Fichiers texte"
+},
+{
+"id": "cr103ce6422818922",
+"q": "Quelle commande Fedora donne la taille d'un fichier en octets ?",
+"a": "wc -c fichier\n\nwc -c compte les octets (-l compte les lignes). Sous PowerShell : la propriété Length de Get-Item.",
+"tag": "TP2 · Fichiers texte"
+},
+{
+"id": "cr103cdf519897220",
+"q": "Sous PowerShell, quelle propriété de Get-Item f donne la taille en octets ?",
+"a": "Length\n\nGet-Item f | Select-Object Name, Length : Length est la taille en octets.",
+"tag": "TP2 · Fichiers texte"
+},
+{
+"id": "cr1039f08649b4d42",
+"q": "Sous Fedora, od -An -tx1 -v fichier affiche…",
+"a": "les octets du fichier en hexa, un par un, sans adresses\n\n-An : pas d'adresses ; -tx1 : hexadécimal, 1 octet à la fois ; -v : toutes les lignes, même répétées.",
+"tag": "TP2 · Fichiers texte"
+},
+{
+"id": "cr103315c8d83d573",
+"q": "Quel est l'équivalent PowerShell de od -An -tx1 -v fichier ?",
+"a": "Format-Hex -Path fichier\n\nFormat-Hex affiche les octets en hexa. Sa colonne texte de droite n'est pas fiable pour les caractères UTF-8 sur plusieurs octets.",
+"tag": "TP2 · Fichiers texte"
+},
+{
+"id": "cr10329d57a9d1fc6",
+"q": "En UTF-8, « é » s'écrit…",
+"a": "C3 A9 (2 octets)\n\né est U+00E9, hors ASCII : 2 octets C3 A9. E2 98 95 code ☕.",
+"tag": "TP2 · UTF-8"
+},
+{
+"id": "cr1039f4eda206b3e",
+"q": "Combien d'octets faut-il pour 😊 en UTF-8 ?",
+"a": "4\n\n😊 (U+1F60A) = F0 9F 98 8A : 4 octets. ASCII 1 octet, é 2, ☕ 3.",
+"tag": "TP2 · UTF-8"
+},
+{
+"id": "cr10388945ec65249",
+"q": "Combien d'octets dans le texte « Café » en UTF-8, sans fin de ligne ?",
+"a": "5\n\nC a f : 1 octet chacun, é : 2 octets (C3 A9). 43 61 66 C3 A9 = 5 octets pour 4 caractères.",
+"tag": "TP2 · UTF-8"
+},
+{
+"id": "cr10364b0819898d9",
+"q": "Pourquoi ne peut-on pas écrire « é » en ASCII ?",
+"a": "ASCII ne code que 128 caractères (00 à 7F), sans lettres accentuées\n\nASCII : 7 bits, 128 codes (lettres non accentuées, chiffres, ponctuation). Ni é ni 😊 n'y sont.",
+"tag": "TP2 · UTF-8"
+},
+{
+"id": "cr10375db2b2169ab",
+"q": "Le texte « Café » est écrit par echo sous Fedora puis sous Windows (PowerShell 7). Qu'est-ce qui change entre les deux fichiers ?",
+"a": "Seulement la fin de ligne\n\nLes deux écrivent en UTF-8 : 43 61 66 C3 A9 des deux côtés. Fedora ajoute 0a, Windows 0D 0A.",
+"tag": "TP2 · UTF-8"
+},
+{
+"id": "cr103ef3d6aa3cc76",
+"q": "L'entier 0x12345678 est stocké en little-endian. Quels octets trouve-t-on aux adresses 0 à 3 ?",
+"a": "78 56 34 12\n\nLittle-endian : l'octet de poids faible (78) à la plus petite adresse. Chaque octet garde ses chiffres : 87 65 43 21 inverserait l'intérieur des octets, c'est faux.",
+"tag": "TP2 · Endianness"
+},
+{
+"id": "cr103ef1d7632615d",
+"q": "En PowerShell : $s = 250 + 10 puis $s -band 255 donne…",
+"a": "4\n\n260 = 1 0000 0100 en binaire. -band 255 garde les 8 bits de droite : 0000 0100 = 4. Le 9ᵉ bit perdu est le carry.",
+"tag": "TP2 · PowerShell"
+},
+{
+"id": "cr1038a727ec6e9d6",
+"q": "$r = 4 ; $r.ToString(\"X2\") affiche…",
+"a": "04\n\nX = hexadécimal, 2 = au moins 2 chiffres : 04. Le binaire s'obtient avec [Convert]::ToString($r, 2).",
+"tag": "TP2 · PowerShell"
+},
+{
+"id": "cr10385a8dbbc8d91",
+"q": "(0 - 1) -band 255 donne 255. Que représente ce mot de 8 bits 1111 1111 ?",
+"a": "255 en non signé et −1 en signé\n\nMême configuration de bits, deux lectures : 255 non signé, −1 en complément à deux. C'est pour cela que $bits8 ≠ la différence mathématique.",
+"tag": "TP2 · PowerShell"
+},
+{
+"id": "cr1034da19194a424",
+"q": "En PowerShell, ([double][single]0.1) -eq 0.1 renvoie…",
+"a": "False\n\n[single]0.1 est arrondi sur 32 bits : 0.10000000149011612. Le passer en [double] n'annule pas l'arrondi, donc ce n'est pas égal au double 0.1.",
+"tag": "TP2 · PowerShell"
+},
+{
+"id": "cr1037000467dfe7a",
+"q": "Pourquoi utiliser PowerShell 7 plutôt que Windows PowerShell 5.1 au TP2 ?",
+"a": "PowerShell 7 écrit en UTF-8 sans BOM, 5.1 utilise un autre codage\n\nLe TP compare des octets UTF-8 : PowerShell 7 écrit en UTF-8 sans BOM, Windows PowerShell 5.1 utilise un autre codage par défaut. Il ajoute quand même CRLF.",
+"tag": "TP2 · PowerShell"
+},
+{
+"id": "cr103c471c8edfbc8",
+"q": "Quelle commande vérifie la version de PowerShell ?",
+"a": "$PSVersionTable.PSVersion\n\n$PSVersionTable.PSVersion doit afficher 7.x. uname -r donne la version du noyau Linux.",
+"tag": "TP2 · PowerShell"
+},
+{
+"id": "cr103426cb451dff8",
+"q": "Quelle cmdlet crée l'archive ZIP du rendu ?",
+"a": "Compress-Archive\n\nCompress-Archive -Path Rendu_TP2 -DestinationPath R103_TP2_Nom1_Nom2.zip.",
+"tag": "TP2 · PowerShell"
+}
+]
+},
+{
+"title": "Pratique : prévois le résultat",
+"cards": [
+{
+"id": "cr10321e8af257c81",
+"q": "PowerShell 7 (Windows). Qu'affiche :[Convert]::ToString(300 -band 255, 2).PadLeft(8, \"0\")",
+"a": "00101100\n\n300 = 1 0010 1100 (9 bits). -band 255 garde les 8 derniers : 0010 1100, et PadLeft rajoute le 0 de tête : 00101100.",
+"tag": "Calcul PowerShell"
+},
+{
+"id": "cr1035560c23aea38",
+"q": "PowerShell 7 (Windows). Qu'affichent ces deux lignes ?$s = 128 + 128\n$s.ToString(\"X\") ; ($s -band 255).ToString(\"X2\")",
+"a": "100 puis 00\n\n128 + 128 = 256 = 0x100 (somme exacte, 3 chiffres). Les 8 bits conservés valent 0x00 : il y a une retenue. Réponse : 100 puis 00.",
+"tag": "Calcul PowerShell"
+},
+{
+"id": "cr1035935fc009c2b",
+"q": "PowerShell 7 (Windows). Après echo \"Noël\" > noel.txt, quels octets montre Format-Hex -Path noel.txt ?",
+"a": "4E 6F C3 AB 6C 0D 0A\n\nN = 4E, o = 6F, ë = C3 AB (2 octets en UTF-8 ; EB est son point de code, pas ses octets), l = 6C, puis CRLF = 0D 0A : 4E 6F C3 AB 6C 0D 0A.",
+"tag": "Lire les octets"
+},
+{
+"id": "cr103887c2e60777c",
+"q": "Fedora (Bash). Après echo \"Prix: 5€\" > prix.txt, quelle est la dernière paire affichée par od -An -tx1 prix.txt ?",
+"a": "0a\n\nLes octets sont 50 72 69 78 3a 20 35 e2 82 ac 0a. € = e2 82 ac, puis echo de Bash ajoute seulement LF : la dernière paire est 0a. CRLF (0d 0a) n'apparaît qu'avec PowerShell sous Windows.",
+"tag": "Lire les octets"
+},
+{
+"id": "cr103d788d81f1a6e",
+"q": "Dans Format-Hex, quels octets codent « € » en UTF-8 ?",
+"a": "E2 82 AC\n\n€ est U+20AC : hors ASCII et au-delà de U+07FF, il prend 3 octets : E2 82 AC. 20AC est son point de code, C3 A9 est « é ».",
+"tag": "Lire les octets"
+},
+{
+"id": "cr10372fa020c618a",
+"q": "PowerShell 7 (Windows). Qu'affiche :\"Fusée 😊\".Length",
+"a": "8\n\nPiège : .Length compte des unités UTF-16, pas des caractères ni des octets. F u s é e espace = 6, et 😊 (hors du plan de base) compte pour 2 : 8. Il y a 7 caractères et 11 octets UTF-8.",
+"tag": "Caractères et octets"
+},
+{
+"id": "cr103b8faeaaa99c1",
+"q": "PowerShell 7 (Windows). Qu'affiche :([double][single]0.75) -eq 0.75",
+"a": "True\n\n0,75 = 0,11₂ : fraction binaire finie, stockée exactement en simple précision. La comparaison donne True.",
+"tag": "Flottants"
+},
+{
+"id": "cr103854bcfa0dc98",
+"q": "PowerShell 7 (Windows). Qu'affiche :([double][single]0.2) -eq 0.2",
+"a": "False\n\n0,2 n'est pas représentable exactement : [single]0.2 vaut 0.20000000298023224 une fois converti en double, différent du double 0.2. Réponse : False.",
+"tag": "Flottants"
+},
+{
+"id": "cr103936e20d73aa8",
+"q": "PowerShell 7 (Windows). Qu'affiche :([double][single]0.3).ToString(\"G17\")",
+"a": "0.30000001192092896\n\n0,3 est infini en binaire. Arrondi en simple précision puis écrit avec 17 chiffres : 0.30000001192092896. 0.29999999999999999 serait le double 0.3, et 0.30000000000000004 est le célèbre 0.1 + 0.2.",
+"tag": "Flottants"
+},
+{
+"id": "cr1034ab51edb70f2",
+"q": "Quelle commande enregistre tout ce que tu tapes et tout ce qui s'affiche (le « journal de ta session ») ?",
+"a": "Start-Transcript -Path journal.txt\n\nStart-Transcript démarre l'enregistrement des commandes et de leurs sorties ; on l'arrête avec Stop-Transcript. Get-History ne garde que les commandes.",
+"tag": "Commandes"
+},
+{
+"id": "cr1033c650a8e9ce0",
+"q": "Quelle commande crée le ZIP à rendre à partir du dossier Rendu ?",
+"a": "Compress-Archive -Path Rendu -DestinationPath R103.zip\n\nCompress-Archive crée l'archive ; Expand-Archive fait l'inverse (décompresser).",
+"tag": "Commandes"
+},
+{
+"id": "cr10370436e7c6ee0",
+"q": "Dans Get-CimInstance Win32_Processor, quelle propriété donne le nombre de processeurs logiques ?",
+"a": "NumberOfLogicalProcessors\n\nNumberOfCores = cœurs physiques, NumberOfLogicalProcessors = processeurs logiques (2 × cœurs avec l'hyperthreading), MaxClockSpeed = fréquence en MHz.",
+"tag": "Commandes"
+},
+{
+"id": "cr10356b5d423a191",
+"q": "Get-CimInstance Win32_Processor affiche MaxClockSpeed : 3600. Que vaut la fréquence ?",
+"a": "3,6 GHz\n\nMaxClockSpeed est en MHz : 3600 MHz = 3,6 GHz.",
+"tag": "Commandes"
+},
+{
+"id": "cr10340d0aab5c51d",
+"q": "Fedora (Bash). Sur un PC 64 bits Intel ou AMD, qu'affiche uname -m ?",
+"a": "x86_64\n\nx86_64 (aussi appelé AMD64). « x64-based PC » est ce qu'affiche CsSystemType sous PowerShell.",
+"tag": "Commandes"
+},
+{
+"id": "cr1038a445948131c",
+"q": "Dans le bon terminal pour l'éval (pwsh), qu'affiche $PSVersionTable.PSVersion.Major ?",
+"a": "7\n\nPowerShell 7 (pwsh) affiche 7. Windows PowerShell 5.1 afficherait 5 : il redirige en UTF-16, et les tailles de fichiers ne correspondraient plus.",
+"tag": "Commandes"
+},
+{
+"id": "cr1034cadb8928ebb",
+"q": "Quelle commande PowerShell donne l'architecture (OsArchitecture, CsSystemType) ?",
+"a": "Get-ComputerInfo\n\nGet-ComputerInfo | Select-Object OsArchitecture, CsSystemType → « 64 bits », « x64-based PC ».",
+"tag": "Commandes"
+}
+]
+}
+],
+"quizzes": [
+{
+"title": "Comme au QCM · quiz 1",
+"questions": [
+{
+"q": "Combien vaut 101011₂ en décimal ?",
+"choices": [
+"53",
+"107",
+"41",
+"43"
+],
+"answer": 3,
+"expl": "Positions 5, 3, 1 et 0 : 32 + 8 + 2 + 1 = 43. On compte les positions à partir de 0, à droite."
+},
+{
+"q": "Combien de bits code un chiffre hexadécimal ?",
+"choices": [
+"2",
+"16",
+"4",
+"8"
+],
+"answer": 2,
+"expl": "16 = 2⁴ : un chiffre hexa correspond à 4 bits, donc un octet s'écrit avec 2 chiffres hexa."
+},
+{
+"q": "Combien vaut 0xB0A en décimal ?",
+"choices": [
+"186",
+"2826",
+"2816",
+"2570"
+],
+"answer": 1,
+"expl": "B0A₁₆ = 11 × 256 + 0 × 16 + 10 = 2 826. Le 0 du milieu compte : il occupe la position des « 16 »."
+},
+{
+"q": "Combien de valeurs différentes peut-on coder sur 8 bits ?",
+"choices": [
+"256",
+"255",
+"128",
+"512"
+],
+"answer": 0,
+"expl": "n bits donnent 2ⁿ combinaisons : 2⁸ = 256 (de 0 à 255 en non signé)."
+},
+{
+"q": "Quelle est la plage d'un entier non signé sur 8 bits ?",
+"choices": [
+"−128 à 127",
+"1 à 256",
+"0 à 255",
+"0 à 256"
+],
+"answer": 2,
+"expl": "Non signé sur n bits : 0 à 2ⁿ − 1, soit 0 à 255 sur 8 bits."
+},
+{
+"q": "Quelle est la plage d'un entier signé sur 8 bits (complément à deux) ?",
+"choices": [
+"−256 à 255",
+"−128 à 127",
+"−127 à 127",
+"−127 à 128"
+],
+"answer": 1,
+"expl": "Plage −2ⁿ⁻¹ à 2ⁿ⁻¹ − 1 : −128 à 127. Il y a un négatif de plus que de positifs, car 0 n'a qu'un codage."
+},
+{
+"q": "Quelle est la plage d'un entier signé sur 5 bits (complément à deux) ?",
+"choices": [
+"−32 à 31",
+"0 à 31",
+"−16 à 15",
+"−15 à 15"
+],
+"answer": 2,
+"expl": "−2⁴ à 2⁴ − 1 = −16 à 15. 0 à 31 serait la plage non signée."
+},
+{
+"q": "Comment s'écrit −5 sur 8 bits en complément à deux ?",
+"choices": [
+"1000 0101",
+"1111 1010",
+"0000 0101",
+"1111 1011"
+],
+"answer": 3,
+"expl": "5 = 0000 0101 → on inverse les bits : 1111 1010 → on ajoute 1 : 1111 1011. 1000 0101 est le codage « signe + valeur absolue », pas le complément à deux ; 1111 1010 oublie le +1."
+},
+{
+"q": "Pour obtenir l'opposé d'un entier en complément à deux, on…",
+"choices": [
+"ajoute 1 puis garde les mêmes bits",
+"inverse tous les bits puis ajoute 1",
+"inverse tous les bits",
+"met le bit de gauche à 1"
+],
+"answer": 1,
+"expl": "Méthode du cours : inverser chaque bit puis ajouter 1. Inverser seulement donne le complément à un (il manque 1)."
+},
+{
+"q": "Lu comme un entier signé sur 8 bits, 1111 1111 vaut…",
+"choices": [
+"−1",
+"−127",
+"255",
+"−128"
+],
+"answer": 0,
+"expl": "On inverse : 0000 0000, puis +1 : 0000 0001 = 1, donc le mot vaut −1. 255 est sa lecture non signée (255 − 256 = −1)."
+},
+{
+"q": "Lu comme un entier signé sur 8 bits, 1000 0000 vaut…",
+"choices": [
+"−128",
+"−0",
+"128",
+"−1"
+],
+"answer": 0,
+"expl": "C'est le plus petit nombre signé sur 8 bits : 128 − 256 = −128. Il n'existe pas de « −0 » en complément à deux."
+},
+{
+"q": "Que vaut 1111 0000 en non signé, puis en signé ?",
+"choices": [
+"240 et 240",
+"15 et −15",
+"240 et −16",
+"240 et −112"
+],
+"answer": 2,
+"expl": "Non signé : 128 + 64 + 32 + 16 = 240. Signé : 240 − 256 = −16. −112 serait la lecture « signe + valeur absolue » (−(64 + 32 + 16))."
+},
+{
+"q": "Combien de codages du zéro y a-t-il en complément à deux ?",
+"choices": [
+"Un seul",
+"Deux (+0 et −0)",
+"Aucun",
+"Cela dépend du nombre de bits"
+],
+"answer": 0,
+"expl": "0000 0000 est le seul zéro : l'opposé de 0 redonne 0 (1111 1111 + 1 = 0000 0000, carry jeté)."
+},
+{
+"q": "Le carry (retenue sortante) d'une addition sur 8 bits signale…",
+"choices": [
+"une erreur de codage",
+"un dépassement en non signé",
+"un dépassement en signé",
+"un résultat négatif"
+],
+"answer": 1,
+"expl": "Le carry est le 9ᵉ bit qui sort : le vrai résultat non signé dépasse 255. Il ne dit rien du résultat signé."
+},
+{
+"q": "Il y a overflow (dépassement signé) quand…",
+"choices": [
+"les deux nombres sont de signes différents",
+"deux nombres de même signe donnent un résultat de signe opposé",
+"il y a une retenue sortante",
+"le résultat est négatif"
+],
+"answer": 1,
+"expl": "Overflow : + et + donnent −, ou − et − donnent +. Le résultat signé exact sort de [−128 ; 127]."
+}
+]
+},
+{
+"title": "Comme au QCM · quiz 2",
+"questions": [
+{
+"q": "Peut-on avoir un overflow en additionnant un nombre positif et un nombre négatif ?",
+"choices": [
+"Seulement sur 4 bits",
+"Non, jamais",
+"Oui, s'il y a un carry",
+"Oui, si le résultat est négatif"
+],
+"answer": 1,
+"expl": "La somme d'un positif et d'un négatif est toujours entre les deux : elle reste dans la plage. L'overflow ne vient que de deux nombres de même signe."
+},
+{
+"q": "Sur 8 bits : 0111 0110 + 0100 0011 = ?",
+"choices": [
+"1011 1001, carry 0, overflow oui",
+"1011 1001, carry 1, overflow non",
+"1011 1001, carry 0, overflow non",
+"1 1011 1001, carry 1, overflow oui"
+],
+"answer": 0,
+"expl": "118 + 67 = 185 ≤ 255 : pas de carry. Mais deux positifs donnent un mot qui commence par 1 (négatif en signé) : 185 > 127, overflow."
+},
+{
+"q": "Sur 8 bits : 1111 1111 + 0000 0001 = ?",
+"choices": [
+"1 0000 0000",
+"0000 0000, carry 1, overflow",
+"0000 0001, carry 0",
+"0000 0000, carry 1, pas d'overflow"
+],
+"answer": 3,
+"expl": "Non signé : 255 + 1 = 256, on garde 8 bits (0000 0000) et le carry vaut 1. Signé : −1 + 1 = 0, résultat juste, pas d'overflow. On ne garde jamais de 9ᵉ bit."
+},
+{
+"q": "Sur 8 bits : 0111 1111 + 0000 0001 = ?",
+"choices": [
+"1000 0000, carry 0, overflow non",
+"1000 0000, carry 1, overflow non",
+"1000 0000, carry 0, overflow oui",
+"1000 0000, carry 1, overflow oui"
+],
+"answer": 2,
+"expl": "127 + 1 = 128 ≤ 255 : pas de carry. En signé, 127 + 1 sort de [−128 ; 127] : le mot 1000 0000 se lit −128, overflow."
+},
+{
+"q": "Comment le processeur calcule-t-il a − b ?",
+"choices": [
+"a + (complément à deux de b)",
+"b − a, puis il change le signe",
+"a + (b avec ses bits inversés, sans +1)",
+"il compare a et b bit à bit"
+],
+"answer": 0,
+"expl": "Soustraire, c'est ajouter l'opposé : a − b = a + (−b), et −b s'obtient par le complément à deux. On jette le carry final."
+},
+{
+"q": "Sur 8 bits : 0000 1111 − 0001 0000 = ?",
+"choices": [
+"1000 0001 (−1)",
+"1111 1110 (−2)",
+"1111 1111 (−1)",
+"0000 0001 (1)"
+],
+"answer": 2,
+"expl": "15 − 16 = −1. −16 = 1111 0000, et 0000 1111 + 1111 0000 = 1111 1111, qui vaut −1 en signé."
+},
+{
+"q": "En IEEE 754 simple précision, comment sont répartis les 32 bits ?",
+"choices": [
+"1 signe, 11 exposant, 52 fraction",
+"1 signe, 7 exposant, 24 fraction",
+"8 exposant, 1 signe, 23 fraction",
+"1 signe, 8 exposant, 23 fraction"
+],
+"answer": 3,
+"expl": "Simple : 1 + 8 + 23 = 32 bits (biais 127). Double : 1 + 11 + 52 = 64 bits (biais 1023)."
+},
+{
+"q": "Quel est le biais de l'exposant en simple précision ?",
+"choices": [
+"128",
+"1023",
+"255",
+"127"
+],
+"answer": 3,
+"expl": "On stocke e = E + 127. 1023 est le biais de la double précision."
+},
+{
+"q": "Dans un flottant normalisé, le 1 avant la virgule de 1,F…",
+"choices": [
+"n'est pas stocké (implicite)",
+"est le premier bit de la fraction",
+"est le bit de signe",
+"est stocké dans l'exposant"
+],
+"answer": 0,
+"expl": "Comme il vaut toujours 1, on ne le stocke pas : les 23 bits de fraction sont ceux après la virgule. Le mettre dans F est une erreur classique."
+},
+{
+"q": "Que vaut le flottant 0 | 10000001 | 0110 0…0 ?",
+"choices": [
+"11",
+"−5,5",
+"5,5",
+"2,75"
+],
+"answer": 2,
+"expl": "Signe 0 : positif. e = 129 donc E = 129 − 127 = 2. 1,011₂ = 1,375. 1,375 × 2² = 5,5."
+},
+{
+"q": "Quel est le codage IEEE 754 simple de 5,75 ?",
+"choices": [
+"0xC0B80000",
+"0x40380000",
+"0x41B80000",
+"0x40B80000"
+],
+"answer": 3,
+"expl": "5,75 = 101,11₂ = 1,0111 × 2². s = 0, e = 2 + 127 = 129 = 1000 0001, F = 0111 0…0. Bits : 0100 0000 1011 1000 0…0 = 0x40B80000. 0xC0B80000 a le bit de signe à 1 (−5,75)."
+},
+{
+"q": "Pourquoi 0,1 n'est-il pas stocké exactement dans un flottant ?",
+"choices": [
+"Il est plus petit que le biais",
+"La fraction ne peut stocker que des entiers",
+"Il est stocké exactement : c'est l'affichage qui se trompe",
+"Son écriture binaire est infinie (0,000110011…₂)"
+],
+"answer": 3,
+"expl": "En binaire, 0,1 = 0,0001100110011…₂ : le motif 0011 se répète sans fin. Avec 23 bits de fraction, il faut arrondir : en simple, la valeur stockée est 0,10000000149011612."
+},
+{
+"q": "Lequel de ces nombres est stocké exactement en IEEE 754 ?",
+"choices": [
+"0,1",
+"0,2",
+"0,3",
+"0,5"
+],
+"answer": 3,
+"expl": "0,5 = 0,1₂ = 2⁻¹ : écriture binaire finie. 0,1, 0,2 et 0,3 ont une écriture binaire infinie."
+},
+{
+"q": "Un flottant a l'exposant 1111 1111 et une fraction non nulle. C'est…",
+"choices": [
+"un dénormalisé",
+"NaN",
+"±∞",
+"±0"
+],
+"answer": 1,
+"expl": "Exposant tout à 1 : fraction nulle → ±∞, fraction non nulle → NaN (Not a Number, par exemple 0/0)."
+},
+{
+"q": "Un flottant a l'exposant 1111 1111 et une fraction nulle. C'est…",
+"choices": [
+"NaN",
+"±0",
+"le plus grand nombre normalisé",
+"±∞ selon le signe"
+],
+"answer": 3,
+"expl": "Exposant tout à 1 avec fraction 0 : l'infini. Exposant 0000 0000 avec fraction 0 : zéro."
+}
+]
+},
+{
+"title": "Comme au QCM · quiz 3",
+"questions": [
+{
+"q": "Pour tester si deux flottants x et y sont « égaux », on écrit plutôt…",
+"choices": [
+"x − y == 0",
+"round(x) == round(y)",
+"|x − y| < ε",
+"x == y"
+],
+"answer": 2,
+"expl": "Les arrondis rendent == peu fiable (0,1 + 0,2 ≠ 0,3). On compare avec une tolérance ε."
+},
+{
+"q": "Combien vaut 101,101₂ ?",
+"choices": [
+"5,101",
+"45",
+"5,625",
+"5,5"
+],
+"answer": 2,
+"expl": "101₂ = 5 et 0,101₂ = 0,5 + 0,125 = 0,625. Après la virgule, les positions valent 2⁻¹, 2⁻², 2⁻³…"
+},
+{
+"q": "Quelle est la forme normalisée de 0,00101₂ ?",
+"choices": [
+"1,01 × 2⁻³",
+"1,01 × 2³",
+"0,101 × 2⁻²",
+"101 × 2⁻⁵"
+],
+"answer": 0,
+"expl": "On décale la virgule de 3 rangs vers la droite pour avoir 1,… : il faut multiplier par 2⁻³ pour compenser."
+},
+{
+"q": "Sous PowerShell, quelle commande donne le nombre de cœurs et de processeurs logiques ?",
+"choices": [
+"Get-CimInstance Win32_Processor",
+"Get-PhysicalDisk",
+"Get-NetAdapter",
+"Get-Volume"
+],
+"answer": 0,
+"expl": "Get-CimInstance Win32_Processor donne Name, NumberOfCores, NumberOfLogicalProcessors et MaxClockSpeed. Sous Fedora : lscpu."
+},
+{
+"q": "Sous Fedora, quelle commande décrit le processeur ?",
+"choices": [
+"lsblk",
+"lspci",
+"free -h",
+"lscpu"
+],
+"answer": 3,
+"expl": "lscpu = processeur. lsblk = disques et partitions, lspci = périphériques PCI, free -h = mémoire vive."
+},
+{
+"q": "Sous Fedora, quelle commande affiche la RAM en unités lisibles ?",
+"choices": [
+"uname -m",
+"lscpu -h",
+"free -h",
+"lsblk -f"
+],
+"answer": 2,
+"expl": "free -h : mémoire totale, utilisée et libre, -h pour des unités lisibles (Gi, Mi). Sous Windows : Get-CimInstance Win32_ComputerSystem (TotalPhysicalMemory en octets)."
+},
+{
+"q": "uname -m affiche x86_64. Cela signifie…",
+"choices": [
+"une architecture 64 bits (comme AMD64)",
+"une architecture 32 bits",
+"la version du noyau",
+"le nom de la machine"
+],
+"answer": 0,
+"expl": "x86_64 = AMD64 = 64 bits. La version du noyau, c'est uname -r ; le nom de la machine, hostname."
+},
+{
+"q": "Sous Fedora, quelle commande affiche le nom et la version du système ?",
+"choices": [
+"uname -m",
+"lscpu",
+"ip -br link",
+"cat /etc/os-release"
+],
+"answer": 3,
+"expl": "Le fichier /etc/os-release décrit la distribution. Sous Windows : Get-ComputerInfo (WindowsProductName, WindowsVersion)."
+},
+{
+"q": "Quel est l'équivalent Fedora de Get-PhysicalDisk ?",
+"choices": [
+"free -h",
+"ip -br link",
+"lsblk",
+"lspci"
+],
+"answer": 2,
+"expl": "lsblk liste les disques (TYPE disk) et leurs partitions ; avec -o NAME,SIZE,TYPE,FSTYPE,MOUNTPOINTS,MODEL on choisit les colonnes."
+},
+{
+"q": "Quel est l'équivalent PowerShell de lsblk -f (systèmes de fichiers des volumes) ?",
+"choices": [
+"Get-Location",
+"Get-Volume",
+"Get-PhysicalDisk",
+"Get-PnpDevice"
+],
+"answer": 1,
+"expl": "Get-Volume donne DriveLetter, FileSystem (NTFS…), Size et SizeRemaining. Get-PhysicalDisk décrit le disque matériel, pas les volumes."
+},
+{
+"q": "ip -br link (Fedora) correspond sous PowerShell à…",
+"choices": [
+"Get-Volume",
+"Get-CimInstance Win32_ComputerSystem",
+"Get-ComputerInfo",
+"Get-NetAdapter"
+],
+"answer": 3,
+"expl": "Get-NetAdapter liste les interfaces réseau (Name, InterfaceDescription, Status, LinkSpeed)."
+},
+{
+"q": "Quelle cmdlet PowerShell correspond à pwd ?",
+"choices": [
+"Get-Date",
+"Get-Item",
+"Set-Location",
+"Get-Location"
+],
+"answer": 3,
+"expl": "Get-Location affiche le dossier courant ; Set-Location change de dossier (comme cd)."
+},
+{
+"q": "Sous Fedora, quelle commande liste les périphériques PCI (carte graphique, carte réseau…) ?",
+"choices": [
+"free -h",
+"lspci",
+"lsblk",
+"lscpu"
+],
+"answer": 1,
+"expl": "lspci. Sous Windows : Get-PnpDevice -PresentOnly, avec -Class Display ou -Class Net pour filtrer."
+},
+{
+"q": "Un processeur a 8 cœurs avec hyperthreading. Combien de processeurs logiques affiche Windows ?",
+"choices": [
+"4",
+"32",
+"16",
+"8"
+],
+"answer": 2,
+"expl": "Avec l'hyperthreading, chaque cœur physique offre 2 processeurs logiques : 8 × 2 = 16. C'est NumberOfLogicalProcessors."
+},
+{
+"q": "Un disque vendu « 512 Go » s'affiche environ…",
+"choices": [
+"512 Gio",
+"549 Gio",
+"500 Gio",
+"476 Gio"
+],
+"answer": 3,
+"expl": "512 Go = 512 × 10⁹ octets ; 1 Gio = 2³⁰ ≈ 1,074 × 10⁹ octets. 512 × 10⁹ / 2³⁰ ≈ 476 Gio."
+}
+]
+},
+{
+"title": "Comme au QCM · quiz 4",
+"questions": [
+{
+"q": "Quel ordre va du plus rapide au plus lent ?",
+"choices": [
+"RAM, cache, registres, SSD",
+"SSD, RAM, cache, registres",
+"registres, cache, RAM, SSD",
+"cache, registres, RAM, SSD"
+],
+"answer": 2,
+"expl": "Les registres sont dans le processeur, puis le cache, la RAM, et enfin le stockage (SSD)."
+},
+{
+"q": "Pour lancer plusieurs machines virtuelles en même temps, quelle ressource limite en premier ?",
+"choices": [
+"La taille de l'écran",
+"La RAM",
+"La carte réseau",
+"Le cache du processeur"
+],
+"answer": 1,
+"expl": "Chaque machine virtuelle réserve sa propre mémoire : la RAM est épuisée en premier."
+},
+{
+"q": "Dans le modèle de von Neumann, l'UAL (unité arithmétique et logique) fait partie…",
+"choices": [
+"du processeur",
+"de la mémoire vive",
+"du stockage",
+"des périphériques d'entrée-sortie"
+],
+"answer": 0,
+"expl": "Processeur = UAL + unité de commande + registres. Autour : mémoire, stockage, périphériques d'E/S, reliés par des bus."
+},
+{
+"q": "Sous Fedora, echo \"Bonjour\" > f.txt crée un fichier de…",
+"choices": [
+"9 octets",
+"10 octets",
+"8 octets",
+"7 octets"
+],
+"answer": 2,
+"expl": "7 octets de texte (ASCII) + LF (0a, 1 octet) ajouté par Bash = 8 octets."
+},
+{
+"q": "Sous Windows avec PowerShell 7, echo \"Bonjour\" > f.txt crée un fichier de…",
+"choices": [
+"8 octets",
+"7 octets",
+"10 octets",
+"9 octets"
+],
+"answer": 3,
+"expl": "7 octets de texte + CRLF (0D 0A, 2 octets) = 9 octets."
+},
+{
+"q": "Quels octets terminent une ligne écrite par PowerShell 7 sous Windows ?",
+"choices": [
+"00",
+"0D (CR)",
+"0D 0A (CRLF)",
+"0A (LF)"
+],
+"answer": 2,
+"expl": "Windows : CR LF = 0D 0A. Linux (Fedora) : LF seul = 0a."
+},
+{
+"q": "Que fait > dans echo \"x\" > f.txt ?",
+"choices": [
+"Il ajoute à la fin du fichier",
+"Il affiche le fichier",
+"Il compare deux fichiers",
+"Il crée le fichier ou remplace son contenu"
+],
+"answer": 3,
+"expl": "> redirige la sortie vers le fichier en l'écrasant. Pour ajouter à la fin, c'est >>."
+},
+{
+"q": "echo \"Café\" > accent.txt : les guillemets sont-ils écrits dans le fichier ?",
+"choices": [
+"Non",
+"Oui, les deux",
+"Oui, seulement sous Windows",
+"Seulement le premier"
+],
+"answer": 0,
+"expl": "Les guillemets délimitent le texte pour le shell, ils ne sont pas écrits : le fichier contient Café et la fin de ligne."
+},
+{
+"q": "Quelle commande Fedora donne la taille d'un fichier en octets ?",
+"choices": [
+"wc -c fichier",
+"wc -l fichier",
+"od -An -tx1 fichier",
+"lsblk fichier"
+],
+"answer": 0,
+"expl": "wc -c compte les octets (-l compte les lignes). Sous PowerShell : la propriété Length de Get-Item."
+},
+{
+"q": "Sous PowerShell, quelle propriété de Get-Item f donne la taille en octets ?",
+"choices": [
+"Size",
+"Count",
+"Bytes",
+"Length"
+],
+"answer": 3,
+"expl": "Get-Item f | Select-Object Name, Length : Length est la taille en octets."
+},
+{
+"q": "Sous Fedora, od -An -tx1 -v fichier affiche…",
+"choices": [
+"le nombre de lignes du fichier",
+"les octets en binaire",
+"l'encodage du fichier",
+"les octets du fichier en hexa, un par un, sans adresses"
+],
+"answer": 3,
+"expl": "-An : pas d'adresses ; -tx1 : hexadécimal, 1 octet à la fois ; -v : toutes les lignes, même répétées."
+},
+{
+"q": "Quel est l'équivalent PowerShell de od -An -tx1 -v fichier ?",
+"choices": [
+"Get-Content fichier",
+"Get-Item fichier",
+"Select-String fichier",
+"Format-Hex -Path fichier"
+],
+"answer": 3,
+"expl": "Format-Hex affiche les octets en hexa. Sa colonne texte de droite n'est pas fiable pour les caractères UTF-8 sur plusieurs octets."
+},
+{
+"q": "En UTF-8, « é » s'écrit…",
+"choices": [
+"E9 (1 octet)",
+"00 E9",
+"E2 98 95",
+"C3 A9 (2 octets)"
+],
+"answer": 3,
+"expl": "é est U+00E9, hors ASCII : 2 octets C3 A9. E2 98 95 code ☕."
+},
+{
+"q": "Combien d'octets faut-il pour 😊 en UTF-8 ?",
+"choices": [
+"4",
+"1",
+"2",
+"3"
+],
+"answer": 0,
+"expl": "😊 (U+1F60A) = F0 9F 98 8A : 4 octets. ASCII 1 octet, é 2, ☕ 3."
+},
+{
+"q": "Combien d'octets dans le texte « Café » en UTF-8, sans fin de ligne ?",
+"choices": [
+"4",
+"6",
+"8",
+"5"
+],
+"answer": 3,
+"expl": "C a f : 1 octet chacun, é : 2 octets (C3 A9). 43 61 66 C3 A9 = 5 octets pour 4 caractères."
+}
+]
+},
+{
+"title": "Comme au QCM · quiz 5",
+"questions": [
+{
+"q": "Pourquoi ne peut-on pas écrire « é » en ASCII ?",
+"choices": [
+"ASCII n'a pas de minuscules",
+"é prendrait 4 octets",
+"ASCII n'existe que sous Windows",
+"ASCII ne code que 128 caractères (00 à 7F), sans lettres accentuées"
+],
+"answer": 3,
+"expl": "ASCII : 7 bits, 128 codes (lettres non accentuées, chiffres, ponctuation). Ni é ni 😊 n'y sont."
+},
+{
+"q": "Le texte « Café » est écrit par echo sous Fedora puis sous Windows (PowerShell 7). Qu'est-ce qui change entre les deux fichiers ?",
+"choices": [
+"Tous les octets",
+"Rien du tout",
+"Seulement la fin de ligne",
+"Les octets de é"
+],
+"answer": 2,
+"expl": "Les deux écrivent en UTF-8 : 43 61 66 C3 A9 des deux côtés. Fedora ajoute 0a, Windows 0D 0A."
+},
+{
+"q": "L'entier 0x12345678 est stocké en little-endian. Quels octets trouve-t-on aux adresses 0 à 3 ?",
+"choices": [
+"56 78 12 34",
+"78 56 34 12",
+"12 34 56 78",
+"87 65 43 21"
+],
+"answer": 1,
+"expl": "Little-endian : l'octet de poids faible (78) à la plus petite adresse. Chaque octet garde ses chiffres : 87 65 43 21 inverserait l'intérieur des octets, c'est faux."
+},
+{
+"q": "En PowerShell : $s = 250 + 10 puis $s -band 255 donne…",
+"choices": [
+"260",
+"255",
+"104",
+"4"
+],
+"answer": 3,
+"expl": "260 = 1 0000 0100 en binaire. -band 255 garde les 8 bits de droite : 0000 0100 = 4. Le 9ᵉ bit perdu est le carry."
+},
+{
+"q": "$r = 4 ; $r.ToString(\"X2\") affiche…",
+"choices": [
+"0x4",
+"00000100",
+"04",
+"4"
+],
+"answer": 2,
+"expl": "X = hexadécimal, 2 = au moins 2 chiffres : 04. Le binaire s'obtient avec [Convert]::ToString($r, 2)."
+},
+{
+"q": "(0 - 1) -band 255 donne 255. Que représente ce mot de 8 bits 1111 1111 ?",
+"choices": [
+"255 en non signé et −1 en signé",
+"seulement 255",
+"une erreur de calcul",
+"−255"
+],
+"answer": 0,
+"expl": "Même configuration de bits, deux lectures : 255 non signé, −1 en complément à deux. C'est pour cela que $bits8 ≠ la différence mathématique."
+},
+{
+"q": "En PowerShell, ([double][single]0.1) -eq 0.1 renvoie…",
+"choices": [
+"False",
+"True",
+"une erreur",
+"0.1"
+],
+"answer": 0,
+"expl": "[single]0.1 est arrondi sur 32 bits : 0.10000000149011612. Le passer en [double] n'annule pas l'arrondi, donc ce n'est pas égal au double 0.1."
+},
+{
+"q": "Pourquoi utiliser PowerShell 7 plutôt que Windows PowerShell 5.1 au TP2 ?",
+"choices": [
+"PowerShell 7 écrit en UTF-8 sans BOM, 5.1 utilise un autre codage",
+"PowerShell 7 met des fins de ligne LF comme Fedora",
+"5.1 ne connaît pas echo",
+"PowerShell 7 n'ajoute pas de fin de ligne"
+],
+"answer": 0,
+"expl": "Le TP compare des octets UTF-8 : PowerShell 7 écrit en UTF-8 sans BOM, Windows PowerShell 5.1 utilise un autre codage par défaut. Il ajoute quand même CRLF."
+},
+{
+"q": "Quelle commande vérifie la version de PowerShell ?",
+"choices": [
+"Get-PSVersion",
+"$PSVersionTable.PSVersion",
+"Get-ComputerInfo",
+"uname -r"
+],
+"answer": 1,
+"expl": "$PSVersionTable.PSVersion doit afficher 7.x. uname -r donne la version du noyau Linux."
+},
+{
+"q": "Quelle cmdlet crée l'archive ZIP du rendu ?",
+"choices": [
+"New-Item -ItemType Zip",
+"Copy-Item -Zip",
+"Format-Hex",
+"Compress-Archive"
+],
+"answer": 3,
+"expl": "Compress-Archive -Path Rendu_TP2 -DestinationPath R103_TP2_Nom1_Nom2.zip."
+}
+]
+},
+{
+"title": "Pratique : prévois le résultat · quiz 1",
+"questions": [
+{
+"q": "PowerShell 7 (Windows). Qu'affiche :[Convert]::ToString(300 -band 255, 2).PadLeft(8, \"0\")",
+"choices": [
+"11111111",
+"101100",
+"00101100",
+"100101100"
+],
+"answer": 2,
+"expl": "300 = 1 0010 1100 (9 bits). -band 255 garde les 8 derniers : 0010 1100, et PadLeft rajoute le 0 de tête : 00101100."
+},
+{
+"q": "PowerShell 7 (Windows). Qu'affichent ces deux lignes ?$s = 128 + 128\n$s.ToString(\"X\") ; ($s -band 255).ToString(\"X2\")",
+"choices": [
+"00 puis 100",
+"80 puis 80",
+"FF puis 00",
+"100 puis 00"
+],
+"answer": 3,
+"expl": "128 + 128 = 256 = 0x100 (somme exacte, 3 chiffres). Les 8 bits conservés valent 0x00 : il y a une retenue. Réponse : 100 puis 00."
+},
+{
+"q": "PowerShell 7 (Windows). Après echo \"Noël\" > noel.txt, quels octets montre Format-Hex -Path noel.txt ?",
+"choices": [
+"4E 6F C3 AB 6C",
+"4E 6F C3 AB 6C 0D 0A",
+"4E 6F EB 6C 0D 0A",
+"4E 6F C3 AB 6C 0A"
+],
+"answer": 1,
+"expl": "N = 4E, o = 6F, ë = C3 AB (2 octets en UTF-8 ; EB est son point de code, pas ses octets), l = 6C, puis CRLF = 0D 0A : 4E 6F C3 AB 6C 0D 0A."
+},
+{
+"q": "Fedora (Bash). Après echo \"Prix: 5€\" > prix.txt, quelle est la dernière paire affichée par od -An -tx1 prix.txt ?",
+"choices": [
+"0d 0a",
+"0a",
+"0d",
+"ac"
+],
+"answer": 1,
+"expl": "Les octets sont 50 72 69 78 3a 20 35 e2 82 ac 0a. € = e2 82 ac, puis echo de Bash ajoute seulement LF : la dernière paire est 0a. CRLF (0d 0a) n'apparaît qu'avec PowerShell sous Windows."
+},
+{
+"q": "Dans Format-Hex, quels octets codent « € » en UTF-8 ?",
+"choices": [
+"C3 A9",
+"E2 82 AC",
+"20 AC",
+"E2 82"
+],
+"answer": 1,
+"expl": "€ est U+20AC : hors ASCII et au-delà de U+07FF, il prend 3 octets : E2 82 AC. 20AC est son point de code, C3 A9 est « é »."
+},
+{
+"q": "PowerShell 7 (Windows). Qu'affiche :\"Fusée 😊\".Length",
+"choices": [
+"6",
+"8",
+"7",
+"11"
+],
+"answer": 1,
+"expl": "Piège : .Length compte des unités UTF-16, pas des caractères ni des octets. F u s é e espace = 6, et 😊 (hors du plan de base) compte pour 2 : 8. Il y a 7 caractères et 11 octets UTF-8."
+},
+{
+"q": "PowerShell 7 (Windows). Qu'affiche :([double][single]0.75) -eq 0.75",
+"choices": [
+"True",
+"False",
+"0.75",
+"0.75000000000000000"
+],
+"answer": 0,
+"expl": "0,75 = 0,11₂ : fraction binaire finie, stockée exactement en simple précision. La comparaison donne True."
+},
+{
+"q": "PowerShell 7 (Windows). Qu'affiche :([double][single]0.2) -eq 0.2",
+"choices": [
+"False",
+"True",
+"0.2",
+"Erreur"
+],
+"answer": 0,
+"expl": "0,2 n'est pas représentable exactement : [single]0.2 vaut 0.20000000298023224 une fois converti en double, différent du double 0.2. Réponse : False."
+},
+{
+"q": "PowerShell 7 (Windows). Qu'affiche :([double][single]0.3).ToString(\"G17\")",
+"choices": [
+"0.30000000000000004",
+"0.30000001192092896",
+"0.3",
+"0.29999999999999999"
+],
+"answer": 1,
+"expl": "0,3 est infini en binaire. Arrondi en simple précision puis écrit avec 17 chiffres : 0.30000001192092896. 0.29999999999999999 serait le double 0.3, et 0.30000000000000004 est le célèbre 0.1 + 0.2."
+},
+{
+"q": "Quelle commande enregistre tout ce que tu tapes et tout ce qui s'affiche (le « journal de ta session ») ?",
+"choices": [
+"Start-Transcript -Path journal.txt",
+"Get-History > journal.txt",
+"Out-File journal.txt",
+"Set-Content journal.txt"
+],
+"answer": 0,
+"expl": "Start-Transcript démarre l'enregistrement des commandes et de leurs sorties ; on l'arrête avec Stop-Transcript. Get-History ne garde que les commandes."
+},
+{
+"q": "Quelle commande crée le ZIP à rendre à partir du dossier Rendu ?",
+"choices": [
+"Copy-Item Rendu R103.zip",
+"Compress-Archive -Path Rendu -DestinationPath R103.zip",
+"Expand-Archive -Path Rendu -DestinationPath R103.zip",
+"New-Item -ItemType Zip Rendu"
+],
+"answer": 1,
+"expl": "Compress-Archive crée l'archive ; Expand-Archive fait l'inverse (décompresser)."
+},
+{
+"q": "Dans Get-CimInstance Win32_Processor, quelle propriété donne le nombre de processeurs logiques ?",
+"choices": [
+"NumberOfProcessors",
+"NumberOfLogicalProcessors",
+"NumberOfCores",
+"MaxClockSpeed"
+],
+"answer": 1,
+"expl": "NumberOfCores = cœurs physiques, NumberOfLogicalProcessors = processeurs logiques (2 × cœurs avec l'hyperthreading), MaxClockSpeed = fréquence en MHz."
+},
+{
+"q": "Get-CimInstance Win32_Processor affiche MaxClockSpeed : 3600. Que vaut la fréquence ?",
+"choices": [
+"3600 GHz",
+"36 GHz",
+"3,6 MHz",
+"3,6 GHz"
+],
+"answer": 3,
+"expl": "MaxClockSpeed est en MHz : 3600 MHz = 3,6 GHz."
+},
+{
+"q": "Fedora (Bash). Sur un PC 64 bits Intel ou AMD, qu'affiche uname -m ?",
+"choices": [
+"x64-based PC",
+"x86_64",
+"amd64 bits",
+"64"
+],
+"answer": 1,
+"expl": "x86_64 (aussi appelé AMD64). « x64-based PC » est ce qu'affiche CsSystemType sous PowerShell."
+},
+{
+"q": "Dans le bon terminal pour l'éval (pwsh), qu'affiche $PSVersionTable.PSVersion.Major ?",
+"choices": [
+"1",
+"11",
+"7",
+"5"
+],
+"answer": 2,
+"expl": "PowerShell 7 (pwsh) affiche 7. Windows PowerShell 5.1 afficherait 5 : il redirige en UTF-16, et les tailles de fichiers ne correspondraient plus."
+},
+{
+"q": "Quelle commande PowerShell donne l'architecture (OsArchitecture, CsSystemType) ?",
+"choices": [
+"Get-ComputerInfo",
+"Get-PhysicalDisk",
+"Get-Volume",
+"Get-NetAdapter"
+],
+"answer": 0,
+"expl": "Get-ComputerInfo | Select-Object OsArchitecture, CsSystemType → « 64 bits », « x64-based PC »."
+}
+]
+}
+],
+"fiches": [
+{
+"title": "Cours : Codage & arithmétique",
+"html": "\n      <h2>R1.03 · Codage et arithmétique des processeurs</h2>\n      <p class=\"muted\">Éval mercredi 18/11, 13 h 30 – 15 h 20 : 1 h de pratique sous Windows / PowerShell 7 (sujets TP1 et TP2 et tes comptes rendus autorisés, pas d'Internet ni d'IA), puis un QCM Moodle de 15 min (15 questions à choix unique, sans document, une seule tentative).</p><div class=\"doc-tools\"></div>\n      <div class=\"box method\"><b>Méthode : compter les octets UTF-8</b>\n        <div class=\"utfm\"><b>1</b><span>ASCII : lettres sans accent, chiffres, ponctuation et <b>espace</b></span><b>2</b><span>lettres accentuées : é è à ç ë Ç ô…</span><b>3</b><span>symboles : € ☕ ✓</span><b>4</b><span>emojis : 😊 👋</span></div>\n        On additionne caractère par caractère : « Allô 😊 » = A 1 + l 1 + l 1 + ô 2 + espace 1 + 😊 4 = <b>10 octets</b> pour 6 caractères. Si c'est un <b>fichier</b> créé par echo, on ajoute la fin de ligne : <b>+1</b> (LF, Fedora) ou <b>+2</b> (CRLF, PowerShell 7 sous Windows), soit 11 ou 12 octets.</div>\n\n      <h3 id=\"k1-s0\"><span class=\"hn\">1</span>Notation positionnelle</h3>\n      <p>Chaque position vaut une puissance de la base, en partant de 0 à droite.</p>\n      <div class=\"formula-list\">\n        <span class=\"f\">101011₂</span><span>= 32 + 8 + 2 + 1 = <b>43</b></span>\n        <span class=\"f\">B0A₁₆</span><span>= 11 × 256 + 0 × 16 + 10 = <b>2 826</b></span>\n        <span class=\"f\">n bits</span><span>2ⁿ combinaisons. Non signé : de 0 à 2ⁿ − 1 (8 bits : 0 à 255).</span>\n      </div>\n      <ul>\n        <li><b>Hexadécimal</b> : chiffres 0 à 9 puis A = 10 … F = 15, préfixe <span class=\"f\">0x</span>.</li>\n        <li><b>1 chiffre hexa = 4 bits</b>, donc <b>1 octet = 2 chiffres hexa</b> : <span class=\"f\">1101 0110₂ = 0xD6</span>.</li>\n        <li>Décimal vers binaire : divisions successives par 2 (on lit les restes de bas en haut), ou on retire les puissances de 2 : 200 = 128 + 64 + 8 → <span class=\"f\">1100 1000</span>.</li>\n      </ul>\n      <div class=\"box method\">Binaire ↔ hexa : on coupe en paquets de 4 bits <b>en partant de la droite</b>, chaque paquet donne un chiffre hexa. <span class=\"f\">0x3F = 0011 1111</span>.</div>\n\n      <h3 id=\"k1-s1\"><span class=\"hn\">2</span>Entiers signés : complément à deux</h3>\n      <ul>\n        <li>Opposé d'un nombre : <b>inverser tous les bits, puis ajouter 1</b>. 5 = <span class=\"f\">0000 0101</span> → <span class=\"f\">1111 1010</span> + 1 = <span class=\"f\">1111 1011</span> = −5.</li>\n        <li>Plage sur n bits : <b>−2ⁿ⁻¹ à 2ⁿ⁻¹ − 1</b>. 8 bits : −128 à 127 ; 4 bits : −8 à 7 ; 5 bits : −16 à 15.</li>\n        <li>Le bit de gauche vaut 1 pour un négatif. Un seul zéro (<span class=\"f\">0000 0000</span>).</li>\n      </ul>\n      <div class=\"tscroll\"><table class=\"tt\">\n        <tbody><tr><th>Mot de 8 bits</th><th>Non signé</th><th>Signé (complément à deux)</th></tr>\n        <tr><td class=\"f\">0111 1111</td><td>127</td><td>127</td></tr>\n        <tr><td class=\"f\">1000 0000</td><td>128</td><td>−128</td></tr>\n        <tr><td class=\"f\">1111 0000</td><td>240</td><td>−16</td></tr>\n        <tr><td class=\"f\">1111 1111</td><td>255</td><td>−1</td></tr>\n      </tbody></table></div>\n      <div class=\"box trap\">Un même mot a deux lectures : <b>précise toujours signé ou non signé</b>. Lire <span class=\"f\">1111 1111</span> « 255 » sans le dire est une erreur classique. Valeur signée d'un mot qui commence par 1 : valeur non signée − 256 (sur 8 bits).</div>\n\n      <h3 id=\"k1-s2\"><span class=\"hn\">3</span>Addition, carry et overflow</h3>\n      <ul>\n        <li><b>Carry</b> (retenue) : le 9ᵉ bit qui sort d'une addition sur 8 bits. Il signale un dépassement <b>en non signé</b>. Le résultat garde seulement les 8 bits de droite.</li>\n        <li><b>Overflow</b> (dépassement signé) : deux positifs donnent un négatif, ou deux négatifs donnent un positif. Deux nombres de signes différents ne font <b>jamais</b> d'overflow.</li>\n        <li>Carry et overflow sont <b>indépendants</b> : on peut avoir l'un sans l'autre.</li>\n      </ul>\n      <div class=\"tscroll\"><table class=\"tt\">\n        <tbody><tr><th>Calcul</th><th>Résultat</th><th>Carry</th><th>Overflow</th><th>Pourquoi</th></tr>\n        <tr><td class=\"f\">0101 + 0011</td><td class=\"f\">1000</td><td>0</td><td>oui</td><td>5 + 3 = 8 &gt; 7 (4 bits signés)</td></tr>\n        <tr><td class=\"f\">1011 + 0110</td><td class=\"f\">0001</td><td>1</td><td>non</td><td>signes différents</td></tr>\n        <tr><td class=\"f\">1111 + 1111</td><td class=\"f\">1110</td><td>1</td><td>non</td><td>−1 + −1 = −2</td></tr>\n        <tr><td class=\"f\">0111 0110 + 0100 0011</td><td class=\"f\">1011 1001</td><td>0</td><td>oui</td><td>118 + 67 = 185 &gt; 127</td></tr>\n        <tr><td class=\"f\">1111 1111 + 0000 0001</td><td class=\"f\">0000 0000</td><td>1</td><td>non</td><td>255 + 1 = 256 en non signé ; −1 + 1 = 0 en signé</td></tr>\n        <tr><td class=\"f\">0111 1111 + 0000 0001</td><td class=\"f\">1000 0000</td><td>0</td><td>oui</td><td>127 + 1 sort de [−128 ; 127]</td></tr>\n      </tbody></table></div>\n      <p><b>Soustraction</b> = addition du complément à deux : <span class=\"f\">0101 − 0011</span> → <span class=\"f\">0101 + 1101 = 0010</span> (2, on jette le carry). <span class=\"f\">0010 1010 − 0011 1100 = 1110 1110</span> (−18). <span class=\"f\">0000 1111 − 0001 0000 = 1111 1111</span> (−1).</p>\n      <div class=\"box trap\">Erreurs typiques : garder un 9ᵉ bit sur un mot de 8 bits ; dire « overflow » dès qu'il y a un carry ; oublier de dire si on lit en signé ou non signé.</div>\n\n      <h3 id=\"k1-s3\"><span class=\"hn\">4</span>Virgule flottante IEEE 754</h3>\n      <div class=\"formula-list\">\n        <span class=\"f\">simple (32 bits)</span><span>1 bit de signe + 8 bits d'exposant + 23 bits de fraction, biais <b>127</b></span>\n        <span class=\"f\">double (64 bits)</span><span>1 + 11 + 52, biais <b>1023</b></span>\n        <span class=\"f\">valeur</span><span>(−1)<sup>s</sup> × 1,F × 2<sup>E</sup> avec <b>E = e − 127</b> ; le 1 avant la virgule est <b>implicite</b> (pas stocké)</span>\n      </div>\n      <ul>\n        <li>Fractions binaires : <span class=\"f\">10,1₂ = 2,5</span> · <span class=\"f\">0,011₂ = 0,375</span> · <span class=\"f\">101,101₂ = 5,625</span> · <span class=\"f\">0,0001₂ = 0,0625</span>.</li>\n        <li>Partie décimale → binaire : multiplier par 2 et garder la partie entière à chaque étape. 0,625 → 1,25 (1) → 0,5 (0) → 1 (1) : <span class=\"f\">0,101₂</span>.</li>\n        <li>Normaliser : <span class=\"f\">101,101₂ = 1,01101 × 2²</span> ; <span class=\"f\">0,00101₂ = 1,01 × 2⁻³</span>.</li>\n      </ul>\n      <div class=\"box method\"><b>Encoder</b> x : signe → binaire → normaliser 1,F × 2<sup>E</sup> → e = E + 127 sur 8 bits → F complétée par des 0 sur 23 bits → regrouper en hexa.<br>5,75 = 101,11₂ = 1,0111 × 2² → s = 0, e = 129 = <span class=\"f\">1000 0001</span>, F = <span class=\"f\">0111 0…</span> → <span class=\"f\">0 10000001 0111000…</span> = <b>0x40B80000</b>.</div>\n      <div class=\"box exm\"><b>Décoder</b> <span class=\"f\">0 | 10000001 | 0110…</span> : e = 129 donc E = 2, 1,011₂ = 1,375, 1,375 × 4 = <b>5,5</b>.<br>\n        <span class=\"f\">1 | 10000010 | 0100…</span> → −1,25 × 8 = <b>−10</b> · <span class=\"f\">0 | 01111101 | 0110…</span> → 1,375 × 2⁻² = <b>0,34375</b> · <span class=\"f\">1 | 01111110 | 1000…</span> → −1,5 × 2⁻¹ = <b>−0,75</b> · <span class=\"f\">0 | 10000000 | 1000…</span> → 1,5 × 2 = <b>3</b>.<br>\n        Autres codages : 12,375 = <span class=\"f\">0x41460000</span> · −0,15625 = <span class=\"f\">0xBE200000</span> · −7,5 = <span class=\"f\">0xC0F00000</span>.</div>\n      <div class=\"tscroll\"><table class=\"tt\">\n        <tbody><tr><th>Exposant</th><th>Fraction</th><th>Valeur</th></tr>\n        <tr><td class=\"f\">0000 0000</td><td>0</td><td>±0</td></tr>\n        <tr><td class=\"f\">0000 0000</td><td>≠ 0</td><td>dénormalisé (très petit, pas de 1 implicite)</td></tr>\n        <tr><td class=\"f\">1111 1111</td><td>0</td><td>±∞</td></tr>\n        <tr><td class=\"f\">1111 1111</td><td>≠ 0</td><td>NaN (ex. 0/0)</td></tr>\n      </tbody></table></div>\n      <div class=\"box trap\">0,1 = <span class=\"f\">0,000110011001100…₂</span> : le motif 0011 se répète à l'infini, la valeur stockée est arrondie (en simple : 0,10000000149011612). 0,5 = <span class=\"f\">0,1₂</span> est exact. Un décimal fini n'a pas toujours une écriture binaire finie. On compare des flottants avec une tolérance <span class=\"f\">|x − y| &lt; ε</span>, jamais avec ==.<br>Autres pièges : confondre e (stocké) et E (réel) ; mettre le 1 implicite dans F ; oublier le bit de signe.</div>\n    "
+},
+{
+"title": "TP1 & TP2 : commandes",
+"html": "\n      <h2>R1.03 · TP1 et TP2 : les commandes</h2>\n      <p class=\"muted\">La partie pratique se fait sous Windows avec PowerShell 7. Le QCM interroge aussi sur Fedora : connais les deux colonnes.</p><div class=\"doc-tools\"></div>\n      <div class=\"box method\"><b>Méthode : compter les octets UTF-8</b>\n        <div class=\"utfm\"><b>1</b><span>ASCII : lettres sans accent, chiffres, ponctuation et <b>espace</b></span><b>2</b><span>lettres accentuées : é è à ç ë Ç ô…</span><b>3</b><span>symboles : € ☕ ✓</span><b>4</b><span>emojis : 😊 👋</span></div>\n        On additionne caractère par caractère : « Allô 😊 » = A 1 + l 1 + l 1 + ô 2 + espace 1 + 😊 4 = <b>10 octets</b> pour 6 caractères. Si c'est un <b>fichier</b> créé par echo, on ajoute la fin de ligne : <b>+1</b> (LF, Fedora) ou <b>+2</b> (CRLF, PowerShell 7 sous Windows), soit 11 ou 12 octets.</div>\n\n      <h3 id=\"k2-s0\"><span class=\"hn\">1</span>TP1 : anatomie d'un ordinateur</h3>\n      <div class=\"tscroll\"><table class=\"tt\">\n        <tbody><tr><th>Info</th><th>PowerShell (Windows 11)</th><th>Fedora (Bash)</th></tr>\n        <tr><td>Date, machine, utilisateur, dossier</td><td class=\"f\">Get-Date, hostname, whoami, Get-Location</td><td class=\"f\">date, hostname, whoami, pwd</td></tr>\n        <tr><td>Système, architecture</td><td><span class=\"f\">Get-ComputerInfo | Select-Object</span> WindowsProductName, WindowsVersion, OsArchitecture, CsSystemType</td><td><span class=\"f\">cat /etc/os-release</span> ; <span class=\"f\">uname -m</span> (architecture, ex. x86_64) ; <span class=\"f\">uname -r</span> (noyau)</td></tr>\n        <tr><td>Processeur</td><td><span class=\"f\">Get-CimInstance Win32_Processor</span> (Name, NumberOfCores, NumberOfLogicalProcessors, MaxClockSpeed)</td><td class=\"f\">lscpu</td></tr>\n        <tr><td>RAM</td><td><span class=\"f\">Get-CimInstance Win32_ComputerSystem</span> : TotalPhysicalMemory en octets (÷ 1GB → Gio)</td><td class=\"f\">free -h</td></tr>\n        <tr><td>Disque physique</td><td><span class=\"f\">Get-PhysicalDisk</span> (FriendlyName, MediaType, Size, HealthStatus)</td><td class=\"f\">lsblk -o NAME,SIZE,TYPE,FSTYPE,MOUNTPOINTS,MODEL</td></tr>\n        <tr><td>Volumes, systèmes de fichiers</td><td><span class=\"f\">Get-Volume</span> (DriveLetter, FileSystem, Size, SizeRemaining)</td><td class=\"f\">lsblk -f</td></tr>\n        <tr><td>Périphériques</td><td class=\"f\">Get-PnpDevice -PresentOnly (-Class Display, -Class Net)</td><td class=\"f\">lspci</td></tr>\n        <tr><td>Réseau</td><td><span class=\"f\">Get-NetAdapter</span> (Name, InterfaceDescription, Status, LinkSpeed)</td><td class=\"f\">ip -br link</td></tr>\n      </tbody></table></div>\n      <p>Outils graphiques Windows : Gestionnaire des tâches, <span class=\"f\">msinfo32</span>, Gestionnaire de périphériques.</p>\n      <ul>\n        <li><b>Cœurs physiques ≠ processeurs logiques</b> : avec l'hyperthreading, chaque cœur offre 2 processeurs logiques (8 cœurs → 16 logiques).</li>\n        <li><b>x86_64 = AMD64 = 64 bits</b>.</li>\n        <li><b>Go ≠ Gio</b> : 1 Go = 10⁹ octets, 1 Gio = 2³⁰ octets. Un disque vendu « 512 Go » s'affiche environ 476 Gio.</li>\n        <li>Disque physique &gt; partition &gt; volume &gt; système de fichiers (NTFS, ext4, btrfs, FAT32…).</li>\n        <li>Hiérarchie mémoire, du plus rapide au plus lent : <b>registres &gt; cache &gt; RAM &gt; SSD</b>. Pour lancer plusieurs machines virtuelles, c'est la RAM qui limite en premier.</li>\n        <li>Modèle de <b>von Neumann</b> : processeur (UAL + unité de commande + registres), mémoire, stockage, périphériques d'entrée-sortie, reliés par des bus.</li>\n      </ul>\n\n      <h3 id=\"k2-s1\"><span class=\"hn\">2</span>TP2 : créer un fichier texte et mesurer sa taille</h3>\n      <ul>\n        <li><span class=\"f\">echo \"Café\" &gt; accent.txt</span> marche sur les deux systèmes. <span class=\"f\">&gt;</span> crée <b>ou remplace</b> le fichier. Les guillemets ne sont pas écrits dans le fichier.</li>\n        <li><b>Fin de ligne</b> : Fedora (Bash) ajoute <b>LF</b> = <span class=\"f\">0a</span> (1 octet). PowerShell 7 sous Windows ajoute <b>CRLF</b> = <span class=\"f\">0D 0A</span> (2 octets). <span class=\"f\">echo -n</span> (Bash) n'ajoute pas de fin de ligne.</li>\n        <li>PowerShell 7 écrit en UTF-8 sans BOM. Windows PowerShell 5.1 utilise un autre codage : à éviter. Vérifier la version : <span class=\"f\">$PSVersionTable.PSVersion</span>. Sous Fedora : <span class=\"f\">locale charmap</span> → UTF-8.</li>\n      </ul>\n      <div class=\"tscroll\"><table class=\"tt\">\n        <tbody><tr><th>Pour…</th><th>PowerShell</th><th>Fedora</th></tr>\n        <tr><td>Taille en octets</td><td><span class=\"f\">Get-Item f | Select-Object Name, Length</span> (Length = octets)</td><td class=\"f\">wc -c fichier</td></tr>\n        <tr><td>Voir les octets en hexa</td><td><span class=\"f\">Format-Hex -Path fichier</span> (colonne texte de droite pas fiable en UTF-8)</td><td><span class=\"f\">od -An -tx1 -v fichier</span> (-An sans adresses, -tx1 hexa octet par octet, -v toutes les lignes)</td></tr>\n        <tr><td>Dossiers et rendu</td><td class=\"f\">New-Item -ItemType Directory, Copy-Item, Get-ChildItem -Recurse, Compress-Archive</td><td class=\"f\">mkdir -p, cd, pwd</td></tr>\n      </tbody></table></div>\n\n      <h3 id=\"k2-s2\"><span class=\"hn\">3</span>UTF-8 : 1 caractère n'est pas toujours 1 octet</h3>\n      <div class=\"tscroll\"><table class=\"tt\">\n        <tbody><tr><th>Caractère</th><th>Point de code</th><th>Octets UTF-8</th><th>Nombre</th></tr>\n        <tr><td>ASCII (a, Z, 7, espace…)</td><td>U+0000 à U+007F</td><td class=\"f\">00 à 7F</td><td>1</td></tr>\n        <tr><td>é</td><td>U+00E9</td><td class=\"f\">C3 A9</td><td>2</td></tr>\n        <tr><td>☕</td><td>U+2615</td><td class=\"f\">E2 98 95</td><td>3</td></tr>\n        <tr><td>😊</td><td>U+1F60A</td><td class=\"f\">F0 9F 98 8A</td><td>4</td></tr>\n      </tbody></table></div>\n      <div class=\"box exm\">« Bonjour » : 7 octets de texte → <b>8</b> octets sous Fedora (LF), <b>9</b> sous Windows (CRLF).<br>\n        « Café » = <span class=\"f\">43 61 66 C3 A9</span> : 5 octets → 5 sans fin de ligne, 6 avec LF, 7 avec CRLF.<br>\n        « Fusée 😊 » (avec un espace final) : F u s é(2) e espace 😊(4) espace = 11 octets → 12 / 13.<br>\n        « Café ☕ 😊 » (espace final) : 5 + 1 + 3 + 1 + 4 + 1 = 15 octets → 16 / 17.</div>\n      <div class=\"box method\">Taille d'un fichier = octets du texte + fin de ligne (0, 1 ou 2). Les octets du texte sont <b>les mêmes</b> sur les deux systèmes : seule la fin de ligne change. ASCII (128 codes) ne peut coder ni é ni 😊.</div>\n\n      <h3 id=\"k2-s3\"><span class=\"hn\">4</span>Ordre des octets (endianness)</h3>\n      <p>L'entier 0x12345678 sur 4 octets, adresses 0 → 3 :</p>\n      <div class=\"formula-list\">\n        <span class=\"f\">big-endian</span><span><span class=\"f\">12 34 56 78</span> : poids fort à la plus petite adresse</span>\n        <span class=\"f\">little-endian</span><span><span class=\"f\">78 56 34 12</span> : poids faible d'abord (processeurs x86)</span>\n      </div>\n      <div class=\"box trap\">Chaque octet garde sa valeur (12 = <span class=\"f\">0001 0010</span>), seule sa position change. Inverser l'ordre des octets n'est pas inverser les bits. Lire <span class=\"f\">78 56 34 12</span> en big-endian donne 0x78563412, un autre entier.</div>\n\n      <h3 id=\"k2-s4\"><span class=\"hn\">5</span>Calculs sur 8 bits avec PowerShell</h3>\n      <div class=\"tscroll\"><table class=\"tt\">\n        <tbody><tr><th>Commande</th><th>Affiche</th><th>Ce qu'il faut comprendre</th></tr>\n        <tr><td class=\"f\">$somme = 250 + 10</td><td>260</td><td>PowerShell calcule sans limite de 8 bits</td></tr>\n        <tr><td class=\"f\">[Convert]::ToString($somme, 2)</td><td class=\"f\">100000100</td><td>9 bits : il y a un carry</td></tr>\n        <tr><td class=\"f\">$somme.ToString(\"X\")</td><td class=\"f\">104</td><td>3 chiffres hexa : ne tient pas dans un octet</td></tr>\n        <tr><td class=\"f\">$resultat = $somme -band 255</td><td>4</td><td>on garde les 8 bits de droite (masque 0xFF)</td></tr>\n        <tr><td class=\"f\">[Convert]::ToString($resultat, 2).PadLeft(8, \"0\")</td><td class=\"f\">00000100</td><td>écrit sur 8 bits</td></tr>\n        <tr><td class=\"f\">$resultat.ToString(\"X2\")</td><td class=\"f\">04</td><td>hexa sur 2 chiffres</td></tr>\n        <tr><td class=\"f\">(0 - 1) -band 255</td><td>255</td><td><span class=\"f\">1111 1111 = FF</span> : 255 non signé = −1 signé</td></tr>\n      </tbody></table></div>\n      <p>255 + 1 = 256 = 0x100 → 8 bits gardés <span class=\"f\">00000000</span>, carry 1.</p>\n\n      <h3 id=\"k2-s5\"><span class=\"hn\">6</span>Flottants dans PowerShell</h3>\n      <div class=\"tscroll\"><table class=\"tt\">\n        <tbody><tr><th>Commande</th><th>Résultat</th></tr>\n        <tr><td class=\"f\">$a = [single]0.5 ; ([double]$a) -eq 0.5</td><td>True (0,5 est exact en binaire)</td></tr>\n        <tr><td class=\"f\">$b = [single]0.1 ; ([double]$b).ToString(\"G17\")</td><td class=\"f\">0.10000000149011612</td></tr>\n        <tr><td class=\"f\">([double]$b) -eq 0.1</td><td>False</td></tr>\n      </tbody></table></div>\n      <div class=\"box trap\">[single] = 32 bits. Passer en [double] élargit le nombre mais <b>n'annule pas</b> l'arrondi déjà fait. Valeur demandée ≠ valeur stockée ≠ valeur affichée.</div>\n      <div class=\"box method\">Le jour J : un journal de session, tes réponses et 2 fichiers texte, dans un ZIP (<span class=\"f\">Compress-Archive -Path Rendu -DestinationPath R103_Nom.zip</span>). Vérifie le dossier avec <span class=\"f\">Get-Location</span> avant de créer les fichiers.</div>\n    "
+},
+{
+"title": "TP blanc (pratique)",
+"html": "\n      <h2>R1.03 · TP blanc : l'épreuve pratique</h2>\n      <p class=\"muted\">1 h · Windows + PowerShell 7 · sujets TP1/TP2 et tes comptes rendus autorisés · ni Internet ni IA. À faire sur ton PC Windows, dans PowerShell 7 (pwsh).</p><div class=\"doc-tools\"></div>\n      <div class=\"box method\"><b>Règles du jeu.</b> Chronomètre 1 h. Pour chaque question, <b>prévois le résultat au brouillon avant de taper la commande</b>, puis vérifie. Réponds dans un fichier <span class=\"f\">reponses.txt</span>. Le jour J, tu rendras un seul ZIP avec le journal de session, tes réponses et deux fichiers texte : on s'entraîne à exactement ça. Les résultats attendus sont repliés sous chaque partie : ouvre-les seulement après avoir fini.</div>\n\n      <h3 id=\"kt-s0\"><span class=\"hn\">0</span>Préparer (5 min)</h3>\n      <div class=\"tscroll\"><pre class=\"f sh ps\">pwsh                                  # PowerShell 7, pas 5.1\n$PSVersionTable.PSVersion\nNew-Item -ItemType Directory -Path R103_Eval -Force\nSet-Location R103_Eval\nStart-Transcript -Path journal.txt    # journal</pre></div>\n      <p><span class=\"f\">Start-Transcript</span> enregistre tout ce que tu tapes et tout ce qui s'affiche. C'est très probablement « le journal de votre session » demandé. On l'arrête à la fin avec <span class=\"f\">Stop-Transcript</span>.</p>\n\n      <h3 id=\"kt-s1\"><span class=\"hn\">1</span>Identité du poste (10 min)</h3>\n      <ol>\n        <li>Donne le nom du processeur, le nombre de cœurs, le nombre de processeurs logiques et la fréquence max.</li>\n        <li>Ton processeur fait-il de l'hyperthreading ? Justifie avec les deux nombres.</li>\n        <li>Donne l'architecture du système (32 ou 64 bits) et la commande utilisée.</li>\n        <li>Donne la RAM totale en Gio, arrondie à 2 décimales.</li>\n        <li>Cite la commande Fedora équivalente pour chacune des questions 1, 3 et 4.</li>\n      </ol>\n      <details class=\"corr-d\"><summary>Voir le résultat</summary>\n        <p class=\"muted\">Les valeurs dépendent de ta machine ; voici les commandes et comment lire leur sortie.</p>\n        <div class=\"tscroll\"><pre class=\"f sh ps\">Get-CimInstance Win32_Processor | Select-Object Name, NumberOfCores, NumberOfLogicalProcessors, MaxClockSpeed\nGet-ComputerInfo | Select-Object OsArchitecture, CsSystemType\nGet-CimInstance Win32_ComputerSystem | Select-Object @{Name='RAM_Gio'; Expression={[math]::Round($_.TotalPhysicalMemory / 1GB, 2)}}</pre></div>\n        <ul>\n          <li>Hyperthreading si <b>logiques = 2 × cœurs</b> (ex. 8 cœurs, 16 logiques).</li>\n          <li>OsArchitecture « 64 bits » et CsSystemType « x64-based PC ».</li>\n          <li>MaxClockSpeed est en <b>MHz</b> (3600 = 3,6 GHz).</li>\n          <li>Fedora : <span class=\"f\">lscpu</span>, <span class=\"f\">uname -m</span> (x86_64), <span class=\"f\">free -h</span>.</li>\n        </ul>\n      </details>\n\n      <h3 id=\"kt-s2\"><span class=\"hn\">2</span>Fichiers texte (10 min)</h3>\n      <p>Prévois le nombre de caractères, puis les octets du texte seul, puis la taille du fichier sous Windows (CRLF) et sous Fedora (LF). Vérifie ensuite avec <span class=\"f\">Get-Item … | Select-Object Name, Length</span>.</p>\n      <div class=\"tscroll\"><pre class=\"f sh ps\">echo \"Noël\" &gt; noel.txt\necho \"Ça va ?\" &gt; cava.txt\necho \"Hé 👋\" &gt; salut.txt\necho \"Prix: 5€\" &gt; prix.txt</pre></div>\n      <details class=\"corr-d\"><summary>Voir le résultat</summary>\n        <div class=\"tscroll\"><table class=\"tt\">\n          <tbody><tr><th>Fichier</th><th>Caractères</th><th>Octets texte</th><th>Windows (CRLF)</th><th>Fedora (LF)</th></tr>\n          <tr><td>Noël</td><td>4</td><td>5</td><td>7</td><td>6</td></tr>\n          <tr><td>Ça va ?</td><td>7</td><td>8</td><td>10</td><td>9</td></tr>\n          <tr><td>Hé 👋</td><td>4</td><td>8</td><td>10</td><td>9</td></tr>\n          <tr><td>Prix: 5€</td><td>8</td><td>10</td><td>12</td><td>11</td></tr>\n        </tbody></table></div>\n        <p>Ç, é et ë prennent 2 octets, € en prend 3, 👋 en prend 4. CRLF ajoute +2, LF +1.</p>\n      </details>\n\n      <h3 id=\"kt-s3\"><span class=\"hn\">3</span>Lire les octets (10 min)</h3>\n      <div class=\"tscroll\"><pre class=\"f sh ps\">Format-Hex -Path noel.txt\nFormat-Hex -Path prix.txt</pre></div>\n      <ol>\n        <li>Recopie les octets de <span class=\"f\">noel.txt</span>. Repère ceux de « ë » et ceux de la fin de ligne.</li>\n        <li>Combien d'octets pour « € » ? Lesquels ?</li>\n        <li>Quelle commande Fedora affiche les mêmes octets ? Quelle serait la dernière paire ?</li>\n      </ol>\n      <details class=\"corr-d\"><summary>Voir le résultat</summary>\n        <ul>\n          <li>noel.txt : <span class=\"f\">4E 6F <b>C3 AB</b> 6C <b>0D 0A</b></span> (ë = C3 AB, fin de ligne CRLF = 0D 0A).</li>\n          <li>€ = <span class=\"f\">E2 82 AC</span> (3 octets).</li>\n          <li>prix.txt : <span class=\"f\">50 72 69 78 3A 20 35 E2 82 AC 0D 0A</span>.</li>\n          <li>Fedora : <span class=\"f\">od -An -tx1 -v noel.txt</span>, qui se termine par <span class=\"f\">0a</span> (LF).</li>\n        </ul>\n      </details>\n\n      <h3 id=\"kt-s4\"><span class=\"hn\">4</span>Calculs sur 8 bits (15 min)</h3>\n      <p>Pour chaque calcul, <b>pose l'addition en binaire au brouillon</b>. Donne la somme exacte (décimal + hexa), les 8 bits conservés (binaire + hexa) et le carry. Calculs : <b>200 + 100</b>, <b>128 + 128</b>, <b>99 + 27</b>, <b>127 + 1</b>. Vérifie avec :</p>\n      <div class=\"tscroll\"><pre class=\"f sh ps\">$s = 200 + 100\n$s ; $s.ToString(\"X\") ; [Convert]::ToString($s, 2)\n$r = $s -band 255\n[Convert]::ToString($r, 2).PadLeft(8, \"0\") ; $r.ToString(\"X2\")</pre></div>\n      <p>Ensuite : <span class=\"f\">(5 - 10) -band 255</span>. Donne le résultat, le binaire, l'hexa et la valeur signée. Pour <b>127 + 1</b>, y a-t-il un carry ? Un overflow en signé ?</p>\n      <details class=\"corr-d\"><summary>Voir le résultat</summary>\n        <div class=\"tscroll\"><table class=\"tt\">\n          <tbody><tr><th>Calcul</th><th>Exacte</th><th>Hexa</th><th>8 bits</th><th>X2</th><th>Carry</th></tr>\n          <tr><td>200 + 100</td><td>300</td><td>12C</td><td class=\"f\">00101100</td><td>2C</td><td>1</td></tr>\n          <tr><td>128 + 128</td><td>256</td><td>100</td><td class=\"f\">00000000</td><td>00</td><td>1</td></tr>\n          <tr><td>99 + 27</td><td>126</td><td>7E</td><td class=\"f\">01111110</td><td>7E</td><td>0</td></tr>\n          <tr><td>127 + 1</td><td>128</td><td>80</td><td class=\"f\">10000000</td><td>80</td><td>0</td></tr>\n        </tbody></table></div>\n        <p>127 + 1 : <b>pas de carry</b>, mais <b>overflow signé</b>. 10000000 vaut −128 en signé : deux positifs ont donné un négatif.</p>\n        <p><span class=\"f\">(5 - 10) -band 255</span> = 251 = <span class=\"f\">11111011</span> = FB → −5 en signé.</p>\n        <p>Attention : la somme exacte en hexa s'écrit sur <b>3 chiffres</b> (12C, 100). Les 8 bits conservés tiennent sur <b>2 chiffres</b> (2C, 00).</p>\n      </details>\n\n      <h3 id=\"kt-s5\"><span class=\"hn\">5</span>Flottants (5 min)</h3>\n      <p>Prévois d'abord lesquels sont exacts en simple précision, puis vérifie :</p>\n      <div class=\"tscroll\"><pre class=\"f sh ps\">foreach ($v in 0.25, 0.2, 0.75, 0.3) {\n  $s = [single]$v\n  \"$v -&gt; \" + ([double]$s).ToString(\"G17\") + \"  \" + (([double]$s) -eq $v)\n}</pre></div>\n      <p>Explique en une phrase pourquoi 0,2 n'est pas exact.</p>\n      <details class=\"corr-d\"><summary>Voir le résultat</summary>\n        <div class=\"tscroll\"><pre class=\"f sh ps\">0.25 -&gt; 0.25  True\n0.2 -&gt; 0.20000000298023224  False\n0.75 -&gt; 0.75  True\n0.3 -&gt; 0.30000001192092896  False</pre></div>\n        <p>0,25 = 0,01₂ et 0,75 = 0,11₂ sont des fractions binaires <b>finies</b>. 0,2 = 0,00110011…₂ est <b>infini</b> : il est arrondi à 23 bits de fraction, donc la valeur stockée ≠ 0,2.</p>\n      </details>\n\n      <h3 id=\"kt-s6\"><span class=\"hn\">6</span>Rendre (5 min)</h3>\n      <div class=\"tscroll\"><pre class=\"f sh ps\">Stop-Transcript\nNew-Item -ItemType Directory -Path Rendu -Force\nCopy-Item journal.txt, reponses.txt, noel.txt, prix.txt -Destination Rendu\nGet-ChildItem Rendu\nCompress-Archive -Path Rendu -DestinationPath R103_Eval_NOM.zip</pre></div>\n      <p>Remplace NOM par ton nom. Vérifie que le ZIP contient bien les 4 fichiers, et n'y mets ni PDF ni capture.</p>\n      <details class=\"corr-d\"><summary>Voir le résultat</summary>\n        <p><span class=\"f\">Get-ChildItem Rendu</span> doit lister journal.txt, noel.txt, prix.txt et reponses.txt. Pour vérifier le ZIP sans le décompresser ailleurs : <span class=\"f\">Expand-Archive R103_Eval_NOM.zip -DestinationPath verif</span> puis <span class=\"f\">Get-ChildItem verif -Recurse</span>.</p>\n      </details>\n\n      <div class=\"box trap\"><b>Pièges du jour J</b>\n        <ul>\n          <li>Ouvre bien <b>PowerShell 7</b> (pwsh), pas Windows PowerShell 5.1 : son codage de redirection est différent.</li>\n          <li>Copie les caractères spéciaux depuis le fichier fourni sur Arche, ne les tape pas.</li>\n          <li>Lance <span class=\"f\">Start-Transcript</span> <b>avant</b> la première commande.</li>\n          <li>Pour l'hexa, utilise <span class=\"f\">\"X2\"</span>, et <span class=\"f\">PadLeft(8,\"0\")</span> pour le binaire.</li>\n          <li>Distingue toujours le <b>texte seul</b> de la <b>fin de ligne</b>.</li>\n        </ul>\n      </div>\n\n      <h3 id=\"kt-s7\">Ton CR du TP2 : à corriger</h3>\n      <p class=\"muted\">Relu à partir du ZIP du TP2 déposé sur Arche le 9/11. Tu as droit à ton CR demain : corrige-le avant de l'enregistrer.</p>\n      <div class=\"box exm\">Tes fichiers sont corrects (octets vérifiés : <span class=\"f\">accent.txt = 43 61 66 C3 A9 0A</span>, etc.). Tes réponses aux questions 7, 10, 12 et 14 sont justes. Mais si tu recopies demain les 4 erreurs ci-dessous, tu perds des points.</div>\n      <div class=\"box trap\"><b>Erreur 1 · Q11 : sommes en hexa.</b> Tu as écrit « somme exacte hexa = 260 » et « hexa conservé = 104 ».\n        <div class=\"tscroll\"><table class=\"tt\">\n          <tbody><tr><th>Calcul</th><th>Exacte</th><th>Hexa exacte</th><th>8 bits</th><th>Hexa conservé</th><th>Carry</th></tr>\n          <tr><td>250 + 10</td><td>260</td><td><b>104</b></td><td class=\"f\">00000100</td><td><b>04</b></td><td>1</td></tr>\n          <tr><td>255 + 1</td><td>256</td><td><b>100</b></td><td class=\"f\">00000000</td><td><b>00</b></td><td>1</td></tr>\n        </tbody></table></div>\n        260 en décimal s'écrit 104 en hexa (1 × 256 + 0 × 16 + 4). Le « 104 » est la somme exacte ; ce qui est conservé, c'est seulement <b>04</b>.</div>\n      <div class=\"box trap\"><b>Erreur 2 · Q5 : 😊 fait 4 octets.</b> Ton tableau dit « 😊 : F0 9F 98 8A : 3 ». Il y a <b>4</b> paires, donc 4 octets. Les emojis prennent 4 octets en UTF-8.</div>\n      <div class=\"box trap\"><b>Erreur 3 · Q2 : la conclusion est inversée.</b> La question était : « Peut-on affirmer qu'un caractère occupe toujours un octet ? » La réponse attendue est <b>non</b>. « Fusée 😊 » a 7 caractères mais 11 octets : é en prend 2 et 😊 en prend 4. En UTF-8, un caractère occupe de 1 à 4 octets.</div>\n      <div class=\"box trap\"><b>Erreur 4 · Q9 : il manque une case.</b> Il y a 4 octets, donc 4 adresses, de <b>0 à 3</b> :\n        <div class=\"tscroll\"><table class=\"tt\">\n          <tbody><tr><th></th><th>@0</th><th>@1</th><th>@2</th><th>@3</th></tr>\n          <tr><td>big-endian</td><td>12</td><td>34</td><td>56</td><td>78</td></tr>\n          <tr><td>little-endian</td><td>78</td><td>56</td><td>34</td><td>12</td></tr>\n        </tbody></table></div>\n        Ajoute aussi la réponse à Q9 : 78 56 34 12 lu en big-endian donne <b>0x78563412</b>, ce n'est pas l'entier initial.</div>\n      <h4>À améliorer</h4>\n      <ul>\n        <li>Q6 : justifie avec la plage ASCII. Les lettres de « Bonjour » ont des codes entre <b>00 et 7F</b>, et UTF-8 garde ces codes tels quels sur 1 octet.</li>\n        <li>Ton <span class=\"f\">mixte.txt</span> n'a pas d'espace après 😊 : 14 octets de texte, donc 15 sous Fedora et 16 sous Windows. C'est cohérent avec tes fichiers. Le sujet comptait un espace final (15 → 16 / 17).</li>\n        <li>Ton dépôt du <b>TP1</b> n'apparaît pas sur Arche de ton côté. Vérifie que ton binôme l'a bien déposé.</li>\n      </ul>\n      <div class=\"box method\"><b>Ce soir, dans l'ordre</b>\n        <ol>\n          <li>Corrige ton CR TP2 (les 4 erreurs) et enregistre-le en PDF avec les sujets TP1 et TP2, prêts à copier sur le poste.</li>\n          <li>Fais ce TP blanc en 1 h, sur ton PC, dans PowerShell 7.</li>\n          <li>Fais 2 fois le deck « Comme au QCM » R1.03, puis « Pratique : prévois le résultat ».</li>\n          <li>Relis la fiche mémento au lit.</li>\n        </ol>\n      </div>\n    "
+}
+],
+"sources": [
+{
+"type": "text",
+"title": "Cours : Codage & arithmétique",
+"text": "\n      R1.03 · Codage et arithmétique des processeurs\n      Éval mercredi 18/11, 13 h 30 – 15 h 20 : 1 h de pratique sous Windows / PowerShell 7 (sujets TP1 et TP2 et tes comptes rendus autorisés, pas d'Internet ni d'IA), puis un QCM Moodle de 15 min (15 questions à choix unique, sans document, une seule tentative).✎ Modifier le cours⎙ Imprimer\n      Méthode : compter les octets UTF-8\n        1ASCII : lettres sans accent, chiffres, ponctuation et espace2lettres accentuées : é è à ç ë Ç ô…3symboles : € ☕ ✓4emojis : 😊 👋\n        On additionne caractère par caractère : « Allô 😊 » = A 1 + l 1 + l 1 + ô 2 + espace 1 + 😊 4 = 10 octets pour 6 caractères. Si c'est un fichier créé par echo, on ajoute la fin de ligne : +1 (LF, Fedora) ou +2 (CRLF, PowerShell 7 sous Windows), soit 11 ou 12 octets.\n\n      1Notation positionnelle\n      Chaque position vaut une puissance de la base, en partant de 0 à droite.\n      \n        101011₂= 32 + 8 + 2 + 1 = 43\n        B0A₁₆= 11 × 256 + 0 × 16 + 10 = 2 826\n        n bits2ⁿ combinaisons. Non signé : de 0 à 2ⁿ − 1 (8 bits : 0 à 255).\n      \n      \n        Hexadécimal : chiffres 0 à 9 puis A = 10 … F = 15, préfixe 0x.\n        1 chiffre hexa = 4 bits, donc 1 octet = 2 chiffres hexa : 1101 0110₂ = 0xD6.\n        Décimal vers binaire : divisions successives par 2 (on lit les restes de bas en haut), ou on retire les puissances de 2 : 200 = 128 + 64 + 8 → 1100 1000.\n      \n      Binaire ↔ hexa : on coupe en paquets de 4 bits en partant de la droite, chaque paquet donne un chiffre hexa. 0x3F = 0011 1111.\n\n      2Entiers signés : complément à deux\n      \n        Opposé d'un nombre : inverser tous les bits, puis ajouter 1. 5 = 0000 0101 → 1111 1010 + 1 = 1111 1011 = −5.\n        Plage sur n bits : −2ⁿ⁻¹ à 2ⁿ⁻¹ − 1. 8 bits : −128 à 127 ; 4 bits : −8 à 7 ; 5 bits : −16 à 15.\n        Le bit de gauche vaut 1 pour un négatif. Un seul zéro (0000 0000).\n      \n      \n        Mot de 8 bitsNon signéSigné (complément à deux)\n        0111 1111127127\n        1000 0000128−128\n        1111 0000240−16\n        1111 1111255−1\n      \n      Un même mot a deux lectures : précise toujours signé ou non signé. Lire 1111 1111 « 255 » sans le dire est une erreur classique. Valeur signée d'un mot qui commence par 1 : valeur non signée − 256 (sur 8 bits).\n\n      3Addition, carry et overflow\n      \n        Carry (retenue) : le 9ᵉ bit qui sort d'une addition sur 8 bits. Il signale un dépassement en non signé. Le résultat garde seulement les 8 bits de droite.\n        Overflow (dépassement signé) : deux positifs donnent un négatif, ou deux négatifs donnent un positif. Deux nombres de signes différents ne font jamais d'overflow.\n        Carry et overflow sont indépendants : on peut avoir l'un sans l'autre.\n      \n      \n        CalculRésultatCarryOverflowPourquoi\n        0101 + 001110000oui5 + 3 = 8 > 7 (4 bits signés)\n        1011 + 011000011nonsignes différents\n        1111 + 111111101non−1 + −1 = −2\n        0111 0110 + 0100 00111011 10010oui118 + 67 = 185 > 127\n        1111 1111 + 0000 00010000 00001non255 + 1 = 256 en non signé ; −1 + 1 = 0 en signé\n        0111 1111 + 0000 00011000 00000oui127 + 1 sort de [−128 ; 127]\n      \n      Soustraction = addition du complément à deux : 0101 − 0011 → 0101 + 1101 = 0010 (2, on jette le carry). 0010 1010 − 0011 1100 = 1110 1110 (−18). 0000 1111 − 0001 0000 = 1111 1111 (−1).\n      Erreurs typiques : garder un 9ᵉ bit sur un mot de 8 bits ; dire « overflow » dès qu'il y a un carry ; oublier de dire si on lit en signé ou non signé.\n\n      4Virgule flottante IEEE 754\n      \n        simple (32 bits)1 bit de signe + 8 bits d'exposant + 23 bits de fraction, biais 127\n        double (64 bits)1 + 11 + 52, biais 1023\n        valeur(−1)s × 1,F × 2E avec E = e − 127 ; le 1 avant la virgule est implicite (pas stocké)\n      \n      \n        Fractions binaires : 10,1₂ = 2,5 · 0,011₂ = 0,375 · 101,101₂ = 5,625 · 0,0001₂ = 0,0625.\n        Partie décimale → binaire : multiplier par 2 et garder la partie entière à chaque étape. 0,625 → 1,25 (1) → 0,5 (0) → 1 (1) : 0,101₂.\n        Normaliser : 101,101₂ = 1,01101 × 2² ; 0,00101₂ = 1,01 × 2⁻³.\n      \n      Encoder x : signe → binaire → normaliser 1,F × 2E → e = E + 127 sur 8 bits → F complétée par des 0 sur 23 bits → regrouper en hexa.5,75 = 101,11₂ = 1,0111 × 2² → s = 0, e = 129 = 1000 0001, F = 0111 0… → 0 10000001 0111000… = 0x40B80000.\n      Décoder 0 | 10000001 | 0110… : e = 129 donc E = 2, 1,011₂ = 1,375, 1,375 × 4 = 5,5.\n        1 | 10000010 | 0100… → −1,25 × 8 = −10 · 0 | 01111101 | 0110… → 1,375 × 2⁻² = 0,34375 · 1 | 01111110 | 1000… → −1,5 × 2⁻¹ = −0,75 · 0 | 10000000 | 1000… → 1,5 × 2 = 3.\n        Autres codages : 12,375 = 0x41460000 · −0,15625 = 0xBE200000 · −7,5 = 0xC0F00000.\n      \n        ExposantFractionValeur\n        0000 00000±0\n        0000 0000≠ 0dénormalisé (très petit, pas de 1 implicite)\n        1111 11110±∞\n        1111 1111≠ 0NaN (ex. 0/0)\n      \n      0,1 = 0,000110011001100…₂ : le motif 0011 se répète à l'infini, la valeur stockée est arrondie (en simple : 0,10000000149011612). 0,5 = 0,1₂ est exact. Un décimal fini n'a pas toujours une écriture binaire finie. On compare des flottants avec une tolérance |x − y| < ε, jamais avec ==.Autres pièges : confondre e (stocké) et E (réel) ; mettre le 1 implicite dans F ; oublier le bit de signe.\n    "
+},
+{
+"type": "text",
+"title": "TP1 & TP2 : commandes",
+"text": "\n      R1.03 · TP1 et TP2 : les commandes\n      La partie pratique se fait sous Windows avec PowerShell 7. Le QCM interroge aussi sur Fedora : connais les deux colonnes.✎ Modifier le cours⎙ Imprimer\n      Méthode : compter les octets UTF-8\n        1ASCII : lettres sans accent, chiffres, ponctuation et espace2lettres accentuées : é è à ç ë Ç ô…3symboles : € ☕ ✓4emojis : 😊 👋\n        On additionne caractère par caractère : « Allô 😊 » = A 1 + l 1 + l 1 + ô 2 + espace 1 + 😊 4 = 10 octets pour 6 caractères. Si c'est un fichier créé par echo, on ajoute la fin de ligne : +1 (LF, Fedora) ou +2 (CRLF, PowerShell 7 sous Windows), soit 11 ou 12 octets.\n\n      1TP1 : anatomie d'un ordinateur\n      \n        InfoPowerShell (Windows 11)Fedora (Bash)\n        Date, machine, utilisateur, dossierGet-Date, hostname, whoami, Get-Locationdate, hostname, whoami, pwd\n        Système, architectureGet-ComputerInfo | Select-Object WindowsProductName, WindowsVersion, OsArchitecture, CsSystemTypecat /etc/os-release ; uname -m (architecture, ex. x86_64) ; uname -r (noyau)\n        ProcesseurGet-CimInstance Win32_Processor (Name, NumberOfCores, NumberOfLogicalProcessors, MaxClockSpeed)lscpu\n        RAMGet-CimInstance Win32_ComputerSystem : TotalPhysicalMemory en octets (÷ 1GB → Gio)free -h\n        Disque physiqueGet-PhysicalDisk (FriendlyName, MediaType, Size, HealthStatus)lsblk -o NAME,SIZE,TYPE,FSTYPE,MOUNTPOINTS,MODEL\n        Volumes, systèmes de fichiersGet-Volume (DriveLetter, FileSystem, Size, SizeRemaining)lsblk -f\n        PériphériquesGet-PnpDevice -PresentOnly (-Class Display, -Class Net)lspci\n        RéseauGet-NetAdapter (Name, InterfaceDescription, Status, LinkSpeed)ip -br link\n      \n      Outils graphiques Windows : Gestionnaire des tâches, msinfo32, Gestionnaire de périphériques.\n      \n        Cœurs physiques ≠ processeurs logiques : avec l'hyperthreading, chaque cœur offre 2 processeurs logiques (8 cœurs → 16 logiques).\n        x86_64 = AMD64 = 64 bits.\n        Go ≠ Gio : 1 Go = 10⁹ octets, 1 Gio = 2³⁰ octets. Un disque vendu « 512 Go » s'affiche environ 476 Gio.\n        Disque physique > partition > volume > système de fichiers (NTFS, ext4, btrfs, FAT32…).\n        Hiérarchie mémoire, du plus rapide au plus lent : registres > cache > RAM > SSD. Pour lancer plusieurs machines virtuelles, c'est la RAM qui limite en premier.\n        Modèle de von Neumann : processeur (UAL + unité de commande + registres), mémoire, stockage, périphériques d'entrée-sortie, reliés par des bus.\n      \n\n      2TP2 : créer un fichier texte et mesurer sa taille\n      \n        echo \"Café\" > accent.txt marche sur les deux systèmes. > crée ou remplace le fichier. Les guillemets ne sont pas écrits dans le fichier.\n        Fin de ligne : Fedora (Bash) ajoute LF = 0a (1 octet). PowerShell 7 sous Windows ajoute CRLF = 0D 0A (2 octets). echo -n (Bash) n'ajoute pas de fin de ligne.\n        PowerShell 7 écrit en UTF-8 sans BOM. Windows PowerShell 5.1 utilise un autre codage : à éviter. Vérifier la version : $PSVersionTable.PSVersion. Sous Fedora : locale charmap → UTF-8.\n      \n      \n        Pour…PowerShellFedora\n        Taille en octetsGet-Item f | Select-Object Name, Length (Length = octets)wc -c fichier\n        Voir les octets en hexaFormat-Hex -Path fichier (colonne texte de droite pas fiable en UTF-8)od -An -tx1 -v fichier (-An sans adresses, -tx1 hexa octet par octet, -v toutes les lignes)\n        Dossiers et renduNew-Item -ItemType Directory, Copy-Item, Get-ChildItem -Recurse, Compress-Archivemkdir -p, cd, pwd\n      \n\n      3UTF-8 : 1 caractère n'est pas toujours 1 octet\n      \n        CaractèrePoint de codeOctets UTF-8Nombre\n        ASCII (a, Z, 7, espace…)U+0000 à U+007F00 à 7F1\n        éU+00E9C3 A92\n        ☕U+2615E2 98 953\n        😊U+1F60AF0 9F 98 8A4\n      \n      « Bonjour » : 7 octets de texte → 8 octets sous Fedora (LF), 9 sous Windows (CRLF).\n        « Café » = 43 61 66 C3 A9 : 5 octets → 5 sans fin de ligne, 6 avec LF, 7 avec CRLF.\n        « Fusée 😊 » (avec un espace final) : F u s é(2) e espace 😊(4) espace = 11 octets → 12 / 13.\n        « Café ☕ 😊 » (espace final) : 5 + 1 + 3 + 1 + 4 + 1 = 15 octets → 16 / 17.\n      Taille d'un fichier = octets du texte + fin de ligne (0, 1 ou 2). Les octets du texte sont les mêmes sur les deux systèmes : seule la fin de ligne change. ASCII (128 codes) ne peut coder ni é ni 😊.\n\n      4Ordre des octets (endianness)\n      L'entier 0x12345678 sur 4 octets, adresses 0 → 3 :\n      \n        big-endian12 34 56 78 : poids fort à la plus petite adresse\n        little-endian78 56 34 12 : poids faible d'abord (processeurs x86)\n      \n      Chaque octet garde sa valeur (12 = 0001 0010), seule sa position change. Inverser l'ordre des octets n'est pas inverser les bits. Lire 78 56 34 12 en big-endian donne 0x78563412, un autre entier.\n\n      5Calculs sur 8 bits avec PowerShell\n      \n        CommandeAfficheCe qu'il faut comprendre\n        $somme = 250 + 10260PowerShell calcule sans limite de 8 bits\n        [Convert]::ToString($somme, 2)1000001009 bits : il y a un carry\n        $somme.ToString(\"X\")1043 chiffres hexa : ne tient pas dans un octet\n        $resultat = $somme -band 2554on garde les 8 bits de droite (masque 0xFF)\n        [Convert]::ToString($resultat, 2).PadLeft(8, \"0\")00000100écrit sur 8 bits\n        $resultat.ToString(\"X2\")04hexa sur 2 chiffres\n        (0 - 1) -band 2552551111 1111 = FF : 255 non signé = −1 signé\n      \n      255 + 1 = 256 = 0x100 → 8 bits gardés 00000000, carry 1.\n\n      6Flottants dans PowerShell\n      \n        CommandeRésultat\n        $a = [single]0.5 ; ([double]$a) -eq 0.5True (0,5 est exact en binaire)\n        $b = [single]0.1 ; ([double]$b).ToString(\"G17\")0.10000000149011612\n        ([double]$b) -eq 0.1False\n      \n      [single] = 32 bits. Passer en [double] élargit le nombre mais n'annule pas l'arrondi déjà fait. Valeur demandée ≠ valeur stockée ≠ valeur affichée.\n      Le jour J : un journal de session, tes réponses et 2 fichiers texte, dans un ZIP (Compress-Archive -Path Rendu -DestinationPath R103_Nom.zip). Vérifie le dossier avec Get-Location avant de créer les fichiers.\n    "
+},
+{
+"type": "text",
+"title": "TP blanc (pratique)",
+"text": "\n      R1.03 · TP blanc : l'épreuve pratique\n      1 h · Windows + PowerShell 7 · sujets TP1/TP2 et tes comptes rendus autorisés · ni Internet ni IA. À faire sur ton PC Windows, dans PowerShell 7 (pwsh).✎ Modifier le cours⎙ Imprimer\n      Règles du jeu. Chronomètre 1 h. Pour chaque question, prévois le résultat au brouillon avant de taper la commande, puis vérifie. Réponds dans un fichier reponses.txt. Le jour J, tu rendras un seul ZIP avec le journal de session, tes réponses et deux fichiers texte : on s'entraîne à exactement ça. Les résultats attendus sont repliés sous chaque partie : ouvre-les seulement après avoir fini.\n\n      0Préparer (5 min)\n      pwsh                                  # PowerShell 7, pas 5.1\n$PSVersionTable.PSVersion\nNew-Item -ItemType Directory -Path R103_Eval -Force\nSet-Location R103_Eval\nStart-Transcript -Path journal.txt    # journal\n      Start-Transcript enregistre tout ce que tu tapes et tout ce qui s'affiche. C'est très probablement « le journal de votre session » demandé. On l'arrête à la fin avec Stop-Transcript.\n\n      1Identité du poste (10 min)\n      \n        Donne le nom du processeur, le nombre de cœurs, le nombre de processeurs logiques et la fréquence max.\n        Ton processeur fait-il de l'hyperthreading ? Justifie avec les deux nombres.\n        Donne l'architecture du système (32 ou 64 bits) et la commande utilisée.\n        Donne la RAM totale en Gio, arrondie à 2 décimales.\n        Cite la commande Fedora équivalente pour chacune des questions 1, 3 et 4.\n      \n      Voir le résultat\n        Les valeurs dépendent de ta machine ; voici les commandes et comment lire leur sortie.\n        Get-CimInstance Win32_Processor | Select-Object Name, NumberOfCores, NumberOfLogicalProcessors, MaxClockSpeed\nGet-ComputerInfo | Select-Object OsArchitecture, CsSystemType\nGet-CimInstance Win32_ComputerSystem | Select-Object @{Name='RAM_Gio'; Expression={[math]::Round($_.TotalPhysicalMemory / 1GB, 2)}}\n        \n          Hyperthreading si logiques = 2 × cœurs (ex. 8 cœurs, 16 logiques).\n          OsArchitecture « 64 bits » et CsSystemType « x64-based PC ».\n          MaxClockSpeed est en MHz (3600 = 3,6 GHz).\n          Fedora : lscpu, uname -m (x86_64), free -h.\n        \n      \n\n      2Fichiers texte (10 min)\n      Prévois le nombre de caractères, puis les octets du texte seul, puis la taille du fichier sous Windows (CRLF) et sous Fedora (LF). Vérifie ensuite avec Get-Item … | Select-Object Name, Length.\n      echo \"Noël\" > noel.txt\necho \"Ça va ?\" > cava.txt\necho \"Hé 👋\" > salut.txt\necho \"Prix: 5€\" > prix.txt\n      Voir le résultat\n        \n          FichierCaractèresOctets texteWindows (CRLF)Fedora (LF)\n          Noël4576\n          Ça va ?78109\n          Hé 👋48109\n          Prix: 5€8101211\n        \n        Ç, é et ë prennent 2 octets, € en prend 3, 👋 en prend 4. CRLF ajoute +2, LF +1.\n      \n\n      3Lire les octets (10 min)\n      Format-Hex -Path noel.txt\nFormat-Hex -Path prix.txt\n      \n        Recopie les octets de noel.txt. Repère ceux de « ë » et ceux de la fin de ligne.\n        Combien d'octets pour « € » ? Lesquels ?\n        Quelle commande Fedora affiche les mêmes octets ? Quelle serait la dernière paire ?\n      \n      Voir le résultat\n        \n          noel.txt : 4E 6F C3 AB 6C 0D 0A (ë = C3 AB, fin de ligne CRLF = 0D 0A).\n          € = E2 82 AC (3 octets).\n          prix.txt : 50 72 69 78 3A 20 35 E2 82 AC 0D 0A.\n          Fedora : od -An -tx1 -v noel.txt, qui se termine par 0a (LF).\n        \n      \n\n      4Calculs sur 8 bits (15 min)\n      Pour chaque calcul, pose l'addition en binaire au brouillon. Donne la somme exacte (décimal + hexa), les 8 bits conservés (binaire + hexa) et le carry. Calculs : 200 + 100, 128 + 128, 99 + 27, 127 + 1. Vérifie avec :\n      $s = 200 + 100\n$s ; $s.ToString(\"X\") ; [Convert]::ToString($s, 2)\n$r = $s -band 255\n[Convert]::ToString($r, 2).PadLeft(8, \"0\") ; $r.ToString(\"X2\")\n      Ensuite : (5 - 10) -band 255. Donne le résultat, le binaire, l'hexa et la valeur signée. Pour 127 + 1, y a-t-il un carry ? Un overflow en signé ?\n      Voir le résultat\n        \n          CalculExacteHexa8 bitsX2Carry\n          200 + 10030012C001011002C1\n          128 + 12825610000000000001\n          99 + 271267E011111107E0\n          127 + 11288010000000800\n        \n        127 + 1 : pas de carry, mais overflow signé. 10000000 vaut −128 en signé : deux positifs ont donné un négatif.\n        (5 - 10) -band 255 = 251 = 11111011 = FB → −5 en signé.\n        Attention : la somme exacte en hexa s'écrit sur 3 chiffres (12C, 100). Les 8 bits conservés tiennent sur 2 chiffres (2C, 00).\n      \n\n      5Flottants (5 min)\n      Prévois d'abord lesquels sont exacts en simple précision, puis vérifie :\n      foreach ($v in 0.25, 0.2, 0.75, 0.3) {\n  $s = [single]$v\n  \"$v -> \" + ([double]$s).ToString(\"G17\") + \"  \" + (([double]$s) -eq $v)\n}\n      Explique en une phrase pourquoi 0,2 n'est pas exact.\n      Voir le résultat\n        0.25 -> 0.25  True\n0.2 -> 0.20000000298023224  False\n0.75 -> 0.75  True\n0.3 -> 0.30000001192092896  False\n        0,25 = 0,01₂ et 0,75 = 0,11₂ sont des fractions binaires finies. 0,2 = 0,00110011…₂ est infini : il est arrondi à 23 bits de fraction, donc la valeur stockée ≠ 0,2.\n      \n\n      6Rendre (5 min)\n      Stop-Transcript\nNew-Item -ItemType Directory -Path Rendu -Force\nCopy-Item journal.txt, reponses.txt, noel.txt, prix.txt -Destination Rendu\nGet-ChildItem Rendu\nCompress-Archive -Path Rendu -DestinationPath R103_Eval_NOM.zip\n      Remplace NOM par ton nom. Vérifie que le ZIP contient bien les 4 fichiers, et n'y mets ni PDF ni capture.\n      Voir le résultat\n        Get-ChildItem Rendu doit lister journal.txt, noel.txt, prix.txt et reponses.txt. Pour vérifier le ZIP sans le décompresser ailleurs : Expand-Archive R103_Eval_NOM.zip -DestinationPath verif puis Get-ChildItem verif -Recurse.\n      \n\n      Pièges du jour J\n        \n          Ouvre bien PowerShell 7 (pwsh), pas Windows PowerShell 5.1 : son codage de redirection est différent.\n          Copie les caractères spéciaux depuis le fichier fourni sur Arche, ne les tape pas.\n          Lance Start-Transcript avant la première commande.\n          Pour l'hexa, utilise \"X2\", et PadLeft(8,\"0\") pour le binaire.\n          Distingue toujours le texte seul de la fin de ligne.\n        \n      \n\n      Ton CR du TP2 : à corriger\n      Relu à partir du ZIP du TP2 déposé sur Arche le 9/11. Tu as droit à ton CR demain : corrige-le avant de l'enregistrer.\n      Tes fichiers sont corrects (octets vérifiés : accent.txt = 43 61 66 C3 A9 0A, etc.). Tes réponses aux questions 7, 10, 12 et 14 sont justes. Mais si tu recopies demain les 4 erreurs ci-dessous, tu perds des points.\n      Erreur 1 · Q11 : sommes en hexa. Tu as écrit « somme exacte hexa = 260 » et « hexa conservé = 104 ».\n        \n          CalculExacteHexa exacte8 bitsHexa conservéCarry\n          250 + 1026010400000100041\n          255 + 125610000000000001\n        \n        260 en décimal s'écrit 104 en hexa (1 × 256 + 0 × 16 + 4). Le « 104 » est la somme exacte ; ce qui est conservé, c'est seulement 04.\n      Erreur 2 · Q5 : 😊 fait 4 octets. Ton tableau dit « 😊 : F0 9F 98 8A : 3 ». Il y a 4 paires, donc 4 octets. Les emojis prennent 4 octets en UTF-8.\n      Erreur 3 · Q2 : la conclusion est inversée. La question était : « Peut-on affirmer qu'un caractère occupe toujours un octet ? » La réponse attendue est non. « Fusée 😊 » a 7 caractères mais 11 octets : é en prend 2 et 😊 en prend 4. En UTF-8, un caractère occupe de 1 à 4 octets.\n      Erreur 4 · Q9 : il manque une case. Il y a 4 octets, donc 4 adresses, de 0 à 3 :\n        \n          @0@1@2@3\n          big-endian12345678\n          little-endian78563412\n        \n        Ajoute aussi la réponse à Q9 : 78 56 34 12 lu en big-endian donne 0x78563412, ce n'est pas l'entier initial.\n      À améliorer\n      \n        Q6 : justifie avec la plage ASCII. Les lettres de « Bonjour » ont des codes entre 00 et 7F, et UTF-8 garde ces codes tels quels sur 1 octet.\n        Ton mixte.txt n'a pas d'espace après 😊 : 14 octets de texte, donc 15 sous Fedora et 16 sous Windows. C'est cohérent avec tes fichiers. Le sujet comptait un espace final (15 → 16 / 17).\n        Ton dépôt du TP1 n'apparaît pas sur Arche de ton côté. Vérifie que ton binôme l'a bien déposé.\n      \n      Ce soir, dans l'ordre\n        \n          Corrige ton CR TP2 (les 4 erreurs) et enregistre-le en PDF avec les sujets TP1 et TP2, prêts à copier sur le poste.\n          Fais ce TP blanc en 1 h, sur ton PC, dans PowerShell 7.\n          Fais 2 fois le deck « Comme au QCM » R1.03, puis « Pratique : prévois le résultat ».\n          Relis la fiche mémento au lit.\n        \n      \n    "
+}
+]
+}

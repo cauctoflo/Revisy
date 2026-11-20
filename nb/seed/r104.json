@@ -1,0 +1,1059 @@
+{
+"decks": [
+{
+"title": "Questions de cours",
+"cards": [
+{
+"id": "cr10411894f428b52",
+"q": "Le noyau (kernel) d'un système d'exploitation…",
+"a": "gère la mémoire, les processus et les périphériques\n\nLe noyau est la couche la plus proche du matériel : mémoire, ordonnancement des processus, pilotes, système de fichiers, droits.",
+"tag": "CM · Système"
+},
+{
+"id": "cr104567aeb9fb8a3",
+"q": "« Linux », au sens strict, désigne…",
+"a": "le noyau\n\nLinux est le noyau. Fedora, Ubuntu, Debian sont des distributions : noyau + outils GNU + logiciels + interface graphique.",
+"tag": "CM · Système"
+},
+{
+"id": "cr10415c2c3a1a231",
+"q": "Lequel de ces systèmes n'est pas conforme POSIX ?",
+"a": "Windows\n\nWindows n'est pas POSIX ; WSL permet d'y lancer un environnement GNU/Linux.",
+"tag": "CM · Système"
+},
+{
+"id": "cr10496e519a6a328",
+"q": "Que ne contient pas l'inode d'un fichier ?",
+"a": "Son nom\n\nL'inode décrit le fichier (taille, propriétaire, droits, dates) ; le nom est stocké dans le répertoire.",
+"tag": "CM · Système"
+},
+{
+"id": "cr1042d7d62f88c35",
+"q": "Comment reconnaît-on un fichier caché sous Linux ?",
+"a": "Son nom commence par un point\n\n.bashrc est caché : ls ne l'affiche pas, ls -a si.",
+"tag": "CM · Système"
+},
+{
+"id": "cr1047982b0b91e46",
+"q": "Metz.txt et metz.txt dans le même dossier…",
+"a": "sont deux fichiers différents\n\nLes noms de fichiers Linux sont sensibles à la casse.",
+"tag": "CM · Système"
+},
+{
+"id": "cr104159d9ed562bc",
+"q": "Lequel est un chemin absolu ?",
+"a": "/home/alice/doc.txt\n\nUn chemin absolu commence par / (la racine). Les autres partent du dossier courant.",
+"tag": "CM · Chemins"
+},
+{
+"id": "cr1042dd3fb8046e1",
+"q": "Dans un chemin, ~ désigne…",
+"a": "le dossier personnel de l'utilisateur\n\n~ = /home/utilisateur. La racine est /, le parent .., le courant .",
+"tag": "CM · Chemins"
+},
+{
+"id": "cr10443d0f3097977",
+"q": "Quels noms correspondent au joker shell ch?t ?",
+"a": "chat et chut\n\n? remplace exactement un caractère : ni cht (0) ni chaat (2).",
+"tag": "CM · Jokers"
+},
+{
+"id": "cr104261c7a73c190",
+"q": "Dans le shell, * veut dire…",
+"a": "0, 1 ou plusieurs caractères quelconques\n\nC'est le joker du shell. En regex, * répète ce qui précède : ne pas confondre.",
+"tag": "CM · Jokers"
+},
+{
+"id": "cr1045ec10cc5438c",
+"q": "Que fait cd tapé seul ?",
+"a": "Il ramène au dossier personnel\n\ncd sans argument = cd ~. pwd affiche le dossier courant.",
+"tag": "Commandes"
+},
+{
+"id": "cr104b6d3eabcb7a4",
+"q": "mv rapport.txt bilan.txt dans le même dossier…",
+"a": "renomme le fichier\n\nmv déplace ou renomme. Si bilan.txt existait, il est remplacé.",
+"tag": "Commandes"
+},
+{
+"id": "cr1041252ddd09899",
+"q": "rmdir projet échoue. Pourquoi, le plus probablement ?",
+"a": "Le dossier n'est pas vide\n\nrmdir ne supprime qu'un dossier vide. Pour un dossier plein : rm -r (sans corbeille).",
+"tag": "Commandes"
+},
+{
+"id": "cr104ec5d2f7430e5",
+"q": "Après rm notes.txt, le fichier…",
+"a": "est supprimé définitivement\n\nLe terminal n'a pas de corbeille : rm est définitif.",
+"tag": "Commandes"
+},
+{
+"id": "cr1049c16f02b1279",
+"q": "Quelle commande crée a/b/c même si a n'existe pas ?",
+"a": "mkdir -p a/b/c\n\n-p crée les parents manquants et ne signale pas d'erreur si le dossier existe déjà.",
+"tag": "Commandes"
+},
+{
+"id": "cr1045832f12836cd",
+"q": "Combien de lignes affiche head fichier par défaut ?",
+"a": "10\n\nhead et tail affichent 10 lignes par défaut ; -n 5 pour en avoir 5.",
+"tag": "Commandes"
+},
+{
+"id": "cr1041b752892a203",
+"q": "Le fichier contient 9, 10 et 100, un par ligne. Que donne sort sans option ?",
+"a": "10, 100, 9\n\nSans -n, le tri est alphabétique : « 1 » avant « 9 ». sort -n trie numériquement.",
+"tag": "Commandes"
+},
+{
+"id": "cr104cc1087eb7b42",
+"q": "Pourquoi écrit-on sort f | uniq ?",
+"a": "uniq ne retire que les doublons consécutifs\n\nAprès le tri, les doublons sont côte à côte et uniq peut les retirer. sort -u fait les deux.",
+"tag": "Commandes"
+},
+{
+"id": "cr1040f5476a51c39",
+"q": "wc -l < f affiche…",
+"a": "le nombre de lignes, sans le nom du fichier\n\n-l compte les lignes ; avec <, wc lit l'entrée standard et n'affiche pas de nom.",
+"tag": "Commandes"
+},
+{
+"id": "cr104afc378bcb004",
+"q": "Quelle commande cherche tous les .txt sous le dossier courant ?",
+"a": "find . -name \"*.txt\"\n\nfind parcourt récursivement ; -name prend un motif à protéger par des guillemets.",
+"tag": "Commandes"
+},
+{
+"id": "cr104bf1e9bbf23f3",
+"q": "echo \"A\" > f ; echo \"B\" > f. Que contient f ?",
+"a": "B\n\n> écrase le fichier à chaque fois. Avec >> pour le 2ᵉ echo, on aurait A puis B.",
+"tag": "Redirections"
+},
+{
+"id": "cr104431be39d2de1",
+"q": "Comment envoyer la sortie et les erreurs dans tout.txt ?",
+"a": "cmd > tout.txt 2>&1\n\nOn redirige d'abord stdout vers le fichier, puis 2>&1 envoie stderr au même endroit.",
+"tag": "Redirections"
+},
+{
+"id": "cr1049ba1a49d91d1",
+"q": "Le numéro du flux d'erreur standard (stderr) est…",
+"a": "2\n\n0 = stdin, 1 = stdout, 2 = stderr.",
+"tag": "Redirections"
+},
+{
+"id": "cr1048b1fb40940c2",
+"q": "Que fait le tube dans ls | grep \".txt\" ?",
+"a": "Il envoie la sortie de ls en entrée de grep\n\nLe tube relie stdout de la 1ʳᵉ commande à stdin de la 2ᵉ.",
+"tag": "Redirections"
+},
+{
+"id": "cr104772546474510",
+"q": "Que vaut rwxr-x--- en octal ?",
+"a": "750\n\nrwx = 4 + 2 + 1 = 7, r-x = 4 + 1 = 5, --- = 0.",
+"tag": "Permissions"
+},
+{
+"id": "cr1044efd4b1a3279",
+"q": "chmod 644 index.html donne…",
+"a": "rw-r--r--\n\n6 = rw-, 4 = r--. C'est la règle pour un fichier public.",
+"tag": "Permissions"
+},
+{
+"id": "cr10465a7bff63b2d",
+"q": "Un fichier est en 755. Après chmod a=rw f, il est en…",
+"a": "666\n\n= remplace les droits de tous (a) par rw : le x disparaît.",
+"tag": "Permissions"
+},
+{
+"id": "cr1049c9b3339309a",
+"q": "Sur un dossier, le droit x permet de…",
+"a": "le traverser (entrer, accéder aux fichiers)\n\nr = lister les noms, w = créer ou supprimer dedans, x = traverser.",
+"tag": "Permissions"
+},
+{
+"id": "cr104ce575702ce73",
+"q": "Tu as r mais pas x sur un dossier. Tu peux…",
+"a": "voir les noms des fichiers, mais pas les ouvrir\n\nC'est l'expérience du TP3 : ls affiche les noms, cat dossier/fichier donne Permission denied.",
+"tag": "Permissions"
+},
+{
+"id": "cr10425d1d9d2d1e4",
+"q": "Pour lire /home/alice/site/index.html, un autre utilisateur a besoin…",
+"a": "de x sur chaque dossier du chemin et de r sur le fichier\n\nIl faut traverser tous les dossiers parents (x), y compris /home/alice, puis lire le fichier (r).",
+"tag": "Permissions"
+},
+{
+"id": "cr104c34e1b851cd1",
+"q": "Avec umask 022, un nouveau fichier est créé en…",
+"a": "644\n\nUn fichier part de 666 au plus ; on retire 022 : 644. Un dossier part de 777 : 755.",
+"tag": "Permissions"
+},
+{
+"id": "cr1040e3685f3b33b",
+"q": "Avec umask 077, un nouveau dossier est créé en…",
+"a": "700\n\n777 moins 077 = 700 : seul le propriétaire y accède. Un fichier serait en 600.",
+"tag": "Permissions"
+},
+{
+"id": "cr104c46f74f9127e",
+"q": "Qui peut exécuter chown bob f.txt ?",
+"a": "root (ou via sudo)\n\nChanger le propriétaire d'un fichier est réservé à l'administrateur.",
+"tag": "Permissions"
+},
+{
+"id": "cr10415b3e4f57805",
+"q": "test -r f && echo OK affiche OK. Qu'est-ce que cela prouve ?",
+"a": "Que ton compte peut lire f\n\ntest vérifie les droits du compte qui lance la commande, pas ceux des autres.",
+"tag": "Permissions"
+},
+{
+"id": "cr104198eb79a1951",
+"q": "Quelle commande ajoute le droit d'exécution au seul propriétaire ?",
+"a": "chmod u+x script.sh\n\nu = propriétaire, + = ajouter, x = exécution. Ensuite : ./script.sh.",
+"tag": "Permissions"
+},
+{
+"id": "cr1042e7779d2d357",
+"q": "Quelle ligne est retenue par grep -E '[01]{8}' mais pas par grep -E '^[01]{8}$' ?",
+"a": "101010101\n\nSans ancres, 8 bits « quelque part » suffisent : 101010101 en contient. Avec ^…$, la ligne entière doit faire exactement 8 bits.",
+"tag": "Regex"
+},
+{
+"id": "cr1042827a4dce0dc",
+"q": "En regex, un point non échappé . signifie…",
+"a": "n'importe quel caractère\n\nPour un point littéral, on écrit \\. ; sinon 192x168x1x2 passe pour une adresse IP.",
+"tag": "Regex"
+},
+{
+"id": "cr104485162693ab7",
+"q": "{1,3} dans une regex veut dire…",
+"a": "de 1 à 3 fois ce qui précède\n\n{n} = exactement n, {n,m} = de n à m. Attention : [0-9]{1,3} accepte 999.",
+"tag": "Regex"
+},
+{
+"id": "cr10422dda7c14087",
+"q": "echo \"0101\" | grep -Eq '^[01]{8}$' ; echo $? affiche…",
+"a": "1\n\n4 bits seulement : aucune correspondance, code 1. 0 = trouvé, 2 = erreur. -q n'affiche rien d'autre.",
+"tag": "Regex"
+},
+{
+"id": "cr104f67eb9922df4",
+"q": "Une adresse MAC (6 paires hexa) code combien de bits ?",
+"a": "48\n\nUne paire hexa = 2 chiffres de 4 bits = 8 bits ; 6 × 8 = 48.",
+"tag": "Regex"
+},
+{
+"id": "cr1041668e8cb7c2f",
+"q": "echo 'PRETTY_NAME=\"Fedora Linux 41\"' | cut -d '=' -f 2- affiche…",
+"a": "\"Fedora Linux 41\"\n\ncut garde le 2ᵉ champ et la suite, guillemets compris ; sed 's/\"//g' les retire ensuite.",
+"tag": "Regex"
+},
+{
+"id": "cr1042d97bf4432cb",
+"q": "À quoi sert la 1ʳᵉ ligne #!/usr/bin/env bash ?",
+"a": "À choisir l'interpréteur quand on lance ./script.sh\n\nC'est le shebang. Le droit x se donne avec chmod u+x ; la syntaxe se vérifie avec bash -n.",
+"tag": "Scripts Bash"
+},
+{
+"id": "cr104b3e59b06d3af",
+"q": "Laquelle de ces affectations est correcte en Bash ?",
+"a": "nom=\"Alice\"\n\nAucun espace autour de = et pas de $ à gauche. Avec des espaces, Bash cherche une commande nom.",
+"tag": "Scripts Bash"
+},
+{
+"id": "cr104f81a25b1f3bf",
+"q": "Avec nom=\"Alice\", echo 'Bonjour $nom' affiche…",
+"a": "Bonjour $nom\n\nLes apostrophes empêchent le remplacement des variables. Avec des guillemets : Bonjour Alice.",
+"tag": "Scripts Bash"
+},
+{
+"id": "cr104e7ed2c52a5a9",
+"q": "Que vaut $(whoami) dans un script ?",
+"a": "Le résultat de la commande whoami\n\n$( … ) est une substitution de commande. ${var} délimite seulement le nom d'une variable.",
+"tag": "Scripts Bash"
+},
+{
+"id": "cr1044547e0a1e0a9",
+"q": "if commande ; then … fi exécute la branche then quand…",
+"a": "le code retour de la commande vaut 0\n\nEn shell, 0 = succès = vrai. grep -q renvoie 0 s'il a trouvé une ligne.",
+"tag": "Scripts Bash"
+},
+{
+"id": "cr1045685d1269594",
+"q": "Pourquoi tape-t-on ./script.sh et pas script.sh ?",
+"a": "Le dossier courant n'est pas dans le PATH\n\nSans chemin, le shell cherche la commande dans les dossiers du PATH, qui ne contient pas le dossier courant.",
+"tag": "Scripts Bash"
+},
+{
+"id": "cr1049dc98838aded",
+"q": "Le script affiche bash\n: No such file or directory. La cause ?",
+"a": "Des fins de ligne Windows (CRLF) dans le script\n\nLe \n (^M) vient d'un fichier enregistré avec CRLF. Il faut des fins de ligne LF.",
+"tag": "Scripts Bash"
+},
+{
+"id": "cr1043e4fe6c633e0",
+"q": "Que fait bash -n script.sh ?",
+"a": "Il vérifie la syntaxe sans exécuter\n\n-n = vérification de syntaxe. -x trace l'exécution.",
+"tag": "Scripts Bash"
+}
+]
+},
+{
+"title": "Pratique terminal",
+"cards": [
+{
+"id": "cr1047517ea480815",
+"q": "Énoncé : « crée tp/preuves et tp/travail en une commande ». Laquelle ?",
+"a": "mkdir -p tp/{preuves,travail}\n\nLes accolades produisent tp/preuves et tp/travail ; -p crée tp au passage.",
+"tag": "Pratique terminal"
+},
+{
+"id": "cr104f132443e2ddb",
+"q": "Énoncé : « enregistre la sortie de id puis celle de ls -ld site dans preuves/droits.txt ». Quelle suite ?",
+"a": "id > preuves/droits.txt puis ls -ld site >> preuves/droits.txt\n\nLa 1ʳᵉ redirection repart de zéro (>), les suivantes ajoutent (>>). Sinon la 2ᵉ écrase la 1ʳᵉ.",
+"tag": "Pratique terminal"
+},
+{
+"id": "cr104a0e405519e20",
+"q": "Énoncé : « le dossier site doit être traversable et lisible par tous, modifiable par toi seul ». Quel chmod ?",
+"a": "chmod 755 site\n\nrwx pour toi, r-x pour groupe et autres. 644 retirerait x : personne ne pourrait entrer dans le dossier.",
+"tag": "Pratique terminal"
+},
+{
+"id": "cr104778025dc086e",
+"q": "Énoncé : « brouillon.html ne doit être lisible et modifiable que par toi ». Quel chmod ?",
+"a": "chmod 600 brouillon.html\n\nrw------- = 600. 700 ajouterait x (inutile pour une page), 400 empêcherait de modifier.",
+"tag": "Pratique terminal"
+},
+{
+"id": "cr104066b08844fc9",
+"q": "Énoncé : « garde la sortie et les erreurs de ls /root dans log.txt ». Quelle commande ?",
+"a": "ls /root > log.txt 2>&1\n\n2>&1 après > envoie aussi les erreurs (Permission denied) dans le fichier.",
+"tag": "Pratique terminal"
+},
+{
+"id": "cr104471fd3d2a9fb",
+"q": "Énoncé : « affiche les lignes de bits.txt qui contiennent exactement 8 bits et rien d'autre ». Quelle commande ?",
+"a": "grep -E '^[01]{8}$' bits.txt\n\nLes ancres ^ et $ imposent la ligne entière ; {8} impose 8 caractères 0 ou 1.",
+"tag": "Pratique terminal"
+},
+{
+"id": "cr10478a8832ec11a",
+"q": "Énoncé : « liste les logins de /etc/passwd, triés ». Quelle commande ?",
+"a": "cut -d: -f1 /etc/passwd | sort\n\nLes champs de /etc/passwd sont séparés par « : » ; le login est le 1ᵉʳ.",
+"tag": "Pratique terminal"
+},
+{
+"id": "cr1048de442893658",
+"q": "Énoncé : « compte les lignes contenant INFO dans system.log ». Quelle commande ?",
+"a": "grep -c 'INFO' system.log\n\n-c compte les lignes qui correspondent. -v | wc -l compterait les autres.",
+"tag": "Pratique terminal"
+}
+]
+}
+],
+"quizzes": [
+{
+"title": "Questions de cours · quiz 1",
+"questions": [
+{
+"q": "Le noyau (kernel) d'un système d'exploitation…",
+"choices": [
+"est l'interface graphique",
+"est un logiciel de traitement de texte",
+"est le shell",
+"gère la mémoire, les processus et les périphériques"
+],
+"answer": 3,
+"expl": "Le noyau est la couche la plus proche du matériel : mémoire, ordonnancement des processus, pilotes, système de fichiers, droits."
+},
+{
+"q": "« Linux », au sens strict, désigne…",
+"choices": [
+"une distribution complète",
+"l'interface graphique",
+"le shell Bash",
+"le noyau"
+],
+"answer": 3,
+"expl": "Linux est le noyau. Fedora, Ubuntu, Debian sont des distributions : noyau + outils GNU + logiciels + interface graphique."
+},
+{
+"q": "Lequel de ces systèmes n'est pas conforme POSIX ?",
+"choices": [
+"Windows",
+"macOS",
+"GNU/Linux",
+"FreeBSD"
+],
+"answer": 0,
+"expl": "Windows n'est pas POSIX ; WSL permet d'y lancer un environnement GNU/Linux."
+},
+{
+"q": "Que ne contient pas l'inode d'un fichier ?",
+"choices": [
+"Son nom",
+"Sa taille",
+"Ses droits",
+"Son propriétaire"
+],
+"answer": 0,
+"expl": "L'inode décrit le fichier (taille, propriétaire, droits, dates) ; le nom est stocké dans le répertoire."
+},
+{
+"q": "Comment reconnaît-on un fichier caché sous Linux ?",
+"choices": [
+"Il est dans /hidden",
+"Son nom commence par un point",
+"Il a le droit h",
+"Son nom finit par ~"
+],
+"answer": 1,
+"expl": ".bashrc est caché : ls ne l'affiche pas, ls -a si."
+},
+{
+"q": "Metz.txt et metz.txt dans le même dossier…",
+"choices": [
+"sont deux fichiers différents",
+"sont le même fichier",
+"ne peuvent pas coexister",
+"sont des liens"
+],
+"answer": 0,
+"expl": "Les noms de fichiers Linux sont sensibles à la casse."
+},
+{
+"q": "Lequel est un chemin absolu ?",
+"choices": [
+"doc.txt",
+"/home/alice/doc.txt",
+"./doc.txt",
+"../alice/doc.txt"
+],
+"answer": 1,
+"expl": "Un chemin absolu commence par / (la racine). Les autres partent du dossier courant."
+},
+{
+"q": "Dans un chemin, ~ désigne…",
+"choices": [
+"la racine",
+"le dossier parent",
+"le dossier courant",
+"le dossier personnel de l'utilisateur"
+],
+"answer": 3,
+"expl": "~ = /home/utilisateur. La racine est /, le parent .., le courant ."
+},
+{
+"q": "Quels noms correspondent au joker shell ch?t ?",
+"choices": [
+"chat et chut",
+"chat, chut et cht",
+"chaat seulement",
+"tous les noms qui commencent par ch"
+],
+"answer": 0,
+"expl": "? remplace exactement un caractère : ni cht (0) ni chaat (2)."
+},
+{
+"q": "Dans le shell, * veut dire…",
+"choices": [
+"un chiffre",
+"0, 1 ou plusieurs caractères quelconques",
+"répéter le caractère précédent",
+"exactement un caractère"
+],
+"answer": 1,
+"expl": "C'est le joker du shell. En regex, * répète ce qui précède : ne pas confondre."
+},
+{
+"q": "Que fait cd tapé seul ?",
+"choices": [
+"Il ramène au dossier personnel",
+"Il affiche le dossier courant",
+"Il remonte à la racine",
+"Il ne fait rien"
+],
+"answer": 0,
+"expl": "cd sans argument = cd ~. pwd affiche le dossier courant."
+},
+{
+"q": "mv rapport.txt bilan.txt dans le même dossier…",
+"choices": [
+"renomme le fichier",
+"crée une copie",
+"supprime bilan.txt seulement",
+"affiche une erreur"
+],
+"answer": 0,
+"expl": "mv déplace ou renomme. Si bilan.txt existait, il est remplacé."
+},
+{
+"q": "rmdir projet échoue. Pourquoi, le plus probablement ?",
+"choices": [
+"Il faut être root",
+"Le dossier n'est pas vide",
+"Il faut -p",
+"rmdir supprime les fichiers seulement"
+],
+"answer": 1,
+"expl": "rmdir ne supprime qu'un dossier vide. Pour un dossier plein : rm -r (sans corbeille)."
+},
+{
+"q": "Après rm notes.txt, le fichier…",
+"choices": [
+"est caché",
+"est vidé mais garde son nom",
+"est supprimé définitivement",
+"va dans la corbeille"
+],
+"answer": 2,
+"expl": "Le terminal n'a pas de corbeille : rm est définitif."
+},
+{
+"q": "Quelle commande crée a/b/c même si a n'existe pas ?",
+"choices": [
+"mkdir -r a/b/c",
+"mkdir -p a/b/c",
+"mkdir a/b/c",
+"touch a/b/c"
+],
+"answer": 1,
+"expl": "-p crée les parents manquants et ne signale pas d'erreur si le dossier existe déjà."
+}
+]
+},
+{
+"title": "Questions de cours · quiz 2",
+"questions": [
+{
+"q": "Combien de lignes affiche head fichier par défaut ?",
+"choices": [
+"toutes",
+"10",
+"5",
+"20"
+],
+"answer": 1,
+"expl": "head et tail affichent 10 lignes par défaut ; -n 5 pour en avoir 5."
+},
+{
+"q": "Le fichier contient 9, 10 et 100, un par ligne. Que donne sort sans option ?",
+"choices": [
+"9, 10, 100",
+"100, 10, 9",
+"9, 100, 10",
+"10, 100, 9"
+],
+"answer": 3,
+"expl": "Sans -n, le tri est alphabétique : « 1 » avant « 9 ». sort -n trie numériquement."
+},
+{
+"q": "Pourquoi écrit-on sort f | uniq ?",
+"choices": [
+"uniq ne retire que les doublons consécutifs",
+"uniq trie aussi",
+"sort ne marche pas seul",
+"pour compter les lignes"
+],
+"answer": 0,
+"expl": "Après le tri, les doublons sont côte à côte et uniq peut les retirer. sort -u fait les deux."
+},
+{
+"q": "wc -l < f affiche…",
+"choices": [
+"les lignes de f",
+"le nombre de lignes, sans le nom du fichier",
+"le nombre de mots",
+"le nombre d'octets"
+],
+"answer": 1,
+"expl": "-l compte les lignes ; avec <, wc lit l'entrée standard et n'affiche pas de nom."
+},
+{
+"q": "Quelle commande cherche tous les .txt sous le dossier courant ?",
+"choices": [
+"find . -name \"*.txt\"",
+"grep *.txt",
+"ls *.txt -R",
+"find *.txt"
+],
+"answer": 0,
+"expl": "find parcourt récursivement ; -name prend un motif à protéger par des guillemets."
+},
+{
+"q": "echo \"A\" > f ; echo \"B\" > f. Que contient f ?",
+"choices": [
+"rien",
+"B",
+"A puis B",
+"A"
+],
+"answer": 1,
+"expl": "> écrase le fichier à chaque fois. Avec >> pour le 2ᵉ echo, on aurait A puis B."
+},
+{
+"q": "Comment envoyer la sortie et les erreurs dans tout.txt ?",
+"choices": [
+"cmd > tout.txt 2>&1",
+"cmd 2>&1 tout.txt",
+"cmd >> 2 tout.txt",
+"cmd | tout.txt"
+],
+"answer": 0,
+"expl": "On redirige d'abord stdout vers le fichier, puis 2>&1 envoie stderr au même endroit."
+},
+{
+"q": "Le numéro du flux d'erreur standard (stderr) est…",
+"choices": [
+"1",
+"0",
+"3",
+"2"
+],
+"answer": 3,
+"expl": "0 = stdin, 1 = stdout, 2 = stderr."
+},
+{
+"q": "Que fait le tube dans ls | grep \".txt\" ?",
+"choices": [
+"Il écrit dans un fichier grep",
+"Il lance les deux commandes l'une après l'autre sans lien",
+"Il compare leurs sorties",
+"Il envoie la sortie de ls en entrée de grep"
+],
+"answer": 3,
+"expl": "Le tube relie stdout de la 1ʳᵉ commande à stdin de la 2ᵉ."
+},
+{
+"q": "Que vaut rwxr-x--- en octal ?",
+"choices": [
+"751",
+"640",
+"570",
+"750"
+],
+"answer": 3,
+"expl": "rwx = 4 + 2 + 1 = 7, r-x = 4 + 1 = 5, --- = 0."
+},
+{
+"q": "chmod 644 index.html donne…",
+"choices": [
+"r--r--r--",
+"rw-r--r--",
+"rwxr--r--",
+"rw-rw-r--"
+],
+"answer": 1,
+"expl": "6 = rw-, 4 = r--. C'est la règle pour un fichier public."
+},
+{
+"q": "Un fichier est en 755. Après chmod a=rw f, il est en…",
+"choices": [
+"644",
+"666",
+"755",
+"777"
+],
+"answer": 1,
+"expl": "= remplace les droits de tous (a) par rw : le x disparaît."
+},
+{
+"q": "Sur un dossier, le droit x permet de…",
+"choices": [
+"lister les noms",
+"créer des fichiers",
+"le traverser (entrer, accéder aux fichiers)",
+"exécuter les scripts qu'il contient"
+],
+"answer": 2,
+"expl": "r = lister les noms, w = créer ou supprimer dedans, x = traverser."
+},
+{
+"q": "Tu as r mais pas x sur un dossier. Tu peux…",
+"choices": [
+"voir les noms des fichiers, mais pas les ouvrir",
+"ouvrir les fichiers, mais pas voir les noms",
+"tout faire",
+"rien du tout"
+],
+"answer": 0,
+"expl": "C'est l'expérience du TP3 : ls affiche les noms, cat dossier/fichier donne Permission denied."
+},
+{
+"q": "Pour lire /home/alice/site/index.html, un autre utilisateur a besoin…",
+"choices": [
+"de w sur le dossier site",
+"d'être dans le groupe root",
+"de x sur chaque dossier du chemin et de r sur le fichier",
+"seulement de r sur le fichier"
+],
+"answer": 2,
+"expl": "Il faut traverser tous les dossiers parents (x), y compris /home/alice, puis lire le fichier (r)."
+}
+]
+},
+{
+"title": "Questions de cours · quiz 3",
+"questions": [
+{
+"q": "Avec umask 022, un nouveau fichier est créé en…",
+"choices": [
+"022",
+"666",
+"644",
+"755"
+],
+"answer": 2,
+"expl": "Un fichier part de 666 au plus ; on retire 022 : 644. Un dossier part de 777 : 755."
+},
+{
+"q": "Avec umask 077, un nouveau dossier est créé en…",
+"choices": [
+"777",
+"700",
+"600",
+"077"
+],
+"answer": 1,
+"expl": "777 moins 077 = 700 : seul le propriétaire y accède. Un fichier serait en 600."
+},
+{
+"q": "Qui peut exécuter chown bob f.txt ?",
+"choices": [
+"tout membre du groupe",
+"n'importe qui",
+"root (ou via sudo)",
+"le propriétaire de f.txt"
+],
+"answer": 2,
+"expl": "Changer le propriétaire d'un fichier est réservé à l'administrateur."
+},
+{
+"q": "test -r f && echo OK affiche OK. Qu'est-ce que cela prouve ?",
+"choices": [
+"Que tout le monde peut lire f",
+"Que le groupe peut lire f",
+"Que f est un script",
+"Que ton compte peut lire f"
+],
+"answer": 3,
+"expl": "test vérifie les droits du compte qui lance la commande, pas ceux des autres."
+},
+{
+"q": "Quelle commande ajoute le droit d'exécution au seul propriétaire ?",
+"choices": [
+"chmod o+x script.sh",
+"chmod 444 script.sh",
+"chmod u+x script.sh",
+"chmod +r script.sh"
+],
+"answer": 2,
+"expl": "u = propriétaire, + = ajouter, x = exécution. Ensuite : ./script.sh."
+},
+{
+"q": "Quelle ligne est retenue par grep -E '[01]{8}' mais pas par grep -E '^[01]{8}$' ?",
+"choices": [
+"11111111",
+"101010101",
+"10101010",
+"00000000"
+],
+"answer": 1,
+"expl": "Sans ancres, 8 bits « quelque part » suffisent : 101010101 en contient. Avec ^…$, la ligne entière doit faire exactement 8 bits."
+},
+{
+"q": "En regex, un point non échappé . signifie…",
+"choices": [
+"la fin de ligne",
+"rien",
+"n'importe quel caractère",
+"un point"
+],
+"answer": 2,
+"expl": "Pour un point littéral, on écrit \\. ; sinon 192x168x1x2 passe pour une adresse IP."
+},
+{
+"q": "{1,3} dans une regex veut dire…",
+"choices": [
+"de 1 à 3 fois ce qui précède",
+"exactement 13 fois",
+"1 ou 3 fois seulement",
+"les caractères 1 et 3"
+],
+"answer": 0,
+"expl": "{n} = exactement n, {n,m} = de n à m. Attention : [0-9]{1,3} accepte 999."
+},
+{
+"q": "echo \"0101\" | grep -Eq '^[01]{8}$' ; echo $? affiche…",
+"choices": [
+"2",
+"0101",
+"1",
+"0"
+],
+"answer": 2,
+"expl": "4 bits seulement : aucune correspondance, code 1. 0 = trouvé, 2 = erreur. -q n'affiche rien d'autre."
+},
+{
+"q": "Une adresse MAC (6 paires hexa) code combien de bits ?",
+"choices": [
+"48",
+"32",
+"24",
+"64"
+],
+"answer": 0,
+"expl": "Une paire hexa = 2 chiffres de 4 bits = 8 bits ; 6 × 8 = 48."
+},
+{
+"q": "echo 'PRETTY_NAME=\"Fedora Linux 41\"' | cut -d '=' -f 2- affiche…",
+"choices": [
+"=\"Fedora Linux 41\"",
+"\"Fedora Linux 41\"",
+"Fedora Linux 41",
+"PRETTY_NAME"
+],
+"answer": 1,
+"expl": "cut garde le 2ᵉ champ et la suite, guillemets compris ; sed 's/\"//g' les retire ensuite."
+},
+{
+"q": "À quoi sert la 1ʳᵉ ligne #!/usr/bin/env bash ?",
+"choices": [
+"C'est un commentaire sans effet",
+"À rendre le script exécutable",
+"À vérifier la syntaxe",
+"À choisir l'interpréteur quand on lance ./script.sh"
+],
+"answer": 3,
+"expl": "C'est le shebang. Le droit x se donne avec chmod u+x ; la syntaxe se vérifie avec bash -n."
+},
+{
+"q": "Laquelle de ces affectations est correcte en Bash ?",
+"choices": [
+"nom=\"Alice\"",
+"nom = \"Alice\"",
+"$nom=\"Alice\"",
+"set nom \"Alice\""
+],
+"answer": 0,
+"expl": "Aucun espace autour de = et pas de $ à gauche. Avec des espaces, Bash cherche une commande nom."
+},
+{
+"q": "Avec nom=\"Alice\", echo 'Bonjour $nom' affiche…",
+"choices": [
+"Bonjour Alice",
+"Bonjour",
+"une erreur",
+"Bonjour $nom"
+],
+"answer": 3,
+"expl": "Les apostrophes empêchent le remplacement des variables. Avec des guillemets : Bonjour Alice."
+},
+{
+"q": "Que vaut $(whoami) dans un script ?",
+"choices": [
+"Le texte whoami",
+"Le code retour de whoami",
+"Le résultat de la commande whoami",
+"La variable whoami"
+],
+"answer": 2,
+"expl": "$( … ) est une substitution de commande. ${var} délimite seulement le nom d'une variable."
+}
+]
+},
+{
+"title": "Questions de cours · quiz 4",
+"questions": [
+{
+"q": "if commande ; then … fi exécute la branche then quand…",
+"choices": [
+"le code retour de la commande vaut 0",
+"la commande affiche quelque chose",
+"le code retour vaut 1",
+"la commande échoue"
+],
+"answer": 0,
+"expl": "En shell, 0 = succès = vrai. grep -q renvoie 0 s'il a trouvé une ligne."
+},
+{
+"q": "Pourquoi tape-t-on ./script.sh et pas script.sh ?",
+"choices": [
+"Le dossier courant n'est pas dans le PATH",
+"Le point rend le script exécutable",
+"C'est obligatoire pour Bash",
+"Pour l'exécuter en root"
+],
+"answer": 0,
+"expl": "Sans chemin, le shell cherche la commande dans les dossiers du PATH, qui ne contient pas le dossier courant."
+},
+{
+"q": "Le script affiche bash\n: No such file or directory. La cause ?",
+"choices": [
+"Des fins de ligne Windows (CRLF) dans le script",
+"Le droit x manquant",
+"Une faute dans le nom du script",
+"Bash n'est pas installé"
+],
+"answer": 0,
+"expl": "Le \n (^M) vient d'un fichier enregistré avec CRLF. Il faut des fins de ligne LF."
+},
+{
+"q": "Que fait bash -n script.sh ?",
+"choices": [
+"Il rend le script exécutable",
+"Il vérifie la syntaxe sans exécuter",
+"Il exécute sans afficher",
+"Il trace chaque ligne"
+],
+"answer": 1,
+"expl": "-n = vérification de syntaxe. -x trace l'exécution."
+}
+]
+},
+{
+"title": "Pratique terminal · quiz",
+"questions": [
+{
+"q": "Énoncé : « crée tp/preuves et tp/travail en une commande ». Laquelle ?",
+"choices": [
+"mkdir tp && preuves travail",
+"mkdir -p tp/{preuves,travail}",
+"mkdir tp/preuves tp/travail -r",
+"touch tp/{preuves,travail}"
+],
+"answer": 1,
+"expl": "Les accolades produisent tp/preuves et tp/travail ; -p crée tp au passage."
+},
+{
+"q": "Énoncé : « enregistre la sortie de id puis celle de ls -ld site dans preuves/droits.txt ». Quelle suite ?",
+"choices": [
+"id | ls -ld site > preuves/droits.txt",
+"id > preuves/droits.txt puis ls -ld site > preuves/droits.txt",
+"id > preuves/droits.txt puis ls -ld site >> preuves/droits.txt",
+"id >> preuves/droits.txt puis ls -ld site > preuves/droits.txt"
+],
+"answer": 2,
+"expl": "La 1ʳᵉ redirection repart de zéro (>), les suivantes ajoutent (>>). Sinon la 2ᵉ écrase la 1ʳᵉ."
+},
+{
+"q": "Énoncé : « le dossier site doit être traversable et lisible par tous, modifiable par toi seul ». Quel chmod ?",
+"choices": [
+"chmod 755 site",
+"chmod 644 site",
+"chmod 700 site",
+"chmod 777 site"
+],
+"answer": 0,
+"expl": "rwx pour toi, r-x pour groupe et autres. 644 retirerait x : personne ne pourrait entrer dans le dossier."
+},
+{
+"q": "Énoncé : « brouillon.html ne doit être lisible et modifiable que par toi ». Quel chmod ?",
+"choices": [
+"chmod 600 brouillon.html",
+"chmod 700 brouillon.html",
+"chmod 644 brouillon.html",
+"chmod 400 brouillon.html"
+],
+"answer": 0,
+"expl": "rw------- = 600. 700 ajouterait x (inutile pour une page), 400 empêcherait de modifier."
+},
+{
+"q": "Énoncé : « garde la sortie et les erreurs de ls /root dans log.txt ». Quelle commande ?",
+"choices": [
+"ls /root > log.txt 2>&1",
+"ls /root 2> log.txt",
+"ls /root | log.txt",
+"ls /root > log.txt"
+],
+"answer": 0,
+"expl": "2>&1 après > envoie aussi les erreurs (Permission denied) dans le fichier."
+},
+{
+"q": "Énoncé : « affiche les lignes de bits.txt qui contiennent exactement 8 bits et rien d'autre ». Quelle commande ?",
+"choices": [
+"grep -E '^[0-1]+$' bits.txt",
+"grep -E '^[01]{8}$' bits.txt",
+"grep -E '[01]{8}' bits.txt",
+"grep '01{8}' bits.txt"
+],
+"answer": 1,
+"expl": "Les ancres ^ et $ imposent la ligne entière ; {8} impose 8 caractères 0 ou 1."
+},
+{
+"q": "Énoncé : « liste les logins de /etc/passwd, triés ». Quelle commande ?",
+"choices": [
+"sort /etc/passwd | cut -d: -f2",
+"cut -d: -f1 /etc/passwd | sort",
+"cut -f1 /etc/passwd | sort",
+"grep -f1 /etc/passwd"
+],
+"answer": 1,
+"expl": "Les champs de /etc/passwd sont séparés par « : » ; le login est le 1ᵉʳ."
+},
+{
+"q": "Énoncé : « compte les lignes contenant INFO dans system.log ». Quelle commande ?",
+"choices": [
+"wc -c system.log",
+"grep -v 'INFO' system.log | wc -l",
+"grep -c 'INFO' system.log",
+"grep -n 'INFO' system.log"
+],
+"answer": 2,
+"expl": "-c compte les lignes qui correspondent. -v | wc -l compterait les autres."
+}
+]
+}
+],
+"fiches": [
+{
+"title": "Cours : SE & Linux",
+"html": "\n      <h2>R1.04 · Système d'exploitation et Linux</h2>\n      <p class=\"muted\">Devoir jeudi 3/12, 8 h – 9 h 50. Format non annoncé ; probablement comme l'éval 1 : un quiz de 15 min puis 1 h de pratique, tout dans le terminal.</p><div class=\"doc-tools\"></div>\n      <h3 id=\"s1-s0\"><span class=\"hn\">1</span>Rôle du système d'exploitation</h3>\n      <ul>\n        <li>Le SE sert d'<b>interface</b> entre le matériel et les applications, gère les ressources et offre une plateforme d'exécution.</li>\n        <li>Couches : applications → shell (CLI ou GUI) → <b>noyau</b> → matériel.</li>\n        <li>Le noyau gère la mémoire, les processus (ordonnancement), les périphériques via les <b>pilotes</b>, le système de fichiers et la sécurité. C'est la 1ʳᵉ couche chargée au démarrage.</li>\n        <li>Historique : années 60 traitement par lots ; 70 Unix (multi-utilisateur, multitâche) ; 80 MS-DOS, MacOS ; 90 Windows NT et Linux ; 2000+ Android, iOS, virtualisation, conteneurs.</li>\n      </ul>\n      <h3 id=\"s1-s1\"><span class=\"hn\">2</span>Linux, distributions, POSIX</h3>\n      <ul>\n        <li><b>Linux = le noyau</b>. Une <b>distribution</b> (Fedora, Ubuntu, Debian…) = noyau + outils GNU + logiciels + gestionnaire de paquets + interface graphique (GNOME, KDE Plasma, XFCE) + pilotes.</li>\n        <li>Linux : multitâche, multi-utilisateur (UID / GID), conforme <b>POSIX</b>. macOS et BSD sont conformes ; <b>Windows ne l'est pas</b> (WSL permet d'y lancer un environnement GNU/Linux).</li>\n        <li>Android est basé sur Linux (plus de 70 % des smartphones).</li>\n      </ul>\n      <h3 id=\"s1-s2\"><span class=\"hn\">3</span>Tout est fichier</h3>\n      <ul>\n        <li>Types (1ᵉʳ caractère de <span class=\"f\">ls -l</span>) : <span class=\"f\">-</span> fichier régulier, <span class=\"f\">d</span> répertoire, <span class=\"f\">l</span> lien, <span class=\"f\">b</span> / <span class=\"f\">c</span> périphérique bloc / caractère.</li>\n        <li>Une seule arborescence à partir de la racine <span class=\"f\">/</span> (pas de C:, D:) ; les disques et clés USB sont <b>montés</b> dans un répertoire.</li>\n        <li>L'<b>inode</b> décrit un fichier (numéro, taille, propriétaire, groupe, type et droits, dates) mais <b>ne contient pas son nom</b> ni ses données.</li>\n        <li>Noms : <span class=\"f\">/</span> interdit ; <b>sensibles à la casse</b> (Metz.txt ≠ metz.txt) ; fichier <b>caché</b> = nom qui commence par <span class=\"f\">.</span> (visible avec <span class=\"f\">ls -a</span>) ; 255 caractères au plus.</li>\n      </ul>\n      <h3 id=\"s1-s3\"><span class=\"hn\">4</span>Chemins et jokers</h3>\n      <div class=\"formula-list\">\n        <span class=\"f\">/home/alice/doc.pdf</span><span>chemin <b>absolu</b> (commence par /)</span>\n        <span class=\"f\">./image.jpg, ../rapports/a.txt</span><span>chemins <b>relatifs</b> au dossier courant</span>\n        <span class=\"f\">.  ..  ~  /</span><span>courant, parent, dossier personnel, racine</span>\n        <span class=\"f\">?</span><span>exactement 1 caractère : ch?t → chat, chut (pas cht ni chaat)</span>\n        <span class=\"f\">*</span><span>0, 1 ou plusieurs caractères : a*e → ae, arbre, allée</span>\n      </div>\n      <div class=\"box trap\">Les jokers du shell ne sont pas des regex : en regex, <span class=\"f\">*</span> répète le caractère précédent et <span class=\"f\">.</span> remplace n'importe quel caractère.</div>\n      <h3 id=\"s1-s4\"><span class=\"hn\">5</span>Utilisateurs et droits</h3>\n      <ul>\n        <li><b>root</b> = administrateur. Chaque utilisateur a un login et un dossier <span class=\"f\">/home/nom</span> ; il appartient à des groupes (<span class=\"f\">id</span>, <span class=\"f\">groups</span>).</li>\n        <li>3 catégories <b>u</b> (propriétaire), <b>g</b> (groupe), <b>o</b> (autres) ; 3 droits <b>r = 4</b>, <b>w = 2</b>, <b>x = 1</b>. <span class=\"f\">-rwxr-x---</span> = 750.</li>\n        <li>Invite <span class=\"f\">alice@pc:~$</span> : utilisateur (<span class=\"f\">whoami</span>) @ machine (<span class=\"f\">hostname</span>). Tab complète, double Tab liste les possibilités.</li>\n      </ul>\n    "
+},
+{
+"title": "Commandes & redirections",
+"html": "\n      <h2>R1.04 · Commandes et redirections</h2>\n      <p class=\"muted\">Le tableau à connaître pour le quiz et la pratique.</p><div class=\"doc-tools\"></div>\n      <h3 id=\"s2-s0\"><span class=\"hn\">1</span>Se repérer et manipuler des fichiers</h3>\n      <div class=\"tscroll\"><table class=\"tt\">\n        <tbody><tr><th>Commande</th><th>Rôle et options</th></tr>\n        <tr><td class=\"f\">pwd, whoami, hostname, id</td><td>dossier courant, utilisateur, machine, UID / GID / groupes</td></tr>\n        <tr><td class=\"f\">cd rep, cd .., cd, cd -</td><td>changer de dossier ; <span class=\"f\">cd</span> seul = ~ ; <span class=\"f\">cd -</span> revient au précédent</td></tr>\n        <tr><td class=\"f\">ls -l -a -h -R -t -r -d</td><td>détails, cachés, tailles lisibles, récursif, tri par date, ordre inverse, le dossier lui-même (<span class=\"f\">ls -ld d</span>)</td></tr>\n        <tr><td class=\"f\">mkdir -p a/b/c</td><td>crée aussi les parents, pas d'erreur s'il existe ; <span class=\"f\">mkdir -p tp/{preuves,travail}</span></td></tr>\n        <tr><td class=\"f\">touch f</td><td>crée un fichier vide ou met à jour sa date</td></tr>\n        <tr><td class=\"f\">cp src dest, cp -r</td><td>copie (la copie appartient à celui qui copie) ; <span class=\"f\">-r</span> pour un dossier</td></tr>\n        <tr><td class=\"f\">mv src dest</td><td>déplace <b>ou renomme</b> (pas de -r pour un dossier)</td></tr>\n        <tr><td class=\"f\">rm f, rm -r d, rmdir d</td><td>suppression <b>définitive</b> ; rmdir seulement un dossier <b>vide</b></td></tr>\n        <tr><td class=\"f\">cat, less, head, tail</td><td>afficher ; page par page ; 10 premières / dernières lignes par défaut (<span class=\"f\">-n 5</span>, <span class=\"f\">tail -f</span>)</td></tr>\n        <tr><td class=\"f\">wc -l -w -c</td><td>lignes, mots, octets ; <span class=\"f\">wc -l &lt; f</span> sans le nom</td></tr>\n        <tr><td class=\"f\">find . -name \"*.txt\" -type f</td><td>recherche récursive ; <span class=\"f\">-iname</span>, <span class=\"f\">-size +1M</span>, <span class=\"f\">-mtime -7</span>, <span class=\"f\">-exec … {} \\;</span></td></tr>\n        <tr><td class=\"f\">tar -czf a.tar.gz d, tar -tzf</td><td>archiver compressé ; lister le contenu</td></tr>\n      </tbody></table></div>\n      <h3 id=\"s2-s1\"><span class=\"hn\">2</span>Filtres</h3>\n      <div class=\"tscroll\"><table class=\"tt\">\n        <tbody><tr><th>Commande</th><th>Rôle et options</th></tr>\n        <tr><td class=\"f\">sort -r -n -f -h -u</td><td>tri alphabétique (10 avant 9 !) ; inverse ; numérique ; sans casse ; tailles K/M/G ; uniques</td></tr>\n        <tr><td class=\"f\">grep -i -v -c -n -x -q -r -E</td><td>sans casse ; inverser ; compter ; numéros ; ligne entière ; silencieux (seul <span class=\"f\">$?</span> compte) ; récursif ; regex étendues</td></tr>\n        <tr><td class=\"f\">cut -d ':' -f 1</td><td>un champ selon un délimiteur (TAB par défaut) ; <span class=\"f\">-f 2-</span> du 2ᵉ à la fin ; <span class=\"f\">-f 2,5</span> ; <span class=\"f\">-c 1-5</span></td></tr>\n        <tr><td class=\"f\">sed 's/a/b/g'</td><td>remplacer (g = toutes les occurrences de la ligne) ; <span class=\"f\">sed 's/\"//g'</span> supprime les guillemets</td></tr>\n        <tr><td class=\"f\">uniq</td><td>retire les doublons <b>consécutifs</b> (après un sort)</td></tr>\n      </tbody></table></div>\n      <h3 id=\"s2-s2\"><span class=\"hn\">3</span>Redirections et tubes</h3>\n      <div class=\"formula-list\">\n        <span class=\"f\">0 1 2</span><span>stdin (clavier), stdout (écran), stderr (écran, séparé)</span>\n        <span class=\"f\">cmd &gt; f</span><span>crée <b>ou écrase</b> f</span>\n        <span class=\"f\">cmd &gt;&gt; f</span><span><b>ajoute</b> à la fin</span>\n        <span class=\"f\">cmd 2&gt; err.txt</span><span>les erreurs seules</span>\n        <span class=\"f\">cmd &gt; f 2&gt;&amp;1</span><span>sortie et erreurs dans le même fichier (2&gt;&amp;1 <b>après</b> &gt;)</span>\n        <span class=\"f\">cmd &lt; f</span><span>lit l'entrée dans f</span>\n        <span class=\"f\">cmd1 | cmd2</span><span>la sortie de cmd1 devient l'entrée de cmd2</span>\n      </div>\n      <div class=\"box exm\"><span class=\"f\">echo \"Ligne 1\" &gt; f ; echo \"Ligne 2\" &gt; f</span> → f contient seulement « Ligne 2 ». Avec <span class=\"f\">&gt;&gt;</span> pour la 2ᵉ : les deux lignes.<br>Nombres 1 à 20, un par ligne : <span class=\"f\">grep '2' nombres.txt | tail -n 5</span> → 2, 12, 20.<br><span class=\"f\">{ echo 'Utilisateur :'; whoami; } &gt; preuve.txt</span> regroupe plusieurs sorties.</div>\n      <h3 id=\"s2-s3\"><span class=\"hn\">4</span>Autres outils</h3>\n      <ul>\n        <li><span class=\"f\">nano f</span> : Ctrl+O enregistrer, Ctrl+X quitter, Ctrl+W chercher.</li>\n        <li><span class=\"f\">wget URL</span> télécharge ; <span class=\"f\">curl URL</span> affiche le corps, <span class=\"f\">curl -I</span> les en-têtes (200 trouvé, 404 absent).</li>\n        <li><span class=\"f\">alias ll='ls -l'</span>, permanent dans <span class=\"f\">~/.bashrc</span> puis <span class=\"f\">source ~/.bashrc</span>.</li>\n        <li>Infos système : <span class=\"f\">lscpu</span>, <span class=\"f\">free -m</span>, <span class=\"f\">df -h .</span>, <span class=\"f\">uname -m</span>, <span class=\"f\">cat /etc/os-release</span>.</li>\n      </ul>\n    "
+},
+{
+"title": "TP3 Permissions",
+"html": "\n      <h2>R1.04 · TP3 : les permissions</h2>\n      <p class=\"muted\">Préparer et protéger un site web : droits octaux et symboliques, umask, droit x sur les dossiers.</p><div class=\"doc-tools\"></div>\n      <h3 id=\"s3-s0\"><span class=\"hn\">1</span>Lire et écrire les droits</h3>\n      <p><span class=\"f\">-rw-r--r--</span> : type, puis u (rw-), g (r--), o (r--). r = 4, w = 2, x = 1.</p>\n      <div class=\"tscroll\"><table class=\"tt\">\n        <tbody><tr><th>Octal</th><th>Droits</th><th>Usage</th></tr>\n        <tr><td>755</td><td class=\"f\">rwxr-xr-x</td><td>dossier public, script</td></tr>\n        <tr><td>644</td><td class=\"f\">rw-r--r--</td><td>fichier public</td></tr>\n        <tr><td>700</td><td class=\"f\">rwx------</td><td>dossier privé</td></tr>\n        <tr><td>600</td><td class=\"f\">rw-------</td><td>fichier privé</td></tr>\n        <tr><td>640</td><td class=\"f\">rw-r-----</td><td>lisible par le groupe</td></tr>\n        <tr><td>750</td><td class=\"f\">rwxr-x---</td><td>dossier pour le groupe</td></tr>\n        <tr><td>651</td><td class=\"f\">rw-r-x--x</td><td>exemple du TP1</td></tr>\n      </tbody></table></div>\n      <h3 id=\"s3-s1\"><span class=\"hn\">2</span>chmod symbolique</h3>\n      <ul>\n        <li>Qui : <b>u g o a</b> ; opérateur <b>+ − =</b> ; droits <b>r w x</b>.</li>\n        <li><span class=\"f\">chmod u+x script.sh</span>, <span class=\"f\">chmod ug-r f</span>, <span class=\"f\">chmod o-r f</span>, <span class=\"f\">chmod -R</span> récursif.</li>\n        <li><span class=\"f\">chmod a=rw f</span> <b>remplace</b> tout : 666 (le x disparaît).</li>\n        <li>Plusieurs à la fois : <span class=\"f\">chmod u+x,g-r,o=r f</span> : 640 → 704.</li>\n        <li><span class=\"f\">chown user:groupe f</span> change le propriétaire : réservé à root (sudo).</li>\n        <li><span class=\"f\">stat -c '%a %U %G %n' f</span> affiche droits octaux, propriétaire, groupe, nom.</li>\n      </ul>\n      <h3 id=\"s3-s2\"><span class=\"hn\">3</span>umask</h3>\n      <div class=\"box def\">Un programme crée un fichier avec au plus <b>666</b> et un dossier avec au plus <b>777</b> ; l'umask <b>retire</b> des droits.</div>\n      <div class=\"tscroll\"><table class=\"tt\">\n        <tbody><tr><th>umask</th><th>Fichier</th><th>Dossier</th></tr>\n        <tr><td>022</td><td>644</td><td>755</td></tr>\n        <tr><td>027</td><td>640</td><td>750</td></tr>\n        <tr><td>077</td><td>600</td><td>700</td></tr>\n      </tbody></table></div>\n      <p>On n'obtient jamais x sur un fichier à sa création.</p>\n      <h3 id=\"s3-s3\"><span class=\"hn\">4</span>Les droits sur un dossier</h3>\n      <div class=\"tscroll\"><table class=\"tt\">\n        <tbody><tr><th>Droit</th><th>Sur un fichier</th><th>Sur un dossier</th></tr>\n        <tr><td>r</td><td>lire</td><td>lister les noms</td></tr>\n        <tr><td>w</td><td>modifier</td><td>créer, supprimer, renommer dedans</td></tr>\n        <tr><td>x</td><td>exécuter</td><td><b>traverser</b> (entrer, accéder aux fichiers)</td></tr>\n      </tbody></table></div>\n      <div class=\"box trap\">Pour lire un fichier, il faut <b>x sur tous les dossiers parents</b> et r sur le fichier. Un membre du groupe ne peut pas lire <span class=\"f\">brouillons/nouvelle_page.html</span> si <span class=\"f\">brouillons</span> est en 700, même s'il connaît le nom.<br>Après <span class=\"f\">chmod u-x brouillons</span> : <span class=\"f\">ls brouillons</span> peut encore afficher les noms (r), mais <span class=\"f\">cat brouillons/nouvelle_page.html</span> donne Permission denied.</div>\n      <div class=\"box method\">Politique du TP : <span class=\"f\">chmod 755</span> sur les dossiers publics, <span class=\"f\">644</span> sur les fichiers publics, <span class=\"f\">700</span> sur <span class=\"f\">brouillons</span>, <span class=\"f\">600</span> sur la page privée. Preuves : <span class=\"f\">id &gt; preuves/01_droits.txt</span> puis <span class=\"f\">ls -ld … &gt;&gt; preuves/01_droits.txt</span>.</div>\n      <p><span class=\"f\">test -r f &amp;&amp; echo OK</span> ne teste que <b>ton</b> compte. Serveur local : <span class=\"f\">python3 -m http.server 8000 --bind 127.0.0.1 --directory publication</span>, puis <span class=\"f\">curl -I http://127.0.0.1:8000/</span> (200 ou 404).</p>\n    "
+},
+{
+"title": "TP4 Regex",
+"html": "\n      <h2>R1.04 · TP4 : expressions régulières</h2>\n      <p class=\"muted\">grep -E, ancres, classes, quantificateurs, et chaînes de filtres grep | cut | sed.</p><div class=\"doc-tools\"></div>\n      <h3 id=\"s4-s0\"><span class=\"hn\">1</span>La syntaxe de grep -E</h3>\n      <div class=\"tscroll\"><table class=\"tt\">\n        <tbody><tr><th>Écriture</th><th>Sens</th></tr>\n        <tr><td class=\"f\">^  $</td><td>début, fin de ligne (les deux : la ligne entière doit correspondre)</td></tr>\n        <tr><td class=\"f\">[01] [0-9] [0-9A-Fa-f] [^…]</td><td>un caractère parmi ; plage ; hexadécimal ; tout sauf</td></tr>\n        <tr><td class=\"f\">{8} {1,3} * + ?</td><td>exactement 8 ; de 1 à 3 ; 0 ou plus ; 1 ou plus ; 0 ou 1</td></tr>\n        <tr><td class=\"f\">( … )  |</td><td>groupe ; alternative</td></tr>\n        <tr><td class=\"f\">\\.  .</td><td>point littéral ; <b>n'importe quel caractère</b></td></tr>\n        <tr><td class=\"f\">[[:space:]]</td><td>un blanc (espace, tabulation)</td></tr>\n      </tbody></table></div>\n      <p>Apostrophes autour du motif (<span class=\"f\">'…'</span>) pour que le shell ne le touche pas ; guillemets doubles quand on y met une variable (<span class=\"f\">\"$regex\"</span>).</p>\n      <h3 id=\"s4-s1\"><span class=\"hn\">2</span>Exemples du TP</h3>\n      <ul>\n        <li><span class=\"f\">grep -E '[01]{8}'</span> accepte aussi 101010101 et x10101010y (8 bits <b>quelque part</b>) ; <span class=\"f\">'^[01]{8}$'</span> ne garde que les lignes de exactement 8 bits.</li>\n        <li>Adresse MAC : <span class=\"f\">'^([0-9A-Fa-f]{2}:){5}[0-9A-Fa-f]{2}$'</span> accepte A4:5E:60:12:AB:09 ; refuse AG (G n'est pas hexa), 5 groupes, des tirets, 009. 6 × 8 = <b>48 bits</b>.</li>\n        <li>IPv4 naïve <span class=\"f\">'^([0-9]{1,3}\\.){3}[0-9]{1,3}$'</span> laisse passer 256.1.2.3 et 999.10.20.30 ({1,3} ne limite pas la valeur). Sans <span class=\"f\">\\</span> devant le point, 192x168x1x2 passe aussi.</li>\n        <li>Octet strict : <span class=\"f\">(25[0-5]|2[0-4][0-9]|1[0-9]{2}|[1-9][0-9]|[0-9])</span> : refuse 256 et 001.</li>\n      </ul>\n      <div class=\"box def\">Code retour : <span class=\"f\">echo \"$bits\" | grep -Eq '^[01]{8}$' ; echo $?</span> → <b>0</b> correspond, <b>1</b> aucune correspondance, <b>2</b> erreur. Lire <span class=\"f\">$?</span> juste après.</div>\n      <h3 id=\"s4-s2\"><span class=\"hn\">3</span>Chaînes de filtres</h3>\n      <div class=\"box exm\"><span class=\"f\">grep '^PRETTY_NAME=' /etc/os-release | cut -d '=' -f 2- | sed 's/\"//g'</span> → Fedora Linux …<br><span class=\"f\">cut -d: -f1 /etc/passwd</span> → les logins.</div>\n      <ul>\n        <li><span class=\"f\">-f 2-</span> (et pas <span class=\"f\">-f 2</span>) garde la suite si la valeur contient le séparateur.</li>\n        <li><span class=\"f\">cut -d ' '</span> fonctionne mal si les colonnes sont séparées par un nombre variable d'espaces.</li>\n        <li><span class=\"f\">grep -E '^CPU\\(s\\):'</span> : parenthèses échappées = littérales. CPU(s) = processeurs <b>logiques</b>. <span class=\"f\">LC_ALL=C</span> fixe la langue des libellés.</li>\n      </ul>\n      <div class=\"box trap\">Format ≠ usage : une MAC ou une IPv4 bien formée n'est pas forcément attribuée.</div>\n    "
+},
+{
+"title": "TP5 Scripts Bash",
+"html": "\n      <h2>R1.04 · TP5 : premiers scripts Bash</h2>\n      <p class=\"muted\">Shebang, variables, read, substitution de commande, if sur un code retour.</p><div class=\"doc-tools\"></div>\n      <h3 id=\"s5-s0\"><span class=\"hn\">1</span>Un script complet</h3>\n<div class=\"tscroll\"><pre class=\"f\" style=\"margin:0;line-height:1.5\">#!/usr/bin/env bash\n# Verifier une saisie de huit bits\nread -r -p \"Saisir exactement huit bits : \" bits\nregex='^[01]{8}$'\nif printf '%s\\n' \"$bits\" | grep -Eq \"$regex\"\nthen\n    echo \"Conforme : huit bits\"\nelse\n    echo \"Non conforme : huit caracteres 0 ou 1 attendus\"\nfi</pre></div>\n      <h3 id=\"s5-s1\"><span class=\"hn\">2</span>Lancer un script</h3>\n      <ul>\n        <li><b>Shebang</b> <span class=\"f\">#!/usr/bin/env bash</span> en 1ʳᵉ ligne : choisit l'interpréteur. <span class=\"f\">#</span> = commentaire.</li>\n        <li><span class=\"f\">bash -n s.sh</span> vérifie la syntaxe sans exécuter ; <span class=\"f\">bash s.sh</span> exécute (r suffit) ; <span class=\"f\">bash -x</span> trace.</li>\n        <li><span class=\"f\">chmod u+x s.sh</span> puis <span class=\"f\">./s.sh</span> : le <span class=\"f\">./</span> est nécessaire car le dossier courant n'est pas dans le PATH.</li>\n      </ul>\n      <h3 id=\"s5-s2\"><span class=\"hn\">3</span>Variables et lecture</h3>\n      <ul>\n        <li><span class=\"f\">nom=\"Alice Martin\"</span> : <b>aucun espace</b> autour de =, pas de $ à gauche. <span class=\"f\">bits = \"0101\"</span> → command not found.</li>\n        <li><span class=\"f\">\"$nom\"</span> donne la valeur ; <span class=\"f\">'$nom'</span> affiche $nom tel quel ; <span class=\"f\">${octet}</span> délimite le nom.</li>\n        <li><span class=\"f\">read -r -p \"Question : \" var</span> : -r garde les antislashs, -p affiche la question, pas de $ devant var.</li>\n        <li><span class=\"f\">$(whoami)</span> : substitution de commande (le résultat de la commande). À ne pas confondre avec <span class=\"f\">${var}</span>.</li>\n      </ul>\n      <h3 id=\"s5-s3\"><span class=\"hn\">4</span>if teste un code retour</h3>\n      <ul>\n        <li><span class=\"f\">if commande ; then … else … fi</span> : la branche then s'exécute si le code retour vaut <b>0</b>. then et fi obligatoires, else facultatif.</li>\n        <li><span class=\"f\">exit 0</span> / <span class=\"f\">exit 1</span> fixent le code du script ; afficher « Non conforme » ne le fait pas échouer.</li>\n        <li>Fiche système : 1ʳᵉ ligne avec <span class=\"f\">&gt;</span>, les suivantes avec <span class=\"f\">&gt;&gt;</span> : pas de doublon si on relance.</li>\n      </ul>\n      <div class=\"box trap\">Erreurs fréquentes : Permission denied → <span class=\"f\">chmod u+x</span> ; No such file → vérifier <span class=\"f\">pwd</span> et la casse ; unexpected end of file → fi ou guillemet manquant ; <span class=\"f\">bash\\r</span> ou <span class=\"f\">^M</span> → fins de ligne CRLF au lieu de LF.</div>\n      <p>Git : <span class=\"f\">git add R104_TP5</span>, <span class=\"f\">git commit -m \"message\"</span>, <span class=\"f\">git push</span> ; <span class=\"f\">git status</span>.</p>\n    "
+}
+],
+"sources": [
+{
+"type": "text",
+"title": "Cours : SE & Linux",
+"text": "\n      R1.04 · Système d'exploitation et Linux\n      Devoir jeudi 3/12, 8 h – 9 h 50. Format non annoncé ; probablement comme l'éval 1 : un quiz de 15 min puis 1 h de pratique, tout dans le terminal.✎ Modifier le cours⎙ Imprimer\n      1Rôle du système d'exploitation\n      \n        Le SE sert d'interface entre le matériel et les applications, gère les ressources et offre une plateforme d'exécution.\n        Couches : applications → shell (CLI ou GUI) → noyau → matériel.\n        Le noyau gère la mémoire, les processus (ordonnancement), les périphériques via les pilotes, le système de fichiers et la sécurité. C'est la 1ʳᵉ couche chargée au démarrage.\n        Historique : années 60 traitement par lots ; 70 Unix (multi-utilisateur, multitâche) ; 80 MS-DOS, MacOS ; 90 Windows NT et Linux ; 2000+ Android, iOS, virtualisation, conteneurs.\n      \n      2Linux, distributions, POSIX\n      \n        Linux = le noyau. Une distribution (Fedora, Ubuntu, Debian…) = noyau + outils GNU + logiciels + gestionnaire de paquets + interface graphique (GNOME, KDE Plasma, XFCE) + pilotes.\n        Linux : multitâche, multi-utilisateur (UID / GID), conforme POSIX. macOS et BSD sont conformes ; Windows ne l'est pas (WSL permet d'y lancer un environnement GNU/Linux).\n        Android est basé sur Linux (plus de 70 % des smartphones).\n      \n      3Tout est fichier\n      \n        Types (1ᵉʳ caractère de ls -l) : - fichier régulier, d répertoire, l lien, b / c périphérique bloc / caractère.\n        Une seule arborescence à partir de la racine / (pas de C:, D:) ; les disques et clés USB sont montés dans un répertoire.\n        L'inode décrit un fichier (numéro, taille, propriétaire, groupe, type et droits, dates) mais ne contient pas son nom ni ses données.\n        Noms : / interdit ; sensibles à la casse (Metz.txt ≠ metz.txt) ; fichier caché = nom qui commence par . (visible avec ls -a) ; 255 caractères au plus.\n      \n      4Chemins et jokers\n      \n        /home/alice/doc.pdfchemin absolu (commence par /)\n        ./image.jpg, ../rapports/a.txtchemins relatifs au dossier courant\n        .  ..  ~  /courant, parent, dossier personnel, racine\n        ?exactement 1 caractère : ch?t → chat, chut (pas cht ni chaat)\n        *0, 1 ou plusieurs caractères : a*e → ae, arbre, allée\n      \n      Les jokers du shell ne sont pas des regex : en regex, * répète le caractère précédent et . remplace n'importe quel caractère.\n      5Utilisateurs et droits\n      \n        root = administrateur. Chaque utilisateur a un login et un dossier /home/nom ; il appartient à des groupes (id, groups).\n        3 catégories u (propriétaire), g (groupe), o (autres) ; 3 droits r = 4, w = 2, x = 1. -rwxr-x--- = 750.\n        Invite alice@pc:~$ : utilisateur (whoami) @ machine (hostname). Tab complète, double Tab liste les possibilités.\n      \n    "
+},
+{
+"type": "text",
+"title": "Commandes & redirections",
+"text": "\n      R1.04 · Commandes et redirections\n      Le tableau à connaître pour le quiz et la pratique.✎ Modifier le cours⎙ Imprimer\n      1Se repérer et manipuler des fichiers\n      \n        CommandeRôle et options\n        pwd, whoami, hostname, iddossier courant, utilisateur, machine, UID / GID / groupes\n        cd rep, cd .., cd, cd -changer de dossier ; cd seul = ~ ; cd - revient au précédent\n        ls -l -a -h -R -t -r -ddétails, cachés, tailles lisibles, récursif, tri par date, ordre inverse, le dossier lui-même (ls -ld d)\n        mkdir -p a/b/ccrée aussi les parents, pas d'erreur s'il existe ; mkdir -p tp/{preuves,travail}\n        touch fcrée un fichier vide ou met à jour sa date\n        cp src dest, cp -rcopie (la copie appartient à celui qui copie) ; -r pour un dossier\n        mv src destdéplace ou renomme (pas de -r pour un dossier)\n        rm f, rm -r d, rmdir dsuppression définitive ; rmdir seulement un dossier vide\n        cat, less, head, tailafficher ; page par page ; 10 premières / dernières lignes par défaut (-n 5, tail -f)\n        wc -l -w -clignes, mots, octets ; wc -l < f sans le nom\n        find . -name \"*.txt\" -type frecherche récursive ; -iname, -size +1M, -mtime -7, -exec … {} \\;\n        tar -czf a.tar.gz d, tar -tzfarchiver compressé ; lister le contenu\n      \n      2Filtres\n      \n        CommandeRôle et options\n        sort -r -n -f -h -utri alphabétique (10 avant 9 !) ; inverse ; numérique ; sans casse ; tailles K/M/G ; uniques\n        grep -i -v -c -n -x -q -r -Esans casse ; inverser ; compter ; numéros ; ligne entière ; silencieux (seul $? compte) ; récursif ; regex étendues\n        cut -d ':' -f 1un champ selon un délimiteur (TAB par défaut) ; -f 2- du 2ᵉ à la fin ; -f 2,5 ; -c 1-5\n        sed 's/a/b/g'remplacer (g = toutes les occurrences de la ligne) ; sed 's/\"//g' supprime les guillemets\n        uniqretire les doublons consécutifs (après un sort)\n      \n      3Redirections et tubes\n      \n        0 1 2stdin (clavier), stdout (écran), stderr (écran, séparé)\n        cmd > fcrée ou écrase f\n        cmd >> fajoute à la fin\n        cmd 2> err.txtles erreurs seules\n        cmd > f 2>&1sortie et erreurs dans le même fichier (2>&1 après >)\n        cmd < flit l'entrée dans f\n        cmd1 | cmd2la sortie de cmd1 devient l'entrée de cmd2\n      \n      echo \"Ligne 1\" > f ; echo \"Ligne 2\" > f → f contient seulement « Ligne 2 ». Avec >> pour la 2ᵉ : les deux lignes.Nombres 1 à 20, un par ligne : grep '2' nombres.txt | tail -n 5 → 2, 12, 20.{ echo 'Utilisateur :'; whoami; } > preuve.txt regroupe plusieurs sorties.\n      4Autres outils\n      \n        nano f : Ctrl+O enregistrer, Ctrl+X quitter, Ctrl+W chercher.\n        wget URL télécharge ; curl URL affiche le corps, curl -I les en-têtes (200 trouvé, 404 absent).\n        alias ll='ls -l', permanent dans ~/.bashrc puis source ~/.bashrc.\n        Infos système : lscpu, free -m, df -h ., uname -m, cat /etc/os-release.\n      \n    "
+},
+{
+"type": "text",
+"title": "TP3 Permissions",
+"text": "\n      R1.04 · TP3 : les permissions\n      Préparer et protéger un site web : droits octaux et symboliques, umask, droit x sur les dossiers.✎ Modifier le cours⎙ Imprimer\n      1Lire et écrire les droits\n      -rw-r--r-- : type, puis u (rw-), g (r--), o (r--). r = 4, w = 2, x = 1.\n      \n        OctalDroitsUsage\n        755rwxr-xr-xdossier public, script\n        644rw-r--r--fichier public\n        700rwx------dossier privé\n        600rw-------fichier privé\n        640rw-r-----lisible par le groupe\n        750rwxr-x---dossier pour le groupe\n        651rw-r-x--xexemple du TP1\n      \n      2chmod symbolique\n      \n        Qui : u g o a ; opérateur + − = ; droits r w x.\n        chmod u+x script.sh, chmod ug-r f, chmod o-r f, chmod -R récursif.\n        chmod a=rw f remplace tout : 666 (le x disparaît).\n        Plusieurs à la fois : chmod u+x,g-r,o=r f : 640 → 704.\n        chown user:groupe f change le propriétaire : réservé à root (sudo).\n        stat -c '%a %U %G %n' f affiche droits octaux, propriétaire, groupe, nom.\n      \n      3umask\n      Un programme crée un fichier avec au plus 666 et un dossier avec au plus 777 ; l'umask retire des droits.\n      \n        umaskFichierDossier\n        022644755\n        027640750\n        077600700\n      \n      On n'obtient jamais x sur un fichier à sa création.\n      4Les droits sur un dossier\n      \n        DroitSur un fichierSur un dossier\n        rlirelister les noms\n        wmodifiercréer, supprimer, renommer dedans\n        xexécutertraverser (entrer, accéder aux fichiers)\n      \n      Pour lire un fichier, il faut x sur tous les dossiers parents et r sur le fichier. Un membre du groupe ne peut pas lire brouillons/nouvelle_page.html si brouillons est en 700, même s'il connaît le nom.Après chmod u-x brouillons : ls brouillons peut encore afficher les noms (r), mais cat brouillons/nouvelle_page.html donne Permission denied.\n      Politique du TP : chmod 755 sur les dossiers publics, 644 sur les fichiers publics, 700 sur brouillons, 600 sur la page privée. Preuves : id > preuves/01_droits.txt puis ls -ld … >> preuves/01_droits.txt.\n      test -r f && echo OK ne teste que ton compte. Serveur local : python3 -m http.server 8000 --bind 127.0.0.1 --directory publication, puis curl -I http://127.0.0.1:8000/ (200 ou 404).\n    "
+},
+{
+"type": "text",
+"title": "TP4 Regex",
+"text": "\n      R1.04 · TP4 : expressions régulières\n      grep -E, ancres, classes, quantificateurs, et chaînes de filtres grep | cut | sed.✎ Modifier le cours⎙ Imprimer\n      1La syntaxe de grep -E\n      \n        ÉcritureSens\n        ^  $début, fin de ligne (les deux : la ligne entière doit correspondre)\n        [01] [0-9] [0-9A-Fa-f] [^…]un caractère parmi ; plage ; hexadécimal ; tout sauf\n        {8} {1,3} * + ?exactement 8 ; de 1 à 3 ; 0 ou plus ; 1 ou plus ; 0 ou 1\n        ( … )  |groupe ; alternative\n        \\.  .point littéral ; n'importe quel caractère\n        [[:space:]]un blanc (espace, tabulation)\n      \n      Apostrophes autour du motif ('…') pour que le shell ne le touche pas ; guillemets doubles quand on y met une variable (\"$regex\").\n      2Exemples du TP\n      \n        grep -E '[01]{8}' accepte aussi 101010101 et x10101010y (8 bits quelque part) ; '^[01]{8}$' ne garde que les lignes de exactement 8 bits.\n        Adresse MAC : '^([0-9A-Fa-f]{2}:){5}[0-9A-Fa-f]{2}$' accepte A4:5E:60:12:AB:09 ; refuse AG (G n'est pas hexa), 5 groupes, des tirets, 009. 6 × 8 = 48 bits.\n        IPv4 naïve '^([0-9]{1,3}\\.){3}[0-9]{1,3}$' laisse passer 256.1.2.3 et 999.10.20.30 ({1,3} ne limite pas la valeur). Sans \\ devant le point, 192x168x1x2 passe aussi.\n        Octet strict : (25[0-5]|2[0-4][0-9]|1[0-9]{2}|[1-9][0-9]|[0-9]) : refuse 256 et 001.\n      \n      Code retour : echo \"$bits\" | grep -Eq '^[01]{8}$' ; echo $? → 0 correspond, 1 aucune correspondance, 2 erreur. Lire $? juste après.\n      3Chaînes de filtres\n      grep '^PRETTY_NAME=' /etc/os-release | cut -d '=' -f 2- | sed 's/\"//g' → Fedora Linux …cut -d: -f1 /etc/passwd → les logins.\n      \n        -f 2- (et pas -f 2) garde la suite si la valeur contient le séparateur.\n        cut -d ' ' fonctionne mal si les colonnes sont séparées par un nombre variable d'espaces.\n        grep -E '^CPU\\(s\\):' : parenthèses échappées = littérales. CPU(s) = processeurs logiques. LC_ALL=C fixe la langue des libellés.\n      \n      Format ≠ usage : une MAC ou une IPv4 bien formée n'est pas forcément attribuée.\n    "
+},
+{
+"type": "text",
+"title": "TP5 Scripts Bash",
+"text": "\n      R1.04 · TP5 : premiers scripts Bash\n      Shebang, variables, read, substitution de commande, if sur un code retour.✎ Modifier le cours⎙ Imprimer\n      1Un script complet\n#!/usr/bin/env bash\n# Verifier une saisie de huit bits\nread -r -p \"Saisir exactement huit bits : \" bits\nregex='^[01]{8}$'\nif printf '%s\\n' \"$bits\" | grep -Eq \"$regex\"\nthen\n    echo \"Conforme : huit bits\"\nelse\n    echo \"Non conforme : huit caracteres 0 ou 1 attendus\"\nfi\n      2Lancer un script\n      \n        Shebang #!/usr/bin/env bash en 1ʳᵉ ligne : choisit l'interpréteur. # = commentaire.\n        bash -n s.sh vérifie la syntaxe sans exécuter ; bash s.sh exécute (r suffit) ; bash -x trace.\n        chmod u+x s.sh puis ./s.sh : le ./ est nécessaire car le dossier courant n'est pas dans le PATH.\n      \n      3Variables et lecture\n      \n        nom=\"Alice Martin\" : aucun espace autour de =, pas de $ à gauche. bits = \"0101\" → command not found.\n        \"$nom\" donne la valeur ; '$nom' affiche $nom tel quel ; ${octet} délimite le nom.\n        read -r -p \"Question : \" var : -r garde les antislashs, -p affiche la question, pas de $ devant var.\n        $(whoami) : substitution de commande (le résultat de la commande). À ne pas confondre avec ${var}.\n      \n      4if teste un code retour\n      \n        if commande ; then … else … fi : la branche then s'exécute si le code retour vaut 0. then et fi obligatoires, else facultatif.\n        exit 0 / exit 1 fixent le code du script ; afficher « Non conforme » ne le fait pas échouer.\n        Fiche système : 1ʳᵉ ligne avec >, les suivantes avec >> : pas de doublon si on relance.\n      \n      Erreurs fréquentes : Permission denied → chmod u+x ; No such file → vérifier pwd et la casse ; unexpected end of file → fi ou guillemet manquant ; bash\\r ou ^M → fins de ligne CRLF au lieu de LF.\n      Git : git add R104_TP5, git commit -m \"message\", git push ; git status.\n    "
+}
+]
+}
