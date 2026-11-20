@@ -850,6 +850,15 @@ pre.sh.ps{background:#012456;color:#eef2ff}pre.sh.fed{background:#2b2b2b;color:#
 .pall-n{font:600 12px var(--f-mono);color:var(--muted);white-space:nowrap}
 .ftools .xa{margin-left:auto}
 .pfdoc{background:#fff;color:#111;width:210mm;max-width:100%;margin:0 auto;padding:12mm 14mm;box-sizing:border-box;break-before:page;break-after:page}.pfdoc .sheet{border:0;box-shadow:none;padding:0;background:#fff;max-width:none}@media print{.pfdoc{width:auto}}
+
+.pf.r106{--c:#b4235a;--cs:#fbe7ef}
+.pf .mx{display:inline-grid;vertical-align:middle;gap:0 2.4mm;padding:.2mm 1.6mm;margin:.6mm .4mm;border-left:1.6px solid #111;border-right:1.6px solid #111;border-radius:2.2mm;text-align:right;font:9.4pt/1.3 "JetBrains Mono",monospace;background:none}
+.pf .mx span{background:none;padding:0}
+.pf .eq{display:flex;flex-wrap:wrap;align-items:center;gap:1mm 1.6mm;margin:.6mm 0}
+.pf .num{display:inline-grid;place-items:center;min-width:5mm;height:5mm;border-radius:50%;background:var(--c);color:#fff;font:700 8pt/1 "Bricolage Grotesque",sans-serif;margin-right:1mm}
+.pf .ct{font:8.8pt/1.35 "JetBrains Mono",monospace}
+.pf table.ct td,.pf table.ct th{text-align:center;padding:.5mm 1.4mm}
+.pf .mini{font-size:9pt;color:#5b5b5b}
 </style>
 
 <div class="wrap">
@@ -1242,6 +1251,117 @@ pre.sh.ps{background:#012456;color:#eef2ff}pre.sh.fed{background:#2b2b2b;color:#
   </section>
 
   <!-- ============ FICHE EXPRESS ============ -->
+  <section id="tab-dv" role="tabpanel" hidden>
+    <div class="ftools"><button type="button" class="btn" data-fs="r106dv">Agrandir la fiche</button><span class="hint">Sélectionne un passage pour le <mark class="uhl" style="--hl:#ffe86b">surligner</mark> : il est gardé dans ta fiche annexe, en bas de page.</span></div>
+    <div class="fiche-host" data-subj="r106dv"><div class="pfwrap">
+<section class="pf r106"><div class="pf-head"><div class="pf-code">R1.06</div><div class="pf-title"><b>Relations binaires</b><span>Chapitre 3 · définition, propriétés, équivalence, ordre (sert aussi pour l'éval SAÉ 1.04 du 25/11)</span></div><div class="pf-exam">Devoir 2<br>lun. 23/11 · 8 h 30<br>1 h · chap. 3 + 4</div></div>
+<div class="pf-key"><ol><li>R de A vers B = une partie de A × B</li><li>« Non » : <u>un seul</u> contre-exemple suffit</li><li>Équivalence = réflexive + symétrique + transitive</li><li>Ordre = réflexive + antisymétrique + transitive</li></ol></div>
+<div class="pf-cols"><div class="pf-col">
+<div class="pf-blk"><h4><i>1</i>Définition et représentations</h4>
+<p>Une relation R de A vers B est une <b>partie de A × B</b>. On écrit x R y ⇔ (x, y) ∈ R. Si A = B : relation <b>dans</b> A.</p>
+<p>Exemple dans E = {1, 2, 3} : R = {(1,1), (1,2), (1,3), (3,3)}</p>
+<div style="display:flex;gap:3mm;align-items:center">
+<table class="ct" style="width:auto"><tr><th>R</th><th>1</th><th>2</th><th>3</th></tr><tr><th>1</th><td>×</td><td>×</td><td>×</td></tr><tr><th>2</th><td></td><td></td><td></td></tr><tr><th>3</th><td></td><td></td><td>×</td></tr></table>
+<svg viewBox="0 0 150 70" width="150" aria-label="Diagramme sagittal"><defs><marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0L10 5L0 10z" fill="#b4235a"/></marker></defs>
+<g fill="#fff" stroke="#111"><circle cx="20" cy="45" r="9"/><circle cx="75" cy="45" r="9"/><circle cx="130" cy="45" r="9"/></g>
+<g font-size="11" text-anchor="middle"><text x="20" y="49">1</text><text x="75" y="49">2</text><text x="130" y="49">3</text></g>
+<g fill="none" stroke="#b4235a" stroke-width="1.4" marker-end="url(#ah)"><path d="M29 45H64"/><path d="M26 37Q75 2 123 37"/><path d="M13 38q-6-22 13-8"/><path d="M123 38q-6-22 13-8"/></g></svg></div>
+<p class="mini">Ligne = x, colonne = y. Une boucle = un couple (x, x).</p></div>
+<div class="pf-blk tint"><h4><i>2</i>Compter</h4>
+<p>|A × B| = |A| · |B| couples, donc <span class="hl">2<sup>|A|·|B|</sup> relations</span> de A vers B.</p>
+<p>A = {a, b}, B = {1, 2} → 2⁴ = 16 · dans {1, 2, 3} → 2⁹ = 512.</p>
+<p><b>Application</b> : chaque x de A a <u>une et une seule</u> image → |B|<sup>|A|</sup> applications (ici 2² = 4).</p></div>
+<div class="pf-blk"><h4><i>3</i>Les 4 propriétés (relation dans E)</h4>
+<table><tr><th>Propriété</th><th>Définition</th><th>Se voit</th></tr>
+<tr><td><b>Réflexive</b></td><td>∀x, x R x</td><td>diagonale toute cochée, une boucle partout</td></tr>
+<tr><td><b>Symétrique</b></td><td>x R y ⇒ y R x</td><td>tableau symétrique / chaque flèche a son retour</td></tr>
+<tr><td><b>Antisym.</b></td><td>x R y et y R x ⇒ x = y</td><td>jamais d'aller-retour entre 2 éléments distincts</td></tr>
+<tr><td><b>Transitive</b></td><td>x R y et y R z ⇒ x R z</td><td>chaque chemin de 2 flèches a son raccourci</td></tr></table></div>
+</div><div class="pf-col">
+<div class="pf-blk pfex"><h4><i>✓</i>Méthode + exemple du cours</h4>
+<p>Pour R = {(1,1), (1,2), (1,3), (3,3)} dans {1, 2, 3} :</p>
+<ul><li><b>Non réflexive</b> : (2, 2) ∉ R.</li><li><b>Non symétrique</b> : 1 R 2 mais pas 2 R 1.</li><li><b>Antisymétrique</b> : aucun aller-retour entre éléments distincts.</li><li><b>Transitive</b> : je liste seulement les triplets où x R y et y R z sont vrais : (1,1,1) (1,1,2) (1,1,3) (1,3,3) (3,3,3) → à chaque fois x R z.</li></ul>
+<p class="mini">Prémisse fausse ⇒ implication vraie : les autres triplets ne comptent pas.</p></div>
+<div class="pf-blk tint"><h4><i>4</i>Relation d'équivalence</h4>
+<p>Réflexive + symétrique + transitive. Souvent « avoir le même … que ».</p>
+<p><span class="hl">Cℓ(x) = {y ∈ E / x R y}</span>. Les classes forment une <b>partition</b> de E (non vides, disjointes, union = E). Ensemble des classes : <b>E/R</b>, l'ensemble quotient.</p>
+<p>« même reste dans la division par 3 » sur ℤ → 3 classes : Cℓ(0), Cℓ(1), Cℓ(2). Sur {1,…,8}, « xy est un carré » → {1,4}, {2,8}, {3}, {5}, {6}, {7}.</p></div>
+<div class="pf-blk"><h4><i>5</i>Relation d'ordre</h4>
+<p>Réflexive + <b>antisymétrique</b> + transitive. <b>Total</b> si deux éléments sont toujours comparables (≤ sur ℝ), sinon <b>partiel</b> (⊂, « divise » dans ℕ : 2 et 3 non comparables).</p>
+<p>« divise » dans <b>ℤ</b> n'est <u>pas</u> antisymétrique : 1 | −1 et −1 | 1 mais 1 ≠ −1.</p></div>
+<div class="pf-blk trap"><h4><i>!</i>Pièges</h4><ul>
+<li>Symétrique et antisymétrique ne sont pas contraires : l'égalité est les deux, une relation peut n'être aucune.</li>
+<li>&lt; n'est pas réflexive ; ≤, ⊂, « divise » ne sont pas symétriques.</li>
+<li>Toujours <b>justifier</b> : un contre-exemple précis pour « non », un argument général pour « oui ».</li></ul></div>
+</div></div><div class="pf-foot"><span>Révisions BUT1 · R1.06 Maths discrètes</span><span>1 / 3</span></div></section>
+<section class="pf r106"><div class="pf-head"><div class="pf-code">R1.06</div><div class="pf-title"><b>Divisibilité dans ℤ</b><span>Chapitre 4 · division euclidienne, diviseurs, nombres premiers, décomposition</span></div><div class="pf-exam">Devoir 2<br>lun. 23/11 · 8 h 30<br>1 h · chap. 3 + 4</div></div>
+<div class="pf-key"><ol><li>a = bq + r avec <u>0 ≤ r &lt; |b|</u> : reste jamais négatif</li><li>b | a ⇔ a = kb (k ∈ ℤ)</li><li>a | b et a | c ⇒ a | xb + yc</li><li>n = p₁<sup>α₁</sup>…p<sub>r</sub><sup>α<sub>r</sub></sup> → (1+α₁)…(1+α<sub>r</sub>) diviseurs</li></ol></div>
+<div class="pf-cols"><div class="pf-col">
+<div class="pf-blk tint"><h4><i>1</i>Division euclidienne</h4>
+<p>a ∈ ℤ, b ∈ ℤ*, il existe un <b>unique</b> (q, r) avec <span class="hl">a = bq + r, 0 ≤ r &lt; |b|</span>.</p>
+<table class="ct"><tr><th>a</th><th>b</th><th>écriture</th><th>q</th><th>r</th></tr>
+<tr><td>125</td><td>11</td><td>125 = 11 × 11 + 4</td><td>11</td><td>4</td></tr>
+<tr><td>−35</td><td>12</td><td>−35 = 12 × (−3) + 1</td><td>−3</td><td>1</td></tr>
+<tr><td>35</td><td>−12</td><td>35 = (−12) × (−2) + 11</td><td>−2</td><td>11</td></tr>
+<tr><td>12</td><td>35</td><td>12 = 35 × 0 + 12</td><td>0</td><td>12</td></tr>
+<tr><td>−2013</td><td>7</td><td>−2013 = 7 × (−288) + 3</td><td>−288</td><td>3</td></tr></table>
+<p style="margin-top:1mm"><b>a négatif</b> : −35 = 12 × (−2) − 11 a un reste négatif, interdit → on descend d'un cran : q = −3, r = −35 + 36 = 1.</p></div>
+<div class="pf-blk"><h4><i>2</i>Diviseurs et multiples</h4>
+<p><b>b | a</b> ⇔ ∃k ∈ ℤ, a = kb (« b divise a », « a multiple de b »). Pour b ≠ 0 : reste nul. On n'écrit <u>jamais</u> b/a.</p>
+<ul class="m" style="font-size:8.6pt"><li>1 | n, n | n, n | 0 toujours ; 0 | n ⇔ n = 0</li><li>a | b et b | a ⇒ a = ±b</li><li>a | b et b | c ⇒ a | c</li><li>a | b ⇒ ac | bc ; ac | bc, c ≠ 0 ⇒ a | b</li><li>a | b et a | c ⇒ a | xb + yc</li><li>b | a, a ≠ 0 ⇒ 1 ≤ |b| ≤ |a|</li></ul></div>
+<div class="pf-blk pfex"><h4><i>✓</i>L'astuce combinaison linéaire</h4>
+<p>a = 2n + 7, b = n + 1. Si d | a et d | b, alors d | a − 2b = 5, donc <b>d ∈ {−5, −1, 1, 5}</b>.</p>
+<p class="mini">But : choisir x, y pour que les n disparaissent.</p></div>
+</div><div class="pf-col">
+<div class="pf-blk"><h4><i>3</i>Nombres premiers</h4>
+<p>p premier ⇔ exactement <b>deux</b> diviseurs dans ℕ : 1 et p. <b>0 et 1 ne sont pas premiers.</b></p>
+<p class="m">2 3 5 7 11 13 17 19 23 29 31 37 41 43 47 53 59 61 67 71 73 79 83 89 97</p>
+<p>Tester n : diviser par les premiers p tels que <span class="hl">p² ≤ n</span>. 221 : 2, 3, 5, 7, 11 non, 13 oui → 221 = 13 × 17.</p></div>
+<div class="pf-blk tint"><h4><i>4</i>Décomposer (méthode de l'escalier)</h4>
+<div style="display:flex;gap:4mm;align-items:flex-start"><pre style="margin:0">720 | 2
+360 | 2
+180 | 2
+ 90 | 2
+ 45 | 3
+ 15 | 3
+  5 | 5
+  1 |</pre><div><p>720 = <b>2⁴ × 3² × 5</b></p><p>Diviseurs positifs :<br>(4+1)(2+1)(1+1) = <b>30</b></p><p class="mini">Dans ℤ : deux fois plus (les opposés) → 60.</p></div></div>
+<table class="ct" style="margin-top:1mm"><tr><th>n</th><th>décomposition</th><th>nb div.</th></tr><tr><td>24</td><td>2³ × 3</td><td>8</td></tr><tr><td>150</td><td>2 × 3 × 5²</td><td>12</td></tr><tr><td>1 323</td><td>3³ × 7²</td><td>12</td></tr><tr><td>2 860</td><td>2² × 5 × 11 × 13</td><td>24</td></tr></table></div>
+<div class="pf-blk"><h4><i>5</i>Lister les diviseurs</h4>
+<p>Développer sans réduire : 120 = 2³ × 3 × 5 → (1 + 2 + 4 + 8)(1 + 3)(1 + 5) ; chaque terme est un diviseur.</p>
+<p class="m" style="font-size:8.4pt">D(150) = {1, 2, 3, 5, 6, 10, 15, 25, 30, 50, 75, 150}</p>
+<p>Multiple de n : contient tous les facteurs de n avec des exposants ≥.</p></div>
+<div class="pf-blk trap"><h4><i>!</i>Pièges</h4><ul>
+<li>Chaque facteur doit être premier : 21⁵ = 3⁵ × 7⁵ → 6 × 6 = <b>36</b> diviseurs, pas 6.</li>
+<li>5 | −10 alors que 5 &gt; −10 : « divise » ≠ « plus petit ».</li>
+<li>Reste négatif = faux, même si l'égalité est juste.</li></ul></div>
+</div></div><div class="pf-foot"><span>Révisions BUT1 · R1.06 Maths discrètes</span><span>2 / 3</span></div></section>
+<section class="pf r106"><div class="pf-head"><div class="pf-code">R1.06</div><div class="pf-title"><b>Devoir type, corrigé</b><span>Fais chaque exercice seul (cache la colonne de droite), puis compare. Refais aussi les feuilles TD 3 et 4.</span></div><div class="pf-exam">1 h<br>Rédige : propriété,<br>justification, conclusion</div></div>
+<div class="pf-cols"><div class="pf-col">
+<div class="pf-blk"><h4><i>1</i>Énoncé · équivalence</h4><p>Dans E = {1, 2, 3, 4} : R = {(1,1), (2,2), (3,3), (4,4), (1,2), (2,1), (3,4), (4,3)}. R est-elle réflexive, symétrique, antisymétrique, transitive ? Si c'est une équivalence, donner les classes.</p></div>
+<div class="pf-blk"><h4><i>2</i>Énoncé · ordre</h4><p>Dans E = {1, 2, 3, 6}, x R y ⇔ x divise y. Faire le tableau cartésien. R est-elle une relation d'ordre ? total ou partiel ?</p></div>
+<div class="pf-blk"><h4><i>3</i>Énoncé · compter</h4><p>A = {a, b, c}, B = {0, 1}. Combien de relations de A vers B ? Combien d'applications de A dans B ?</p></div>
+<div class="pf-blk"><h4><i>4</i>Énoncé · division euclidienne</h4><p>Division euclidienne de −47 par 6, puis de 47 par −6.</p></div>
+<div class="pf-blk"><h4><i>5</i>Énoncé · décomposition</h4><p>Décomposer 360. Nombre de diviseurs dans ℕ et dans ℤ ? Lister D(72).</p></div>
+<div class="pf-blk"><h4><i>6</i>Énoncé · premier ?</h4><p>211 est-il premier ? Et 221 ?</p></div>
+<div class="pf-blk"><h4><i>7</i>Énoncé · diviseur commun</h4><p>n ∈ ℤ. Montrer que tout diviseur commun de 3n + 4 et n + 1 vaut 1 ou −1.</p></div>
+</div><div class="pf-col">
+<div class="pf-blk pfex"><h4><i>✓</i>Corrections</h4>
+<p><span class="num">1</span><b>Réflexive</b> : (1,1) … (4,4) ∈ R. <b>Symétrique</b> : (1,2)↔(2,1), (3,4)↔(4,3). <b>Transitive</b> : triplets utiles (1,2,1) → (1,1) ∈ R, (2,1,2) → (2,2), (3,4,3) → (3,3), (4,3,4) → (4,4), les autres passent par une boucle. <b>Pas antisymétrique</b> : 1 R 2, 2 R 1, 1 ≠ 2. Donc <b>équivalence</b>, classes {1, 2} et {3, 4}, E/R = {{1, 2}, {3, 4}}.</p>
+<p><span class="num">2</span>Couples : (1,1) (1,2) (1,3) (1,6) (2,2) (2,6) (3,3) (3,6) (6,6), 9 croix. Réflexive (n | n), antisymétrique (dans ℕ, a | b et b | a ⇒ a = b), transitive (a | b, b | c ⇒ a | c) : <b>ordre</b>. <b>Partiel</b> : 2 ∤ 3 et 3 ∤ 2.</p>
+<p><span class="num">3</span>|A × B| = 3 × 2 = 6 → <b>2⁶ = 64</b> relations. Applications : 2 choix pour chacun des 3 éléments → <b>2³ = 8</b>.</p>
+<p><span class="num">4</span>−47 = 6 × (−8) + <b>1</b> (q = −8, r = 1, car 6 × (−7) = −42 donnerait r = −5 &lt; 0). 47 = (−6) × (−7) + <b>5</b> (q = −7, r = 5).</p>
+<p><span class="num">5</span>360 = <b>2³ × 3² × 5</b> → (3+1)(2+1)(1+1) = <b>24</b> dans ℕ, <b>48</b> dans ℤ. 72 = 2³ × 3² → 12 diviseurs : {1, 2, 3, 4, 6, 8, 9, 12, 18, 24, 36, 72}.</p>
+<p><span class="num">6</span>√211 ≈ 14,5 : on teste 2, 3, 5, 7, 11, 13, aucun ne divise 211 → <b>premier</b>. 221 = <b>13 × 17</b>, pas premier.</p>
+<p><span class="num">7</span>Si d | 3n + 4 et d | n + 1, alors d | (3n + 4) − 3(n + 1) = <b>1</b>, donc d ∈ {−1, 1}.</p></div>
+<div class="pf-blk trap"><h4><i>!</i>Ce qui coûte des points</h4><ul><li>Dire « non symétrique » sans donner le couple qui le prouve.</li><li>Oublier « dans ℤ » : les diviseurs négatifs comptent.</li><li>Donner un reste négatif à la division euclidienne.</li></ul></div>
+<div class="pf-blk tint"><h4><i>+</i>Encore plus d'entraînement</h4><p>Sur Arche, section « Devoir n°2 » : exercices corrigés supplémentaires (en plus des feuilles TD 3 et 4).</p></div>
+</div></div><div class="pf-foot"><span>Révisions BUT1 · R1.06 Maths discrètes</span><span>3 / 3</span></div></section>
+</div></div>
+    <div class="section-title" style="text-align:center">Ma fiche annexe</div>
+    <div class="annex" data-subj="r106dv"></div>
+  </section>
+
   <section id="tab-fx" role="tabpanel" hidden>
     <article class="sheet fiche" data-doc="fx">
       <h2>Fiche express · Chap. 1 à 4</h2>
@@ -2250,6 +2370,55 @@ S = {(3 − 2y, y, 2) / y ∈ ℝ}</pre></div>
 </div>
     <div class="section-title" style="text-align:center">Ma fiche annexe</div>
     <div class="annex" data-subj="r107"></div>
+  </section>
+
+  <section id="tab-mt" role="tabpanel" hidden>
+    <div class="ftools"><button type="button" class="btn" data-fs="r107td">Agrandir la fiche</button><span class="hint">Sélectionne un passage pour le <mark class="uhl" style="--hl:#ffe86b">surligner</mark> : il est gardé dans ta fiche annexe, en bas de page.</span></div>
+    <div class="fiche-host" data-subj="r107td"><div class="pfwrap">
+<section class="pf r107"><div class="pf-head"><div class="pf-code">R1.07</div><div class="pf-title"><b>TD noté blanc · calcul matriciel</b><span>Énoncés · 2 h, sans calculatrice ni document · rédige comme pour le compte-rendu</span></div><div class="pf-exam">TD noté S1.02<br>semaine du 23/11<br>sans calculatrice ni doc</div></div>
+<div class="pf-key"><ol><li>Écris le type avant chaque produit</li><li>Une case = une ligne « × » une colonne, écris le calcul</li><li>Inverse : on vérifie AB = I</li><li>Conclus chaque question par une phrase</li></ol></div>
+<div class="pf-cols"><div class="pf-col">
+<div class="pf-blk"><h4><i>1</i>Opérations</h4><div class="eq">A = <span class="mx" style="grid-template-columns:repeat(2,auto)"><span>1</span><span>−2</span><span>3</span><span>0</span></span> B = <span class="mx" style="grid-template-columns:repeat(2,auto)"><span>2</span><span>1</span><span>−1</span><span>4</span></span></div><p>Calculer 3A − 2B, AB, BA et <sup>t</sup>A. Que remarque-t-on ?</p></div>
+<div class="pf-blk"><h4><i>2</i>Quels produits existent ?</h4><div class="eq">A = <span class="mx" style="grid-template-columns:repeat(3,auto)"><span>1</span><span>0</span><span>2</span><span>−1</span><span>3</span><span>1</span></span> B = <span class="mx" style="grid-template-columns:repeat(1,auto)"><span>2</span><span>1</span><span>−1</span></span> C = <span class="mx" style="grid-template-columns:repeat(2,auto)"><span>1</span><span>−1</span></span></div><p>Donner le type de A, B, C. Parmi AB, BA, AC, BC, CA, CB, lesquels existent ? Les calculer. Que dire de AB ?</p></div>
+<div class="pf-blk"><h4><i>3</i>Produit 3 × 3</h4><div class="eq">A = <span class="mx" style="grid-template-columns:repeat(3,auto)"><span>1</span><span>0</span><span>1</span><span>2</span><span>1</span><span>0</span><span>0</span><span>−1</span><span>1</span></span> B = <span class="mx" style="grid-template-columns:repeat(3,auto)"><span>1</span><span>1</span><span>0</span><span>0</span><span>1</span><span>1</span><span>1</span><span>0</span><span>1</span></span></div><p>Calculer AB et BA.</p></div>
+</div><div class="pf-col">
+<div class="pf-blk"><h4><i>4</i>Puissances</h4><div class="eq">M = <span class="mx" style="grid-template-columns:repeat(2,auto)"><span>1</span><span>1</span><span>0</span><span>1</span></span> N = <span class="mx" style="grid-template-columns:repeat(2,auto)"><span>0</span><span>1</span><span>0</span><span>0</span></span></div><p>Calculer M², M³ et conjecturer Mⁿ. Calculer N². Conclusion ?</p></div>
+<div class="pf-blk"><h4><i>5</i>Inverse</h4><div class="eq">P = <span class="mx" style="grid-template-columns:repeat(2,auto)"><span>3</span><span>5</span><span>1</span><span>2</span></span> Q = <span class="mx" style="grid-template-columns:repeat(2,auto)"><span>2</span><span>−5</span><span>−1</span><span>3</span></span> R = <span class="mx" style="grid-template-columns:repeat(2,auto)"><span>1</span><span>2</span><span>2</span><span>4</span></span></div><p>a) Montrer que P est inversible et donner P<sup>−1</sup>.<br>b) Montrer que R n'est pas inversible (poser X = (x y ; z t) et écrire RX = I₂).</p></div>
+<div class="pf-blk"><h4><i>6</i>Équation matricielle</h4><p>Résoudre PX = <span class="mx" style="grid-template-columns:repeat(1,auto)"><span>1</span><span>1</span></span> avec P de l'exercice 5.</p></div>
+<div class="pf-blk"><h4><i>7</i>Transposée</h4><div class="eq">A = <span class="mx" style="grid-template-columns:repeat(2,auto)"><span>1</span><span>2</span><span>0</span><span>3</span></span></div><p>Calculer A + <sup>t</sup>A. Est-elle symétrique ? Rappeler <sup>t</sup>(AB) en fonction de <sup>t</sup>A et <sup>t</sup>B.</p></div>
+<div class="pf-blk tint"><h4><i>✎</i>Barème perso</h4><p>Chronomètre-toi : 1 h 15 max pour tout, puis corrige avec la page suivante. Refais en priorité ce que tu as raté.</p></div>
+</div></div><div class="pf-foot"><span>Révisions BUT1 · R1.07 Outils mathématiques</span><span>TD blanc 1 / 2</span></div></section>
+<section class="pf r107"><div class="pf-head"><div class="pf-code">R1.07</div><div class="pf-title"><b>TD noté blanc · corrigé</b><span>Compare ligne par ligne : les calculs intermédiaires comptent dans la note</span></div><div class="pf-exam">TD noté S1.02<br>semaine du 23/11<br>sans calculatrice ni doc</div></div>
+<div class="pf-cols"><div class="pf-col">
+<div class="pf-blk pfex"><h4><i>1</i>Opérations</h4>
+<div class="eq">3A − 2B = <span class="mx" style="grid-template-columns:repeat(2,auto)"><span>3</span><span>−6</span><span>9</span><span>0</span></span> − <span class="mx" style="grid-template-columns:repeat(2,auto)"><span>4</span><span>2</span><span>−2</span><span>8</span></span> = <span class="mx" style="grid-template-columns:repeat(2,auto)"><span>−1</span><span>−8</span><span>11</span><span>−8</span></span></div>
+<p class="m">AB : (2,2)×(2,2) = (2,2)<br>c11 = 1×2 + (−2)×(−1) = 4   c12 = 1×1 + (−2)×4 = −7<br>c21 = 3×2 + 0×(−1) = 6     c22 = 3×1 + 0×4 = 3</p>
+<div class="eq">AB = <span class="mx" style="grid-template-columns:repeat(2,auto)"><span>4</span><span>−7</span><span>6</span><span>3</span></span> BA = <span class="mx" style="grid-template-columns:repeat(2,auto)"><span>5</span><span>−4</span><span>11</span><span>2</span></span> <sup>t</sup>A = <span class="mx" style="grid-template-columns:repeat(2,auto)"><span>1</span><span>3</span><span>−2</span><span>0</span></span></div>
+<p><b>AB ≠ BA</b> : le produit n'est pas commutatif.</p></div>
+<div class="pf-blk pfex"><h4><i>2</i>Quels produits existent ?</h4>
+<p>A (2,3), B (3,1), C (1,2). Existent : <b>AB</b> (2,1), <b>BC</b> (3,2), <b>CA</b> (1,3). Impossibles : BA, AC, CB (colonnes ≠ lignes).</p>
+<div class="eq">AB = <span class="mx" style="grid-template-columns:repeat(1,auto)"><span>0</span><span>0</span></span> BC = <span class="mx" style="grid-template-columns:repeat(2,auto)"><span>2</span><span>−2</span><span>1</span><span>−1</span><span>−1</span><span>1</span></span> CA = <span class="mx" style="grid-template-columns:repeat(3,auto)"><span>2</span><span>−3</span><span>1</span></span></div>
+<p><b>AB = 0</b> alors que A ≠ 0 et B ≠ 0 : un produit nul n'implique pas qu'un facteur soit nul.</p></div>
+<div class="pf-blk pfex"><h4><i>3</i>Produit 3 × 3</h4>
+<div class="eq">AB = <span class="mx" style="grid-template-columns:repeat(3,auto)"><span>2</span><span>1</span><span>1</span><span>2</span><span>3</span><span>1</span><span>1</span><span>−1</span><span>0</span></span> BA = <span class="mx" style="grid-template-columns:repeat(3,auto)"><span>3</span><span>1</span><span>1</span><span>2</span><span>0</span><span>1</span><span>1</span><span>−1</span><span>2</span></span></div>
+<p class="m">ex. (AB)₃₂ = 0×1 + (−1)×1 + 1×0 = −1</p></div>
+</div><div class="pf-col">
+<div class="pf-blk pfex"><h4><i>4</i>Puissances</h4>
+<div class="eq">M² = <span class="mx" style="grid-template-columns:repeat(2,auto)"><span>1</span><span>2</span><span>0</span><span>1</span></span> M³ = <span class="mx" style="grid-template-columns:repeat(2,auto)"><span>1</span><span>3</span><span>0</span><span>1</span></span> → Mⁿ = <span class="mx" style="grid-template-columns:repeat(2,auto)"><span>1</span><span>n</span><span>0</span><span>1</span></span></div>
+<div class="eq">N² = <span class="mx" style="grid-template-columns:repeat(2,auto)"><span>0</span><span>0</span><span>0</span><span>0</span></span></div><p>N ≠ 0 mais <b>N² = 0</b>.</p></div>
+<div class="pf-blk pfex"><h4><i>5</i>Inverse</h4>
+<p class="m">PQ = (3×2+5×(−1)  3×(−5)+5×3 ; 1×2+2×(−1)  1×(−5)+2×3)</p>
+<div class="eq">PQ = <span class="mx" style="grid-template-columns:repeat(2,auto)"><span>1</span><span>0</span><span>0</span><span>1</span></span> = I₂ donc <b>P<sup>−1</sup> = Q</b></div>
+<p>b) RX = (x + 2z  y + 2t ; 2x + 4z  2y + 4t). RX = I₂ donne x + 2z = 1 (case 1,1) et 2x + 4z = 0 (case 2,1). Or 2x + 4z = 2(x + 2z) = 2, donc 2 = 0 : <b>impossible</b>, R n'est pas inversible.</p></div>
+<div class="pf-blk pfex"><h4><i>6</i>Équation matricielle</h4>
+<p>P inversible : on multiplie <b>à gauche</b> par P<sup>−1</sup> → X = P<sup>−1</sup><span class="mx" style="grid-template-columns:repeat(1,auto)"><span>1</span><span>1</span></span> = Q<span class="mx" style="grid-template-columns:repeat(1,auto)"><span>1</span><span>1</span></span> = <span class="mx" style="grid-template-columns:repeat(1,auto)"><span>−3</span><span>2</span></span></p>
+<p class="m">vérif : 3×(−3) + 5×2 = 1 ✓  1×(−3) + 2×2 = 1 ✓</p></div>
+<div class="pf-blk pfex"><h4><i>7</i>Transposée</h4><div class="eq">A + <sup>t</sup>A = <span class="mx" style="grid-template-columns:repeat(2,auto)"><span>1</span><span>2</span><span>0</span><span>3</span></span> + <span class="mx" style="grid-template-columns:repeat(2,auto)"><span>1</span><span>0</span><span>2</span><span>3</span></span> = <span class="mx" style="grid-template-columns:repeat(2,auto)"><span>2</span><span>2</span><span>2</span><span>6</span></span></div><p>Égale à sa transposée : <b>symétrique</b> (toujours vrai pour A + <sup>t</sup>A). <sup>t</sup>(AB) = <sup>t</sup>B <sup>t</sup>A (l'ordre s'inverse).</p></div>
+<div class="pf-blk trap"><h4><i>!</i>Ce qui coûte des points</h4><ul><li>X = BP<sup>−1</sup> au lieu de P<sup>−1</sup>B : l'ordre compte.</li><li>A² calculé case par case.</li><li>Oublier une phrase de conclusion.</li></ul></div>
+</div></div><div class="pf-foot"><span>Révisions BUT1 · R1.07 Outils mathématiques</span><span>TD blanc 2 / 2</span></div></section>
+</div></div>
+    <div class="section-title" style="text-align:center">Ma fiche annexe</div>
+    <div class="annex" data-subj="r107td"></div>
   </section>
 
   <!-- ============ R1.07 : fiches des tests du chapitre 0 ============ -->
@@ -5539,14 +5708,14 @@ const SUBJECTS={
    {key:"algomix",tag:"Algorithmique",title:"Comme à l'éval du 9/11",desc:"12 questions mélangées, avec des traces d'algorithmes",bank:()=>BANK.algo,gens:["algoSearch","algoSum","algoRepeat","algoTrace","algoBool","algoMorgan"],n:12},
    {key:"cmix",tag:"Spécial devoir",title:"Comme au devoir (hypothèse C)",desc:"12 questions : cours de C et programmes à exécuter de tête",bank:()=>BANK.clang,gens:["cExpr","cDiv","cLoop","cPrintf","cPtr","cTree","cBst","cStack"],n:12}],
   gendecks:[{key:"g-cexpr",tag:"Générées",title:"C : expressions",desc:"++, −−, +=, division entière, %, cast",gens:["cExpr","cDiv"]},{key:"g-cloop",tag:"Générées",title:"C : boucles et printf",desc:"break, continue, largeur et précision",gens:["cLoop","cPrintf"]},{key:"g-cptr",tag:"Générées",title:"C : pointeurs",desc:"*p, &a, que valent les variables ?",gens:["cPtr"]},{key:"g-csd",tag:"Générées",title:"Piles, files, arbres",desc:"Contenu final, parcours, ABR",gens:["cStack","cTree","cBst"]},{key:"g-atrace",tag:"Générées",title:"Traces d'exécution",desc:"Que vaut la variable à la fin ?",gens:["algoTrace","algoSum","algoSearch"]},{key:"g-aloop",tag:"Générées",title:"Compter les tours",desc:"pour, tq, repeter",gens:["algoLoop","algoRepeat"]},{key:"g-abool",tag:"Générées",title:"Booléens et De Morgan",desc:"Évaluer une condition, écrire sa négation",gens:["algoBool","algoMorgan"]},{key:"g-amatch",tag:"Générées",title:"Associer les paires",desc:"Paramètres, boucles, opérateurs, cas parmi",gens:["matchAlgo","algoDivMod","algoCas"]}]},
- r106:{code:"R1.06",name:"Maths discrètes",exam:"2026-11-23T08:30",exlabel:"Devoir 2 lun. 23/11 · 8 h 30",scope:"Chap. 3 Relations & Chap. 4 Divisibilité",tabs:[["f3","Cours : Relations"],["f4","Cours : Divisibilité"],["f1","Cours : Logique"],["f2","Cours : Ensembles"],["fx","Résumé express"]],decks:DECKS2.concat(DECKS,[DEVOIR2]),gendecks:GENDECKS2.concat(GENDECKS)},
+ r106:{code:"R1.06",name:"Maths discrètes",exam:"2026-11-23T08:30",exlabel:"Devoir 2 lun. 23/11 · 8 h 30",scope:"Chap. 3 Relations & Chap. 4 Divisibilité",tabs:[["dv","Fiche devoir 2"],["f3","Cours : Relations"],["f4","Cours : Divisibilité"],["f1","Cours : Logique"],["f2","Cours : Ensembles"],["fx","Résumé express"]],decks:DECKS2.concat(DECKS,[DEVOIR2]),gendecks:GENDECKS2.concat(GENDECKS)},
  r105:{code:"R1.05",name:"Bases de données",exam:"2026-10-20T08:00",exlabel:"Pas d'éval prévue pour l'instant",scope:"MCD, cardinalités, DF, passage au MLD (sans document)",tabs:[["b1","Cours : MCD"],["b2","Cours : MCD → MLD"],["b3","Corrections TD / TP / annales"],["bx","Fiche de révision"]],
   decks:[{key:"bdd",tag:"Cours",title:"Cardinalités et règles",desc:"Lire les cardinalités, type d'association, où va la clé étrangère",bank:()=>BANK.bdd,gens:["assoc","mldFK","matchBDD"]},
    {key:"bddeval",tag:"Comme à l'évaluation",title:"Exercices complets",desc:"Énoncé → cardinalités → schéma relationnel, corrigé comme les annales (3 exercices)",bank:()=>[],gens:["evalBDD"],n:3},
    {key:"bddmix",tag:"Spécial devoir",title:"Révision complète",desc:"2 exercices complets + questions de cours",bank:()=>BANK.bdd,gens:["evalBDD","evalBDD","assoc","mldFK"],n:10}],
   gendecks:[{key:"g-assoc",tag:"Générées",title:"Lire les cardinalités",desc:"Type 1:1, 1:n ou n:n",gens:["assoc"]},{key:"g-mld",tag:"Générées",title:"Où va la clé étrangère ?",desc:"Passage MCD → MLD",gens:["mldFK"]},{key:"g-mbdd",tag:"Générées",title:"Associer les paires",desc:"Vocabulaire et règles",gens:["matchBDD"]}]},
  r107:{code:"R1.07",name:"Outils mathématiques",exam:"2026-11-26T13:30",exlabel:"TD noté S1.02 jeu. 26/11 · 13 h 30 (matrices, sans calculatrice)",scope:"Chap. 1 Calcul matriciel, en binôme, sans document ni calculatrice",
-  get tabs(){return r107TD()?[["m1","Cours : Matrices"],["mg","Cours : Gauss-Jordan"],["md","Cours : Dérivation"],["mp","Cours : Polynômes"],["m2","Cours : Pivot"],["mx","Fiche de révision"],["c0","Fiches tests ch. 0"]]:[["mg","Cours : Gauss-Jordan"],["md","Cours : Dérivation"],["mp","Cours : Polynômes"],["m1","Cours : Matrices"],["m2","Cours : Pivot"],["mx","Fiche de révision"],["c0","Fiches tests ch. 0"]]},
+  get tabs(){return r107TD()?[["m1","Cours : Matrices"],["mg","Cours : Gauss-Jordan"],["md","Cours : Dérivation"],["mp","Cours : Polynômes"],["m2","Cours : Pivot"],["mx","Fiche de révision"],["mt","TD noté blanc"],["c0","Fiches tests ch. 0"]]:[["mg","Cours : Gauss-Jordan"],["md","Cours : Dérivation"],["mp","Cours : Polynômes"],["m1","Cours : Matrices"],["m2","Cours : Pivot"],["mx","Fiche de révision"],["mt","TD noté blanc"],["c0","Fiches tests ch. 0"]]},
   get decks(){const D=R107D;return r107TD()?[D.maths,D.gj,D.deriv,D.poly,D.dev2c,D.dev2mix,D.mathsmix]:[D.dev2c,D.gj,D.deriv,D.poly,D.maths,D.mathsmix,D.dev2mix]},
   gendecks:[{key:"g-mprod",tag:"Générées",title:"Produits de matrices",desc:"Remplis la matrice résultat",gens:["matProd","matPow"]},{key:"g-msum",tag:"Générées",title:"Somme, réel, transposée",desc:"Calculs de base",gens:["matSum","matTrans","matType"]},{key:"g-sys",tag:"Générées",title:"Systèmes (pivot)",desc:"Résoudre, lire un système échelonné",gens:["system","echelon","sysNature"]},{key:"g-minv",tag:"Générées",title:"Inverse et associations",desc:"Vérifier une inverse, relier les règles",gens:["matInv","matchMaths"]},{key:"g-gj",tag:"Générées",title:"Gauss-Jordan",desc:"Inverse 2 × 2 et 3 × 3 avec les étapes, AX = B",gens:["gjInv2","gjInv3","gjSolve"]},{key:"g-deriv",tag:"Générées",title:"Dérivées",desc:"Polynômes, quotients, √u, uⁿ, eᵘ, ln u",gens:["derivPoly","derivRule"]},{key:"g-tanvar",tag:"Générées",title:"Tangente et variations",desc:"Équation de tangente, extremums d'un degré 3",gens:["tangent","variations"]},{key:"g-poly",tag:"Générées",title:"Polynômes",desc:"Division euclidienne, racines, degré",gens:["polyDiv","polyFactor","polyDeg"]}]},
  r102:{code:"R1.02",name:"Web (HTML / CSS)",exam:"2026-10-21T08:00",exlabel:"Pas d'éval prévue pour l'instant",scope:"HTML + CSS jusqu'au TD4, positionnement inclus",tabs:[["w1","Cours : HTML"],["w2","Cours : CSS"],["wx","Mémento TP (à imprimer)"]],
