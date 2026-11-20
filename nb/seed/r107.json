@@ -1,0 +1,647 @@
+{
+ "decks": [
+  {
+   "title": "Ch. 0 · Fractions",
+   "cards": [
+    {
+     "id": "c107fr00",
+     "q": "a/b + c/d = ?",
+     "a": "(ad + bc) / bd\nMieux : réduire au même dénominateur (PPCM).",
+     "tag": "Ch. 0 · Fractions"
+    },
+    {
+     "id": "c107fr01",
+     "q": "a/b × c/d = ?",
+     "a": "(a × c) / (b × d)",
+     "tag": "Ch. 0 · Fractions"
+    },
+    {
+     "id": "c107fr02",
+     "q": "a/b ÷ c/d = ?",
+     "a": "a/b × d/c : diviser = multiplier par l'inverse",
+     "tag": "Ch. 0 · Fractions"
+    },
+    {
+     "id": "c107fr03",
+     "q": "Simplifie 33/30",
+     "a": "3 × 11 / (3 × 10) = **11/10**",
+     "tag": "Ch. 0 · Fractions"
+    },
+    {
+     "id": "c107fr04",
+     "q": "2/3 + 11/6 = ?",
+     "a": "4/6 + 11/6 = 15/6 = **5/2**",
+     "tag": "Ch. 0 · Fractions"
+    },
+    {
+     "id": "c107fr05",
+     "q": "1 + 1/2 + 1/4 + 1/8 = ?",
+     "a": "(8 + 4 + 2 + 1)/8 = **15/8**",
+     "tag": "Ch. 0 · Fractions"
+    },
+    {
+     "id": "c107fr06",
+     "q": "2/3 ÷ 4/9 = ?",
+     "a": "2/3 × 9/4 = 18/12 = **3/2**",
+     "tag": "Ch. 0 · Fractions"
+    },
+    {
+     "id": "c107fr07",
+     "q": "Vrai ou faux : 1/2 + 1/2 = 2/4",
+     "a": "**Faux** : 1/2 + 1/2 = 1. On n'additionne jamais les dénominateurs.",
+     "tag": "Ch. 0 · Fractions"
+    },
+    {
+     "id": "c107fr08",
+     "q": "Peut-on simplifier (2 + 3)/2 en 3 ?",
+     "a": "**Non** : on ne simplifie que des **facteurs**, pas des termes. (2 + 3)/2 = 5/2.",
+     "tag": "Ch. 0 · Fractions"
+    },
+    {
+     "id": "c107fr09",
+     "q": "−a/b est égal à…",
+     "a": "(−a)/b = a/(−b) = −(a/b)",
+     "tag": "Ch. 0 · Fractions"
+    }
+   ]
+  },
+  {
+   "title": "Ch. 0 · Puissances",
+   "cards": [
+    {
+     "id": "c107pw00",
+     "q": "a^n × a^m = ?",
+     "a": "a^{n+m}",
+     "tag": "Ch. 0 · Puissances"
+    },
+    {
+     "id": "c107pw01",
+     "q": "a^n / a^m = ?",
+     "a": "a^{n−m}",
+     "tag": "Ch. 0 · Puissances"
+    },
+    {
+     "id": "c107pw02",
+     "q": "(a^n)^m = ?",
+     "a": "a^{n×m}",
+     "tag": "Ch. 0 · Puissances"
+    },
+    {
+     "id": "c107pw03",
+     "q": "a^0 = ?  et  a^{−n} = ?",
+     "a": "a^0 = 1 (a ≠ 0) et a^{−n} = 1/a^n",
+     "tag": "Ch. 0 · Puissances"
+    },
+    {
+     "id": "c107pw04",
+     "q": "(2x)^3 = ?",
+     "a": "8x^3",
+     "tag": "Ch. 0 · Puissances"
+    },
+    {
+     "id": "c107pw05",
+     "q": "(−2)^4 et −2^4 valent ?",
+     "a": "(−2)^4 = **16** mais −2^4 = **−16** (la puissance passe avant le signe −)",
+     "tag": "Ch. 0 · Puissances"
+    },
+    {
+     "id": "c107pw06",
+     "q": "Simplifie 2^3 × 4^2 / 8^2",
+     "a": "2^3 × 2^4 / 2^6 = 2^{3+4−6} = **2**",
+     "tag": "Ch. 0 · Puissances"
+    },
+    {
+     "id": "c107pw07",
+     "q": "Simplifie 3^{−2} × 9^3 / 27",
+     "a": "3^{−2} × 3^6 / 3^3 = **3**",
+     "tag": "Ch. 0 · Puissances"
+    },
+    {
+     "id": "c107pw08",
+     "q": "2^3 + 2^2 = 2^5 ?",
+     "a": "**Non** : 8 + 4 = 12. On n'additionne pas les exposants dans une somme.",
+     "tag": "Ch. 0 · Puissances"
+    },
+    {
+     "id": "c107pw09",
+     "q": "10^{−2} = ?",
+     "a": "0,01",
+     "tag": "Ch. 0 · Puissances"
+    }
+   ]
+  },
+  {
+   "title": "Ch. 0 · Calcul littéral",
+   "cards": [
+    {
+     "id": "c107cl00",
+     "q": "(a + b)^2 = ?",
+     "a": "a^2 + 2ab + b^2",
+     "tag": "Ch. 0 · Calcul littéral"
+    },
+    {
+     "id": "c107cl01",
+     "q": "(a − b)^2 = ?",
+     "a": "a^2 − 2ab + b^2",
+     "tag": "Ch. 0 · Calcul littéral"
+    },
+    {
+     "id": "c107cl02",
+     "q": "(a − b)(a + b) = ?",
+     "a": "a^2 − b^2",
+     "tag": "Ch. 0 · Calcul littéral"
+    },
+    {
+     "id": "c107cl03",
+     "q": "Développe (a − 1)(a + 3)",
+     "a": "a^2 + 3a − a − 3 = **a^2 + 2a − 3**",
+     "tag": "Ch. 0 · Calcul littéral"
+    },
+    {
+     "id": "c107cl04",
+     "q": "Développe −(a + 7)(a − 11)",
+     "a": "−(a^2 − 4a − 77) = **−a^2 + 4a + 77**",
+     "tag": "Ch. 0 · Calcul littéral"
+    },
+    {
+     "id": "c107cl05",
+     "q": "Factorise 81x^2 − 64",
+     "a": "(9x)^2 − 8^2 = **(9x − 8)(9x + 8)**",
+     "tag": "Ch. 0 · Calcul littéral"
+    },
+    {
+     "id": "c107cl06",
+     "q": "Factorise 9x^2 + 12x + 4",
+     "a": "**(3x + 2)^2**",
+     "tag": "Ch. 0 · Calcul littéral"
+    },
+    {
+     "id": "c107cl07",
+     "q": "Factorise 2x + 6 + 3x(x + 3)",
+     "a": "2(x + 3) + 3x(x + 3) = **(x + 3)(3x + 2)**",
+     "tag": "Ch. 0 · Calcul littéral"
+    },
+    {
+     "id": "c107cl08",
+     "q": "Factorise x^2 + 2x − 8 (début de carré)",
+     "a": "(x + 1)^2 − 9 = **(x − 2)(x + 4)**",
+     "tag": "Ch. 0 · Calcul littéral"
+    },
+    {
+     "id": "c107cl09",
+     "q": "−(3a − 4) = ?",
+     "a": "−3a + 4 : le − change **tous** les signes",
+     "tag": "Ch. 0 · Calcul littéral"
+    },
+    {
+     "id": "c107cl10",
+     "q": "(a + b)^3 = ?",
+     "a": "a^3 + 3a^2b + 3ab^2 + b^3",
+     "tag": "Ch. 0 · Calcul littéral"
+    }
+   ]
+  },
+  {
+   "title": "Ch. 0 · Proportionnalité",
+   "cards": [
+    {
+     "id": "c107pp00",
+     "q": "Comment reconnaître que y est proportionnel à x ?",
+     "a": "y = k × x : même coefficient k sur tout le tableau ; graphique = droite passant par l'origine.",
+     "tag": "Ch. 0 · Proportionnalité"
+    },
+    {
+     "id": "c107pp01",
+     "q": "3 kg coûtent 4,50 €. Prix de 7 kg ?",
+     "a": "7 × 4,50 / 3 = **10,50 €**",
+     "tag": "Ch. 0 · Proportionnalité"
+    },
+    {
+     "id": "c107pp02",
+     "q": "Produit en croix : a/b = c/d ⇔ ?",
+     "a": "ad = bc",
+     "tag": "Ch. 0 · Proportionnalité"
+    },
+    {
+     "id": "c107pp03",
+     "q": "Augmenter de t % revient à multiplier par…",
+     "a": "1 + t/100 (ex. +20 % → × 1,2)",
+     "tag": "Ch. 0 · Proportionnalité"
+    },
+    {
+     "id": "c107pp04",
+     "q": "Baisser de t % revient à multiplier par…",
+     "a": "1 − t/100 (ex. −15 % → × 0,85)",
+     "tag": "Ch. 0 · Proportionnalité"
+    },
+    {
+     "id": "c107pp05",
+     "q": "+20 % puis −20 % : quelle évolution globale ?",
+     "a": "× 1,2 × 0,8 = × 0,96 → **−4 %**",
+     "tag": "Ch. 0 · Proportionnalité"
+    },
+    {
+     "id": "c107pp06",
+     "q": "Taux d'évolution entre V_D et V_A ?",
+     "a": "(V_A − V_D) / V_D",
+     "tag": "Ch. 0 · Proportionnalité"
+    },
+    {
+     "id": "c107pp07",
+     "q": "90 km/h en m/s ?",
+     "a": "90 ÷ 3,6 = **25 m/s**",
+     "tag": "Ch. 0 · Proportionnalité"
+    },
+    {
+     "id": "c107pp08",
+     "q": "Échelle 1/25 000 : 4 cm sur la carte = ?",
+     "a": "100 000 cm = **1 km**",
+     "tag": "Ch. 0 · Proportionnalité"
+    },
+    {
+     "id": "c107pp09",
+     "q": "Taxi : 3 € + 1,50 €/km. Proportionnel ?",
+     "a": "**Non** : 0 km coûte déjà 3 € (la droite ne passe pas par l'origine).",
+     "tag": "Ch. 0 · Proportionnalité"
+    }
+   ]
+  },
+  {
+   "title": "Ch. 0 · Vocabulaire équations / inéquations",
+   "cards": [
+    {
+     "id": "c107vo00",
+     "q": "Qu'est-ce qu'une solution d'une équation ?",
+     "a": "Une valeur de l'inconnue qui rend l'égalité **vraie**.",
+     "tag": "Ch. 0 · Vocabulaire équations / inéquations"
+    },
+    {
+     "id": "c107vo01",
+     "q": "Que veut dire « résoudre » ?",
+     "a": "Trouver **toutes** les solutions et les donner dans l'ensemble S.",
+     "tag": "Ch. 0 · Vocabulaire équations / inéquations"
+    },
+    {
+     "id": "c107vo02",
+     "q": "Deux équations équivalentes (⇔) ?",
+     "a": "Elles ont exactement le même ensemble de solutions.",
+     "tag": "Ch. 0 · Vocabulaire équations / inéquations"
+    },
+    {
+     "id": "c107vo03",
+     "q": "Que sont les membres d'une équation ?",
+     "a": "Ce qui est à gauche et à droite du signe =.",
+     "tag": "Ch. 0 · Vocabulaire équations / inéquations"
+    },
+    {
+     "id": "c107vo04",
+     "q": "Une équation toujours vraie a pour S…",
+     "a": "S = ℝ",
+     "tag": "Ch. 0 · Vocabulaire équations / inéquations"
+    },
+    {
+     "id": "c107vo05",
+     "q": "Une équation jamais vraie a pour S…",
+     "a": "S = ∅",
+     "tag": "Ch. 0 · Vocabulaire équations / inéquations"
+    },
+    {
+     "id": "c107vo06",
+     "q": "x ≥ 2 en intervalle ?",
+     "a": "[2 ; +∞[",
+     "tag": "Ch. 0 · Vocabulaire équations / inéquations"
+    },
+    {
+     "id": "c107vo07",
+     "q": "−1 < x ≤ 3 en intervalle ?",
+     "a": "]−1 ; 3]",
+     "tag": "Ch. 0 · Vocabulaire équations / inéquations"
+    },
+    {
+     "id": "c107vo08",
+     "q": "Différence entre {2 ; 5} et [2 ; 5] ?",
+     "a": "{2 ; 5} : **deux nombres**. [2 ; 5] : **tous les réels** entre 2 et 5.",
+     "tag": "Ch. 0 · Vocabulaire équations / inéquations"
+    },
+    {
+     "id": "c107vo09",
+     "q": "3 est-il solution de x^2 − 2x = 3 ?",
+     "a": "9 − 6 = 3 → **oui**",
+     "tag": "Ch. 0 · Vocabulaire équations / inéquations"
+    },
+    {
+     "id": "c107vo10",
+     "q": "Degré de 3x^2 − x + 1 ?",
+     "a": "2 (plus grande puissance de x)",
+     "tag": "Ch. 0 · Vocabulaire équations / inéquations"
+    }
+   ]
+  },
+  {
+   "title": "Ch. 0 · Équations du 1er degré",
+   "cards": [
+    {
+     "id": "c107e100",
+     "q": "Solution de ax + b = 0 (a ≠ 0) ?",
+     "a": "x = −b/a, donc S = {−b/a}",
+     "tag": "Ch. 0 · Équations du 1er degré"
+    },
+    {
+     "id": "c107e101",
+     "q": "ax + b = 0 avec a = 0 ?",
+     "a": "Si b = 0 : S = ℝ ; sinon S = ∅",
+     "tag": "Ch. 0 · Équations du 1er degré"
+    },
+    {
+     "id": "c107e102",
+     "q": "Résous 5(x − 2) = 3x + 4",
+     "a": "5x − 10 = 3x + 4 ⇔ 2x = 14 ⇔ **x = 7**",
+     "tag": "Ch. 0 · Équations du 1er degré"
+    },
+    {
+     "id": "c107e103",
+     "q": "Résous x/2 + 1/3 = x/3",
+     "a": "× 6 : 3x + 2 = 2x ⇔ **x = −2**",
+     "tag": "Ch. 0 · Équations du 1er degré"
+    },
+    {
+     "id": "c107e104",
+     "q": "Équation produit nul : A × B = 0 ⇔ ?",
+     "a": "A = 0 **ou** B = 0",
+     "tag": "Ch. 0 · Équations du 1er degré"
+    },
+    {
+     "id": "c107e105",
+     "q": "Résous (3x + 2)(−x + 1) = 0",
+     "a": "S = {−2/3 ; 1}",
+     "tag": "Ch. 0 · Équations du 1er degré"
+    },
+    {
+     "id": "c107e106",
+     "q": "Résous x^2 = 3x",
+     "a": "x(x − 3) = 0 ⇔ S = {0 ; 3}. **Ne jamais diviser par x.**",
+     "tag": "Ch. 0 · Équations du 1er degré"
+    },
+    {
+     "id": "c107e107",
+     "q": "A/B = 0 ⇔ ?",
+     "a": "A = 0 **et** B ≠ 0",
+     "tag": "Ch. 0 · Équations du 1er degré"
+    },
+    {
+     "id": "c107e108",
+     "q": "Résous 2x − 7 = 5x + 2",
+     "a": "−3x = 9 ⇔ **x = −3**",
+     "tag": "Ch. 0 · Équations du 1er degré"
+    }
+   ]
+  },
+  {
+   "title": "Ch. 0 · Équations du 2nd degré",
+   "cards": [
+    {
+     "id": "c107e200",
+     "q": "Discriminant de ax^2 + bx + c ?",
+     "a": "Δ = b^2 − 4ac",
+     "tag": "Ch. 0 · Équations du 2nd degré"
+    },
+    {
+     "id": "c107e201",
+     "q": "Si Δ > 0, les solutions sont…",
+     "a": "x = (−b − √Δ)/(2a) et x = (−b + √Δ)/(2a)",
+     "tag": "Ch. 0 · Équations du 2nd degré"
+    },
+    {
+     "id": "c107e202",
+     "q": "Si Δ = 0 ?",
+     "a": "Une solution double : x₀ = −b/(2a)",
+     "tag": "Ch. 0 · Équations du 2nd degré"
+    },
+    {
+     "id": "c107e203",
+     "q": "Si Δ < 0 ?",
+     "a": "Aucune solution réelle : S = ∅",
+     "tag": "Ch. 0 · Équations du 2nd degré"
+    },
+    {
+     "id": "c107e204",
+     "q": "Résous 2x^2 + x − 10 = 0",
+     "a": "Δ = 1 + 80 = 81 ; x = (−1 ± 9)/4 → S = {−5/2 ; 2}",
+     "tag": "Ch. 0 · Équations du 2nd degré"
+    },
+    {
+     "id": "c107e205",
+     "q": "Résous x^2 + 2x − 8 = 0",
+     "a": "Δ = 36 → S = {−4 ; 2}",
+     "tag": "Ch. 0 · Équations du 2nd degré"
+    },
+    {
+     "id": "c107e206",
+     "q": "Résous 81x^2 − 121 = 0 sans Δ",
+     "a": "(9x)^2 = 11^2 → S = {−11/9 ; 11/9}",
+     "tag": "Ch. 0 · Équations du 2nd degré"
+    },
+    {
+     "id": "c107e207",
+     "q": "Δ de 3x^2 − 15x − 2 ?",
+     "a": "(−15)^2 − 4 × 3 × (−2) = 225 + 24 = **249**",
+     "tag": "Ch. 0 · Équations du 2nd degré"
+    },
+    {
+     "id": "c107e208",
+     "q": "Factorisation si Δ > 0 ?",
+     "a": "a(x − x₁)(x − x₂)",
+     "tag": "Ch. 0 · Équations du 2nd degré"
+    },
+    {
+     "id": "c107e209",
+     "q": "Somme et produit des racines ?",
+     "a": "x₁ + x₂ = −b/a et x₁ × x₂ = c/a",
+     "tag": "Ch. 0 · Équations du 2nd degré"
+    }
+   ]
+  },
+  {
+   "title": "Ch. 0 · Inéquations",
+   "cards": [
+    {
+     "id": "c107in00",
+     "q": "Multiplier une inégalité par un négatif…",
+     "a": "**retourne** le sens (< devient >)",
+     "tag": "Ch. 0 · Inéquations"
+    },
+    {
+     "id": "c107in01",
+     "q": "Résous −2x + 5 ≥ 11",
+     "a": "−2x ≥ 6 ⇔ x ≤ −3 → S = ]−∞ ; −3]",
+     "tag": "Ch. 0 · Inéquations"
+    },
+    {
+     "id": "c107in02",
+     "q": "Signe de ax + b ?",
+     "a": "Signe de a à droite de −b/a, contraire à gauche.",
+     "tag": "Ch. 0 · Inéquations"
+    },
+    {
+     "id": "c107in03",
+     "q": "Résous (x − 2)(x + 4) ≤ 0",
+     "a": "Tableau de signes → S = [−4 ; 2]",
+     "tag": "Ch. 0 · Inéquations"
+    },
+    {
+     "id": "c107in04",
+     "q": "Signe du trinôme quand Δ > 0 ?",
+     "a": "Signe de a **à l'extérieur** des racines, contraire entre elles.",
+     "tag": "Ch. 0 · Inéquations"
+    },
+    {
+     "id": "c107in05",
+     "q": "Résous x^2 − x − 6 > 0",
+     "a": "Racines −2 et 3, a > 0 → S = ]−∞ ; −2[ ∪ ]3 ; +∞[",
+     "tag": "Ch. 0 · Inéquations"
+    },
+    {
+     "id": "c107in06",
+     "q": "Δ < 0 : signe du trinôme ?",
+     "a": "Toujours du signe de a.",
+     "tag": "Ch. 0 · Inéquations"
+    },
+    {
+     "id": "c107in07",
+     "q": "Crochets avec < ou ≤ ?",
+     "a": "< : crochet ouvert ; ≤ : crochet fermé. Valeur interdite : toujours ouvert.",
+     "tag": "Ch. 0 · Inéquations"
+    },
+    {
+     "id": "c107in08",
+     "q": "Peut-on multiplier les deux membres par x ?",
+     "a": "**Non** : on ne connaît pas le signe de x.",
+     "tag": "Ch. 0 · Inéquations"
+    }
+   ]
+  }
+ ],
+ "quizzes": [
+  {
+   "title": "Chapitre 0 · quiz de révision",
+   "questions": [
+    {
+     "q": "2/3 + 11/6 = ?",
+     "choices": [
+      "13/9",
+      "5/2",
+      "13/6",
+      "15/9"
+     ],
+     "answer": 1,
+     "expl": "4/6 + 11/6 = 15/6 = 5/2."
+    },
+    {
+     "q": "−2^4 = ?",
+     "choices": [
+      "16",
+      "−16",
+      "−8",
+      "8"
+     ],
+     "answer": 1,
+     "expl": "La puissance passe avant le signe : −(2^4) = −16."
+    },
+    {
+     "q": "(x − 3)^2 = ?",
+     "choices": [
+      "x^2 − 9",
+      "x^2 − 6x + 9",
+      "x^2 + 9",
+      "x^2 − 3x + 9"
+     ],
+     "answer": 1,
+     "expl": "(a − b)^2 = a^2 − 2ab + b^2."
+    },
+    {
+     "q": "Un prix augmente de 10 % puis baisse de 10 %. Il a…",
+     "choices": [
+      "baissé de 1 %",
+      "pas changé",
+      "augmenté de 1 %",
+      "baissé de 10 %"
+     ],
+     "answer": 0,
+     "expl": "× 1,1 × 0,9 = × 0,99 → −1 %."
+    },
+    {
+     "q": "S de x^2 = 3x ?",
+     "choices": [
+      "{3}",
+      "{0 ; 3}",
+      "{−3 ; 3}",
+      "∅"
+     ],
+     "answer": 1,
+     "expl": "x(x − 3) = 0 : ne jamais diviser par x, on perdrait 0."
+    },
+    {
+     "q": "Δ de x^2 + 2x + 5 ?",
+     "choices": [
+      "24",
+      "−16",
+      "16",
+      "−24"
+     ],
+     "answer": 1,
+     "expl": "4 − 20 = −16 < 0 : pas de solution réelle."
+    },
+    {
+     "q": "−3x > 12 ⇔ ?",
+     "choices": [
+      "x > −4",
+      "x < −4",
+      "x > 4",
+      "x < 4"
+     ],
+     "answer": 1,
+     "expl": "Diviser par −3 retourne le sens."
+    },
+    {
+     "q": "x ≥ 2 s'écrit…",
+     "choices": [
+      "]2 ; +∞[",
+      "[2 ; +∞[",
+      "[2 ; +∞]",
+      "{2 ; +∞}"
+     ],
+     "answer": 1,
+     "expl": "2 est inclus (crochet fermé), toujours ouvert en +∞."
+    },
+    {
+     "q": "3^{−2} = ?",
+     "choices": [
+      "−9",
+      "−6",
+      "1/9",
+      "1/6"
+     ],
+     "answer": 2,
+     "expl": "a^{−n} = 1/a^n."
+    },
+    {
+     "q": "Solutions de 2x^2 + x − 10 = 0 ?",
+     "choices": [
+      "{−2 ; 5/2}",
+      "{−5/2 ; 2}",
+      "{2 ; 5}",
+      "∅"
+     ],
+     "answer": 1,
+     "expl": "Δ = 81, x = (−1 ± 9)/4."
+    }
+   ]
+  }
+ ],
+ "fiches": [
+  {
+   "title": "Chapitre 0 · l'essentiel des 8 tests",
+   "html": "<h1>Chapitre 0 · l'essentiel des 8 tests</h1>\n<p>Pour la version imprimable complète (4 pages A4), ouvre le site de révision → R1.07 → <b>Fiches tests ch. 0</b>.</p>\n<div class=\"cols\"><div>\n<h2>Fractions</h2><ul><li>a/b + c/d = (ad + bc)/bd, avec le <b>plus petit dénominateur commun</b></li><li>a/b ÷ c/d = a/b × d/c</li><li>On simplifie des <b>facteurs</b>, jamais des termes</li></ul>\n<h2>Puissances</h2><ul><li>a<sup>n</sup>a<sup>m</sup> = a<sup>n+m</sup> · a<sup>n</sup>/a<sup>m</sup> = a<sup>n−m</sup> · (a<sup>n</sup>)<sup>m</sup> = a<sup>nm</sup></li><li>a<sup>0</sup> = 1 · a<sup>−n</sup> = 1/a<sup>n</sup></li><li>(−2)<sup>4</sup> = 16 mais −2<sup>4</sup> = −16</li></ul>\n<h2>Calcul littéral</h2><ul><li>(a ± b)<sup>2</sup> = a<sup>2</sup> ± 2ab + b<sup>2</sup> · (a − b)(a + b) = a<sup>2</sup> − b<sup>2</sup></li><li>Factoriser : facteur commun, puis identité, puis début de carré</li></ul>\n<h2>Proportionnalité</h2><ul><li>y = kx, droite par l'origine</li><li>+t % = × (1 + t/100) ; on multiplie les coefficients</li></ul>\n</div><div>\n<h2>Vocabulaire</h2><ul><li>Résoudre = donner <b>toutes</b> les solutions dans S</li><li>{2 ; 5} ≠ [2 ; 5]</li><li>Toujours vraie : S = ℝ ; jamais : S = ∅</li></ul>\n<h2>1er degré</h2><ul><li>ax + b = 0 ⇔ x = −b/a (a ≠ 0)</li><li>AB = 0 ⇔ A = 0 <b>ou</b> B = 0 ; ne jamais diviser par x</li></ul>\n<h2>2nd degré</h2><ul><li>Δ = b<sup>2</sup> − 4ac ; x = (−b ± √Δ)/2a</li><li>Δ = 0 : x<sub>0</sub> = −b/2a ; Δ &lt; 0 : S = ∅</li></ul>\n<h2>Inéquations</h2><ul><li>× ou ÷ par un négatif : on <b>retourne</b> le sens</li><li>Trinôme : signe de a à l'extérieur des racines</li></ul>\n</div></div>\n<div class=\"trap\"><b>Tests Arche :</b> 10 essais par test avant le mar. 1/12 à 23 h 59, c'est la moyenne qui compte.</div>"
+  }
+ ]
+}
